@@ -92,13 +92,19 @@ export function PatchHighlight({
         onMouseLeave={hide}
         onFocus={() => show()}
         onBlur={hide}
-        // Touch has no hover: flash the wave on tap without delaying the
-        // click — it plays during (and briefly after) navigation.
+        // Touch has no hover: flash the wave on tap, then redirect after 300ms
+        // to ensure users see the full animation.
         onPointerDown={(e) => {
           if (e.pointerType !== "touch" && e.pointerType !== "pen") return;
-          show({ x: e.clientX, y: e.clientY });
-          clearTimeout(tapTimer.current);
-          tapTimer.current = setTimeout(hide, 700);
+          e.preventDefault();
+          const link = e.currentTarget.querySelector('a');
+          if (link) {
+            show({ x: e.clientX, y: e.clientY });
+            clearTimeout(tapTimer.current);
+            tapTimer.current = setTimeout(() => {
+              window.location.href = link.href;
+            }, 300);
+          }
         }}
       >
         {children}
