@@ -1,0 +1,19 @@
+---
+title: SeanGPT
+year: 2025
+period: May 2025 – Jul 2025
+blurb: RAG Q&A over my course notes
+order: 1
+link: https://seanfang.click
+---
+
+SeanGPT is a retrieval interface over my Obsidian vault of college notes — the
+same notebook linked from the homepage. The vault syncs from GitHub into a
+vector database on every push, so the model always answers against my latest
+notes.
+
+- Built a RAG pipeline (FastAPI + LangChain) that ingests the Obsidian vault
+  into a ChromaDB vector store on each push, enabling natural-language Q&A over
+  my notes with OpenAI embeddings and GPT-4 / Claude.
+- Dockerized and deployed to AWS ECS with Route 53 via CI/CD, cutting
+  deployment time by 70% and query costs by 80%.
