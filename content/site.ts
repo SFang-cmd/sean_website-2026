@@ -67,7 +67,8 @@ export const site: SiteContent = {
   ],
   experience: [
     {
-      period: "Sep 2026 – Present",
+      // Two stints, one row: the gap is the Google summer (no overlap by contract).
+      period: "Oct 2025 – Apr 2026, Sep 2026 – Present",
       company: "Anthropic",
       role: "Claude Campus Ambassador",
       blurb: "",
@@ -76,12 +77,6 @@ export const site: SiteContent = {
       period: "May – Aug 2026",
       company: "Google",
       role: "Software Engineering Intern, Machine Learning",
-      blurb: "",
-    },
-    {
-      period: "Oct 2025 – Apr 2026",
-      company: "Anthropic",
-      role: "Claude Campus Ambassador",
       blurb: "",
     },
     {
