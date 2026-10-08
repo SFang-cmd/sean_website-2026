@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 1 · B-side flip</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  /* The viewport is a card. Front = A, back = B (pre-rotated 180° on X so it
+     reads upright once the card has turned). Each face scrolls on its own. */
+  body { overflow: hidden; }
+  .stage {
+    position: fixed; inset: 0;
+    perspective: 1800px;
+  }
+  .card {
+    position: absolute; inset: 0;
+    transform-style: preserve-3d;
+    transition: transform 900ms cubic-bezier(0.65, 0, 0.2, 1);
+  }
+  .card.flipped { transform: rotateX(180deg); }
+  .face {
+    position: absolute; inset: 0; overflow: auto;
+    backface-visibility: hidden;
+  }
+  .face.b { transform: rotateX(180deg); }
+  /* The fixed grid backdrops don't rotate with a transformed ancestor, so
+     scope them to the face instead. */
+  .face::before, .face::after { position: absolute; }
+  /* B side mirrors the layout: nav sits at the bottom. */
+  .face.b .col { display: flex; flex-direction: column; min-height: 100%; }
+  .face.b .nav { order: 99; margin-top: auto; padding-top: 48px; }
+  .face.b h1 { margin-top: 48px; }
+  /* Darken the face while it's edge-on so the turn has weight. */
+  .face::after { transition: background-color 900ms; }
+  .card.turning .face.a::after { background-color: rgba(0,0,0,0.35); }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="card" id="card">
+      <div class="face side a" id="a"></div>
+      <div class="face side b" id="b"></div>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+  <script>
+    mountSides(document.getElementById("a"), document.getElementById("b"));
+    mountSchemeToggle();
+    mountHint("1 · B-side flip. Click “photos” or “turn over”. The whole viewport turns like a record; the B side has its nav at the bottom.");
+
+    const card = document.getElementById("card");
+    onGo((side) => {
+      if (reducedMotion()) { card.style.transition = "none"; }
+      card.classList.add("turning");
+      card.classList.toggle("flipped", side === "b");
+      setTimeout(() => card.classList.remove("turning"), 900);
+    });
+  </script>
+</body>
+</html>

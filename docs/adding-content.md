@@ -64,6 +64,37 @@ cover `p`, `h2`, `ul`, `a`, `code`):
 To remove a project from the homepage, delete its file (or park it
 outside `content/work/`). To reorder, edit `order`.
 
+## Adding photos (B side)
+
+Photos are data too: a folder of originals plus one CSV, and a script that
+turns them into the manifest the pages read. You never touch a component.
+
+1. Export from Lightroom as JPEG, long edge ~2400px, into `photos/`
+   (gitignored; originals stay on your machine).
+2. Add a row per photo to `content/photos.csv`:
+
+   | column   | meaning |
+   | -------- | ------- |
+   | `file`   | filename in `photos/` — must match exactly |
+   | `title`  | shown in italics under the image |
+   | `place`  | shown after the title |
+   | `year`   | number; gallery sorts newest first |
+   | `series` | one of the `slug`s in `content/series.ts` (portraits, sports, travel, aerial) |
+   | `home`   | `TRUE` to include on the home streams (aim for 30–40) |
+   | `order`  | sequence on the home, lower first; blank when `home` is FALSE |
+   | `alt`    | one plain sentence describing the image, for screen readers and search |
+
+   If `title`/`alt` are blank the script falls back to the JPEG's IPTC
+   Title/Caption, so captioning in Lightroom also works.
+3. Run `npm run photos`. It is strict: a row without a file, or a file
+   without a row, is an error, not a warning. It writes optimized
+   renditions to `public/photos/` and the manifest to `content/photos.json`;
+   commit both.
+4. Commit and push. The site is static, so that's the deploy.
+
+To add a series, add an entry to `content/series.ts`. To take a photo down,
+delete its row (and optionally the original) and re-run the script.
+
 ## Adding a notes/blog section (future)
 
 The pattern is already established: copy the `work` pipeline —

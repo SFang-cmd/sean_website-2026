@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>B side · home (interleaved streams)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  /* B side: paper, no grid, no accent. Serif display, small sans support text. */
+  :root { --bg: #f7f5f0; --fg: #141311; --muted: #6e6a62; --line: rgba(20,19,17,0.14); }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141414; --fg: #ecebe7; --muted: #9a978f; --line: rgba(236,235,231,0.16); }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 14px/1.5 system-ui, -apple-system, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+
+  nav {
+    position: fixed; inset: 0 0 auto 0; z-index: 10;
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 20px 28px; mix-blend-mode: difference; color: #fff;
+  }
+  nav .name { font-size: 22px; }
+  nav a { color: inherit; text-decoration: none; margin-left: 24px; font-size: 13px; }
+  nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  header { min-height: 92vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 28px 48px; }
+  header h1 { font-size: clamp(40px, 7vw, 96px); line-height: 0.98; margin: 0; max-width: 14ch; letter-spacing: -0.01em; }
+  header p { color: var(--muted); max-width: 44ch; margin: 24px 0 0; }
+
+  /* Streams. Each stream is one absolutely positioned track with ONE transform
+     driven by scroll. Streams differ in angle (sign and size), image scale and
+     vertical speed, so they cross and parallax against each other. */
+  /* Each shot is its own scroll-driven layer (one transform each), so the
+     stacking order can interleave across streams: z-index = sequence order,
+     the next image in the deal always lands on top of the previous ones. */
+  .river { position: relative; height: var(--river-h, 6000px); }
+  .shot { position: absolute; margin: 0; will-change: transform; }
+  .shot .img { background: var(--tint); box-shadow: 0 1px 0 rgba(0,0,0,0.04); }
+  .shot figcaption { margin-top: 6px; color: var(--muted); font-size: 11px; white-space: nowrap; }
+  .shot figcaption i { font-style: italic; color: var(--fg); font-family: "Instrument Serif", Georgia, serif; font-size: 14px; }
+
+  /* Scroll-driven version: pure CSS, compositor-only. Longhands on purpose —
+     the `animation` shorthand resets duration to 0s and the drift snaps. */
+  @supports (animation-timeline: scroll()) {
+    .shot.css {
+      animation-name: drift; animation-timing-function: linear; animation-fill-mode: both;
+      animation-duration: auto; animation-timeline: scroll(root);
+    }
+    @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(var(--dx), var(--dy), 0); } }
+  }
+
+  footer { padding: 120px 28px 64px; border-top: 1px solid var(--line); position: relative; z-index: 4; background: var(--bg); }
+  footer h2 { font-size: clamp(32px, 5vw, 64px); margin: 0 0 16px; line-height: 1; }
+  footer p { color: var(--muted); max-width: 44ch; }
+  footer a { color: var(--fg); }
+  footer .tiny { margin-top: 64px; font-size: 12px; color: var(--muted); }
+
+  /* prototype chrome */
+  .ctl {
+    position: fixed; bottom: 12px; left: 12px; z-index: 20; display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+    background: rgba(128,128,128,0.18); padding: 8px 12px; border-radius: 8px;
+    font: 11px ui-monospace, Menlo, monospace; color: var(--fg); max-width: calc(100vw - 24px);
+  }
+  .ctl label { display: flex; gap: 6px; align-items: center; }
+  body.phone { max-width: 390px; margin: 0 auto; box-shadow: 0 0 0 1px var(--line); }
+  @media (prefers-reduced-motion: reduce) { .shot { transform: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+  <nav>
+    <span class="serif name">Sean Fang</span>
+    <span><a href="b-gallery.html">Gallery</a><a href="#work">Work with me</a></span>
+  </nav>
+
+  <header>
+    <h1 class="serif">The rest of the time I do the looking myself.</h1>
+    <p>Photographer, Philadelphia and New York. Night, street, and from the air. Scroll.</p>
+  </header>
+
+  <section class="river" id="river"></section>
+
+  <footer id="work">
+    <h2 class="serif">Work with me</h2>
+    <p>Available for editorial, events, and commissioned work. The fastest way to reach me is email: <a href="#">sean@sean-fang.com</a>. Instagram: <a href="#">@seanfang</a>.</p>
+    <p class="tiny"><a href="index.html">engineering →</a></p>
+  </footer>
+
+  <div class="ctl">
+    <label>streams <input type="range" id="streams" min="1" max="3" value="3" /><span id="streamsV">3</span></label>
+    <label>angle <input type="range" id="angle" min="0" max="45" value="18" /><span id="angleV">18°</span></label>
+    <label>spacing <input type="range" id="gap" min="300" max="1200" value="640" /><span id="gapV">640</span></label>
+    <label>size <input type="range" id="size" min="50" max="130" value="100" /><span id="sizeV">100%</span></label>
+    <label><input type="checkbox" id="parallax" checked />parallax</label>
+    <label><input type="radio" name="mode" value="css" checked />css</label>
+    <label><input type="radio" name="mode" value="raf" />rAF</label>
+    <label><input type="checkbox" id="phone" />phone</label>
+    <span id="support"></span>
+  </div>
+
+<script>
+  // Placeholder "photos". ~36 so the page reads as a body of work, not a gallery.
+  const TINTS = ["#3b3f46","#6b5b4a","#5c6f7a","#52404f","#4f5a44","#45505a","#36445a","#5a5247","#6a6e6a","#3d3a44","#4b5566","#8a8578","#2f3440","#726a5c","#55606b","#6c7d6a","#4f5f6a","#3a3542"];
+  const PLACES = ["Philadelphia","Chinatown","Jersey shore","Center City","West Philly","Camden","Schuylkill","SEPTA","Fairmount","Fishtown","NYC","Utah"];
+  const TITLES = ["Last train","Hold still","Flyover","Neon, wet","Corner store","Grid from 400ft","Blue hour","Passenger","Fog line","After hours","Window seat","Salt flats","Underpass","Rooftop","Crosswalk","Dock","Tide line","Shift change"];
+  const RATIOS = ["3/2","4/5","3/2","1/1","4/5","3/2","16/9","4/5"];
+  const SHOTS = Array.from({ length: 36 }, (_, i) => ({
+    ratio: RATIOS[i % RATIOS.length], title: TITLES[i % TITLES.length], place: PLACES[(i * 5) % PLACES.length],
+    year: 2026 - (i % 4), tint: TINTS[(i * 7) % TINTS.length],
+    // a little irregularity in spacing and size so it never reads as a conveyor belt
+    jitterY: ((i * 37) % 100) / 100, jitterS: 0.85 + ((i * 53) % 100) / 100 * 0.3,
+  }));
+
+  // Stream definitions: angle sign/multiplier, image scale, vertical speed
+  // (1 = scrolls with the page; <1 lags behind = feels farther away).
+  // Stream definitions: angle sign/multiplier, lane position across the
+  // width, vertical speed (1 = scrolls with the page; <1 lags = parallax).
+  // All streams share the same image scale now; z-order interleaves by sequence.
+  const STREAM_DEFS = [
+    { angleMul: +1.0,  lane: 0.42, speed: 1.0  },
+    { angleMul: -1.0,  lane: 0.58, speed: 0.86 },
+    { angleMul: +0.5,  lane: 0.50, speed: 0.74 },
+  ];
+
+  const river = document.getElementById("river");
+  const $ = (id) => document.getElementById(id);
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const supportsScrollTimeline = CSS.supports("animation-timeline: scroll()");
+  $("support").textContent = supportsScrollTimeline ? "scroll-timeline ok" : "no scroll-timeline → rAF";
+
+  let mode = "css", rafId = null, shots = [];
+
+  function build() {
+    const n = +$("streams").value;
+    // Deal the shots round-robin across streams; z-index follows sequence so
+    // streams interleave instead of one always sitting on top.
+    river.innerHTML = SHOTS.map((p, i) => `
+      <figure class="shot" style="--tint:${p.tint}; z-index:${i + 1}" data-stream="${i % n}">
+        <div class="img" style="aspect-ratio:${p.ratio}"></div>
+        <figcaption><i>${p.title}</i> · ${p.place} · ${p.year}</figcaption>
+      </figure>`).join("");
+    shots = [...river.children];
+    layout();
+  }
+
+  function layout() {
+    const phone = document.body.classList.contains("phone");
+    const vw = phone ? 390 : innerWidth, vh = innerHeight;
+    let angle = reduced ? 0 : +$("angle").value;
+    if (phone) angle = Math.min(angle, 12);
+    const stepY = +$("gap").value, sizeMul = +$("size").value / 100;
+    const parallax = $("parallax").checked;
+    const riverTop = river.offsetTop;
+    const n = +$("streams").value;
+    const defs = STREAM_DEFS.slice(0, n);
+    // Streams advance together: every shot steps the shared y cursor, so the
+    // sequence reads top-to-bottom across streams (interleaved), not one
+    // stream after another.
+    let y = 0, maxY = 0;
+    shots.forEach((shot, i) => {
+      const p = SHOTS[i], def = defs[i % n];
+      const tan = Math.tan(angle * def.angleMul * Math.PI / 180);
+      const speed = parallax ? def.speed : 1;
+      const laneX = vw * def.lane;
+      const w = Math.min(vw * 0.62, 760) * 0.78 * sizeMul * p.jitterS;
+      // Where (in scrollY) this shot is ~40% down the viewport, accounting for
+      // its vertical speed: it moves by scrollY*(speed-1) in y, so a shot at
+      // layout y is on screen when riverTop + y + scrollY*(speed-1) - scrollY = 0.4*vh.
+      const centeredAtScroll = (riverTop + y - vh * 0.4) / (2 - speed);
+      shot.style.width = w + "px";
+      shot.style.left = Math.round(laneX - w / 2 + centeredAtScroll * tan * speed) + "px";
+      shot.style.top = Math.round(y) + "px";
+      shot.dataset.tan = tan * speed;
+      shot.dataset.lag = speed - 1;
+      maxY = Math.max(maxY, y / (2 - speed));
+      y += (stepY / n) * (0.7 + p.jitterY * 0.8);
+    });
+
+    river.style.setProperty("--river-h", Math.round(maxY + vh * 0.6) + "px");
+    const range = document.documentElement.scrollHeight - innerHeight;
+    shots.forEach((el) => {
+      el.style.setProperty("--dx", (-range * +el.dataset.tan) + "px");
+      el.style.setProperty("--dy", (range * +el.dataset.lag) + "px");
+      el.classList.toggle("css", mode === "css");
+    });
+    if (mode === "raf") onScroll();
+  }
+
+  function onScroll() {
+    if (mode !== "raf") return;
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      shots.forEach((el) => {
+        el.style.transform = `translate3d(${-scrollY * +el.dataset.tan}px, ${scrollY * +el.dataset.lag}px, 0)`;
+      });
+    });
+  }
+  function setMode(m) {
+    mode = (m === "css" && supportsScrollTimeline) ? "css" : "raf";
+    shots.forEach((el) => { el.style.transform = ""; });
+    layout();
+  }
+
+  const bind = (id, suffix, fn) => { $(id).oninput = () => { $(id + "V").textContent = $(id).value + suffix; fn(); }; };
+  bind("streams", "", build); bind("angle", "°", layout); bind("gap", "", layout); bind("size", "%", layout);
+  $("parallax").onchange = layout;
+  $("phone").onchange = () => { document.body.classList.toggle("phone", $("phone").checked); layout(); };
+  document.querySelectorAll("input[name=mode]").forEach((r) => r.onchange = () => setMode(r.value));
+  addEventListener("resize", layout);
+  addEventListener("scroll", onScroll, { passive: true });
+  build();
+  setMode(supportsScrollTimeline ? "css" : "raf");
+</script>
+</body>
+</html>

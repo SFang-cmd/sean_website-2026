@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>B side · gallery (organized)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg: #f7f5f0; --fg: #141311; --muted: #6e6a62; --line: rgba(20,19,17,0.14); }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141414; --fg: #ecebe7; --muted: #9a978f; --line: rgba(236,235,231,0.16); }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 14px/1.5 system-ui, -apple-system, "Helvetica Neue", sans-serif; -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+  a { color: inherit; }
+
+  nav {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 20px 28px; border-bottom: 1px solid var(--line);
+  }
+  nav .name { font-size: 22px; text-decoration: none; }
+  nav a { text-decoration: none; margin-left: 24px; font-size: 13px; }
+  nav a:hover, aside a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  /* Two columns: a sticky index of series on the left, the work on the right.
+     The index is the "organized" part: a client can jump straight to the
+     kind of work they're hiring for. */
+  .wrap { display: grid; grid-template-columns: 220px 1fr; gap: 48px; padding: 0 28px 96px; }
+  aside { position: sticky; top: 0; align-self: start; padding-top: 48px; height: 100vh; }
+  aside h1 { font-size: 40px; margin: 0 0 32px; line-height: 1; }
+  aside ol { list-style: none; padding: 0; margin: 0; }
+  aside li { margin: 0 0 10px; }
+  aside li a { text-decoration: none; font-size: 15px; }
+  aside li span { color: var(--muted); font-size: 12px; margin-left: 8px; font-variant-numeric: tabular-nums; }
+  aside li.active a { text-decoration: underline; text-underline-offset: 4px; }
+  aside .view { margin-top: 48px; font-size: 12px; color: var(--muted); display: flex; gap: 12px; }
+  aside .view button { all: unset; cursor: pointer; }
+  aside .view button[aria-pressed="true"] { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
+
+  main { padding-top: 48px; }
+  section { padding-bottom: 96px; scroll-margin-top: 48px; }
+  section h2 { font-size: 32px; margin: 0 0 6px; line-height: 1; }
+  section .lede { color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+
+  /* Grid view: uniform cells, fast to scan. */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .grid figure { margin: 0; }
+  .grid .img { aspect-ratio: 4 / 5; background: var(--tint); }
+  .grid .img.land { aspect-ratio: 3 / 2; }
+  .grid figure:hover .img { opacity: 0.9; }
+  figcaption { margin-top: 6px; font-size: 12px; color: var(--muted); }
+  figcaption i { font-style: italic; color: var(--fg); font-family: "Instrument Serif", Georgia, serif; font-size: 14px; }
+
+  /* Editorial view: one image at a time, varied sizes, more air. */
+  main.editorial .grid { display: block; }
+  main.editorial .grid figure { margin: 0 0 56px; max-width: 760px; }
+  main.editorial .grid figure:nth-child(3n) { max-width: 480px; margin-left: auto; }
+  main.editorial .grid figure:nth-child(3n+2) { max-width: 100%; }
+  main.editorial .grid .img { aspect-ratio: 3 / 2; }
+  main.editorial .grid .img.land { aspect-ratio: 16 / 9; }
+
+  @media (max-width: 800px) {
+    .wrap { grid-template-columns: 1fr; gap: 0; }
+    aside { position: static; height: auto; padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+    aside ol { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  }
+  footer { padding: 32px 28px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+  <nav>
+    <a class="serif name" href="b-home.html">Sean Fang</a>
+    <span><a href="b-gallery.html">Gallery</a><a href="b-home.html#work">Work with me</a></span>
+  </nav>
+
+  <div class="wrap">
+    <aside>
+      <h1 class="serif">Gallery</h1>
+      <ol id="index"></ol>
+      <div class="view">view: <button id="vGrid" aria-pressed="true">grid</button><button id="vEd" aria-pressed="false">editorial</button></div>
+    </aside>
+    <main id="main"></main>
+  </div>
+
+  <footer>
+    <span>© Sean Fang</span>
+    <a href="index.html">engineering →</a>
+  </footer>
+
+<script>
+  const SERIES = [
+    { slug: "night", name: "Night", lede: "Cities after the lights come on. Long exposures, wet streets, whoever is still out.", n: 9, tint: ["#2f3440", "#3a3542", "#36445a", "#2b2f36", "#45404a"] },
+    { slug: "aerial", name: "From the air", lede: "Drone work. Shorelines, rooftops, the grid from 400 feet.", n: 6, tint: ["#5c6f7a", "#6c7d6a", "#8a8578", "#4f5f6a"] },
+    { slug: "street", name: "Street", lede: "Philadelphia and New York, daylight, mostly strangers.", n: 12, tint: ["#6b5b4a", "#4f5a44", "#5a5247", "#726a5c", "#55606b"] },
+    { slug: "portraits", name: "Portraits", lede: "Commissioned and personal. Available light where possible.", n: 5, tint: ["#52404f", "#4b5566", "#6a6e6a"] },
+  ];
+  const main = document.getElementById("main"), index = document.getElementById("index");
+  index.innerHTML = SERIES.map((s) => `<li data-slug="${s.slug}"><a href="#${s.slug}">${s.name}</a><span>${s.n}</span></li>`).join("");
+  main.innerHTML = SERIES.map((s) => `
+    <section id="${s.slug}">
+      <h2 class="serif">${s.name}</h2>
+      <p class="lede">${s.lede}</p>
+      <div class="grid">
+        ${Array.from({ length: s.n }, (_, i) => `
+          <figure style="--tint:${s.tint[i % s.tint.length]}">
+            <div class="img ${i % 4 === 1 ? "land" : ""}"></div>
+            <figcaption><i>${s.name} ${String(i + 1).padStart(2, "0")}</i> · ${2026 - (i % 3)}</figcaption>
+          </figure>`).join("")}
+      </div>
+    </section>`).join("");
+
+  // Highlight the series currently in view.
+  const items = [...index.children];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) items.forEach((li) => li.classList.toggle("active", li.dataset.slug === e.target.id)); });
+  }, { rootMargin: "-20% 0px -70% 0px" });
+  document.querySelectorAll("section").forEach((s) => io.observe(s));
+
+  const vGrid = document.getElementById("vGrid"), vEd = document.getElementById("vEd");
+  const setView = (ed) => { main.classList.toggle("editorial", ed); vGrid.setAttribute("aria-pressed", !ed); vEd.setAttribute("aria-pressed", ed); };
+  vGrid.onclick = () => setView(false); vEd.onclick = () => setView(true);
+</script>
+</body>
+</html>

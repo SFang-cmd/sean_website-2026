@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 2 · Darkroom develop</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  /* A sits on top. Click: A inverts into a film negative (one filter on one
+     element), holds, then B develops upward from the bottom like paper in a
+     tray (one clip-path on one element). */
+  .layer { position: fixed; inset: 0; overflow: auto; }
+  .layer::before, .layer::after { position: absolute; }
+  #a { z-index: 1; transition: filter 450ms ease-in; }
+  #a.negative { filter: invert(1) sepia(0.55) saturate(1.6) hue-rotate(-20deg); }
+  #b {
+    z-index: 2;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1100ms cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  #b.developed { clip-path: inset(0 0 0 0); }
+  /* Wet edge: a thin bright line riding the top of the developing region. */
+  #edge {
+    position: fixed; left: 0; right: 0; height: 2px; z-index: 3;
+    background: var(--accent); box-shadow: 0 0 24px 4px rgba(226,69,44,0.5);
+    top: 100%; opacity: 0; pointer-events: none;
+    transition: top 1100ms cubic-bezier(0.7, 0, 0.3, 1), opacity 200ms;
+  }
+  #edge.on { top: 0; opacity: 1; }
+  #edge.off { opacity: 0; }
+  /* Reverse direction: B drains back down. */
+  #a.hidden { visibility: hidden; }
+</style>
+</head>
+<body>
+  <div class="layer side a" id="a"></div>
+  <div class="layer side b" id="b"></div>
+  <div id="edge"></div>
+  <script src="shared.js"></script>
+  <script>
+    const a = document.getElementById("a"), b = document.getElementById("b"), edge = document.getElementById("edge");
+    mountSides(a, b);
+    mountSchemeToggle();
+    mountHint("2 · Darkroom develop. Click “photos”. A inverts into a negative, then B develops upward from the bottom.");
+
+    onGo((side) => {
+      if (reducedMotion()) {
+        a.classList.toggle("hidden", side === "b");
+        b.classList.toggle("developed", side === "b");
+        return;
+      }
+      if (side === "b") {
+        a.classList.add("negative");
+        setTimeout(() => {
+          edge.classList.remove("off"); edge.classList.add("on");
+          b.classList.add("developed");
+        }, 450);
+        setTimeout(() => { edge.classList.add("off"); a.classList.add("hidden"); }, 1550);
+      } else {
+        a.classList.remove("hidden");
+        edge.classList.remove("off"); edge.classList.remove("on");
+        b.classList.remove("developed");
+        setTimeout(() => a.classList.remove("negative"), 900);
+        setTimeout(() => edge.classList.add("off"), 1100);
+      }
+    });
+  </script>
+</body>
+</html>

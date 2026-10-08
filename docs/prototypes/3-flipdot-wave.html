@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 3 · Flip-dot grid wave</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  /* The 24px patch grid itself turns over, cell by cell, in a wave from the
+     click point. Drawn on one canvas (solid tiles only), so cost is a few
+     thousand fillRects per frame for under a second; no per-cell DOM. */
+  .layer { position: fixed; inset: 0; overflow: auto; }
+  .layer::before, .layer::after { position: absolute; }
+  #b { z-index: 0; }
+  #a { z-index: 1; }
+  #wave { position: fixed; inset: 0; z-index: 2; pointer-events: none; opacity: 0; }
+  .hidden { visibility: hidden; }
+  /* Text on the arriving side fades in just behind the wave so it isn't a hard pop. */
+  .layer .col { transition: opacity 250ms; }
+  .layer.arriving .col { opacity: 0; }
+</style>
+</head>
+<body>
+  <div class="layer side b" id="b"></div>
+  <div class="layer side a" id="a"></div>
+  <canvas id="wave"></canvas>
+  <script src="shared.js"></script>
+  <script>
+    const a = document.getElementById("a"), b = document.getElementById("b");
+    const canvas = document.getElementById("wave"), ctx = canvas.getContext("2d");
+    mountSides(a, b);
+    mountSchemeToggle();
+    mountHint("3 · Flip-dot wave. Click “photos”. Each 24px patch flips over in a ripple from the click; the wave front is the safelight switching on.");
+
+    const CELL = 24, MS_PER_CELL = 11, FLIP_MS = 320;
+    const cssVar = (el, name) => getComputedStyle(el).getPropertyValue(name).trim();
+
+    function run(from, to, cx, cy) {
+      const dpr = devicePixelRatio || 1;
+      const W = innerWidth, H = innerHeight;
+      canvas.width = W * dpr; canvas.height = H * dpr;
+      canvas.style.width = W + "px"; canvas.style.height = H + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const fromBg = cssVar(from, "--bg"), toBg = cssVar(to, "--bg");
+      const edge = cssVar(to, "--accent");
+      const cols = Math.ceil(W / CELL), rows = Math.ceil(H / CELL);
+      const ci = Math.floor(cx / CELL), cj = Math.floor(cy / CELL);
+      let maxDist = 0;
+      const delays = new Float32Array(cols * rows);
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        // Jitter of up to ~2.5 cells breaks the rings up so the wave reads as
+        // patches turning over rather than scanlines.
+        const d = Math.hypot(i - ci, j - cj) + (Math.random() * 2.5);
+        delays[j * cols + i] = d * MS_PER_CELL;
+        if (d > maxDist) maxDist = d;
+      }
+      const total = maxDist * MS_PER_CELL + FLIP_MS;
+
+      canvas.style.opacity = 1;
+      to.classList.remove("hidden"); to.classList.add("arriving");
+      const t0 = performance.now();
+
+      function frame(now) {
+        const t = now - t0;
+        ctx.clearRect(0, 0, W, H);
+        for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+          const lt = (t - delays[j * cols + i]) / FLIP_MS;
+          if (lt <= 0) continue;                 // not reached: the old side shows through
+          const x = i * CELL, y = j * CELL;
+          if (lt >= 1) { ctx.fillStyle = toBg; ctx.fillRect(x, y, CELL, CELL); continue; }
+          // Tile rotating on its horizontal axis: shrink to edge-on in old color,
+          // then grow back in new color. Edge-on gets a hairline of safelight.
+          ctx.fillStyle = toBg; ctx.fillRect(x, y, CELL, CELL);
+          const k = lt < 0.5 ? 1 - lt * 2 : lt * 2 - 1;
+          const s = Math.max(1, CELL * k);
+          const vertical = (i + j) & 1;          // alternate flip axis per cell
+          ctx.fillStyle = lt < 0.5 ? fromBg : toBg;
+          if (vertical) ctx.fillRect(x, y + (CELL - s) / 2, CELL, s);
+          else ctx.fillRect(x + (CELL - s) / 2, y, s, CELL);
+          if (Math.abs(lt - 0.5) < 0.12) {
+            ctx.globalAlpha = 1 - Math.abs(lt - 0.5) / 0.12;
+            ctx.fillStyle = edge;
+            if (vertical) ctx.fillRect(x, y + CELL / 2 - 1, CELL, 2);
+            else ctx.fillRect(x + CELL / 2 - 1, y, 2, CELL);
+            ctx.globalAlpha = 1;
+          }
+        }
+        if (t < total) requestAnimationFrame(frame);
+        else {
+          from.classList.add("hidden");
+          to.classList.remove("arriving");
+          canvas.style.transition = "opacity 250ms";
+          canvas.style.opacity = 0;
+          setTimeout(() => { canvas.style.transition = ""; }, 260);
+        }
+      }
+      // Hide the departing side once the wave has fully covered it: we simply
+      // keep it under the canvas until the end, then swap.
+      requestAnimationFrame(frame);
+    }
+
+    let busy = false;
+    onGo((side, e) => {
+      if (busy) return;
+      const from = side === "b" ? a : b, to = side === "b" ? b : a;
+      if (reducedMotion()) { from.classList.add("hidden"); to.classList.remove("hidden"); return; }
+      busy = true;
+      // Layer order: the arriving side must be beneath the canvas but above the
+      // departing side's fixed backdrop, so swap z-indices for the run.
+      from.style.zIndex = 1; to.style.zIndex = 0;
+      run(from, to, e.clientX, e.clientY);
+      setTimeout(() => { busy = false; }, 2000);
+    });
+    b.classList.add("hidden");
+  </script>
+</body>
+</html>

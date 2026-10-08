@@ -1,0 +1,187 @@
+/* Shared tokens + placeholder layout for the A/B transition prototypes.
+   Two axes: scheme (light/dark, via prefers-color-scheme or html[data-scheme])
+   and side (A = model view, B = darkroom). B is always dark; in dark scheme
+   the flip reads as a temperature change (cool black → warm black, blue → red). */
+
+:root {
+  --bg: #fcfcfa;
+  --fg: #191918;
+  --muted: #6b6b68;
+  --faint: #a3a39e;
+  --accent: #185fa5;
+  --accent-rgb: 24, 95, 165;
+  --grid-line: rgba(128, 128, 128, 0.11);
+  --line: rgba(128, 128, 128, 0.28);
+  --cell: 24px;
+}
+:root[data-scheme="dark"] {
+  --bg: #121211;
+  --fg: #ececea;
+  --muted: #a0a09b;
+  --faint: #6e6e69;
+  --accent: #378add;
+  --accent-rgb: 55, 138, 221;
+  --grid-line: rgba(140, 140, 140, 0.15);
+  --line: rgba(140, 140, 140, 0.3);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-scheme="light"]) {
+    --bg: #121211;
+    --fg: #ececea;
+    --muted: #a0a09b;
+    --faint: #6e6e69;
+    --accent: #378add;
+    --accent-rgb: 55, 138, 221;
+    --grid-line: rgba(140, 140, 140, 0.15);
+    --line: rgba(140, 140, 140, 0.3);
+  }
+}
+
+/* B side: the darkroom. Scoped to .b so both sides can coexist during a flip. */
+.b {
+  --bg: #16110d;
+  --fg: #f0e9df;
+  --muted: #a89d8f;
+  --faint: #6f6659;
+  --accent: #e2452c;
+  --accent-rgb: 226, 69, 44;
+  --grid-line: rgba(240, 233, 223, 0.08);
+  --line: rgba(240, 233, 223, 0.22);
+}
+:root[data-scheme="dark"] .b { --bg: #110d0a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-scheme="light"]) .b { --bg: #110d0a; }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.mono, .label, .frame span, .nav, footer, .readout {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+/* A side container and B side container share this. */
+.side {
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100%;
+  position: relative;
+}
+.side::before {
+  content: "";
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+}
+/* A: the ViT patch grid. */
+.a::before {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--cell) var(--cell);
+}
+/* B: 35mm sprocket margins + frame lines, plus a safelight bloom at the top. */
+.b::before {
+  background-image:
+    radial-gradient(circle, var(--line) 0 3px, transparent 3.5px),
+    radial-gradient(circle, var(--line) 0 3px, transparent 3.5px),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    radial-gradient(ellipse 60% 40% at 50% -10%, rgba(var(--accent-rgb), 0.16), transparent 70%);
+  background-size:
+    var(--cell) var(--cell),
+    var(--cell) var(--cell),
+    100% calc(var(--cell) * 4),
+    100% 100%;
+  background-position: 12px 12px, calc(100% - 12px) 12px, 0 0, 0 0;
+  background-repeat: repeat-y, repeat-y, repeat, no-repeat;
+}
+/* Edge strips so the sprockets sit on a film margin. */
+.b::after {
+  content: "";
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.35) 0 calc(var(--cell) * 2), transparent calc(var(--cell) * 2)),
+    linear-gradient(-90deg, rgba(0,0,0,0.35) 0 calc(var(--cell) * 2), transparent calc(var(--cell) * 2));
+}
+
+.col {
+  position: relative; z-index: 1;
+  max-width: 648px; margin: 0 auto; padding: 0 24px 96px;
+}
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 0; color: var(--faint);
+}
+.nav .name { color: var(--fg); }
+.nav a, footer a, .trigger { color: var(--accent); cursor: pointer; text-decoration: none; margin-left: 24px; }
+.nav a:hover, footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+h1 {
+  font-size: 26px; line-height: 1.35; font-weight: 500;
+  max-width: 30ch; margin: 96px 0 0;
+}
+section { padding-top: 72px; }
+.label { color: var(--faint); margin: 0 0 4px; }
+.muted { color: var(--muted); max-width: 54ch; margin: 0 0 12px; }
+.row {
+  display: flex; justify-content: space-between; gap: 24px;
+  padding: 12px 0; border-top: 1px solid var(--line);
+}
+.row:last-child { border-bottom: 1px solid var(--line); }
+.row .mono { color: var(--faint); white-space: nowrap; }
+.row .sub { color: var(--muted); font-size: 13px; }
+footer {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 96px; padding-top: 24px; border-top: 1px solid var(--line);
+  color: var(--faint);
+}
+.readout { color: var(--faint); }
+.readout .conf { color: var(--accent); }
+
+/* Contact sheet (B side). Placeholder frames, 3:2, snapped to 2-cell gutters. */
+.sheet {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.frame {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0) 60%),
+    #2a221c;
+  border: 1px solid var(--line);
+  position: relative;
+}
+.frame span {
+  position: absolute; left: 6px; bottom: 4px; color: var(--faint);
+}
+.frame:hover { outline: 1px solid var(--accent); outline-offset: 2px; }
+.caption { margin-top: 12px; }
+.caption .human { color: var(--muted); }
+.caption .model { margin-top: 4px; }
+
+/* Scheme toggle (prototype-only chrome). */
+.scheme {
+  position: fixed; top: 12px; right: 12px; z-index: 1000;
+  display: flex; gap: 2px; padding: 2px;
+  background: rgba(128,128,128,0.15); border-radius: 999px;
+  font-family: ui-monospace, Menlo, monospace; font-size: 11px;
+}
+.scheme button {
+  border: 0; background: transparent; color: inherit; cursor: pointer;
+  padding: 4px 10px; border-radius: 999px; opacity: 0.6;
+}
+.scheme button[aria-pressed="true"] { background: rgba(128,128,128,0.35); opacity: 1; }
+.scheme { color: #888; }
+
+.hint {
+  position: fixed; bottom: 12px; left: 12px; z-index: 1000;
+  font: 11px/1.4 ui-monospace, Menlo, monospace; color: #888;
+  max-width: 320px; pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

@@ -4,14 +4,17 @@ export interface Experience {
   company: string;
   role: string;
   blurb: string;
-  /** Short impact fragment, rendered only on the lesser-known rows. */
-  tag?: string;
 }
 
 export interface SiteContent {
   name: string;
   /** Deployed origin, used for metadata/sitemap. */
   url: string;
+  /**
+   * Canonical origin of the photography side (B). A host alias of this same
+   * app: next.config.ts rewrites it onto the /photo routes.
+   */
+  photosUrl: string;
   role: string;
   /** The single hero line. */
   tagline: string;
@@ -34,11 +37,13 @@ export interface SiteContent {
 export const site: SiteContent = {
   name: "Sean Fang",
   url: "https://sean-fang.com",
+  photosUrl: "https://photos.sean-fang.com",
   role: "engineer",
-  tagline: "I build machine learning systems across software and robotics.",
+  tagline:
+    "I build machine learning models and the systems that run them at scale.",
   about: [
     "I'm a CS and robotics student at Penn, building vision systems at Google. Before that, as a founding engineer, I helped raise $1.1M in AI hardware, and I researched computer vision at Penn's robotics lab.",
-    "Currently, I'm building vision models and the infrastructure that runs them at scale.",
+    "These days that mostly means teaching models to watch video. Most of what I build never gets seen — the pipeline under a model, the tool someone else uses to check its work — and I've come to prefer it that way.",
     "I like making things that occasionally break, mostly around AI, vision, and cloud systems. Off the clock I'm flying drones, shooting photos, or writing code at some odd hour.",
   ],
   availability: "Always open to new problems in ML, vision, and systems.",
@@ -61,7 +66,7 @@ export const site: SiteContent = {
     {
       period: "May 2026 – Present",
       company: "Google",
-      role: "ML Engineer Intern",
+      role: "Software Engineering Intern, Machine Learning",
       blurb: "Vision models for YouTube, under Algorithms & GenAI.",
     },
     {
@@ -72,24 +77,21 @@ export const site: SiteContent = {
     },
     {
       period: "May 2025 – Aug 2025",
-      company: "UPenn GRASP Lab",
+      company: "UPenn PRONTO Lab",
       role: "Research Assistant",
       blurb: "Computer vision for the DARPA Triage Challenge.",
-      tag: "DARPA-sponsored",
     },
     {
-      period: "Sep 2023 – May 2025",
+      period: "Dec 2023 – May 2025",
       company: "Nanoneuro Systems",
       role: "Founding Engineer",
       blurb: "Biochips for AI inference; raised $1.1M preseed.",
-      tag: "raised $1.1M pre-seed",
     },
     {
       period: "May 2024 – Aug 2024",
       company: "NuDigital Financial",
       role: "Software Engineer Intern",
       blurb: "Banking backend at 1M-user scale; cut latency 75%.",
-      tag: "served 1M+ users",
     },
   ],
 };

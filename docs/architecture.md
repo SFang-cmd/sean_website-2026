@@ -16,13 +16,36 @@
 4. **UI components are dumb.** `components/ui/` renders props into markup.
    No data fetching, no state beyond what an effect wrapper provides.
 
+## Two sides
+
+The site has two faces in one Next app:
+
+- **A side** (`/`, `/work/*`): engineering, "the page as seen by a vision
+  model". Patch grid, 648px column, Geist. Lives in the route group
+  `app/(a)/` with its own layout.
+- **B side** (`/photo`, `/photo/gallery`): photography, client-facing.
+  Paper, no grid, no accent, Instrument Serif. Lives in `app/photo/` with
+  its own layout, which scopes the B token set via the `.b` class.
+  Canonical host `photos.sean-fang.com` is a rewrite onto `/photo/*`
+  (`next.config.ts`).
+
+The root `app/layout.tsx` only sets fonts and metadata. Plan and decisions:
+`docs/plan-two-sides.md`; visual prototypes: `docs/prototypes/`.
+
 ## Directory layout
 
 ```
 config/theme.ts        design tokens + feature flags (see configuration.md)
 content/site.ts        name, tagline, about, contact, email, tag, nav,
-                       socials, experience[] (all typed)
+                       socials, experience[], photosUrl (all typed)
 content/work/*.mdx     one file per project: frontmatter + case-study body
+content/series.ts      B gallery sections: { slug, name, lede }[]
+content/photos.csv     one row per photo (hand-edited; see adding-content.md)
+content/photos.json    GENERATED photo manifest (npm run photos) — never hand-edit
+photos/                photo originals, gitignored (input to npm run photos)
+public/photos/         GENERATED renditions (avif/jpg per width), committed
+scripts/photos.ts      the pipeline: csv + originals → manifest + renditions
+lib/photos.ts          Photo type (the pipeline↔pages contract) + loaders
 lib/grid.ts            CELL constant, snapToGrid(), cellsForRect()
 lib/content.ts         reads/parses/sorts content/work MDX (gray-matter)
 lib/a11y.ts            prefersReducedMotion()
@@ -33,13 +56,16 @@ components/effects/    PatchGrid, PatchHighlight, DiffusionText,
                        CursorTracker, BlurThumb, VlmCaption
 components/ui/         Nav, TimelineRow, Footer, EffectToggles,
                        TrackerToggle, HighlightToggle, PlainToggle
-app/layout.tsx         fonts (Geist), metadata, PatchGrid + CursorTracker
-                       mounts, 648px content column
-app/page.tsx           single-page narrative: hero → about → experience →
+app/layout.tsx         fonts (Geist), metadata — nothing else
+app/(a)/layout.tsx     A chrome: PatchGrid + CursorTracker, 648px column
+app/(a)/page.tsx       single-page narrative: hero → about → experience →
                        projects → contact → footer
-app/work/[slug]/       project case-study pages, statically generated from MDX
-app/globals.css        color tokens (light/dark), Tailwind theme bridge,
-                       smooth-scroll, .patch-link, .caret, .prose styles
+app/(a)/work/[slug]/   project case-study pages, statically generated from MDX
+app/photo/layout.tsx   B chrome: `.b` token scope, Instrument Serif, full width
+app/photo/page.tsx     B home (the streams)
+app/photo/gallery/     B gallery (series index + grid)
+app/globals.css        A tokens (light/dark), `.b` B tokens, Tailwind theme
+                       bridge, smooth-scroll, .patch-link, .caret, .prose
 app/sitemap.ts, robots.ts, icon.svg
 ```
 
@@ -55,6 +81,15 @@ content/work/*.mdx
        ├─ app/work/[slug]/page.tsx → generateStaticParams + MDXRemote body
        └─ app/sitemap.ts          → one URL per project
 ```
+
+content/photos.csv + photos/*.jpg
+  └─ scripts/photos.ts (npm run photos)
+       ├─ public/photos/<id>-<w>.{avif,jpg}
+       └─ content/photos.json
+            └─ lib/photos.ts (getHomePhotos / getPhotosBySeries)
+                 ├─ app/photo/page.tsx          → streams (home = true, by order)
+                 ├─ app/photo/gallery/page.tsx  → grouped by content/series.ts
+                 └─ app/sitemap.ts              → photos.sean-fang.com URLs
 
 Experience and projects share one presentational component
 (`components/ui/TimelineRow.tsx`) so the two sections can't drift visually —

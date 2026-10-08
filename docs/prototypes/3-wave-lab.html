@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 3 lab · flip rules</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  body { background: #e9e8e4; color: #191918; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin: 12px 0 24px; font: 12px ui-monospace, Menlo, monospace; color: #555; }
+  .controls label { display: flex; gap: 6px; align-items: center; }
+  .controls input[type=range] { width: 110px; }
+  .controls button { font: inherit; padding: 3px 10px; cursor: pointer; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap: 24px; }
+  .card { background: #fff; border: 1px solid #ccc; }
+  .card canvas { display: block; width: 100%; cursor: crosshair; }
+  .card .meta { padding: 8px 10px; font: 12px/1.5 ui-monospace, Menlo, monospace; color: #555; border-top: 1px solid #ddd; }
+  .card .meta b { color: #191918; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Flip-dot wave: which rule?</h1>
+  <div class="controls">
+    <span>wave shape:</span>
+    <label><input type="radio" name="shape" value="ripple" checked />ripple (circle)</label>
+    <label><input type="radio" name="shape" value="diamond" />diamond</label>
+    <label><input type="radio" name="shape" value="sweep" />sweep (left↔right from click)</label>
+    <label><input type="radio" name="shape" value="rows" />rows (top↔bottom from click)</label>
+    <label>ms/cell <input type="range" id="speed" min="4" max="40" value="14" /><span id="speedV">14</span></label>
+    <label>jitter <input type="range" id="jitter" min="0" max="4" step="0.5" value="1" /><span id="jitterV">1</span></label>
+    <label>flip ms <input type="range" id="flip" min="150" max="700" step="10" value="320" /><span id="flipV">320</span></label>
+    <label><input type="checkbox" id="darkA" />dark A side</label>
+    <button id="replay">replay all (from center)</button>
+    <span>· click inside any card to replay from that point</span>
+  </div>
+  <div class="cards" id="cards"></div>
+</div>
+<script>
+  const CELL = 16, W = 432, H = 272;      // half-scale cells so a card shows a 27×17 patch grid
+  const A_LIGHT = { bg: "#fcfcfa", fg: "#191918", muted: "#6b6b68", grid: "rgba(128,128,128,0.14)", accent: "#185fa5" };
+  const A_DARK  = { bg: "#121211", fg: "#ececea", muted: "#a0a09b", grid: "rgba(140,140,140,0.18)", accent: "#378add" };
+  const B       = { bg: "#16110d", fg: "#f0e9df", muted: "#a89d8f", grid: "rgba(240,233,223,0.09)", accent: "#e2452c", line: "rgba(240,233,223,0.25)" };
+
+  // ---- the two scenes, drawn once each into offscreen canvases ----
+  function scene(draw) {
+    const c = document.createElement("canvas"); c.width = W; c.height = H;
+    draw(c.getContext("2d")); return c;
+  }
+  function drawA(ctx, T) {
+    ctx.fillStyle = T.bg; ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = T.grid; ctx.lineWidth = 1; ctx.beginPath();
+    for (let x = 0.5; x < W; x += CELL) { ctx.moveTo(x, 0); ctx.lineTo(x, H); }
+    for (let y = 0.5; y < H; y += CELL) { ctx.moveTo(0, y); ctx.lineTo(W, y); }
+    ctx.stroke();
+    ctx.fillStyle = T.fg; ctx.font = "500 15px system-ui, sans-serif";
+    ctx.fillText("I build machine learning models and", 48, 72);
+    ctx.fillText("the systems that run them at scale.", 48, 94);
+    ctx.font = "11px ui-monospace, Menlo, monospace"; ctx.fillStyle = T.muted;
+    ctx.fillText("sean fang", 48, 36);
+    ctx.fillStyle = T.accent; ctx.fillText("about   work   photos   contact", 230, 36);
+    ctx.fillStyle = T.muted; ctx.font = "11px system-ui, sans-serif";
+    ["Google · Vision models for YouTube", "Anthropic · Claude Campus Ambassador", "UPenn PRONTO Lab · Computer vision research"].forEach((s, i) => {
+      ctx.fillText(s, 48, 150 + i * 32);
+      ctx.fillStyle = T.grid; ctx.fillRect(48, 160 + i * 32, 336, 1); ctx.fillStyle = T.muted;
+    });
+  }
+  function drawB(ctx) {
+    ctx.fillStyle = B.bg; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = "rgba(0,0,0,0.35)"; ctx.fillRect(0, 0, CELL * 2, H); ctx.fillRect(W - CELL * 2, 0, CELL * 2, H);
+    ctx.fillStyle = B.line;
+    for (let y = CELL / 2; y < H; y += CELL) { ctx.beginPath(); ctx.arc(CELL, y, 2, 0, 7); ctx.arc(W - CELL, y, 2, 0, 7); ctx.fill(); }
+    ctx.fillStyle = B.fg; ctx.font = "500 15px system-ui, sans-serif";
+    ctx.fillText("The rest of the time I do the looking myself.", 48, 72);
+    ctx.font = "11px ui-monospace, Menlo, monospace"; ctx.fillStyle = B.muted;
+    ctx.fillText("contact sheet · roll 01", 48, 110);
+    for (let i = 0; i < 3; i++) {
+      ctx.fillStyle = "#2a221c"; ctx.fillRect(48 + i * 116, 122, 104, 70);
+      ctx.strokeStyle = B.line; ctx.strokeRect(48.5 + i * 116, 122.5, 104, 70);
+      ctx.fillStyle = B.muted; ctx.fillText(`00${i + 1} · 35mm`, 54 + i * 116, 186);
+    }
+    ctx.fillStyle = B.accent; ctx.fillText("> caption: a wet street at night. [0.91]", 48, 222);
+    ctx.fillStyle = B.muted; ctx.fillText("← a side   photos   contact", 230, 252);
+  }
+
+  // ---- flip rules: return the axis angle (radians) the tile rotates about.
+  //      `scale` returns null → tile shrinks to a point instead of folding. ----
+  const RULES = [
+    { key: "horizontal", name: "same axis, horizontal", desc: "Every tile folds over its horizontal midline (like a split-flap board). Rings read as horizontal bands.",
+      axis: () => 0 },
+    { key: "vertical",   name: "same axis, vertical",   desc: "Every tile folds over its vertical midline. Rings read as vertical bands.",
+      axis: () => Math.PI / 2 },
+    { key: "radial",     name: "fold toward the click", desc: "Axis is perpendicular to the line to the click, so each tile folds over toward where you clicked. Reads as a shockwave.",
+      axis: (ang) => ang + Math.PI / 2 },
+    { key: "tangential", name: "fold along the ring",   desc: "Axis points at the click, so tiles fold sideways along the ring. Reads as a pinwheel / iris.",
+      axis: (ang) => ang },
+    { key: "spiral",     name: "spiral (original)",     desc: "Axis angle = angle to click + distance × 20°. Tiles twist as the ring expands. Same handedness both directions.",
+      axis: (ang, d) => ang + d * 0.35 },
+    { key: "checker",    name: "alternate (current)",   desc: "What proto 3 does now: horizontal / vertical by checkerboard parity. The one that looked odd.",
+      axis: (ang, d, i, j) => ((i + j) & 1) ? 0 : Math.PI / 2 },
+    { key: "random",     name: "random axis",           desc: "Each tile gets a fixed random axis. Noisy, more like static than a wave.",
+      axis: (ang, d, i, j, r) => r * Math.PI },
+    { key: "scale",      name: "shrink (original)",     desc: "Tiles shrink to a point and regrow. No fold direction at all, so no banding; reads as pixels popping.",
+      axis: () => null },
+    // ---- combos ----
+    { key: "scaleSpiralWave", name: "NEW · shrink + spiral wave", desc: "Same shrinking tiles, but the firing order is a corkscrew from the click (delay = ring + angle), so the front is an Archimedean spiral instead of clean rings.",
+      axis: () => null,
+      delay: (dx, dy, shapeFn) => shapeFn(dx, dy) + ((Math.atan2(dy, dx) + Math.PI) / (2 * Math.PI)) * 5 },
+    { key: "scaleSpin",  name: "NEW · shrink + in-plane spin", desc: "Tiles shrink while rotating flat (like a coin on a table), by an angle that grows with distance. Twists as it pops. Spin direction mirrors on the way back.",
+      axis: () => null,
+      spin: (d, lt, h) => h * (Math.PI / 3 + d * 0.04) * Math.sin(lt * Math.PI) },
+    { key: "spiralMirror", name: "NEW · spiral, mirrored on return", desc: "The original spiral going A→B; coming back (click again) the twist runs the opposite way, so the return reads as an undo of the same move.",
+      axis: (ang, d, i, j, r, h) => ang + h * d * 0.35 },
+  ];
+
+  const SHAPES = {
+    ripple:  (dx, dy) => Math.hypot(dx, dy),
+    diamond: (dx, dy) => Math.abs(dx) + Math.abs(dy),
+    sweep:   (dx, dy) => Math.abs(dx),
+    rows:    (dx, dy) => Math.abs(dy),
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const settings = () => ({
+    shape: document.querySelector('input[name=shape]:checked').value,
+    msPerCell: +$("speed").value, jitter: +$("jitter").value, flipMs: +$("flip").value, darkA: $("darkA").checked,
+  });
+  ["speed", "jitter", "flip"].forEach((k) => $(k).oninput = () => { $(k + "V").textContent = $(k).value; });
+
+  let sceneA = scene((c) => drawA(c, A_LIGHT)), sceneB = scene(drawB);
+  $("darkA").onchange = () => { sceneA = scene((c) => drawA(c, $("darkA").checked ? A_DARK : A_LIGHT)); cards.forEach((c) => c.reset()); };
+
+  const cols = W / CELL, rows = H / CELL;
+  const cards = RULES.map((rule) => {
+    const el = document.createElement("div"); el.className = "card";
+    const canvas = document.createElement("canvas");
+    const dpr = devicePixelRatio || 1;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    const ctx = canvas.getContext("2d"); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    el.appendChild(canvas);
+    el.insertAdjacentHTML("beforeend", `<div class="meta"><b>${rule.name}</b><br>${rule.desc}</div>`);
+    $("cards").appendChild(el);
+
+    const rand = Float32Array.from({ length: cols * rows }, () => Math.random());
+    let run = null, toB = true;
+
+    function reset() { run = null; toB = true; ctx.drawImage(sceneA, 0, 0, W, H); }
+    function start(cx, cy) {
+      const s = settings();
+      const ci = Math.floor(cx / CELL), cj = Math.floor(cy / CELL);
+      const delays = new Float32Array(cols * rows), angles = new Float32Array(cols * rows), dists = new Float32Array(cols * rows);
+      const h = toB ? 1 : -1;                 // handedness: +1 going to B, -1 coming back
+      let maxT = 0;
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        const dx = i - ci, dy = j - cj, k = j * cols + i;
+        const shapeFn = SHAPES[s.shape];
+        const d = (rule.delay ? rule.delay(dx, dy, shapeFn) : shapeFn(dx, dy)) + rand[k] * s.jitter;
+        delays[k] = d * s.msPerCell; if (delays[k] > maxT) maxT = delays[k];
+        dists[k] = Math.hypot(dx, dy);
+        const a = rule.axis(Math.atan2(dy, dx), dists[k], i, j, rand[k], h);
+        angles[k] = a === null ? NaN : a;
+      }
+      run = { t0: performance.now(), delays, angles, dists, h, spin: rule.spin, total: maxT + s.flipMs, flipMs: s.flipMs,
+              from: toB ? sceneA : sceneB, to: toB ? sceneB : sceneA, edge: toB ? B.accent : (s.darkA ? A_DARK : A_LIGHT).accent };
+      toB = !toB;
+    }
+    function frame(now) {
+      if (!run) return;
+      const t = now - run.t0;
+      ctx.drawImage(run.from, 0, 0, W, H);
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        const k = j * cols + i, lt = (t - run.delays[k]) / run.flipMs;
+        if (lt <= 0) continue;
+        const x = i * CELL, y = j * CELL;
+        if (lt >= 1) { ctx.drawImage(run.to, x, y, CELL, CELL, x, y, CELL, CELL); continue; }
+        // Behind the turning tile: the arriving side.
+        ctx.drawImage(run.to, x, y, CELL, CELL, x, y, CELL, CELL);
+        const src = lt < 0.5 ? run.from : run.to;
+        const kk = Math.abs(Math.cos(lt * Math.PI));           // 1 → 0 → 1
+        const ang = run.angles[k];
+        ctx.save();
+        ctx.translate(x + CELL / 2, y + CELL / 2);
+        if (run.spin) ctx.rotate(run.spin(run.dists[k], lt, run.h));
+        if (Number.isNaN(ang)) ctx.scale(kk, kk);
+        else { ctx.rotate(ang); ctx.scale(1, kk); ctx.rotate(-ang); }
+        ctx.drawImage(src, x, y, CELL, CELL, -CELL / 2, -CELL / 2, CELL, CELL);
+        ctx.restore();
+        // Safelight hairline when the tile is edge-on.
+        if (Math.abs(lt - 0.5) < 0.12) {
+          ctx.save(); ctx.globalAlpha = 1 - Math.abs(lt - 0.5) / 0.12; ctx.fillStyle = run.edge;
+          ctx.translate(x + CELL / 2, y + CELL / 2);
+          if (Number.isNaN(ang)) ctx.fillRect(-1.5, -1.5, 3, 3);
+          else { ctx.rotate(ang); ctx.fillRect(-CELL / 2, -1, CELL, 2); }
+          ctx.restore();
+        }
+      }
+      if (t >= run.total) { ctx.drawImage(run.to, 0, 0, W, H); run = null; }
+    }
+    canvas.addEventListener("click", (e) => {
+      const r = canvas.getBoundingClientRect();
+      start((e.clientX - r.left) * W / r.width, (e.clientY - r.top) * H / r.height);
+    });
+    reset();
+    return { reset, start, frame };
+  });
+
+  $("replay").onclick = () => cards.forEach((c) => c.start(W / 2, H / 2));
+  (function loop(now) { cards.forEach((c) => c.frame(now)); requestAnimationFrame(loop); })(performance.now());
+</script>
+</body>
+</html>

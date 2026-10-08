@@ -14,6 +14,15 @@ next-env.d.ts
 # Local tooling config
 .claude/
 
+# Agent session scaffolding — not shipped project content
+CLAUDE.md
+STATUS.md
+DEVLOG.md
+
 # Never commit PDFs — keeps the résumé (and any future PDF) out of the public repo,
 # matching the site's privacy decision to not serve a resume.
 *.pdf
+
+# Photo originals (exported from Lightroom) — large, local-only. The optimized
+# renditions in public/photos/ and content/photos.json are what gets committed.
+photos/

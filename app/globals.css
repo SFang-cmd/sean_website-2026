@@ -23,6 +23,33 @@
   }
 }
 
+/*
+ * B side (photography) token set, scoped to `.b` (app/photo/layout.tsx).
+ * Paper, near-black text, NO accent — the photos are the color. In dark
+ * mode B is a neutral charcoal, never tinted. `--accent` is kept equal to
+ * `--fg` so any shared component that uses it degrades to plain text color.
+ */
+.b {
+  --bg: #f7f5f0;
+  --fg: #141311;
+  --muted: #6e6a62;
+  --faint: #a09b92;
+  --accent: #141311;
+  --accent-rgb: 20, 19, 17;
+  --line: rgba(20, 19, 17, 0.14);
+}
+@media (prefers-color-scheme: dark) {
+  .b {
+    --bg: #141414;
+    --fg: #ecebe7;
+    --muted: #9a978f;
+    --faint: #6f6d67;
+    --accent: #ecebe7;
+    --accent-rgb: 236, 235, 231;
+    --line: rgba(236, 235, 231, 0.16);
+  }
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-fg: var(--fg);
@@ -32,6 +59,8 @@
   --color-line: var(--line);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* B-side display face (Instrument Serif via next/font in app/photo/layout.tsx). */
+  --font-serif: var(--font-serif), Georgia, serif;
 }
 
 body {

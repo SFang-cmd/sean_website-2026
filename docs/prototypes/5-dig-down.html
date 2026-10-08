@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 5 · Dig down</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  /* No modal moment. One tall page: A on top, a horizon, B underneath.
+     Crossing the horizon swaps the token set on <body> and crossfades the two
+     fixed backdrops. Scroll handling is one IntersectionObserver. */
+  body { transition: background-color 900ms, color 900ms; }
+  .col * { transition: color 900ms, border-color 900ms, background-color 900ms, outline-color 900ms; }
+  .bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; transition: opacity 900ms; min-height: 0; background: transparent; }
+  .bg::before, .bg::after { position: fixed; }
+  #bgB { opacity: 0; }
+  body.b #bgA { opacity: 0; }
+  body.b #bgB { opacity: 1; }
+  .side { background: transparent; }
+  .side::before, .side::after { content: none; }
+  /* The horizon: ground level. A hairline that reads as the surface. */
+  .horizon {
+    position: relative; z-index: 1; max-width: 648px; margin: 96px auto 0; padding: 0 24px;
+    height: 120px; display: flex; align-items: center; justify-content: center;
+    color: var(--faint); font: 12px/1 ui-monospace, Menlo, monospace; letter-spacing: 0.08em;
+  }
+  .horizon::before, .horizon::after {
+    content: ""; flex: 1; height: 1px; background: var(--line); margin: 0 12px;
+  }
+  /* Underground: the B side mirrors the layout, nav at the bottom. */
+  #b .col { display: flex; flex-direction: column; }
+  #b .nav { order: 99; padding-top: 48px; }
+  #b h1 { margin-top: 48px; }
+  #b footer a { display: none; }
+</style>
+</head>
+<body>
+  <div class="bg side a" id="bgA"></div>
+  <div class="bg side b" id="bgB"></div>
+  <div class="side a" id="a"></div>
+  <div class="horizon" id="horizon">ground level · keep scrolling ↓</div>
+  <div class="side" id="b"></div>
+  <script src="shared.js"></script>
+  <script>
+    const a = document.getElementById("a"), b = document.getElementById("b"), horizon = document.getElementById("horizon");
+    mountSides(a, b);
+    mountSchemeToggle();
+    mountHint("5 · Dig down. Just scroll. Past the horizon the page goes underground; “photos” / “turn over” scroll you there, “← a side” scrolls back.");
+
+    // Tokens live on body.b here (shared.css scopes B to .b), so the whole
+    // page recolors; the two fixed backdrops crossfade. One passive scroll
+    // listener doing a single getBoundingClientRect is the whole cost.
+    const decide = () => {
+      const r = horizon.getBoundingClientRect();
+      document.body.classList.toggle("b", r.top + r.height / 2 < innerHeight * 0.5);
+    };
+    addEventListener("scroll", decide, { passive: true });
+    decide();
+
+    onGo((side) => {
+      const target = side === "b" ? b : a;
+      target.scrollIntoView({ behavior: reducedMotion() ? "auto" : "smooth", block: "start" });
+    });
+  </script>
+</body>
+</html>

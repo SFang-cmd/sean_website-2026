@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proto 4 · Aperture iris</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  /* A six-blade iris closes over the page to black from the click point, then
+     opens on the other side. One clip-path polygon per layer, updated per
+     frame; the black underneath is a plain div. */
+  .black { position: fixed; inset: 0; background: #000; z-index: 0; }
+  .layer { position: fixed; inset: 0; overflow: auto; }
+  .layer::before, .layer::after { position: absolute; }
+  #a { z-index: 1; }
+  #b { z-index: 2; clip-path: polygon(0 0, 0 0, 0 0); }
+  .hidden { visibility: hidden; }
+  /* The cursor tracker patch the iris grows out of. */
+  #tracker {
+    position: fixed; width: 24px; height: 24px; z-index: 5; pointer-events: none;
+    background: rgba(var(--accent-rgb), 0.12); outline: 1px solid rgba(var(--accent-rgb), 0.25);
+    transform: translate(-9999px, -9999px);
+  }
+</style>
+</head>
+<body>
+  <div class="black"></div>
+  <div class="layer side a" id="a"></div>
+  <div class="layer side b hidden" id="b"></div>
+  <div id="tracker"></div>
+  <script src="shared.js"></script>
+  <script>
+    const a = document.getElementById("a"), b = document.getElementById("b"), tracker = document.getElementById("tracker");
+    mountSides(a, b);
+    mountSchemeToggle();
+    mountHint("4 · Aperture iris. Click “photos”. The patch under your cursor becomes a camera iris that closes to black and reopens on the B side.");
+
+    addEventListener("pointermove", (e) => {
+      tracker.style.transform = `translate(${Math.floor(e.clientX / 24) * 24}px, ${Math.floor(e.clientY / 24) * 24}px)`;
+    });
+
+    function hexagon(cx, cy, r, rot) {
+      const pts = [];
+      for (let k = 0; k < 6; k++) {
+        const ang = rot + (Math.PI / 3) * k;
+        pts.push(`${cx + r * Math.cos(ang)}px ${cy + r * Math.sin(ang)}px`);
+      }
+      return `polygon(${pts.join(",")})`;
+    }
+    const easeIn = (t) => t * t * t, easeOut = (t) => 1 - Math.pow(1 - t, 3);
+
+    function animate(el, cx, cy, open, ms, done) {
+      const R = Math.hypot(Math.max(cx, innerWidth - cx), Math.max(cy, innerHeight - cy)) * 1.15;
+      const t0 = performance.now();
+      function frame(now) {
+        const t = Math.min(1, (now - t0) / ms);
+        const k = open ? easeOut(t) : 1 - easeIn(t);
+        // Blades rotate ~60° through the move, like a real diaphragm.
+        el.style.clipPath = hexagon(cx, cy, Math.max(0, R * k), (1 - k) * Math.PI / 3);
+        if (t < 1) requestAnimationFrame(frame); else done && done();
+      }
+      requestAnimationFrame(frame);
+    }
+
+    let busy = false;
+    onGo((side, e) => {
+      if (busy) return;
+      const from = side === "b" ? a : b, to = side === "b" ? b : a;
+      if (reducedMotion()) { from.classList.add("hidden"); to.classList.remove("hidden"); to.style.clipPath = "none"; return; }
+      busy = true;
+      const cx = Math.floor(e.clientX / 24) * 24 + 12, cy = Math.floor(e.clientY / 24) * 24 + 12;
+      from.style.zIndex = 2; to.style.zIndex = 1;
+      animate(from, cx, cy, false, 520, () => {
+        from.classList.add("hidden"); from.style.clipPath = "none";
+        to.classList.remove("hidden"); to.style.zIndex = 2;
+        setTimeout(() => animate(to, cx, cy, true, 650, () => { to.style.clipPath = "none"; busy = false; }), 120);
+      });
+    });
+  </script>
+</body>
+</html>

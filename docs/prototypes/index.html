@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A/B transition prototypes</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  .list a { display: block; color: var(--fg); text-decoration: none; margin: 0; }
+  .list .row:hover { background: rgba(var(--accent-rgb), 0.06); }
+  .list .sub { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="side a">
+    <div class="col">
+      <nav class="nav"><span class="name">website-2026 · prototypes</span><span class="mono">oct 2026</span></nav>
+      <h1>Five ways to turn the page over.</h1>
+      <section>
+        <p class="label">a side = the model's view · b side = the darkroom</p>
+        <p class="muted">Blank sketches with placeholder copy, the real 24px grid, both themes, and a scheme toggle (top right) so each one can be judged in all four quadrants. Click “photos” or “turn over” on each.</p>
+      </section>
+      <section class="list">
+        <p class="label">prototypes</p>
+        <a href="1-bside-flip.html"><div class="row"><div>1 · B-side flip<div class="sub">Whole viewport turns like a record. B side nav lands at the bottom.</div></div><span class="mono">card</span></div></a>
+        <a href="2-darkroom-develop.html"><div class="row"><div>2 · Darkroom develop<div class="sub">A inverts into a negative, B develops upward like paper in a tray.</div></div><span class="mono">negative</span></div></a>
+        <a href="3-flipdot-wave.html"><div class="row"><div>3 · Flip-dot wave<div class="sub">The patch grid turns over cell by cell from the click. Safelight at the wave front.</div></div><span class="mono">grid</span></div></a>
+        <a href="3-wave-lab.html"><div class="row"><div>3 lab · Flip rules<div class="sub">Eight flip rules side by side (same axis, fold toward click, spiral, shrink…) plus wave shape, speed, jitter and dark-A controls.</div></div><span class="mono">lab</span></div></a>
+        <a href="4-aperture-iris.html"><div class="row"><div>4 · Aperture iris<div class="sub">Cursor patch becomes a six-blade iris: close to black, open on B.</div></div><span class="mono">iris</span></div></a>
+        <a href="5-dig-down.html"><div class="row"><div>5 · Dig down<div class="sub">No click. Scroll past ground level and the page goes underground.</div></div><span class="mono">scroll</span></div></a>
+      </section>
+      <section class="list">
+        <p class="label">b side · look &amp; feel (paper, serif, no grid)</p>
+        <a href="b-home.html"><div class="row"><div>B home · diagonal river<div class="sub">One continuous drift of images at an angle. Angle + spacing sliders, CSS scroll-timeline vs rAF, phone-width toggle.</div></div><span class="mono">home</span></div></a>
+        <a href="b-gallery.html"><div class="row"><div>B gallery · organized<div class="sub">Sticky series index on the left, work on the right. Grid view for scanning, editorial view for looking.</div></div><span class="mono">gallery</span></div></a>
+      </section>
+      <footer><span class="readout">&gt; status: sketches, not shipped. <span class="conf">[1.00]</span></span></footer>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+  <script>mountSchemeToggle();</script>
+</body>
+</html>
