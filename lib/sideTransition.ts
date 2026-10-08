@@ -139,9 +139,13 @@ export function clipPathAt(wave: Wave, t: number): string {
 }
 
 /**
- * The hairline/dot flash in the arriving side's signature color at the
- * moment each tile is smallest. Painted on a thin canvas in the live
- * document, so it only shows where the snapshot above has opened up.
+ * What the thin canvas under the overlay shows through each hole, per tile:
+ * a halo (the whole cell tinted in the arriving side's signature color while
+ * its tile shrinks, fading as it closes) and the dot flash at the moment the
+ * tile is smallest. The halo gives the shrink its own contrast, so the wave
+ * reads even when the two sides' backgrounds are close (paper over paper,
+ * charcoal over charcoal). `background`, when given, is painted first: the
+ * arriving side's bg, used until the arriving route has actually mounted.
  */
 export function paintFlashes(
   ctx: CanvasRenderingContext2D,
@@ -150,19 +154,30 @@ export function paintFlashes(
   color: string,
   width: number,
   height: number,
+  background?: string,
 ): void {
-  const { cell, cols, rows, delays } = wave;
-  const tileMs = wave.tileMs;
+  const { cell, cols, rows, delays, tileMs } = wave;
+  const halo = theme.timing.sideHaloAlpha;
   ctx.clearRect(0, 0, width, height);
+  if (background) {
+    ctx.fillStyle = background;
+    ctx.fillRect(0, 0, width, height);
+  }
   ctx.fillStyle = color;
   for (let j = 0; j < rows; j++) {
     for (let i = 0; i < cols; i++) {
       const lt = (t - delays[j * cols + i]) / tileMs;
-      // Visible around the point moment: fades in as the tile closes, out
-      // just after it has gone.
-      if (lt < 0.7 || lt > 1.3) continue;
-      ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.3;
-      ctx.fillRect(i * cell + cell / 2 - 1.5, j * cell + cell / 2 - 1.5, 3, 3);
+      if (lt <= 0 || lt > 1.3) continue;
+      const x = i * cell;
+      const y = j * cell;
+      if (halo > 0 && lt < 1) {
+        ctx.globalAlpha = halo * (1 - lt * lt);
+        ctx.fillRect(x, y, cell, cell);
+      }
+      if (lt >= 0.7) {
+        ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.3;
+        ctx.fillRect(x + cell / 2 - 1.5, y + cell / 2 - 1.5, 3, 3);
+      }
     }
   }
   ctx.globalAlpha = 1;
@@ -342,25 +357,7 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
 
   const paint = (t: number) => {
     if (!ctx) return;
-    if (!arrived) {
-      ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = arrivingTokens.bg;
-      ctx.fillRect(0, 0, width, height);
-      ctx.fillStyle = color;
-      // paintFlashes clears the canvas, so draw the flashes by hand here.
-      const { cell, cols, rows, delays, tileMs } = wave;
-      for (let j = 0; j < rows; j++) {
-        for (let i = 0; i < cols; i++) {
-          const lt = (t - delays[j * cols + i]) / tileMs;
-          if (lt < 0.7 || lt > 1.3) continue;
-          ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.3;
-          ctx.fillRect(i * cell + cell / 2 - 1.5, j * cell + cell / 2 - 1.5, 3, 3);
-        }
-      }
-      ctx.globalAlpha = 1;
-    } else {
-      paintFlashes(ctx, wave, t, color, width, height);
-    }
+    paintFlashes(ctx, wave, t, color, width, height, arrived ? undefined : arrivingTokens.bg);
   };
 
   try {

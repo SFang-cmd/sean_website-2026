@@ -20,6 +20,7 @@
 | `timing.sideMsPerCell` | `12` | A↔B shrink wave (`SideFlip`): delay per cell of distance from the click. |
 | `timing.sideTileMs` | `320` | How long one tile takes to shrink to a point. |
 | `timing.sideJitterCells` | `1` | Random extra delay per tile, in cells, so the front isn't a clean ring. |
+| `timing.sideHaloAlpha` | `0.1` | Peak tint of a cell while its tile shrinks, in the arriving side's signature color; 0 disables. |
 | `timing.sideNavHeadStartMs` | `220` | How long the ripple runs before the route change is kicked off underneath it. |
 | `timing.sideFadeMs` | `250` | Crossfade length for the reduced-motion / plaintext / no-View-Transitions fallbacks. |
 

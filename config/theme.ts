@@ -78,5 +78,12 @@ export const theme = {
      * that reads as a beat, not a stall at the click.
      */
     sideNavHeadStartMs: 220,
+    /**
+     * Halo: each cell is tinted in the arriving side's signature color while
+     * its tile shrinks (peak alpha here, fading to 0 as the tile closes), so
+     * the wave has its own contrast when the two backgrounds are close.
+     * 0 turns it off.
+     */
+    sideHaloAlpha: 0.1,
   },
 } as const;
