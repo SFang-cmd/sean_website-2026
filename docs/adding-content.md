@@ -75,25 +75,42 @@ turns them into the manifest the pages read. You never touch a component.
 
    | column   | meaning |
    | -------- | ------- |
-   | `file`   | filename in `photos/` — must match exactly |
+   | `file`   | filename in `photos/` — must match exactly (case included); `.jpg`, `.jpeg` or `.png` |
    | `title`  | shown in italics under the image |
    | `place`  | shown after the title |
-   | `year`   | number; gallery sorts newest first |
+   | `year`   | integer; gallery sorts newest first |
    | `series` | one of the `slug`s in `content/series.ts` (portraits, sports, travel, aerial) |
-   | `home`   | `TRUE` to include on the home streams (aim for 30–40) |
-   | `order`  | sequence on the home, lower first; blank when `home` is FALSE |
+   | `home`   | `TRUE` to include on the home streams (aim for 30–40); `TRUE`/`FALSE`, `1`/`0`, `yes`/`no`, any case |
+   | `order`  | integer sequence on the home, lower first; blank when `home` is FALSE |
    | `alt`    | one plain sentence describing the image, for screen readers and search |
 
-   If `title`/`alt` are blank the script falls back to the JPEG's IPTC
-   Title/Caption, so captioning in Lightroom also works.
-3. Run `npm run photos`. It is strict: a row without a file, or a file
-   without a row, is an error, not a warning. It writes optimized
-   renditions to `public/photos/` and the manifest to `content/photos.json`;
-   commit both.
+   If `title`/`alt` are blank the script falls back to the image's embedded
+   IPTC/XMP Title and Caption, so captioning in Lightroom also works. If
+   there is no embedded text either, `title` becomes the filename
+   ("last-train_02" → "Last train 02") and `alt` becomes the title. The
+   run summary lists every row that used a fallback.
+3. Run `npm run photos`. It is strict: a row without a file, a file without
+   a row, a duplicate `file`, an unknown `series`, or a non-integer `year`/
+   `order` is an error, not a warning. It prints every problem at once and
+   writes nothing. On success it writes renditions at 480/960/1600px wide
+   (AVIF + JPEG, never upscaled) to `public/photos/<id>-<width>.*` and the
+   manifest to `content/photos.json`; commit both. `<id>` is the filename
+   stem slugified (`Tiny Pic_01.JPG` → `tiny-pic-01`), so two files that
+   differ only by case or punctuation are an error.
+
+   Re-runs are incremental: a photo is skipped when all its outputs are
+   newer than the original. `npm run photos -- --force` regenerates
+   everything. Outputs in `public/photos/` for ids no longer in the CSV are
+   deleted and listed. The manifest is always rewritten, in a stable order
+   (series order, then year desc, then title), so diffs stay clean.
 4. Commit and push. The site is static, so that's the deploy.
 
 To add a series, add an entry to `content/series.ts`. To take a photo down,
 delete its row (and optionally the original) and re-run the script.
+
+The rows currently in `photos.csv` are placeholders for synthetic sample
+images (`sample-01..04.jpg`), generated locally during development; the
+committed `photos.json` is `[]` until real originals go through the script.
 
 ## Adding a notes/blog section (future)
 
