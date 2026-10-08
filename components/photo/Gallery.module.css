@@ -1,0 +1,135 @@
+/* The gallery (docs/prototypes/b-gallery.html): sticky series index on the
+   left, the work on the right; grid (uniform cells) or editorial (one at a
+   time, varied sizes) view. */
+.wrap {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+  padding: 0 28px 96px;
+}
+.aside {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  padding-top: 48px;
+}
+.main {
+  padding-top: 48px;
+}
+.section {
+  padding-bottom: 96px;
+  scroll-margin-top: 48px;
+}
+
+/* Grid view: uniform cells, fast to scan. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.figure {
+  margin: 0;
+}
+.cell {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--line);
+}
+.cell.land {
+  aspect-ratio: 3 / 2;
+}
+.cell img {
+  object-fit: cover;
+  transition: opacity 150ms ease;
+}
+.figure:hover .cell img {
+  opacity: 0.9;
+}
+
+/* Editorial view: one image at a time, natural ratio, varied widths, more air. */
+.editorial .grid {
+  display: block;
+}
+.editorial .figure {
+  margin: 0 0 56px;
+  max-width: 760px;
+}
+.editorial .figure:nth-child(3n) {
+  max-width: 480px;
+  margin-left: auto;
+}
+.editorial .figure:nth-child(3n + 2) {
+  max-width: 100%;
+}
+.editorial .cell,
+.editorial .cell.land {
+  aspect-ratio: var(--ar);
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .aside {
+    position: static;
+    height: auto;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+  }
+  .index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+  }
+  .main {
+    padding-top: 0;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+@media (max-width: 599px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Lightbox: a native <dialog> filling the viewport. */
+.dialog {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 24px 28px;
+  border: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+.dialog::backdrop {
+  background: transparent;
+}
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dialogImg {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 136px);
+  object-fit: contain;
+}

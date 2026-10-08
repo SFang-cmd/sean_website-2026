@@ -1,1 +1,1242 @@
-[]
+[
+  {
+    "id": "placeholder-01",
+    "file": "placeholder-01.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-01-480.avif",
+        "jpg": "/photos/placeholder-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-01-960.avif",
+        "jpg": "/photos/placeholder-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-01-1600.avif",
+        "jpg": "/photos/placeholder-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIiA3GBMv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMGLqtA2LHytENmkV5XbgC5XbgAf/9k=",
+    "title": "Last train",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "travel",
+    "home": true,
+    "order": 1,
+    "alt": "A man waits alone on an empty SEPTA platform at night"
+  },
+  {
+    "id": "placeholder-02",
+    "file": "placeholder-02.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-02-480.avif",
+        "jpg": "/photos/placeholder-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-02-960.avif",
+        "jpg": "/photos/placeholder-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-02-1600.avif",
+        "jpg": "/photos/placeholder-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5lFQqFBDUDVZpooDUKgf/9k=",
+    "title": "Hold still",
+    "place": "Chinatown",
+    "year": 2025,
+    "series": "portraits",
+    "home": true,
+    "order": 2,
+    "alt": "Graduation portrait under a red awning"
+  },
+  {
+    "id": "placeholder-03",
+    "file": "placeholder-03.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-03-480.avif",
+        "jpg": "/photos/placeholder-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-03-960.avif",
+        "jpg": "/photos/placeholder-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-03-1600.avif",
+        "jpg": "/photos/placeholder-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDnwdI4GyY+I4Gxgx7u6wE93dYCa//Z",
+    "title": "Flyover",
+    "place": "Jersey shore",
+    "year": 2024,
+    "series": "aerial",
+    "home": true,
+    "order": 3,
+    "alt": "Shoreline from above with a line of surf"
+  },
+  {
+    "id": "placeholder-04",
+    "file": "placeholder-04.jpg",
+    "width": 2400,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-04-480.avif",
+        "jpg": "/photos/placeholder-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-04-960.avif",
+        "jpg": "/photos/placeholder-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-04-1600.avif",
+        "jpg": "/photos/placeholder-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A41qCWqWaM6A1WaAJaAD/2Q==",
+    "title": "Baseline",
+    "place": "Wells Fargo Center",
+    "year": 2023,
+    "series": "sports",
+    "home": true,
+    "order": 4,
+    "alt": "A guard drives baseline past two defenders"
+  },
+  {
+    "id": "placeholder-05",
+    "file": "placeholder-05.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-05-480.avif",
+        "jpg": "/photos/placeholder-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-05-960.avif",
+        "jpg": "/photos/placeholder-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-05-1600.avif",
+        "jpg": "/photos/placeholder-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOZRUK1QkNQGi01mgEED/9k=",
+    "title": "Neon, wet",
+    "place": "Center City",
+    "year": 2026,
+    "series": "travel",
+    "home": true,
+    "order": 5,
+    "alt": "Rain-slick street reflecting a neon sign"
+  },
+  {
+    "id": "placeholder-06",
+    "file": "placeholder-06.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-06-480.avif",
+        "jpg": "/photos/placeholder-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-06-960.avif",
+        "jpg": "/photos/placeholder-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-06-1600.avif",
+        "jpg": "/photos/placeholder-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABsQAAICAwEAAAAAAAAAAAAAAAABAyICcYEy/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A57F1Wg2SvK0Y2aVErtwEyO3AB//Z",
+    "title": "Corner store",
+    "place": "West Philly",
+    "year": 2025,
+    "series": "travel",
+    "home": true,
+    "order": 6,
+    "alt": "A corner store lit from inside at dusk"
+  },
+  {
+    "id": "placeholder-07",
+    "file": "placeholder-07.jpg",
+    "width": 2400,
+    "height": 1350,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-07-480.avif",
+        "jpg": "/photos/placeholder-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-07-960.avif",
+        "jpg": "/photos/placeholder-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-07-1600.avif",
+        "jpg": "/photos/placeholder-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQMiMnGBAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aw/LqtCbEsVoTLJq5XbgEZMuABf/Z",
+    "title": "Grid from 400ft",
+    "place": "Camden",
+    "year": 2024,
+    "series": "aerial",
+    "home": true,
+    "order": 7,
+    "alt": "City blocks seen straight down from a drone"
+  },
+  {
+    "id": "placeholder-08",
+    "file": "placeholder-08.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-08-480.avif",
+        "jpg": "/photos/placeholder-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-08-960.avif",
+        "jpg": "/photos/placeholder-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-08-1600.avif",
+        "jpg": "/photos/placeholder-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdKJazUaM6A1azVqUEEAf/Z",
+    "title": "Blue hour",
+    "place": "Schuylkill",
+    "year": 2023,
+    "series": "travel",
+    "home": true,
+    "order": 8,
+    "alt": "The river at blue hour with the skyline behind"
+  },
+  {
+    "id": "placeholder-09",
+    "file": "placeholder-09.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-09-480.avif",
+        "jpg": "/photos/placeholder-09-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-09-960.avif",
+        "jpg": "/photos/placeholder-09-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-09-1600.avif",
+        "jpg": "/photos/placeholder-09-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEEIiMy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlg+caQbJh4jQbKJMMh7qgTkPoqAF//9k=",
+    "title": "Passenger",
+    "place": "SEPTA",
+    "year": 2026,
+    "series": "portraits",
+    "home": true,
+    "order": 9,
+    "alt": "A passenger looks out a train window"
+  },
+  {
+    "id": "placeholder-10",
+    "file": "placeholder-10.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-10-480.avif",
+        "jpg": "/photos/placeholder-10-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-10-960.avif",
+        "jpg": "/photos/placeholder-10-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-10-1600.avif",
+        "jpg": "/photos/placeholder-10-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4KUS1QaM6A1azVqUEEAf/9k=",
+    "title": "Fog line",
+    "place": "Fairmount",
+    "year": 2025,
+    "series": "aerial",
+    "home": true,
+    "order": 10,
+    "alt": "Fog sitting in a line over the park from above"
+  },
+  {
+    "id": "placeholder-11",
+    "file": "placeholder-11.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-11-480.avif",
+        "jpg": "/photos/placeholder-11-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-11-960.avif",
+        "jpg": "/photos/placeholder-11-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-11-1600.avif",
+        "jpg": "/photos/placeholder-11-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdB0jgbJj4jgbKJse7usBPd3WAC/9k=",
+    "title": "After hours",
+    "place": "Fishtown",
+    "year": 2024,
+    "series": "travel",
+    "home": true,
+    "order": 11,
+    "alt": "An empty bar patio after closing"
+  },
+  {
+    "id": "placeholder-12",
+    "file": "placeholder-12.jpg",
+    "width": 2400,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-12-480.avif",
+        "jpg": "/photos/placeholder-12-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-12-960.avif",
+        "jpg": "/photos/placeholder-12-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-12-1600.avif",
+        "jpg": "/photos/placeholder-12-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5KWlqWrQaM6A1WaAJaAD/9k=",
+    "title": "Window seat",
+    "place": "NYC",
+    "year": 2023,
+    "series": "travel",
+    "home": true,
+    "order": 12,
+    "alt": "Manhattan seen from an airplane window"
+  },
+  {
+    "id": "placeholder-13",
+    "file": "placeholder-13.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-13-480.avif",
+        "jpg": "/photos/placeholder-13-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-13-960.avif",
+        "jpg": "/photos/placeholder-13-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-13-1600.avif",
+        "jpg": "/photos/placeholder-13-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdSiVtATQFqVazQNGaA/9k=",
+    "title": "Salt flats",
+    "place": "Utah",
+    "year": 2026,
+    "series": "aerial",
+    "home": true,
+    "order": 13,
+    "alt": "A single car crossing white salt flats from above"
+  },
+  {
+    "id": "placeholder-14",
+    "file": "placeholder-14.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-14-480.avif",
+        "jpg": "/photos/placeholder-14-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-14-960.avif",
+        "jpg": "/photos/placeholder-14-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-14-1600.avif",
+        "jpg": "/photos/placeholder-14-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOfB0jgbJi6RwNklGPd3WAnv7WAQ/9k=",
+    "title": "Underpass",
+    "place": "Philadelphia",
+    "year": 2025,
+    "series": "travel",
+    "home": true,
+    "order": 14,
+    "alt": "A cyclist passing under a rail bridge"
+  },
+  {
+    "id": "placeholder-15",
+    "file": "placeholder-15.jpg",
+    "width": 2400,
+    "height": 1350,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-15-480.avif",
+        "jpg": "/photos/placeholder-15-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-15-960.avif",
+        "jpg": "/photos/placeholder-15-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-15-1600.avif",
+        "jpg": "/photos/placeholder-15-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAaEAACAgMAAAAAAAAAAAAAAAAAAQJxAyIy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDNB6RoGxY8RohhFOd7qgFz9qgA/9k=",
+    "title": "Rooftop",
+    "place": "Center City",
+    "year": 2024,
+    "series": "portraits",
+    "home": true,
+    "order": 15,
+    "alt": "Portrait on a rooftop with the city out of focus"
+  },
+  {
+    "id": "placeholder-16",
+    "file": "placeholder-16.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-16-480.avif",
+        "jpg": "/photos/placeholder-16-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-16-960.avif",
+        "jpg": "/photos/placeholder-16-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-16-1600.avif",
+        "jpg": "/photos/placeholder-16-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDFSiWoQaM6A1azVqUE0SgP/9k=",
+    "title": "Crosswalk",
+    "place": "Chinatown",
+    "year": 2023,
+    "series": "travel",
+    "home": true,
+    "order": 16,
+    "alt": "Pedestrians crossing under a paper lantern"
+  },
+  {
+    "id": "placeholder-17",
+    "file": "placeholder-17.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-17-480.avif",
+        "jpg": "/photos/placeholder-17-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-17-960.avif",
+        "jpg": "/photos/placeholder-17-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-17-1600.avif",
+        "jpg": "/photos/placeholder-17-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlxdI4GyY+I4GzNLHu7rAT2d1gEv/Z",
+    "title": "Dock",
+    "place": "Jersey shore",
+    "year": 2026,
+    "series": "aerial",
+    "home": true,
+    "order": 17,
+    "alt": "A wooden dock reaching into still water"
+  },
+  {
+    "id": "placeholder-18",
+    "file": "placeholder-18.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-18-480.avif",
+        "jpg": "/photos/placeholder-18-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-18-960.avif",
+        "jpg": "/photos/placeholder-18-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-18-1600.avif",
+        "jpg": "/photos/placeholder-18-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACA//EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOrNprNYVIagNFprNAIIH//Z",
+    "title": "Tide line",
+    "place": "Jersey shore",
+    "year": 2025,
+    "series": "aerial",
+    "home": true,
+    "order": 18,
+    "alt": "The tide line drawn across sand from above"
+  },
+  {
+    "id": "placeholder-19",
+    "file": "placeholder-19.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-19-480.avif",
+        "jpg": "/photos/placeholder-19-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-19-960.avif",
+        "jpg": "/photos/placeholder-19-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-19-1600.avif",
+        "jpg": "/photos/placeholder-19-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIiA3GBMv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMGLqtA2LHytENmkV5XbgC5XbgAf/9k=",
+    "title": "Shift change",
+    "place": "SEPTA",
+    "year": 2024,
+    "series": "portraits",
+    "home": true,
+    "order": 19,
+    "alt": "A conductor steps off a train at the end of a shift"
+  },
+  {
+    "id": "placeholder-20",
+    "file": "placeholder-20.jpg",
+    "width": 2400,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-20-480.avif",
+        "jpg": "/photos/placeholder-20-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-20-960.avif",
+        "jpg": "/photos/placeholder-20-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-20-1600.avif",
+        "jpg": "/photos/placeholder-20-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5lrIlqFGiaAtSgDNoAP/2Q==",
+    "title": "Free throw",
+    "place": "Palestra",
+    "year": 2023,
+    "series": "sports",
+    "home": true,
+    "order": 20,
+    "alt": "A player at the line, crowd blurred behind"
+  },
+  {
+    "id": "placeholder-21",
+    "file": "placeholder-21.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-21-480.avif",
+        "jpg": "/photos/placeholder-21-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-21-960.avif",
+        "jpg": "/photos/placeholder-21-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-21-1600.avif",
+        "jpg": "/photos/placeholder-21-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4RaqKtAQ1A1WaaKA1CoH/9k=",
+    "title": "Tip-off",
+    "place": "Wells Fargo Center",
+    "year": 2026,
+    "series": "sports",
+    "home": true,
+    "order": 21,
+    "alt": "Two centers jumping for the opening tip"
+  },
+  {
+    "id": "placeholder-22",
+    "file": "placeholder-22.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-22-480.avif",
+        "jpg": "/photos/placeholder-22-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-22-960.avif",
+        "jpg": "/photos/placeholder-22-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-22-1600.avif",
+        "jpg": "/photos/placeholder-22-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABInECAzKB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDi4uCoNk48qg2Utluc1QJ3OfgA/9k=",
+    "title": "Sideline",
+    "place": "Franklin Field",
+    "year": 2025,
+    "series": "sports",
+    "home": true,
+    "order": 22,
+    "alt": "Players watching from the sideline in the rain"
+  },
+  {
+    "id": "placeholder-23",
+    "file": "placeholder-23.jpg",
+    "width": 2400,
+    "height": 1350,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-23-480.avif",
+        "jpg": "/photos/placeholder-23-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-23-960.avif",
+        "jpg": "/photos/placeholder-23-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-23-1600.avif",
+        "jpg": "/photos/placeholder-23-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQJxAyIygf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMqL0VA2KPCoTNUKsz3VARy9eABf/9k=",
+    "title": "Commencement",
+    "place": "College Green",
+    "year": 2024,
+    "series": "portraits",
+    "home": true,
+    "order": 23,
+    "alt": "A graduate in a cap and gown on College Green"
+  },
+  {
+    "id": "placeholder-24",
+    "file": "placeholder-24.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-24-480.avif",
+        "jpg": "/photos/placeholder-24-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-24-960.avif",
+        "jpg": "/photos/placeholder-24-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-24-1600.avif",
+        "jpg": "/photos/placeholder-24-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOfFQrSpDUBotNZoBBKP/9k=",
+    "title": "Headshot, north light",
+    "place": "Studio",
+    "year": 2023,
+    "series": "portraits",
+    "home": true,
+    "order": 24,
+    "alt": "A headshot lit by a north-facing window"
+  },
+  {
+    "id": "placeholder-25",
+    "file": "placeholder-25.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-25-480.avif",
+        "jpg": "/photos/placeholder-25-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-25-960.avif",
+        "jpg": "/photos/placeholder-25-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-25-1600.avif",
+        "jpg": "/photos/placeholder-25-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAaEAADAAMBAAAAAAAAAAAAAAAAASIDcYEC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDD8uVoTYk5WhNlk1eV1wCOV1wAL//Z",
+    "title": "Locust Walk",
+    "place": "University City",
+    "year": 2026,
+    "series": "portraits",
+    "home": true,
+    "order": 25,
+    "alt": "Graduation portrait under the trees on Locust Walk"
+  },
+  {
+    "id": "placeholder-26",
+    "file": "placeholder-26.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-26-480.avif",
+        "jpg": "/photos/placeholder-26-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-26-960.avif",
+        "jpg": "/photos/placeholder-26-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-26-1600.avif",
+        "jpg": "/photos/placeholder-26-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdKJazUaM6A1azVqUEEAf/Z",
+    "title": "Fast break",
+    "place": "Palestra",
+    "year": 2025,
+    "series": "sports",
+    "home": true,
+    "order": 26,
+    "alt": "A fast break seen from behind the basket"
+  },
+  {
+    "id": "placeholder-27",
+    "file": "placeholder-27.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-27-480.avif",
+        "jpg": "/photos/placeholder-27-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-27-960.avif",
+        "jpg": "/photos/placeholder-27-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-27-1600.avif",
+        "jpg": "/photos/placeholder-27-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEEIiMy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlg+caQbJh4jQbKJMMh7qgTkPoqAF//9k=",
+    "title": "Overtime",
+    "place": "Wells Fargo Center",
+    "year": 2024,
+    "series": "sports",
+    "home": true,
+    "order": 27,
+    "alt": "Bench reaction in the final seconds of overtime"
+  },
+  {
+    "id": "placeholder-28",
+    "file": "placeholder-28.jpg",
+    "width": 2400,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-28-480.avif",
+        "jpg": "/photos/placeholder-28-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-28-960.avif",
+        "jpg": "/photos/placeholder-28-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-28-1600.avif",
+        "jpg": "/photos/placeholder-28-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4LKVNqhuidAVU0ASAD//2Q==",
+    "title": "Morning market",
+    "place": "Italian Market",
+    "year": 2023,
+    "series": "travel",
+    "home": true,
+    "order": 28,
+    "alt": "Produce stands opening on a cold morning"
+  },
+  {
+    "id": "placeholder-29",
+    "file": "placeholder-29.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-29-480.avif",
+        "jpg": "/photos/placeholder-29-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-29-960.avif",
+        "jpg": "/photos/placeholder-29-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-29-1600.avif",
+        "jpg": "/photos/placeholder-29-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4BaqKomENQNVmmigNQqB/9k=",
+    "title": "Boardwalk",
+    "place": "Jersey shore",
+    "year": 2026,
+    "series": "aerial",
+    "home": true,
+    "order": 29,
+    "alt": "The boardwalk and beach umbrellas from above"
+  },
+  {
+    "id": "placeholder-30",
+    "file": "placeholder-30.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-30-480.avif",
+        "jpg": "/photos/placeholder-30-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-30-960.avif",
+        "jpg": "/photos/placeholder-30-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-30-1600.avif",
+        "jpg": "/photos/placeholder-30-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABAiIDMnGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDkRdI8DZMdFwNloY5ndcBOZ38AF//Z",
+    "title": "Reservoir",
+    "place": "Fairmount",
+    "year": 2025,
+    "series": "aerial",
+    "home": true,
+    "order": 30,
+    "alt": "The reservoir and tree line from 400 feet"
+  },
+  {
+    "id": "placeholder-31",
+    "file": "placeholder-31.jpg",
+    "width": 2400,
+    "height": 1350,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-31-480.avif",
+        "jpg": "/photos/placeholder-31-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-31-960.avif",
+        "jpg": "/photos/placeholder-31-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-31-1600.avif",
+        "jpg": "/photos/placeholder-31-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAAICAwEAAAAAAAAAAAAAAAABIjICA3GB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5xOK4DYKq4DNhjY5eEGdiBP/2Q==",
+    "title": "Warmups",
+    "place": "Franklin Field",
+    "year": 2024,
+    "series": "sports",
+    "home": true,
+    "order": 31,
+    "alt": "Sprinters warming up in lane one"
+  },
+  {
+    "id": "placeholder-32",
+    "file": "placeholder-32.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-32-480.avif",
+        "jpg": "/photos/placeholder-32-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-32-960.avif",
+        "jpg": "/photos/placeholder-32-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-32-1600.avif",
+        "jpg": "/photos/placeholder-32-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4UolqShozoDVrNWpQTRKA//Z",
+    "title": "Two of them",
+    "place": "Rittenhouse",
+    "year": 2023,
+    "series": "portraits",
+    "home": true,
+    "order": 32,
+    "alt": "A couple's portrait on a park bench"
+  },
+  {
+    "id": "placeholder-33",
+    "file": "placeholder-33.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-33-480.avif",
+        "jpg": "/photos/placeholder-33-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-33-960.avif",
+        "jpg": "/photos/placeholder-33-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-33-1600.avif",
+        "jpg": "/photos/placeholder-33-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiNxBCL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOaDrjiDZMHXHA2EYdDsWAnoftYAP//Z",
+    "title": "Ferry",
+    "place": "NYC",
+    "year": 2026,
+    "series": "travel",
+    "home": true,
+    "order": 33,
+    "alt": "Passengers on the deck of the Staten Island ferry"
+  },
+  {
+    "id": "placeholder-34",
+    "file": "placeholder-34.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-34-480.avif",
+        "jpg": "/photos/placeholder-34-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-34-960.avif",
+        "jpg": "/photos/placeholder-34-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-34-1600.avif",
+        "jpg": "/photos/placeholder-34-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDFSiWoQaM6A1azVqUE0SgP/9k=",
+    "title": "Night court",
+    "place": "South Philly",
+    "year": 2025,
+    "series": "sports",
+    "home": true,
+    "order": 34,
+    "alt": "A pickup game under floodlights"
+  },
+  {
+    "id": "placeholder-35",
+    "file": "placeholder-35.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-35-480.avif",
+        "jpg": "/photos/placeholder-35-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-35-960.avif",
+        "jpg": "/photos/placeholder-35-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-35-1600.avif",
+        "jpg": "/photos/placeholder-35-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlxdI4GyY+I4GzNLHu7rAT2d1gEv/Z",
+    "title": "Causeway",
+    "place": "Utah",
+    "year": 2024,
+    "series": "aerial",
+    "home": true,
+    "order": 35,
+    "alt": "A causeway dividing two colors of water"
+  },
+  {
+    "id": "placeholder-36",
+    "file": "placeholder-36.jpg",
+    "width": 2400,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-36-480.avif",
+        "jpg": "/photos/placeholder-36-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-36-960.avif",
+        "jpg": "/photos/placeholder-36-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-36-1600.avif",
+        "jpg": "/photos/placeholder-36-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBA//EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOjLS1lrCmidAVU0ASAD/9k=",
+    "title": "Last light",
+    "place": "Schuylkill",
+    "year": 2023,
+    "series": "travel",
+    "home": true,
+    "order": 36,
+    "alt": "Rowers on the river in the last light"
+  },
+  {
+    "id": "placeholder-37",
+    "file": "placeholder-37.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-37-480.avif",
+        "jpg": "/photos/placeholder-37-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-37-960.avif",
+        "jpg": "/photos/placeholder-37-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-37-1600.avif",
+        "jpg": "/photos/placeholder-37-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOEKhWkSGoDRaazQCCB//9k=",
+    "title": "Press row",
+    "place": "Wells Fargo Center",
+    "year": 2026,
+    "series": "sports",
+    "home": false,
+    "order": null,
+    "alt": "The view from press row during a timeout"
+  },
+  {
+    "id": "placeholder-38",
+    "file": "placeholder-38.jpg",
+    "width": 2400,
+    "height": 1600,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-38-480.avif",
+        "jpg": "/photos/placeholder-38-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-38-960.avif",
+        "jpg": "/photos/placeholder-38-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-38-1600.avif",
+        "jpg": "/photos/placeholder-38-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOVF0jgbJj4WBshTLs7rAT2d1gA//9k=",
+    "title": "Senior portrait",
+    "place": "Locust Walk",
+    "year": 2025,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "alt": "Senior portrait in front of the Quad gate"
+  },
+  {
+    "id": "placeholder-39",
+    "file": "placeholder-39.jpg",
+    "width": 2400,
+    "height": 1350,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-39-480.avif",
+        "jpg": "/photos/placeholder-39-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-39-960.avif",
+        "jpg": "/photos/placeholder-39-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-39-1600.avif",
+        "jpg": "/photos/placeholder-39-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEDIjKB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A58XpGg2THhUGMGOZ7qgTm78BNf/Z",
+    "title": "Inlet",
+    "place": "Jersey shore",
+    "year": 2024,
+    "series": "aerial",
+    "home": false,
+    "order": null,
+    "alt": "A tidal inlet from directly above"
+  },
+  {
+    "id": "placeholder-40",
+    "file": "placeholder-40.jpg",
+    "width": 1920,
+    "height": 2400,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/placeholder-40-480.avif",
+        "jpg": "/photos/placeholder-40-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/placeholder-40-960.avif",
+        "jpg": "/photos/placeholder-40-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/placeholder-40-1600.avif",
+        "jpg": "/photos/placeholder-40-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A41SiVSwTQFqVazQNGaA//9k=",
+    "title": "Platform",
+    "place": "30th Street",
+    "year": 2023,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "alt": "Travelers on a platform at 30th Street Station"
+  }
+]
