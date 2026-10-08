@@ -93,41 +93,31 @@ for the person. Text lives in `content/site.ts` (`tag`, e.g.
 `> tag: … [0.98]`).
 
 ### SideFlip (`SideLink`)
-The door between the two sides (`photos` in the A nav, the footer link on
-B). On click the 24px patch grid shrinks to points in a ripple from the
-click, revealing the other side's real page underneath, then the Next route
-change completes (`router.push`, arriving route prefetched on mount/hover).
-At the instant each tile is smallest it flashes a 3px dot in the arriving
-side's signature color: B's `--fg` going in (B has no accent), A's blue
-coming back. Same move both directions. Timings in `theme.timing`:
-`sideMsPerCell` 12, `sideTileMs` 320, `sideJitterCells` 1 (≈1.1s at
-1440×900, ≈1.6s at 2560×1440), `sideFadeMs` 250 for the fallbacks.
+The A↔B transition. Clicking a `SideLink` (the nav door on A, `engineering →`
+on B) runs the **shrink wave**: every 24px patch shrinks to a point in a
+ripple from the click, revealing the other side underneath, then the route
+change completes. Timing: `theme.timing.sideMsPerCell` (12) per cell of
+distance, `sideTileMs` (320; ×0.75 on phones) per tile, `sideJitterCells` (1)
+of jitter, ~1.1 s across a laptop screen. A 3px dot flashes in the arriving
+side's signature color (B's text color going in, A's blue coming back) as
+each tile closes.
 
-Shipped approach: a View Transition. `document.startViewTransition` freezes
-the departing page as `::view-transition-old(root)`, Next swaps the route
-beneath it, and each frame sets that snapshot's `clip-path` to one `path()`
-of every still-visible tile (`lib/sideTransition.ts`). The arriving page is
-live, so the holes show real content. Measured with rAF frame sampling in
-the built-in Chromium at 120Hz: 118–120 fps, p95 ≤ 9.3 ms, no long tasks,
-at both 1440×900 (2.3k tiles) and 2560×1440 (6.4k tiles). Rejected: an SVG
-`<mask>` of per-tile WAAPI animations (73 fps, 25 ms p95 and an 88 ms long
-task at 6.4k tiles; and `mask-image: url(#…)` does not resolve from the
-view-transition pseudo-element at all), and the proven canvas overlay from
-`docs/prototypes/3-flipdot-wave.html` (equally cheap, but it shrinks solid
-tiles, not content; kept out of the bundle).
+**How (approach "A2" from the spike harness,
+`docs/prototypes/transition-harness/`):** the departing page's DOM is cloned
+into a fixed, inert overlay at the same scroll offset; Next swaps the route
+underneath at once; the overlay's `clip-path` is rebuilt every frame as one
+`path()` of the still-visible tiles. A thin canvas under the overlay paints
+the arriving background until the new route has mounted, then only the dot
+flashes, so the holes show real arriving content. The wave runs on frame
+time (a stalled frame advances it by at most 50 ms) and bails to a fade if
+six frames stall. No View Transitions API: the snapshot approach ("A3") was
+dropped by the browser around the route change in Chrome, Brave and Safari.
 
-Fallbacks: `prefers-reduced-motion`, plaintext mode, or a browser without
-View Transitions get a 250ms crossfade (the browser's own for VT, a fade
-through the arriving `--bg` otherwise). Modifier/middle clicks are normal
-links (new tab). Enter on a focused link ripples from the link's centre.
-Clicks during a transition are ignored; a direct load of `/photo` never
-animates; back/forward never animates and nothing is left in the DOM (the
-canvas and style the effect adds are removed when it ends, on `pagehide`,
-and by a safety timer). On `photos.sean-fang.com` the B door can't client-
-navigate to `/` (the host rewrite maps it back onto B), so `SideLink`
-detects the rewritten host and leaves via a crossfade into a full load of
-`hardHref`. Touch taps on the A nav still go through `PatchHighlight`'s
-tap-wave, which hard-loads the href after 300ms (no shrink wave on touch).
+Fallbacks: reduced motion or plaintext mode → a `sideFadeMs` (250) crossfade;
+modifier/middle clicks → normal link; keyboard activation ripples from the
+link's centre; direct loads never animate; on `photos.sean-fang.com` the door
+to A leaves via a crossfade + full load (`hardHref`). Touch gets the wave too
+(`PatchHighlight` lets `data-side-link` links handle their own tap).
 
 ### The door (PatchHighlight `idle="flicker"` + `SideLink`)
 The last nav item, *off the clock*, is the way into the photography side.

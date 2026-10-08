@@ -197,16 +197,22 @@ export function PatchHighlight({
         // to ensure users see the full animation.
         onPointerDown={(e) => {
           if (e.pointerType !== "touch" && e.pointerType !== "pen") return;
-          e.preventDefault();
           const link = e.currentTarget.querySelector('a');
-          if (link) {
+          if (!link) return;
+          // A side-door link runs its own transition from the tap's click
+          // event; just flash the highlight and let the tap through.
+          if (link.hasAttribute("data-side-link")) {
             markFound();
             show({ x: e.clientX, y: e.clientY });
-            clearTimeout(tapTimer.current);
-            tapTimer.current = setTimeout(() => {
-              window.location.href = link.href;
-            }, 300);
+            return;
           }
+          e.preventDefault();
+          markFound();
+          show({ x: e.clientX, y: e.clientY });
+          clearTimeout(tapTimer.current);
+          tapTimer.current = setTimeout(() => {
+            window.location.href = link.href;
+          }, 300);
         }}
       >
         {children}

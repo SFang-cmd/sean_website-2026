@@ -10,7 +10,6 @@ import {
   runCrossfade,
   runShrinkWave,
   sideOf,
-  supportsViewTransitions,
   waitForPathname,
 } from "@/lib/sideTransition";
 
@@ -77,7 +76,9 @@ export function SideLink({ href, hardHref, className, children }: SideLinkProps)
       router.push(href);
       return waitForPathname(href);
     };
-    const still = plain || prefersReducedMotion() || !supportsViewTransitions();
+    // The wave needs no View Transitions support (it clips a DOM clone), so
+    // only motion preferences decide between wave and crossfade.
+    const still = plain || prefersReducedMotion();
     void (still
       ? runCrossfade({ arriving, navigate })
       : runShrinkWave({ origin, arriving, navigate }));
@@ -87,6 +88,9 @@ export function SideLink({ href, hardHref, className, children }: SideLinkProps)
     <Link
       href={href}
       className={className}
+      // Lets PatchHighlight's touch handler leave navigation to onClick so
+      // phones get the wave too.
+      data-side-link=""
       onClick={onClick}
       onMouseEnter={prefetch}
       onFocus={prefetch}

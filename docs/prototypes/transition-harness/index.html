@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Phase 3 spike: shrink-wave reveal cost</title>
+<style>
+  :root { --bg:#fcfcfa; --fg:#191918; --muted:#6b6b68; --accent:#185fa5; --grid:rgba(128,128,128,.11); --line:rgba(128,128,128,.28); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121211; --fg:#ececea; --muted:#a0a09b; --accent:#378add; --grid:rgba(140,140,140,.15); } }
+  .b { --bg:#f7f5f0; --fg:#141311; --muted:#6e6a62; --accent:#141311; }
+  @media (prefers-color-scheme: dark) { .b { --bg:#141414; --fg:#ecebe7; --muted:#9a978f; --accent:#ecebe7; } }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--fg); font:15px/1.6 system-ui,-apple-system,sans-serif; }
+  .layer { position:fixed; inset:0; overflow:hidden; background:var(--bg); color:var(--fg); }
+  #new { z-index:0; }
+  #old { z-index:1; }
+  #old::before { content:""; position:absolute; inset:0; background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px); background-size:24px 24px; }
+  .col { position:relative; max-width:648px; margin:0 auto; padding:48px 24px; }
+  .wide { position:relative; padding:48px 28px; }
+  h1 { font-size:26px; line-height:1.35; font-weight:500; margin:72px 0 0; max-width:30ch; }
+  .b h1 { font-family:Georgia,serif; font-size:72px; line-height:.98; font-weight:400; max-width:14ch; }
+  p { color:var(--muted); max-width:54ch; }
+  .row { display:flex; justify-content:space-between; padding:12px 0; border-top:1px solid var(--line); }
+  .row span { font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
+  .sheet { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px; }
+  .sheet div { aspect-ratio:3/2; background:linear-gradient(135deg,#8a8378,#4a453f); }
+  nav { display:flex; justify-content:space-between; font-size:13px; color:var(--muted); }
+  nav a { color:var(--accent); margin-left:24px; cursor:pointer; }
+  #overlay { position:fixed; inset:0; z-index:5; pointer-events:none; }
+  #hud { position:fixed; right:12px; bottom:12px; z-index:10; font:11px/1.5 ui-monospace,Menlo,monospace; background:rgba(0,0,0,.75); color:#eee; padding:8px 10px; max-width:420px; white-space:pre-wrap; }
+  #ctl { position:fixed; left:12px; bottom:12px; z-index:10; display:flex; gap:6px; font:11px ui-monospace,Menlo,monospace; }
+  #ctl button { font:inherit; padding:3px 8px; cursor:pointer; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation:none; mix-blend-mode:normal; }
+  ::view-transition-old(root) { animation: vt-hold 4000ms linear; }
+  @keyframes vt-hold { from { opacity:1 } to { opacity:1 } }
+  /* The mask element lives in the document; HTML layers and the VT pseudo reference it by id. */
+  #maskrects rect { transform-box:fill-box; transform-origin:center; fill:#fff; }
+</style>
+</head>
+<body>
+  <div class="layer b" id="new">
+    <div class="wide">
+      <nav><span>Sean Fang</span><span><a>Gallery</a><a>Work with me</a></span></nav>
+      <h1>The rest of the time I do the looking myself.</h1>
+      <p>Phase 0 shell. Three photos flagged for the home page.</p>
+      <div class="sheet" id="sheet"></div>
+    </div>
+  </div>
+  <div class="layer" id="old">
+    <div class="col">
+      <nav><span>Sean Fang</span><span><a>about</a><a>experience</a><a>projects</a><a id="go">photos</a><a>contact</a></span></nav>
+      <h1>I build machine learning models and the systems that run them at scale.</h1>
+      <div id="paras"></div>
+      <div id="rows"></div>
+    </div>
+  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><mask id="m" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"><g id="maskrects"></g></mask></defs></svg>
+  <canvas id="overlay"></canvas>
+  <div id="hud">click “photos” (or use ?mode=…&auto=1)</div>
+  <div id="ctl">
+    <button data-mode="svgmask">A1 svg mask (WAAPI)</button>
+    <button data-mode="clippath">A2 clip-path path()/frame</button>
+    <button data-mode="vt-clippath">A3 view-transition + clip-path</button>
+    <button data-mode="vt-svgmask">A4 view-transition + svg mask</button>
+    <button data-mode="vt-plain">VT control (no mask)</button>
+    <button data-mode="canvas">B canvas overlay</button>
+    <button id="reset">reset</button>
+  </div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const SLOW = +(q.get("slow") || 1);
+  const CELL = +(q.get("cell") || 24), MS_PER_CELL = 12 * SLOW, TILE_MS = 320 * SLOW, JITTER = 1;
+  const hud = document.getElementById("hud");
+  // Fill the fake pages with plausible amounts of content.
+  document.getElementById("paras").innerHTML = Array.from({length: 6}, (_, i) => `<p>Paragraph ${i + 1}. I'm a CS and robotics student at Penn, building vision systems at Google. Before that, as a founding engineer, I helped raise $1.1M in AI hardware, and I researched computer vision at Penn's robotics lab.</p>`).join("");
+  document.getElementById("rows").innerHTML = Array.from({length: 10}, (_, i) => `<div class="row"><div>Company ${i + 1}<div style="color:var(--muted);font-size:13px">Role title here</div></div><span>2026</span></div>`).join("");
+  document.getElementById("sheet").innerHTML = Array.from({length: 12}, () => `<div></div>`).join("");
+
+  // ---------- metrics ----------
+  let metrics = null;
+  const longtasks = [];
+  try { new PerformanceObserver((l) => { for (const e of l.getEntries()) longtasks.push(e.duration); }).observe({ type: "longtask", buffered: false }); } catch {}
+  function startMetrics(mode) {
+    metrics = { mode, t0: performance.now(), last: performance.now(), deltas: [], lt0: longtasks.length };
+    (function tick(now) { if (!metrics) return; metrics.deltas.push(now - metrics.last); metrics.last = now; requestAnimationFrame(tick); })(performance.now());
+  }
+  function stopMetrics(extra = {}) {
+    const m = metrics; metrics = null;
+    const d = m.deltas.slice(1); d.sort((a, b) => a - b);
+    const dur = performance.now() - m.t0;
+    const sum = d.reduce((a, b) => a + b, 0);
+    const r = {
+      tag: q.get("tag") || "", cell: CELL, ua: navigator.userAgent.match(/(Chrome|Safari|Firefox)\/[\d.]+/g)?.join(" "), mode: m.mode,
+      viewport: `${innerWidth}x${innerHeight}`, dpr: devicePixelRatio, cells: Math.ceil(innerWidth / CELL) * Math.ceil(innerHeight / CELL),
+      durationMs: Math.round(dur), frames: d.length, fps: +(d.length / (sum / 1000)).toFixed(1),
+      avgMs: +(sum / d.length).toFixed(2), p95Ms: +d[Math.floor(d.length * 0.95)].toFixed(2), maxMs: +d[d.length - 1].toFixed(2),
+      over20ms: d.filter((x) => x > 20).length, over34ms: d.filter((x) => x > 34).length,
+      longTasks: longtasks.slice(m.lt0).map((x) => Math.round(x)), ...extra,
+    };
+    hud.textContent = JSON.stringify(r, null, 1);
+    console.log("RESULT", JSON.stringify(r));
+    fetch("/report", { method: "POST", body: JSON.stringify(r) }).catch(() => {});
+    return r;
+  }
+
+  // ---------- shared wave geometry ----------
+  function wave(cx, cy) {
+    const W = innerWidth, H = innerHeight;
+    const cols = Math.ceil(W / CELL), rows = Math.ceil(H / CELL);
+    const ci = cx / CELL - 0.5, cj = cy / CELL - 0.5;
+    const delays = new Float32Array(cols * rows);
+    let maxD = 0;
+    for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+      const d = (Math.hypot(i - ci, j - cj) + Math.random() * JITTER) * MS_PER_CELL;
+      delays[j * cols + i] = d; if (d > maxD) maxD = d;
+    }
+    return { W, H, cols, rows, delays, total: maxD + TILE_MS };
+  }
+  const ease = (t) => 1 - Math.pow(1 - t, 2); // ease-out: size falls fast then settles to a point
+
+  const oldL = document.getElementById("old"), newL = document.getElementById("new");
+  const canvas = document.getElementById("overlay"), ctx = canvas.getContext("2d");
+  const cssVar = (el, n) => getComputedStyle(el).getPropertyValue(n).trim();
+  let busy = false;
+
+  // Flash dots (arriving color) drawn on the thin canvas overlay for the mask/clip modes.
+  function dotFrame(g, t, color) {
+    ctx.clearRect(0, 0, g.W, g.H); ctx.fillStyle = color;
+    for (let j = 0; j < g.rows; j++) for (let i = 0; i < g.cols; i++) {
+      const lt = (t - g.delays[j * g.cols + i]) / TILE_MS;
+      if (lt < 0.75 || lt > 1.25) continue;
+      ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.25;
+      ctx.fillRect(i * CELL + CELL / 2 - 1.5, j * CELL + CELL / 2 - 1.5, 3, 3);
+    }
+    ctx.globalAlpha = 1;
+  }
+  function sizeCanvas() {
+    const dpr = devicePixelRatio || 1;
+    canvas.width = innerWidth * dpr; canvas.height = innerHeight * dpr;
+    canvas.style.width = innerWidth + "px"; canvas.style.height = innerHeight + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  // ---------- A1: SVG mask, one WAAPI animation per rect ----------
+  function buildMask(g) {
+    const grp = document.getElementById("maskrects");
+    grp.innerHTML = "";
+    const mask = grp.parentNode; mask.setAttribute("x", 0); mask.setAttribute("y", 0); mask.setAttribute("width", g.W); mask.setAttribute("height", g.H);
+    const frag = document.createDocumentFragment();
+    const rects = [];
+    for (let j = 0; j < g.rows; j++) for (let i = 0; i < g.cols; i++) {
+      const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      r.setAttribute("x", i * CELL); r.setAttribute("y", j * CELL); r.setAttribute("width", CELL); r.setAttribute("height", CELL);
+      frag.appendChild(r); rects.push(r);
+    }
+    grp.appendChild(frag);
+    return rects;
+  }
+  function runSvgMask(g, target, done) {
+    const rects = buildMask(g);
+    target.style.maskImage = "url(#m)"; target.style.webkitMaskImage = "url(#m)";
+    const anims = rects.map((r, k) => r.animate([{ transform: "scale(1)" }, { transform: "scale(0)" }], { delay: g.delays[k], duration: TILE_MS, easing: "ease-out", fill: "forwards" }));
+    const t0 = performance.now(), color = cssVar(newL, "--accent");
+    (function frame(now) {
+      const t = now - t0; dotFrame(g, t, color);
+      if (t < g.total) requestAnimationFrame(frame); else { anims.forEach((a) => a.cancel()); done(); }
+    })(t0);
+  }
+
+  // ---------- A2: clip-path: path() rebuilt every frame ----------
+  function clipPathAt(g, t) {
+    let s = "";
+    for (let j = 0; j < g.rows; j++) for (let i = 0; i < g.cols; i++) {
+      const lt = (t - g.delays[j * g.cols + i]) / TILE_MS;
+      if (lt >= 1) continue;
+      const size = lt <= 0 ? CELL : CELL * (1 - ease(lt));
+      const x = i * CELL + (CELL - size) / 2, y = j * CELL + (CELL - size) / 2;
+      s += `M${x.toFixed(1)} ${y.toFixed(1)}h${size.toFixed(1)}v${size.toFixed(1)}h-${size.toFixed(1)}z`;
+    }
+    return s ? `path("${s}")` : "inset(100%)";
+  }
+  function runClipPath(g, apply, done) {
+    const t0 = performance.now(), color = cssVar(newL, "--accent");
+    (function frame(now) {
+      const t = now - t0;
+      apply(clipPathAt(g, t)); dotFrame(g, t, color);
+      if (t < g.total) requestAnimationFrame(frame); else done();
+    })(t0);
+  }
+
+  // ---------- B: canvas overlay (solid tiles) ----------
+  function runCanvas(g, done) {
+    const fromBg = cssVar(oldL, "--bg"), toBg = cssVar(newL, "--bg"), color = cssVar(newL, "--accent");
+    canvas.style.zIndex = 5;
+    const t0 = performance.now();
+    (function frame(now) {
+      const t = now - t0;
+      ctx.clearRect(0, 0, g.W, g.H);
+      for (let j = 0; j < g.rows; j++) for (let i = 0; i < g.cols; i++) {
+        const lt = (t - g.delays[j * g.cols + i]) / TILE_MS;
+        if (lt <= 0) continue;
+        const x = i * CELL, y = j * CELL;
+        ctx.fillStyle = toBg; ctx.fillRect(x, y, CELL, CELL);
+        if (lt >= 1) continue;
+        const size = CELL * (1 - ease(lt));
+        ctx.fillStyle = fromBg; ctx.fillRect(x + (CELL - size) / 2, y + (CELL - size) / 2, size, size);
+        if (lt > 0.75) { ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.25; ctx.fillStyle = color; ctx.fillRect(x + CELL / 2 - 1.5, y + CELL / 2 - 1.5, 3, 3); ctx.globalAlpha = 1; }
+      }
+      if (t < g.total) requestAnimationFrame(frame);
+      else { oldL.style.visibility = "hidden"; canvas.style.transition = "opacity 250ms"; canvas.style.opacity = 0; setTimeout(() => { canvas.style.transition = ""; done(); }, 260); }
+    })(t0);
+  }
+
+  // ---------- drivers ----------
+  function finish(extra) { busy = false; extra = { hitAt40pct: window.__hit, ...extra }; ctx.clearRect(0, 0, innerWidth, innerHeight); stopMetrics(extra); }
+  function run(mode, cx, cy) {
+    if (busy) return; busy = true;
+    sizeCanvas();
+    const g = wave(cx, cy);
+    startMetrics(mode);
+    setTimeout(() => { const el = document.elementFromPoint(cx, cy); window.__hit = el ? (el.closest(".layer")?.id || el.tagName) : "none"; }, g.total * 0.4);
+    if (mode === "svgmask") {
+      runSvgMask(g, oldL, () => { oldL.style.visibility = "hidden"; oldL.style.maskImage = ""; oldL.style.webkitMaskImage = ""; finish(); });
+    } else if (mode === "clippath") {
+      runClipPath(g, (v) => { oldL.style.clipPath = v; }, () => { oldL.style.visibility = "hidden"; oldL.style.clipPath = ""; finish(); });
+    } else if (mode === "canvas") {
+      runCanvas(g, () => { canvas.style.opacity = 1; finish(); });
+    } else if (mode.startsWith("vt-")) {
+      if (!document.startViewTransition) { finish({ error: "no startViewTransition" }); return; }
+      const sheet = document.styleSheets[0];
+      const idx = sheet.insertRule("::view-transition-old(root) { }", sheet.cssRules.length);
+      const rule = sheet.cssRules[idx];
+      const vt = document.startViewTransition(() => { oldL.style.visibility = "hidden"; });
+      vt.ready.then(() => {
+        if (mode === "vt-plain") {
+          setTimeout(() => vt.skipTransition(), g.total);
+        } else if (mode === "vt-clippath") {
+          runClipPath(g, (v) => { rule.style.clipPath = v; }, () => { vt.skipTransition(); });
+        } else {
+          const rects = buildMask(g);
+          rule.style.maskImage = "url(#m)"; rule.style.webkitMaskImage = "url(#m)";
+          const anims = rects.map((r, k) => r.animate([{ transform: "scale(1)" }, { transform: "scale(0)" }], { delay: g.delays[k], duration: TILE_MS, easing: "ease-out", fill: "forwards" }));
+          const t0 = performance.now(), color = cssVar(newL, "--accent");
+          (function frame(now) { const t = now - t0; dotFrame(g, t, color); if (t < g.total) requestAnimationFrame(frame); else { anims.forEach((a) => a.cancel()); vt.skipTransition(); } })(t0);
+        }
+      }).catch((e) => finish({ error: String(e) }));
+      vt.finished.then(() => { sheet.deleteRule(idx); finish({ vtOldSupported: true }); });
+    }
+  }
+  function reset() { oldL.style.visibility = ""; oldL.style.clipPath = ""; oldL.style.maskImage = ""; oldL.style.webkitMaskImage = ""; canvas.style.opacity = 1; }
+  document.getElementById("reset").onclick = reset;
+  document.querySelectorAll("#ctl button[data-mode]").forEach((b) => { b.onclick = () => { reset(); requestAnimationFrame(() => run(b.dataset.mode, innerWidth * 0.55, 60)); }; });
+  document.getElementById("go").onclick = (e) => run(q.get("mode") || "canvas", e.clientX, e.clientY);
+  if (q.get("auto")) setTimeout(() => run(q.get("mode") || "canvas", innerWidth * 0.55, 60), 800);
+</script>
+</body>
+</html>

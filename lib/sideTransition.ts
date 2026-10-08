@@ -6,11 +6,14 @@ import { theme } from "@/config/theme";
  * route change completes. Pure DOM; the React glue is
  * components/effects/SideFlip.tsx.
  *
- * How the real content gets under the tiles: the departing page is frozen as
- * a View Transition snapshot (`::view-transition-old(root)`) while Next swaps
- * the route beneath it, and we drive that snapshot's `clip-path` every frame
- * with one `path()` made of every still-visible tile. The arriving page is
- * the live document, so what shows through each hole is real content.
+ * How the real content gets under the tiles: on click the departing page's
+ * DOM is cloned into a fixed overlay (same CSS, same scroll offset), Next
+ * swaps the route beneath it, and we drive the overlay's `clip-path` every
+ * frame with one `path()` made of every still-visible tile (the "A2" approach
+ * from the spike harness, docs/prototypes/transition-harness/). The arriving
+ * page is the live document, so what shows through each hole is real
+ * content. No View Transitions API: that route (A3) froze a snapshot the
+ * browser then dropped around the route change in Chrome, Brave and Safari.
  */
 
 export type Side = "a" | "b";
@@ -65,6 +68,8 @@ export interface Wave {
   delays: Float32Array;
   /** When the last tile has shrunk to a point. */
   total: number;
+  /** Per-tile shrink duration (shorter on phones). */
+  tileMs: number;
 }
 
 /** Ripple timing for every tile covering a width×height viewport, from an origin in CSS px. */
@@ -75,7 +80,8 @@ export function buildWave(
   originY: number,
 ): Wave {
   const cell = theme.cell;
-  const { sideMsPerCell, sideJitterCells, sideTileMs } = theme.timing;
+  const { sideMsPerCell, sideJitterCells } = theme.timing;
+  const sideTileMs = tileMsFor(width);
   const cols = Math.ceil(width / cell);
   const rows = Math.ceil(height / cell);
   const ci = originX / cell - 0.5;
@@ -93,7 +99,12 @@ export function buildWave(
       if (d > max) max = d;
     }
   }
-  return { cell, cols, rows, delays, total: max + sideTileMs };
+  return { cell, cols, rows, delays, total: max + sideTileMs, tileMs: sideTileMs };
+}
+
+/** Phones get shorter tiles: fewer cells to cross, so the wave stays brisk. */
+export function tileMsFor(width: number): number {
+  return width < 768 ? Math.round(theme.timing.sideTileMs * 0.75) : theme.timing.sideTileMs;
 }
 
 /** Tile size falls fast and settles into the point (ease-out). */
@@ -107,7 +118,7 @@ const easeOut = (t: number) => 1 - (1 - t) * (1 - t);
  */
 export function clipPathAt(wave: Wave, t: number): string {
   const { cell, cols, rows, delays } = wave;
-  const tileMs = theme.timing.sideTileMs;
+  const tileMs = wave.tileMs;
   let d = "";
   for (let j = 0; j < rows; j++) {
     for (let i = 0; i < cols; i++) {
@@ -141,7 +152,7 @@ export function paintFlashes(
   height: number,
 ): void {
   const { cell, cols, rows, delays } = wave;
-  const tileMs = theme.timing.sideTileMs;
+  const tileMs = wave.tileMs;
   ctx.clearRect(0, 0, width, height);
   ctx.fillStyle = color;
   for (let j = 0; j < rows; j++) {
@@ -221,11 +232,6 @@ function makeStyle(css: string): HTMLStyleElement {
   return style;
 }
 
-/** The view-transition pseudo tree with its default crossfade and blending turned off. */
-const VT_RESET =
-  "::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}" +
-  "::view-transition-image-pair(root){isolation:auto}";
-
 export interface WaveOptions {
   /** Click point (or link centre) in viewport px. */
   origin: { x: number; y: number };
@@ -234,9 +240,41 @@ export interface WaveOptions {
   navigate: () => Promise<void>;
 }
 
+/** Elements never worth cloning into the overlay. */
+const SKIP_CLONE = "script,style,link,noscript,canvas,[data-side-flip]";
+
 /**
- * The shrink wave. Freezes the departing page as the view-transition "old"
- * snapshot, swaps the route beneath it, then clips the snapshot tile by tile.
+ * A static copy of the current page in a fixed overlay, at the same scroll
+ * offset. Fixed descendants (the patch grid, the B nav) keep their viewport
+ * position because the overlay is scrolled, not transformed.
+ */
+function cloneDeparting(bg: string): HTMLDivElement {
+  const overlay = document.createElement("div");
+  overlay.setAttribute("aria-hidden", "true");
+  overlay.setAttribute("data-side-flip", "");
+  overlay.style.cssText = `${FIXED_FULL};overflow:hidden;background:${bg};will-change:clip-path`;
+  // `inert` keeps the copy out of focus order and assistive tech.
+  overlay.setAttribute("inert", "");
+  for (const child of Array.from(document.body.children)) {
+    if (child.matches(SKIP_CLONE)) continue;
+    const copy = child.cloneNode(true) as HTMLElement;
+    copy.querySelectorAll(SKIP_CLONE).forEach((n) => n.remove());
+    overlay.appendChild(copy);
+  }
+  document.body.appendChild(overlay);
+  overlay.scrollTop = window.scrollY;
+  overlay.scrollLeft = window.scrollX;
+  return overlay;
+}
+
+/** Frames longer than this count as stalls; several in a row abort the wave. */
+const SLOW_FRAME_MS = 50;
+const SLOW_FRAMES_TO_BAIL = 6;
+
+/**
+ * The shrink wave. Clones the departing page over the live document, swaps
+ * the route beneath it, then clips the clone tile by tile. Until the arriving
+ * page has mounted, the holes show its background; after, its real content.
  * Everything it adds to the DOM is removed when it ends.
  */
 export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions): Promise<void> {
@@ -246,57 +284,97 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
   const width = window.innerWidth;
   const height = window.innerHeight;
   const wave = buildWave(width, height, origin.x, origin.y);
-  const color = signatureColor(arriving, readSideTokens(arriving));
+  const departing: Side = arriving === "a" ? "b" : "a";
+  const departingBg = readSideTokens(departing).bg;
+  const arrivingTokens = readSideTokens(arriving);
+  const color = signatureColor(arriving, arrivingTokens);
 
-  const style = makeStyle(VT_RESET);
-  const sheet = style.sheet as CSSStyleSheet;
-  const rule = sheet.cssRules[
-    sheet.insertRule("::view-transition-old(root){}", sheet.cssRules.length)
-  ] as CSSStyleRule;
-  rule.style.clipPath = clipPathAt(wave, 0);
+  // Under the overlay: the arriving background (until the new route is in),
+  // then only the dot flashes.
   const canvas = makeCanvas(width, height);
+  canvas.style.zIndex = String(OVERLAY_Z - 1);
   document.body.appendChild(canvas);
+  const ctx = canvas.getContext("2d");
+  let arrived = false;
+
+  const overlay = cloneDeparting(departingBg);
+  overlay.style.clipPath = clipPathAt(wave, 0);
 
   let cleaned = false;
   const cleanup = () => {
     if (cleaned) return;
     cleaned = true;
     clearTimeout(safety);
+    overlay.remove();
     canvas.remove();
-    style.remove();
     inFlight = false;
   };
   // Belt and braces: nothing may outlive the transition (hidden tab, back
-  // button mid-wave, a skipped transition).
+  // button mid-wave, a navigation that never resolves).
   const safety = setTimeout(cleanup, wave.total + 6000);
   window.addEventListener("pagehide", cleanup, { once: true });
 
+  const paint = (t: number) => {
+    if (!ctx) return;
+    if (!arrived) {
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = arrivingTokens.bg;
+      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = color;
+      // paintFlashes clears the canvas, so draw the flashes by hand here.
+      const { cell, cols, rows, delays, tileMs } = wave;
+      for (let j = 0; j < rows; j++) {
+        for (let i = 0; i < cols; i++) {
+          const lt = (t - delays[j * cols + i]) / tileMs;
+          if (lt < 0.7 || lt > 1.3) continue;
+          ctx.globalAlpha = 1 - Math.abs(lt - 1) / 0.3;
+          ctx.fillRect(i * cell + cell / 2 - 1.5, j * cell + cell / 2 - 1.5, 3, 3);
+        }
+      }
+      ctx.globalAlpha = 1;
+    } else {
+      paintFlashes(ctx, wave, t, color, width, height);
+    }
+  };
+
   try {
-    const transition = document.startViewTransition(navigate);
-    await transition.ready;
-    // Hold the snapshot on screen for the wave; our frame loop does the clipping.
-    document.documentElement.animate([{ opacity: 1 }, { opacity: 1 }], {
-      duration: wave.total + 500,
-      pseudoElement: "::view-transition-old(root)",
+    // The route change starts at once; the overlay hides the swap.
+    const nav = navigate().then(() => {
+      arrived = true;
     });
-    const ctx = canvas.getContext("2d");
-    const t0 = performance.now();
     await new Promise<void>((resolve) => {
+      // Frame time, not wall time: a stalled frame (the arriving page laying
+      // out, image decode) advances the wave by at most one short step, and
+      // a run of stalls gives up on the wave rather than stutter through it.
+      let last = 0;
+      let t = 0;
+      let slow = 0;
       const frame = (now: number) => {
-        const t = now - t0;
-        rule.style.clipPath = clipPathAt(wave, t);
-        if (ctx) paintFlashes(ctx, wave, t, color, width, height);
+        if (last) {
+          const dt = now - last;
+          if (dt > SLOW_FRAME_MS) slow++;
+          t += Math.min(dt, SLOW_FRAME_MS);
+        }
+        last = now;
+        if (slow >= SLOW_FRAMES_TO_BAIL) {
+          // Too janky here: fade the copy out instead.
+          overlay.style.clipPath = "none";
+          overlay.style.transition = `opacity ${theme.timing.sideFadeMs}ms ease`;
+          overlay.style.opacity = "0";
+          if (ctx) ctx.clearRect(0, 0, width, height);
+          setTimeout(resolve, theme.timing.sideFadeMs);
+          return;
+        }
+        overlay.style.clipPath = clipPathAt(wave, t);
+        paint(t);
         if (t < wave.total) requestAnimationFrame(frame);
         else resolve();
       };
       requestAnimationFrame(frame);
     });
-    // Everything is clipped away; ending the transition now is seamless.
-    transition.skipTransition();
-    await transition.finished;
+    await nav;
   } catch {
-    // The transition was skipped (hidden document, etc.). The route change
-    // still happened; just make sure nothing is left behind.
+    /* the route change still happened; just make sure nothing is left behind */
   } finally {
     cleanup();
   }
