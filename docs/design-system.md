@@ -92,6 +92,43 @@ Footer line typed out on scroll-into-view, written as a model-readout `tag`
 for the person. Text lives in `content/site.ts` (`tag`, e.g.
 `> tag: … [0.98]`).
 
+### SideFlip (`SideLink`)
+The door between the two sides (`photos` in the A nav, the footer link on
+B). On click the 24px patch grid shrinks to points in a ripple from the
+click, revealing the other side's real page underneath, then the Next route
+change completes (`router.push`, arriving route prefetched on mount/hover).
+At the instant each tile is smallest it flashes a 3px dot in the arriving
+side's signature color: B's `--fg` going in (B has no accent), A's blue
+coming back. Same move both directions. Timings in `theme.timing`:
+`sideMsPerCell` 12, `sideTileMs` 320, `sideJitterCells` 1 (≈1.1s at
+1440×900, ≈1.6s at 2560×1440), `sideFadeMs` 250 for the fallbacks.
+
+Shipped approach: a View Transition. `document.startViewTransition` freezes
+the departing page as `::view-transition-old(root)`, Next swaps the route
+beneath it, and each frame sets that snapshot's `clip-path` to one `path()`
+of every still-visible tile (`lib/sideTransition.ts`). The arriving page is
+live, so the holes show real content. Measured with rAF frame sampling in
+the built-in Chromium at 120Hz: 118–120 fps, p95 ≤ 9.3 ms, no long tasks,
+at both 1440×900 (2.3k tiles) and 2560×1440 (6.4k tiles). Rejected: an SVG
+`<mask>` of per-tile WAAPI animations (73 fps, 25 ms p95 and an 88 ms long
+task at 6.4k tiles; and `mask-image: url(#…)` does not resolve from the
+view-transition pseudo-element at all), and the proven canvas overlay from
+`docs/prototypes/3-flipdot-wave.html` (equally cheap, but it shrinks solid
+tiles, not content; kept out of the bundle).
+
+Fallbacks: `prefers-reduced-motion`, plaintext mode, or a browser without
+View Transitions get a 250ms crossfade (the browser's own for VT, a fade
+through the arriving `--bg` otherwise). Modifier/middle clicks are normal
+links (new tab). Enter on a focused link ripples from the link's centre.
+Clicks during a transition are ignored; a direct load of `/photo` never
+animates; back/forward never animates and nothing is left in the DOM (the
+canvas and style the effect adds are removed when it ends, on `pagehide`,
+and by a safety timer). On `photos.sean-fang.com` the B door can't client-
+navigate to `/` (the host rewrite maps it back onto B), so `SideLink`
+detects the rewritten host and leaves via a crossfade into a full load of
+`hardHref`. Touch taps on the A nav still go through `PatchHighlight`'s
+tap-wave, which hard-loads the href after 300ms (no shrink wave on touch).
+
 ### Plaintext mode
 A master footer toggle (`lib/plainStore.ts`, `PlainToggle`) that disables
 **every dynamic flourish at once**: cursor tracker, link highlights, the
