@@ -39,5 +39,21 @@ export const theme = {
     diffusionMsPerStep: 55,
     /** VLM footer caption typing speed. */
     captionMsPerChar: 28,
+    /**
+     * A↔B side transition (SideFlip): the patch grid shrinks to points in a
+     * ripple from the click. Delay per cell of distance from the click point
+     * (the lab settled on 11–14ms; 12 reads as a wave, not a wipe).
+     */
+    sideMsPerCell: 12,
+    /** How long one tile takes to shrink from full size to a point. */
+    sideTileMs: 320,
+    /** Random extra delay per tile, in cells, so the front isn't a clean ring. */
+    sideJitterCells: 1,
+    /**
+     * Fade-out of the finished overlay once the arriving route has rendered
+     * under it. Also the crossfade length used by the reduced-motion and
+     * plaintext-mode fallbacks.
+     */
+    sideFadeMs: 250,
   },
 } as const;

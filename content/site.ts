@@ -56,6 +56,7 @@ export const site: SiteContent = {
     { label: "about", href: "#about" },
     { label: "experience", href: "#experience" },
     { label: "projects", href: "#projects" },
+    { label: "photos", href: "/photo" },
     { label: "contact", href: "#contact" },
   ],
   socials: [

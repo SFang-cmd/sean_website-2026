@@ -13,6 +13,10 @@
 | `timing.diffusionSteps` | `24` | Hero reveal step count (the `t=` counter starts here). |
 | `timing.diffusionMsPerStep` | `55` | Hero reveal speed (total ≈ steps × this). |
 | `timing.captionMsPerChar` | `28` | Footer `tag` typing speed (the `VlmCaption` effect). |
+| `timing.sideMsPerCell` | `12` | A↔B shrink wave (`SideFlip`): delay per cell of distance from the click. |
+| `timing.sideTileMs` | `320` | How long one tile takes to shrink to a point. |
+| `timing.sideJitterCells` | `1` | Random extra delay per tile, in cells, so the front isn't a clean ring. |
+| `timing.sideFadeMs` | `250` | Crossfade length for the reduced-motion / plaintext / no-View-Transitions fallbacks. |
 
 ## Accent color
 
