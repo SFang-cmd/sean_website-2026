@@ -25,4 +25,4 @@ DEVLOG.md
 
 # Photo originals (exported from Lightroom) — large, local-only. The optimized
 # renditions in public/photos/ and content/photos.json are what gets committed.
-photos/
+/photos/

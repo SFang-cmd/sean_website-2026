@@ -1,0 +1,46 @@
+/* The streams (docs/prototypes/b-home.html). Each shot is one absolutely
+   positioned layer with ONE scroll-driven transform; z-index = sequence order
+   so the three streams interleave. `isolation` keeps those z-indices inside
+   the river, so the fixed nav and the sections after it stack independently. */
+.river {
+  position: relative;
+  height: var(--river-h, 300vh);
+  overflow-x: clip; /* shots drift sideways; never widen the page */
+  isolation: isolate;
+}
+/* Until the first layout pass has placed the shots they have no box, so
+   lazy images don't all load while stacked at the top of the river. */
+.river:not([data-ready]) .shot {
+  display: none;
+}
+.shot {
+  position: absolute;
+  margin: 0;
+  will-change: transform;
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* Scroll-driven version: pure CSS, compositor-only. Longhands on purpose —
+   the `animation` shorthand resets `animation-timeline` and the drift snaps. */
+@supports (animation-timeline: scroll()) {
+  .shot[data-mode="css"] {
+    animation-name: drift;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: auto;
+    animation-timeline: scroll(root);
+  }
+  @keyframes drift {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(var(--dx), var(--dy), 0);
+    }
+  }
+}
