@@ -34,7 +34,7 @@ Each phase lists what's in it, what it depends on, and who does it. Phases marke
 ### Phase 0: schema + scaffolding (one short session, me)
 Defines the contracts the parallel phases build against.
 - `content/photos.csv` columns: `file, title, place, year, series, home, order, alt`.
-- `content/photos.json` shape (generated): `{ id, file, srcset: {avif, jpg} per width, width, height, blur, title, place, year, series, home, order, alt }`.
+- `content/photos.json` shape (generated): `{ id, file, width, height, renditions: [{ width, avif, jpg }], blur, title, place, year, series, home, order, alt }`.
 - `content/series.ts`: `{ slug, name, lede, order }[]`.
 - Route skeletons: `app/photo/layout.tsx` (B theme scope: `.b` tokens, Instrument Serif via `next/font/google`), `app/photo/page.tsx`, `app/photo/gallery/page.tsx` as empty shells.
 - `.gitignore`: `photos/`.
