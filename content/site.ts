@@ -56,8 +56,9 @@ export const site: SiteContent = {
     { label: "about", href: "#about" },
     { label: "experience", href: "#experience" },
     { label: "projects", href: "#projects" },
-    { label: "photos", href: "/photo" },
     { label: "contact", href: "#contact" },
+    // The door: last, set in the B side's serif, runs the shrink wave.
+    { label: "off the clock", href: "/photo" },
   ],
   socials: [
     { label: "GitHub", href: "https://github.com/SFang-cmd" },

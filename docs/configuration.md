@@ -13,6 +13,10 @@
 | `timing.diffusionSteps` | `24` | Hero reveal step count (the `t=` counter starts here). |
 | `timing.diffusionMsPerStep` | `55` | Hero reveal speed (total ≈ steps × this). |
 | `timing.captionMsPerChar` | `28` | Footer `tag` typing speed (the `VlmCaption` effect). |
+| `door.rows` | `3` | The door's highlight block height in cells, centred on the link. |
+| `door.flickerPerSec` | `4` | Idle flicker ticks per second (randomised ±50%). |
+| `door.flickerCells` | `5` | Cells lit per flicker tick. |
+| `door.flickerAlpha` | `0.15` | Peak alpha of a flickering cell. |
 | `timing.sideMsPerCell` | `12` | A↔B shrink wave (`SideFlip`): delay per cell of distance from the click. |
 | `timing.sideTileMs` | `320` | How long one tile takes to shrink to a point. |
 | `timing.sideJitterCells` | `1` | Random extra delay per tile, in cells, so the front isn't a clean ring. |

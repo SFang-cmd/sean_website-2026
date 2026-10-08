@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Door lab 4 · the link the model can't stop looking at</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #e9e8e4; color: #191918; font: 13px/1.5 system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .lede { color: #555; margin: 0 0 16px; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+  .ctl { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin: 0 0 18px; font: 12px ui-monospace, Menlo, monospace; color: #555; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(720px, 1fr)); gap: 24px; align-items: start; }
+  .card { background: #fff; border: 1px solid #ccc; }
+  .meta { padding: 8px 10px; font: 12px/1.5 ui-monospace, Menlo, monospace; color: #555; border-top: 1px solid #ddd; }
+  .meta b { color: #191918; }
+
+  .vp { position: relative; height: 300px; overflow: hidden; --cell: 24px;
+        --bg: #fcfcfa; --fg: #191918; --muted: #6b6b68; --faint: #a3a39e; --accent: #185fa5; --accent-rgb: 24,95,165;
+        --grid: rgba(128,128,128,0.13); --line: rgba(128,128,128,0.28); background: var(--bg); color: var(--fg); }
+  .vp.dark { --bg: #121211; --fg: #ececea; --muted: #a0a09b; --faint: #6e6e69; --accent: #378add; --accent-rgb: 55,138,221; --grid: rgba(140,140,140,0.17); }
+  .side { position: absolute; inset: 0; }
+  .side.a { background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: var(--cell) var(--cell); }
+  .side.b { background: #f7f5f0; color: #141311; display: none; }
+  .vp.dark .side.b { background: #141414; color: #ecebe7; }
+  .vp.flipped .side.a { display: none; } .vp.flipped .side.b { display: block; }
+  .col { position: absolute; left: 72px; right: 72px; top: 0; z-index: 2; }
+  .nav { display: flex; justify-content: space-between; align-items: center; height: 24px; margin-top: 48px; }
+  .nav .lead { display: flex; align-items: baseline; gap: 24px; }
+  .nav .name { font-size: 14px; font-weight: 500; white-space: nowrap; }
+  .nav .links { display: flex; gap: 24px; font-size: 13px; color: var(--muted); align-items: baseline; }
+  .nav .links span { cursor: pointer; }
+  .door { font-size: 13px; color: var(--muted); cursor: pointer; white-space: nowrap; transition: color 200ms; position: relative; z-index: 3; }
+  .door.mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: .08em; }
+  .door.serif { font-family: "Instrument Serif", Georgia, serif; font-size: 17px; letter-spacing: 0; color: var(--fg); }
+  .door.serif.italic { font-style: italic; }
+  .door:hover { color: var(--accent); }
+  .hero { font-size: 22px; font-weight: 500; line-height: 1.35; max-width: 30ch; margin: 48px 0 0; }
+  .mono { font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: .08em; color: var(--faint); }
+  .rows { margin-top: 36px; color: var(--muted); font-size: 12px; }
+  .rows div { padding: 8px 0; border-top: 1px solid var(--line); display: flex; justify-content: space-between; }
+  .b .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+  .b .nav .name { font-size: 20px; }
+  .b .hero { font-size: 34px; line-height: 1; max-width: 16ch; font-weight: 400; }
+  .b .readout { position: absolute; left: 72px; bottom: 20px; cursor: pointer; }
+
+  /* the link's patch group: cells covering the link, portal'd into the side.a layer under the text */
+  .cell { position: absolute; width: var(--cell); height: var(--cell); background: rgba(var(--accent-rgb), 1); opacity: 0; z-index: 1;
+          transition: opacity 260ms ease; pointer-events: none; }
+  .cell.edge { box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.35); }
+  canvas.wave { position: absolute; inset: 0; z-index: 9; pointer-events: none; opacity: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The link the model can't stop looking at</h1>
+  <p class="lede">the door is a normal nav link · its highlight cells flicker sparsely while idle · hover = the site's usual link-highlight ripple · click = the shrink wave</p>
+  <div class="ctl">
+    <label>flicker rate <input type="range" id="rate" min="1" max="10" value="4" /><span id="rateV">4</span>/s</label>
+    <label>flicker opacity <input type="range" id="fop" min="4" max="20" value="10" /><span id="fopV">0.10</span></label>
+    <label>cells per tick <input type="range" id="count" min="1" max="4" value="2" /><span id="countV">2</span></label>
+    <label><input type="checkbox" id="dark" /> dark mode</label>
+  </div>
+  <div class="cards" id="cards"></div>
+</div>
+<script>
+  const CARDS = [
+    { key:"0", name:"0 · “off the clock” in the other side's serif, after contact, 3 tall, 2× flicker", text:"off the clock", serif:true, where:"end", tall:true, dense:true,
+      desc:"No > tag. The label is set in Instrument Serif (the B side's face) so it stands out as the one thing on A that belongs to B. The 3-row block fires twice as often as the other cards, nothing else changed." },
+    { key:"0b", name:"0b · same, italic", text:"off the clock", serif:true, italic:true, where:"end", tall:true, dense:true,
+      desc:"Same as 0 with the serif in italic, which is how the B side sets photo titles." },
+    { key:"1", name:"1 · “off the clock”, sans, next to the name", text:"off the clock", mono:false, where:"lead",
+      desc:"Reads as part of the menu, and points at the About line (“Off the clock I'm flying drones, shooting photos…”)." },
+    { key:"2", name:"2 · “fun stuff”, sans, next to the name", text:"fun stuff", mono:false, where:"lead", desc:"Plainer word, same mechanics." },
+    { key:"3", name:"3 · “> off the clock”, mono readout, next to the name", text:"> off the clock", mono:true, where:"lead",
+      desc:"The footer's instrument voice. Marks it as the odd one out before you even see the cells." },
+    { key:"4", name:"4 · “off the clock”, sans, at the end of the menu", text:"off the clock", mono:false, where:"menu",
+      desc:"Where `photos` was. Same door, in the menu's own order; the name stands alone on the left." },
+  ];
+  const aSide = (c) => `
+    <div class="col">
+      <div class="nav">
+        <span class="lead"><span class="name">Sean Fang</span>${c.where === "lead" ? `<span class="door ${c.mono ? "mono" : ""}" data-go="b">${c.text}</span>` : ""}</span>
+        <span class="links"><span>about</span><span>experience</span><span>projects</span>${c.where === "menu" ? `<span class="door ${c.mono ? "mono" : ""}" data-go="b">${c.text}</span>` : ""}<span>contact</span>${c.where === "end" ? `<span class="door ${c.mono ? "mono" : ""} ${c.serif ? "serif" : ""} ${c.italic ? "italic" : ""}" data-go="b">${c.text}</span>` : ""}</span>
+      </div>
+      <p class="hero">I build machine learning models and the systems that run them at scale.</p>
+      <div class="rows"><div><span>Google · Vision models for YouTube</span><span class="mono">2026</span></div><div><span>Anthropic · Claude Campus Ambassador</span><span class="mono">2025–26</span></div></div>
+    </div>`;
+  const bSide = `
+    <div class="col">
+      <div class="nav"><span class="lead"><span class="name serif">Sean Fang</span></span><span class="links"><span>Gallery</span><span>Work with me</span></span></div>
+      <p class="hero serif">The rest of the time I do the looking myself.</p>
+    </div>
+    <div class="readout mono" data-go="a">engineering → (click to come back)</div>`;
+
+  const $ = (id) => document.getElementById(id);
+  const settings = () => ({ rate: +$("rate").value, fop: +$("fop").value / 100, count: +$("count").value });
+  ["rate","fop","count"].forEach((k) => $(k).oninput = () => { $(k+"V").textContent = k === "fop" ? (+$(k).value/100).toFixed(2) : $(k).value; });
+
+  const cards = CARDS.map((c) => {
+    const el = document.createElement("div"); el.className = "card";
+    el.innerHTML = `<div class="vp"><div class="side a">${aSide(c)}</div><div class="side b">${bSide}</div><canvas class="wave"></canvas></div>
+      <div class="meta"><b>${c.name}</b><br>${c.desc}</div>`;
+    $("cards").appendChild(el);
+    const vp = el.querySelector(".vp"), door = el.querySelector(".door"), layer = el.querySelector(".side.a");
+
+    // cellsForRect: every 24px cell the link's box touches (same rule as lib/grid.ts)
+    let cells = [];
+    function build() {
+      cells.forEach((x) => x.el.remove()); cells = [];
+      const r = door.getBoundingClientRect(), v = vp.getBoundingClientRect();
+      const x0 = Math.floor((r.left - v.left) / 24), x1 = Math.ceil((r.right - v.left) / 24);
+      let y0 = Math.floor((r.top - v.top) / 24), y1 = Math.ceil((r.bottom - v.top) / 24);
+      if (c.tall) {                                          // exactly 3 rows, centred on the link's midline
+        const mid = Math.floor(((r.top + r.bottom) / 2 - v.top) / 24);
+        y0 = mid - 1; y1 = mid + 2;
+      }
+      for (let j = y0; j < y1; j++) for (let i = x0; i < x1; i++) {
+        const d = document.createElement("i"); d.className = "cell" + ((i === x0 || i === x1 - 1 || j === y0 || j === y1 - 1) ? " edge" : "");
+        d.style.left = i * 24 + "px"; d.style.top = j * 24 + "px"; layer.appendChild(d);
+        const centre = !c.tall || (j > y0 && j < y1 - 1);
+        cells.push({ el: d, i, j, lit: 0.09 + Math.random() * 0.07, centre });
+      }
+    }
+    build();
+    addEventListener("resize", build);                       // keep the cell block on the link if the window changes
+    document.fonts && document.fonts.ready.then(build);      // and after the mono font swaps in
+    let hovered = false, found = false;
+
+    // idle: sparse flicker across the link's own cells
+    function flicker() {
+      const s = settings();
+      if (!hovered && !found && cells.length) {
+        for (let n = 0; n < s.count; n++) {
+          const cell = cells[Math.floor(Math.random() * cells.length)];
+          cell.el.style.opacity = s.fop * (0.6 + Math.random() * 0.8);
+          setTimeout(() => { if (!hovered) cell.el.style.opacity = 0; }, 180 + Math.random() * 260);
+        }
+      }
+      // `dense` cards simply fire twice as often
+      setTimeout(flicker, 1000 / (c.dense ? s.rate * 2 : s.rate) * (0.5 + Math.random()));
+    }
+    flicker();
+
+    // hover: the site's PatchHighlight — ripple from the cursor entry cell, ≥180ms total, per-cell opacity 0.09–0.16
+    door.addEventListener("pointerenter", (e) => {
+      hovered = true;
+      const v = vp.getBoundingClientRect(), ei = (e.clientX - v.left) / 24, ej = (e.clientY - v.top) / 24;
+      const maxD = Math.max(...cells.map((c) => Math.hypot(c.i + .5 - ei, c.j + .5 - ej)));
+      const msPerCell = Math.max(45, 180 / Math.max(maxD, 1));
+      cells.forEach((c) => {
+        const d = Math.hypot(c.i + .5 - ei, c.j + .5 - ej);
+        c.el.style.transitionDelay = (d * msPerCell) + "ms"; c.el.style.opacity = c.lit;
+      });
+    });
+    door.addEventListener("pointerleave", () => {
+      hovered = false;
+      cells.forEach((c) => { c.el.style.transitionDelay = "0ms"; c.el.style.opacity = 0; });
+    });
+    door.addEventListener("click", () => { found = true; });
+    return { vp };
+  });
+  $("dark").onchange = (e) => cards.forEach((c) => c.vp.classList.toggle("dark", e.target.checked));
+
+  const CELL = 24, MS_PER_CELL = 13, TILE_MS = 320;
+  function wave(vp, cx, cy, toB) {
+    const canvas = vp.querySelector("canvas.wave"), ctx = canvas.getContext("2d");
+    const W = vp.clientWidth, H = vp.clientHeight, dpr = devicePixelRatio || 1;
+    canvas.width = W * dpr; canvas.height = H * dpr; canvas.style.width = W + "px"; canvas.style.height = H + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const cs = getComputedStyle(vp), dark = vp.classList.contains("dark");
+    const aBg = cs.getPropertyValue("--bg").trim(), bBg = dark ? "#141414" : "#f7f5f0";
+    const from = toB ? aBg : bBg, to = toB ? bBg : aBg, flash = toB ? (dark ? "#ecebe7" : "#141311") : cs.getPropertyValue("--accent").trim();
+    const cols = Math.ceil(W / CELL), rows = Math.ceil(H / CELL), ci = cx / CELL, cj = cy / CELL;
+    const delays = new Float32Array(cols * rows); let maxD = 0;
+    for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) { const d = Math.hypot(i + .5 - ci, j + .5 - cj) + Math.random(); delays[j * cols + i] = d * MS_PER_CELL; maxD = Math.max(maxD, d); }
+    const total = maxD * MS_PER_CELL + TILE_MS, t0 = performance.now();
+    canvas.style.opacity = 1;
+    (function frame(now) {
+      const t = now - t0; ctx.clearRect(0, 0, W, H);
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        const lt = (t - delays[j * cols + i]) / TILE_MS; if (lt <= 0) continue;
+        const x = i * CELL, y = j * CELL;
+        ctx.fillStyle = to; ctx.fillRect(x, y, CELL, CELL);
+        if (lt >= 1) continue;
+        const s = CELL * (1 - lt);
+        ctx.fillStyle = from; ctx.fillRect(x + (CELL - s) / 2, y + (CELL - s) / 2, s, s);
+        if (lt > 0.8) { ctx.globalAlpha = (lt - 0.8) / 0.2; ctx.fillStyle = flash; ctx.fillRect(x + CELL / 2 - 1.5, y + CELL / 2 - 1.5, 3, 3); ctx.globalAlpha = 1; }
+      }
+      if (t < total) requestAnimationFrame(frame);
+      else { vp.classList.toggle("flipped", toB); canvas.style.transition = "opacity 250ms"; canvas.style.opacity = 0; setTimeout(() => canvas.style.transition = "", 260); }
+    })(t0);
+  }
+  document.addEventListener("click", (e) => {
+    const go = e.target.closest("[data-go]"); if (!go) return;
+    const vp = go.closest(".vp"), r = vp.getBoundingClientRect(), g = go.getBoundingClientRect();
+    wave(vp, g.left + g.width / 2 - r.left, g.top + g.height / 2 - r.top, go.dataset.go === "b");
+  });
+</script>
+</body>
+</html>

@@ -26,6 +26,23 @@ export const theme = {
     plainMode: false,
   },
 
+  /**
+   * The door: the one nav link ("off the clock") whose highlight never fully
+   * rests. Idle, a few of its cells flicker; hover is the normal ripple; click
+   * runs the A↔B shrink wave (SideFlip). Flicker stops once the visitor has
+   * used the door (localStorage `door-found`).
+   */
+  door: {
+    /** Highlight block height in cells, centred on the link (text row ± 1). */
+    rows: 3,
+    /** Average flicker ticks per second (randomised ±50%). Lab: slider 2 on the 2× card. */
+    flickerPerSec: 4,
+    /** Cells lit per tick. */
+    flickerCells: 5,
+    /** Peak alpha of a flickering cell (hover cells use 0.09–0.16). */
+    flickerAlpha: 0.15,
+  },
+
   timing: {
     /** Patch-wave ripple: delay per cell of distance from the cursor entry point. */
     waveMsPerCell: 45,

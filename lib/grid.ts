@@ -27,11 +27,22 @@ export function cellsForRect(
   rect: DOMRect,
   pad = 3,
   origin?: { x: number; y: number },
+  /**
+   * Force exactly this many rows, centred on the rect's midline, instead of
+   * whichever rows the rect happens to touch. Used by the door (3 rows) so a
+   * taller typeface can't change the block's height.
+   */
+  rows?: number,
 ): PatchCell[] {
   const x0 = Math.floor((rect.left - pad) / CELL);
   const x1 = Math.ceil((rect.right + pad) / CELL);
-  const y0 = Math.floor((rect.top - pad) / CELL);
-  const y1 = Math.ceil((rect.bottom + pad) / CELL);
+  let y0 = Math.floor((rect.top - pad) / CELL);
+  let y1 = Math.ceil((rect.bottom + pad) / CELL);
+  if (rows && rows > 0) {
+    const mid = Math.floor((rect.top + rect.height / 2) / CELL);
+    y0 = mid - Math.floor(rows / 2);
+    y1 = y0 + rows;
+  }
 
   const ox = (origin?.x ?? rect.left) / CELL;
   const oy = (origin?.y ?? rect.top + rect.height / 2) / CELL;
