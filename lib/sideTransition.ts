@@ -338,10 +338,17 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
   };
 
   try {
-    // The route change starts at once; the overlay hides the swap.
-    const nav = navigate().then(() => {
-      arrived = true;
-    });
+    // The overlay hides the swap, so the route change can start whenever.
+    // Give the ripple a short head start first: mounting the arriving page
+    // blocks painting for a beat, and it reads better once the wave is
+    // visibly underway than as a hitch at the very start.
+    const nav = new Promise<void>((resolve) =>
+      setTimeout(resolve, theme.timing.sideNavHeadStartMs),
+    )
+      .then(navigate)
+      .then(() => {
+        arrived = true;
+      });
     await new Promise<void>((resolve) => {
       // Frame time, not wall time: a stalled frame (the arriving page laying
       // out, image decode) advances the wave by at most one short step, and

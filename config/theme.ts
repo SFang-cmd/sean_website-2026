@@ -72,5 +72,11 @@ export const theme = {
      * plaintext-mode fallbacks.
      */
     sideFadeMs: 250,
+    /**
+     * Head start the ripple gets before the route change begins. Mounting the
+     * arriving page blocks painting briefly; with the wave already moving
+     * that reads as a beat, not a stall at the click.
+     */
+    sideNavHeadStartMs: 220,
   },
 } as const;

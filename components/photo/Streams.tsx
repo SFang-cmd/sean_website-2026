@@ -23,6 +23,9 @@ import styles from "./Streams.module.css";
 
 // Angle sign/multiplier, lane across the width, vertical speed (1 = the page's
 // speed; the (2 − speed) factor below is what makes the streams parallax).
+/** Shots mounted immediately; the rest follow after MOUNT_REST_AFTER_MS. */
+const INITIAL_SHOTS = 8;
+const MOUNT_REST_AFTER_MS = 400;
 const STREAMS = [
   { angleMul: +1.0, lane: 0.42, speed: 1.0 },
   { angleMul: -1.0, lane: 0.58, speed: 0.86 },
@@ -90,6 +93,15 @@ function River({ photos }: { photos: Photo[] }) {
   // Per-shot drift factors from the last layout: x = −scroll·tan, y = scroll·lag.
   const drift = useRef<{ tan: number[]; lag: number[] }>({ tan: [], lag: [] });
   const [mode, setMode] = useState<Mode | null>(null);
+  // Progressive mount: the first screenful of shots renders at once, the rest
+  // a beat later. Mounting all 36 images in one go blocks the main thread
+  // right when the A→B wave is painting over this page.
+  const [count, setCount] = useState(Math.min(INITIAL_SHOTS, photos.length));
+  useEffect(() => {
+    if (count >= photos.length) return;
+    const id = window.setTimeout(() => setCount(photos.length), MOUNT_REST_AFTER_MS);
+    return () => window.clearTimeout(id);
+  }, [count, photos.length]);
 
   useLayoutEffect(() => {
     const forceRaf = new URLSearchParams(window.location.search).get("motion") === "raf";
@@ -182,7 +194,7 @@ function River({ photos }: { photos: Photo[] }) {
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf);
     };
-  }, [mode, photos.length]);
+  }, [mode, count]);
 
   // Fonts loading late can change the hero's height and so the river's top.
   useEffect(() => {
@@ -191,7 +203,7 @@ function River({ photos }: { photos: Photo[] }) {
 
   return (
     <section ref={riverRef} className={styles.river} aria-label="Selected photos">
-      {photos.map((p, i) => (
+      {photos.slice(0, count).map((p, i) => (
         <figure
           key={p.id}
           ref={(el) => {
