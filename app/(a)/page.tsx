@@ -55,7 +55,7 @@ export default function Home() {
           <SectionLabel>experience</SectionLabel>
           {site.experience.map((e, i) => (
             <TimelineRow
-              key={e.company}
+              key={`${e.company}-${e.period}`}
               period={e.period}
               title={e.company}
               subtitle={e.role}
