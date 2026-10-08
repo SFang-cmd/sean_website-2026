@@ -3,6 +3,7 @@ export interface Experience {
   period: string;
   company: string;
   role: string;
+  /** Not rendered since Oct 2026: the timeline is company · role · period only. Kept for notes. */
   blurb: string;
 }
 
@@ -66,34 +67,34 @@ export const site: SiteContent = {
   ],
   experience: [
     {
-      period: "May 2026 – Present",
+      period: "May – Aug 2026",
       company: "Google",
       role: "Software Engineering Intern, Machine Learning",
-      blurb: "Vision models for YouTube, under Algorithms & GenAI.",
+      blurb: "",
     },
     {
-      period: "Oct 2025 – Apr 2026",
+      period: "Oct 2025 – Present",
       company: "Anthropic",
       role: "Claude Campus Ambassador",
-      blurb: "Grew Penn's Claude Builder Club to 800+; ran a 200-person hackathon.",
+      blurb: "",
     },
     {
-      period: "May 2025 – Aug 2025",
+      period: "May – Aug 2025",
       company: "UPenn PRONTO Lab",
       role: "Research Assistant",
-      blurb: "Computer vision for the DARPA Triage Challenge.",
+      blurb: "",
     },
     {
       period: "Dec 2023 – May 2025",
       company: "Nanoneuro Systems",
       role: "Founding Engineer",
-      blurb: "Biochips for AI inference; raised $1.1M preseed.",
+      blurb: "",
     },
     {
-      period: "May 2024 – Aug 2024",
+      period: "May – Aug 2024",
       company: "NuDigital Financial",
       role: "Software Engineer Intern",
-      blurb: "Banking backend at 1M-user scale; cut latency 75%.",
+      blurb: "",
     },
   ],
 };

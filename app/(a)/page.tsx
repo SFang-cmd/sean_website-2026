@@ -59,7 +59,6 @@ export default function Home() {
               period={e.period}
               title={e.company}
               subtitle={e.role}
-              blurb={e.blurb}
               last={i === site.experience.length - 1}
             />
           ))}
