@@ -244,6 +244,31 @@ export interface WaveOptions {
 const SKIP_CLONE = "script,style,link,noscript,canvas,[data-side-flip]";
 
 /**
+ * Make a cloned subtree truly static: bake every element's current computed
+ * transform into the copy and strip its animations/transitions. Without
+ * this, scroll-driven animations in the copy (the photo streams) keep
+ * following the document's scroll, which Next resets to the top on the route
+ * change, so the copy would visibly jump mid-wave.
+ */
+function freeze(original: Element, copy: Element): void {
+  const origs = [original, ...Array.from(original.querySelectorAll("*"))];
+  const copies = [copy, ...Array.from(copy.querySelectorAll("*"))];
+  for (let i = 0; i < origs.length && i < copies.length; i++) {
+    const target = copies[i] as HTMLElement;
+    if (!target.style) continue;
+    const cs = getComputedStyle(origs[i]);
+    if (cs.animationName !== "none") {
+      if (cs.transform !== "none") target.style.transform = cs.transform;
+      if (cs.opacity !== "1") target.style.opacity = cs.opacity;
+      target.style.animation = "none";
+    }
+    if (cs.transitionProperty !== "all" || cs.transitionDuration !== "0s") {
+      target.style.transition = "none";
+    }
+  }
+}
+
+/**
  * A static copy of the current page in a fixed overlay, at the same scroll
  * offset. Fixed descendants (the patch grid, the B nav) keep their viewport
  * position because the overlay is scrolled, not transformed.
@@ -258,6 +283,7 @@ function cloneDeparting(bg: string): HTMLDivElement {
   for (const child of Array.from(document.body.children)) {
     if (child.matches(SKIP_CLONE)) continue;
     const copy = child.cloneNode(true) as HTMLElement;
+    freeze(child, copy);
     copy.querySelectorAll(SKIP_CLONE).forEach((n) => n.remove());
     overlay.appendChild(copy);
   }
