@@ -1,11 +1,20 @@
 import Link from "next/link";
 import { site } from "@/content/site";
+import { SideLink } from "@/components/effects/SideFlip";
 
 /**
- * B chrome: name in serif (→ /photo), then Gallery and Work with me.
- * `blend` is the home variant: fixed over the streams, white text in
- * `mix-blend-mode: difference`, so it reads dark on paper, light on charcoal,
- * and inverted over whatever image is passing under it.
+ * The quiet way back to the engineering side from the top of B. The A nav's
+ * door is "off the clock" in B's serif; this is its mirror: A's mono voice,
+ * small and muted, last in the menu. Runs the same shrink wave.
+ */
+const BACK_LABEL = "on the clock";
+
+/**
+ * B chrome: name in serif (→ /photo), then Gallery, Work with me, and the
+ * low-key door back to A. `blend` is the home variant: fixed over the
+ * streams, white text in `mix-blend-mode: difference`, so it reads dark on
+ * paper, light on charcoal, and inverted over whatever image is passing
+ * under it.
  */
 export function PhotoNav({ blend = false }: { blend?: boolean }) {
   const link = "text-[13px] underline-offset-4 hover:underline";
@@ -20,13 +29,20 @@ export function PhotoNav({ blend = false }: { blend?: boolean }) {
       <Link href="/photo" className="font-serif text-[22px] leading-none">
         {site.name}
       </Link>
-      <nav className="flex gap-6">
+      <nav className="flex items-baseline gap-6">
         <Link href="/photo/gallery" className={link}>
           Gallery
         </Link>
         <Link href="/photo#work" className={link}>
           Work with me
         </Link>
+        <SideLink
+          href="/"
+          hardHref={site.url}
+          className={`font-mono text-[11px] tracking-[0.08em] underline-offset-4 hover:underline ${blend ? "opacity-70" : "text-muted"}`}
+        >
+          {BACK_LABEL}
+        </SideLink>
       </nav>
     </header>
   );
