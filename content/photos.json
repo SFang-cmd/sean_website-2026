@@ -1599,108 +1599,6 @@
     "alt": "Jlin Grad Shoot, UPenn, 2026 (6 of 6)"
   },
   {
-    "id": "2026-05-ew-headshots-2026-05-emily-01",
-    "file": "portraits/2026_05-EW_headshots/2026_05-emily_01.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
-    "title": "EW Headshots",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "portraits",
-    "home": false,
-    "order": null,
-    "rank": 1,
-    "shoot": "2026_05-EW_headshots",
-    "cover": true,
-    "alt": "EW Headshots, UPenn, 2026 (1 of 3)"
-  },
-  {
-    "id": "2026-05-ew-headshots-2026-05-emily-02",
-    "file": "portraits/2026_05-EW_headshots/2026_05-emily_02.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwUE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAABxhcrS3ztIrOHWLW4zQ3//xAAmEAACAQQBAwMFAAAAAAAAAAABAgMABBESBRMxUhUhIkJhgYKR/9oACAEBAAE/AEgGKha1ud+jKj6HDansae1G3ap5ES3mLNgdNvf8Vwd6vqt3Gw1LwqP2SmkXNc1cFbPYSYw4+Pn9q4ORDezvqVYodRRnNczdbydH6Iz/AE1x8LRG3uCwJlJUDxGKM1f/xAAWEQEBAQAAAAAAAAAAAAAAAAAQAjH/2gAIAQIBAT8AMk//xAAYEQACAwAAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPwDHNH//2Q==",
-    "title": "EW Headshots",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "portraits",
-    "home": false,
-    "order": null,
-    "rank": 2,
-    "shoot": "2026_05-EW_headshots",
-    "cover": false,
-    "alt": "EW Headshots, UPenn, 2026 (2 of 3)"
-  },
-  {
-    "id": "2026-05-ew-headshots-2026-05-emily-03",
-    "file": "portraits/2026_05-EW_headshots/2026_05-emily_03.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.avif",
-        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABgAFAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAFnXqPKSWhYNFUR6lvZ8H//EACMQAAMAAgIBAwUAAAAAAAAAAAECAwAEBRESFSEyMVFScYL/2gAIAQEAAT8ASA6+mCcnLKrKSvyAPZH7x9UeXxyt568KVc9KiljnE8pCO5qrUGZpFvIn7vjUXvObufTb/wA5Ww2dzSWZBCpFPbDb3zd8KxCU78GogPWHWlr8hrSmz9Kykk/lhr0c/8QAGBEAAwEBAAAAAAAAAAAAAAAAAQIQIVH/2gAIAQIBAT8A5FYDJ//EABoRAAICAwAAAAAAAAAAAAAAAAERABIQIUH/2gAIAQMBAT8AA0Tipq+OKf/Z",
-    "title": "EW Headshots",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "portraits",
-    "home": false,
-    "order": null,
-    "rank": 3,
-    "shoot": "2026_05-EW_headshots",
-    "cover": false,
-    "alt": "EW Headshots, UPenn, 2026 (3 of 3)"
-  },
-  {
     "id": "2026-05-ey-grad-2026-05-ey-01",
     "file": "portraits/2026_05-EY_grad/2026_05-EY_01.jpg",
     "width": 5072,
@@ -4957,6 +4855,108 @@
     "alt": "LZ Grad Shoot, UPenn, 2026 (8 of 8)"
   },
   {
+    "id": "2026-05-ew-headshots-2026-05-emily-01",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_01.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
+    "title": "EW Headshots",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_05-EW_headshots",
+    "cover": true,
+    "alt": "EW Headshots, UPenn, 2026 (1 of 3)"
+  },
+  {
+    "id": "2026-05-ew-headshots-2026-05-emily-02",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_02.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwUE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAABxhcrS3ztIrOHWLW4zQ3//xAAmEAACAQQBAwMFAAAAAAAAAAABAgMABBESBRMxUhUhIkJhgYKR/9oACAEBAAE/AEgGKha1ud+jKj6HDansae1G3ap5ES3mLNgdNvf8Vwd6vqt3Gw1LwqP2SmkXNc1cFbPYSYw4+Pn9q4ORDezvqVYodRRnNczdbydH6Iz/AE1x8LRG3uCwJlJUDxGKM1f/xAAWEQEBAQAAAAAAAAAAAAAAAAAQAjH/2gAIAQIBAT8AMk//xAAYEQACAwAAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPwDHNH//2Q==",
+    "title": "EW Headshots",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_05-EW_headshots",
+    "cover": false,
+    "alt": "EW Headshots, UPenn, 2026 (2 of 3)"
+  },
+  {
+    "id": "2026-05-ew-headshots-2026-05-emily-03",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_03.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABgAFAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAFnXqPKSWhYNFUR6lvZ8H//EACMQAAMAAgIBAwUAAAAAAAAAAAECAwAEBRESFSEyMVFScYL/2gAIAQEAAT8ASA6+mCcnLKrKSvyAPZH7x9UeXxyt568KVc9KiljnE8pCO5qrUGZpFvIn7vjUXvObufTb/wA5Ww2dzSWZBCpFPbDb3zd8KxCU78GogPWHWlr8hrSmz9Kykk/lhr0c/8QAGBEAAwEBAAAAAAAAAAAAAAAAAQIQIVH/2gAIAQIBAT8A5FYDJ//EABoRAAICAwAAAAAAAAAAAAAAAAERABIQIUH/2gAIAQMBAT8AA0Tipq+OKf/Z",
+    "title": "EW Headshots",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_05-EW_headshots",
+    "cover": false,
+    "alt": "EW Headshots, UPenn, 2026 (3 of 3)"
+  },
+  {
     "id": "2026-04-wuhc-speakers-2026-04-wuhc-01",
     "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_01.jpg",
     "width": 5515,
@@ -6330,28 +6330,28 @@
     "alt": "Photo 8 of 16"
   },
   {
-    "id": "home-09-ew-studio",
-    "file": "home/09-ew-studio.jpg",
-    "width": 5464,
-    "height": 8192,
+    "id": "home-09-jje-steps",
+    "file": "home/09-jje-steps.jpg",
+    "width": 5007,
+    "height": 7511,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-09-ew-studio-480.avif",
-        "jpg": "/photos/home-09-ew-studio-480.jpg"
+        "avif": "/photos/home-09-jje-steps-480.avif",
+        "jpg": "/photos/home-09-jje-steps-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-09-ew-studio-960.avif",
-        "jpg": "/photos/home-09-ew-studio-960.jpg"
+        "avif": "/photos/home-09-jje-steps-960.avif",
+        "jpg": "/photos/home-09-jje-steps-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-09-ew-studio-1600.avif",
-        "jpg": "/photos/home-09-ew-studio-1600.jpg"
+        "avif": "/photos/home-09-jje-steps-1600.avif",
+        "jpg": "/photos/home-09-jje-steps-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6544,28 +6544,28 @@
     "alt": "Photo 14 of 16"
   },
   {
-    "id": "home-15-jje-steps",
-    "file": "home/15-jje-steps.jpg",
-    "width": 5007,
-    "height": 7511,
+    "id": "home-15-ew-studio",
+    "file": "home/15-ew-studio.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-15-jje-steps-480.avif",
-        "jpg": "/photos/home-15-jje-steps-480.jpg"
+        "avif": "/photos/home-15-ew-studio-480.avif",
+        "jpg": "/photos/home-15-ew-studio-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-15-jje-steps-960.avif",
-        "jpg": "/photos/home-15-jje-steps-960.jpg"
+        "avif": "/photos/home-15-ew-studio-960.avif",
+        "jpg": "/photos/home-15-ew-studio-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-15-jje-steps-1600.avif",
-        "jpg": "/photos/home-15-jje-steps-1600.jpg"
+        "avif": "/photos/home-15-ew-studio-1600.avif",
+        "jpg": "/photos/home-15-ew-studio-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
     "title": "",
     "place": "",
     "year": 2026,
