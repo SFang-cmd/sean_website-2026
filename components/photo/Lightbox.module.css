@@ -16,10 +16,8 @@
   border: 0;
   background: #141414;
   color: #fff;
-  /* A scroll container that never scrolls (hidden, not auto: the zoomed
-     photo's transform would otherwise grow a scrollbar): wheel/touch over
-     the dialog stops here instead of chaining to the (locked) page
-     underneath. */
+  /* A scroll container that never scrolls: wheel/touch over the dialog
+     stops here instead of chaining to the (locked) page underneath. */
   overflow: hidden;
   overscroll-behavior: contain;
 }
@@ -91,20 +89,7 @@
   pointer-events: auto;
   user-select: none;
   -webkit-user-drag: none;
-  touch-action: pinch-zoom; /* one finger pans when zoomed; two go to the browser */
-  cursor: zoom-in;
-}
-.zoomed {
-  cursor: grab;
-}
-.panning {
-  cursor: grabbing;
-}
-.fade .full {
-  transition: transform 180ms ease;
-}
-.fade .panning {
-  transition: none;
+  touch-action: pinch-zoom; /* the browser's own pinch is the only zoom */
 }
 
 /* Controls: small, white, Geist (inherited), readable over any photo. */
@@ -141,8 +126,7 @@
 
 /* Prev/next zones, inside the stage: the empty margin beside the photo plus
    the outer fifth of the photo, full stage height, invisible; the cursor
-   becomes an arrow there. Rendered only when there is more than one photo
-   and not zoomed. The SVG cursor is a white arrow with a dark outline so it
+   becomes an arrow there. Rendered only when there is more than one photo. The SVG cursor is a white arrow with a dark outline so it
    reads over any photo. */
 .zone {
   position: absolute;
@@ -168,8 +152,7 @@
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23000' stroke-opacity='.7' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") 14 14, e-resize;
 }
 
-/* The band: the caption/counter line, then the filmstrip (if any). Hidden
-   as a whole while zoomed. */
+/* The band: the caption/counter line, then the filmstrip (if any). */
 .band {
   position: absolute;
   left: 0;
@@ -179,9 +162,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-.bandHidden {
-  visibility: hidden;
 }
 .strip {
   display: flex;

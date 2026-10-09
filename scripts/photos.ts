@@ -43,6 +43,10 @@ const OUTPUT_DIR = path.join(ROOT, "public", "photos");
 const PUBLIC_PREFIX = "/photos";
 
 const WIDTHS = [480, 960, 1600] as const;
+/** Landscapes get one more: at fit in the lightbox they span the whole
+    viewport (~1200 CSS px on a 13" laptop = 2400 device px), where 1600 is
+    visibly upscaled. Portraits are narrower on screen and 1600 is enough. */
+const LANDSCAPE_WIDTHS = [...WIDTHS, 2400] as const;
 const AVIF_QUALITY = 55;
 const JPEG_QUALITY = 78;
 const BLUR_WIDTH = 20;
@@ -406,9 +410,11 @@ function outputName(id: string, width: number, ext: "avif" | "jpg"): string {
   return `${id}-${width}.${ext}`;
 }
 
-/** Widths to render for an original of the given (oriented) width. */
-function targetWidths(originalWidth: number): number[] {
-  const fit = WIDTHS.filter((w) => w <= originalWidth);
+/** Widths to render for an original of the given (oriented) size: the
+    standard ladder, plus LANDSCAPE_WIDTHS' extra rung when wider than tall. */
+function targetWidths(originalWidth: number, originalHeight: number): number[] {
+  const ladder = originalWidth > originalHeight ? LANDSCAPE_WIDTHS : WIDTHS;
+  const fit = ladder.filter((w) => w <= originalWidth);
   return fit.length ? [...fit] : [originalWidth];
 }
 
@@ -434,7 +440,7 @@ async function build(entry: Entry): Promise<Built> {
   const height = meta.autoOrient?.height ?? meta.height;
   if (!width || !height) throw new Error(`${entry.file}: could not read image dimensions`);
 
-  const widths = targetWidths(width);
+  const widths = targetWidths(width, height);
   const outputs = widths.flatMap((w) => [
     path.join(OUTPUT_DIR, outputName(entry.id, w, "avif")),
     path.join(OUTPUT_DIR, outputName(entry.id, w, "jpg")),

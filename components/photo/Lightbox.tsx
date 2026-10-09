@@ -16,15 +16,15 @@ import styles from "./Lightbox.module.css";
  *
  * One look everywhere: a solid neutral near-black (#141414, not #000, so a
  * photo with a black background keeps its edge), the photo alone at the
- * largest size that fits, click-to-zoom (fit ↔ 2× about the clicked point,
- * drag to pan), a close button, and a bottom band: the caption and counter
- * centred, over the filmstrip. The whole band hides while zoomed and the
- * zoomed photo may pan into its space. Stepping: on each side,
- * the empty stage beside the photo plus the outer fifth of the photo is a
- * prev/next zone (the cursor becomes an arrow there; gone while zoomed so
- * dragging pans) — the side you are on is the way you go, whatever the
- * photo's shape — plus ←/→ and a touch swipe. Closing is the ×, Esc, or a
- * click on the empty stage above/below a photo. With `filmstrip`, the band also holds a
+ * largest size that fits, a close button, and a bottom band: the caption and
+ * counter centred, over the filmstrip. No zoom: the largest rendition is
+ * 1600 px (2400 for landscapes), sized for the fit view, and enlarging it
+ * only shows the resampling; phones keep the browser's pinch. Stepping: on
+ * each side, the empty stage beside the photo plus the outer fifth of the
+ * photo is a prev/next zone (the cursor becomes an arrow there) — the side
+ * you are on is the way you go, whatever the photo's shape — plus ←/→ and
+ * a touch swipe. Closing is the ×, Esc, or a click on the empty stage
+ * above/below a photo. With `filmstrip`, the band also holds a
  * row of thumbnails: the current one outlined, click to jump, the row kept
  * centred on it; on pointer devices it fades out after a short idle and comes
  * back on any movement or key.
@@ -62,7 +62,6 @@ export function Lightbox({
   const count = photos.length;
   const open = photo !== null;
   const close = () => ref.current?.close();
-  const [zoomed, setZoomed] = useState(false);
 
   // Keep the last photo through the close fade, so the image doesn't vanish
   // a frame before the backdrop does.
@@ -151,16 +150,16 @@ export function Lightbox({
     el.scrollTo({ left, behavior: fade ? "smooth" : "auto" });
   }, [index, fade, strip]);
 
-  // Touch swipe steps when not zoomed (zoomed, one finger pans the photo).
+  // Touch swipe steps.
   const swipe = useRef<{ x: number; y: number } | null>(null);
   const onPointerDown = (e: React.PointerEvent) => {
-    if (e.pointerType !== "touch" || zoomed || (e.target as HTMLElement).closest("button")) return;
+    if (e.pointerType !== "touch" || (e.target as HTMLElement).closest("button")) return;
     swipe.current = { x: e.clientX, y: e.clientY };
   };
   const onPointerUp = (e: React.PointerEvent) => {
     const s = swipe.current;
     swipe.current = null;
-    if (!s || zoomed) return;
+    if (!s) return;
     const dx = e.clientX - s.x;
     const dy = e.clientY - s.y;
     if (Math.abs(dx) > SWIPE_PX && Math.abs(dx) > Math.abs(dy) * 1.5) onNav(dx < 0 ? 1 : -1);
@@ -193,8 +192,8 @@ export function Lightbox({
           >
             ×
           </button>
-          <ZoomableImage key={shown.id} photo={shown} onZoomChange={setZoomed}>
-            {count > 1 && !zoomed && (
+          <Stage key={shown.id} photo={shown}>
+            {count > 1 && (
               <>
                 <button
                   type="button"
@@ -210,8 +209,8 @@ export function Lightbox({
                 />
               </>
             )}
-          </ZoomableImage>
-          <div className={`${styles.band} ${zoomed ? styles.bandHidden : ""}`}>
+          </Stage>
+          <div className={styles.band}>
             <div className={styles.meta}>
               <p className={styles.caption}>
                 <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
@@ -277,121 +276,19 @@ export function Lightbox({
   );
 }
 
-const ZOOM = 2;
 const THUMB_H = 48;
 const IDLE_MS = 2000;
 const SWIPE_PX = 50;
 
-/** Zoom state: origin and pan in px, plus the fitted image's box so panning
-    can be clamped to the viewport without re-measuring a transformed element. */
-interface Zoom {
-  ox: number;
-  oy: number;
-  tx: number;
-  ty: number;
-  left: number;
-  top: number;
-  w: number;
-  h: number;
-}
-
 /**
- * The photo. Click toggles fit ↔ 2× scaled about the clicked point (so that
- * spot stays put); while zoomed, dragging pans, clamped so the photo never
- * leaves the stage. The drag writes the transform straight to the element
- * and commits to state on release. Pinch gestures are left to the browser
- * (`touch-action: pinch-zoom`).
+ * The stage: the photo centred at the largest size that fits above the band,
+ * with any overlays (the prev/next zones) laid out inside it. Clicks on the
+ * empty stage fall through to the dialog (= backdrop close); the photo itself
+ * swallows them so a mis-click on it does nothing.
  */
-function ZoomableImage({
-  photo,
-  onZoomChange,
-  children,
-}: {
-  photo: Photo;
-  onZoomChange?: (zoomed: boolean) => void;
-  /** Overlays laid out inside the stage (the prev/next zones). */
-  children?: React.ReactNode;
-}) {
-  const [zoom, setZoom] = useState<Zoom | null>(null);
-  const [panning, setPanning] = useState(false);
-  const drag = useRef<{ x: number; y: number; tx: number; ty: number; moved: boolean } | null>(
-    null,
-  );
-  const suppressClick = useRef(false);
-  const stageRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    onZoomChange?.(zoom !== null);
-  }, [zoom, onZoomChange]);
-  // Remounted per photo (key={id}), so report "not zoomed" when going away.
-  useEffect(() => () => onZoomChange?.(false), [onZoomChange]);
-
-  const transform = (z: Zoom) => `translate(${z.tx}px, ${z.ty}px) scale(${ZOOM})`;
-  // Clamp to the dialog, not the stage: the band under the stage hides while
-  // zoomed, so the photo may use that space too.
-  const clamp = (z: Zoom) =>
-    clampPan(z, stageRef.current?.parentElement?.getBoundingClientRect() ?? null);
-
-  const onClick = (e: React.MouseEvent<HTMLImageElement>) => {
-    if (suppressClick.current) {
-      suppressClick.current = false;
-      return;
-    }
-    if (zoom) {
-      setZoom(null);
-      return;
-    }
-    const r = e.currentTarget.getBoundingClientRect();
-    setZoom(
-      clamp({
-        ox: e.clientX - r.left,
-        oy: e.clientY - r.top,
-        tx: 0,
-        ty: 0,
-        left: r.left,
-        top: r.top,
-        w: r.width,
-        h: r.height,
-      }),
-    );
-  };
-
-  const onPointerDown = (e: React.PointerEvent<HTMLImageElement>) => {
-    if (!zoom || e.button !== 0) return;
-    e.currentTarget.setPointerCapture(e.pointerId);
-    drag.current = { x: e.clientX, y: e.clientY, tx: zoom.tx, ty: zoom.ty, moved: false };
-    setPanning(true);
-  };
-
-  const onPointerMove = (e: React.PointerEvent<HTMLImageElement>) => {
-    const d = drag.current;
-    if (!d || !zoom) return;
-    const dx = e.clientX - d.x;
-    const dy = e.clientY - d.y;
-    if (!d.moved && Math.hypot(dx, dy) > 4) d.moved = true;
-    if (!d.moved) return;
-    const z = clamp({ ...zoom, tx: d.tx + dx, ty: d.ty + dy });
-    d.tx = z.tx - dx;
-    d.ty = z.ty - dy;
-    e.currentTarget.style.transform = transform(z);
-  };
-
-  const onPointerUp = (e: React.PointerEvent<HTMLImageElement>) => {
-    const d = drag.current;
-    if (!d || !zoom) return;
-    drag.current = null;
-    setPanning(false);
-    if (d.moved) {
-      suppressClick.current = true;
-      const dx = e.clientX - d.x;
-      const dy = e.clientY - d.y;
-      setZoom(clamp({ ...zoom, tx: d.tx + dx, ty: d.ty + dy }));
-    }
-  };
-
+function Stage({ photo, children }: { photo: Photo; children?: React.ReactNode }) {
   return (
     <div
-      ref={stageRef}
       className={styles.stage}
       style={{ "--ar": `${photo.width} / ${photo.height}` } as React.CSSProperties}
     >
@@ -406,40 +303,9 @@ function ZoomableImage({
         blurDataURL={photo.blur}
         priority
         draggable={false}
-        className={[styles.full, zoom ? styles.zoomed : "", panning ? styles.panning : ""]
-          .filter(Boolean)
-          .join(" ")}
-        style={
-          zoom ? { transform: transform(zoom), transformOrigin: `${zoom.ox}px ${zoom.oy}px` } : undefined
-        }
-        onClick={onClick}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
+        className={styles.full}
       />
       {children}
     </div>
   );
-}
-
-/** Keep the scaled photo inside `box` on each axis: no gap beside it when it
-    is larger than the box, no overflow when it is smaller. */
-function clampPan(z: Zoom, box: DOMRect | null): Zoom {
-  const sl = box?.left ?? 0;
-  const st = box?.top ?? 0;
-  const sw = box?.width ?? window.innerWidth;
-  const sh = box?.height ?? window.innerHeight;
-  const axis = (pos: number, origin: number, size: number, start: number, view: number, t: number) => {
-    const scaled = size * ZOOM;
-    const at0 = pos + origin * (1 - ZOOM) - start; // scaled edge at t = 0, relative to the box
-    const lo = Math.min(0, view - scaled);
-    const hi = Math.max(0, view - scaled);
-    return Math.min(hi, Math.max(lo, at0 + t)) - at0;
-  };
-  return {
-    ...z,
-    tx: axis(z.left, z.ox, z.w, sl, sw, z.tx),
-    ty: axis(z.top, z.oy, z.h, st, sh, z.ty),
-  };
 }

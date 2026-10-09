@@ -24,7 +24,7 @@ export interface Photo {
   /** Intrinsic size of the original, for aspect ratio and next/image. */
   width: number;
   height: number;
-  /** Renditions, ascending by width (e.g. 480, 960, 1600). */
+  /** Renditions, ascending by width (480, 960, 1600; landscapes add 2400). */
   renditions: Rendition[];
   /** Tiny base64 JPEG for next/image `placeholder="blur"`. */
   blur: string;
