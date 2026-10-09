@@ -127,28 +127,39 @@ function River({ photos }: { photos: Photo[] }) {
       const lags: number[] = [];
       // Streams advance together: every shot steps the shared y cursor, so the
       // sequence reads top-to-bottom across streams (interleaved), not one
-      // stream after another.
+      // stream after another. Within a stream, a shot can never start above
+      // the previous shot's bottom plus a gap, so tall portraits don't get a
+      // landscape dropped onto them.
       let y = 0;
       let maxY = 0;
+      const streamBottom = new Array(n).fill(-Infinity);
       shots.forEach((el, i) => {
         if (!el) return;
+        const p = photos[i];
         const def = STREAMS[i % n];
         const tan = Math.tan((angle * def.angleMul * Math.PI) / 180);
         const speed = def.speed;
         const laneX = vw * def.lane;
+        const landscape = p.width > p.height;
+        // Size by orientation so a landscape has roughly the same visual mass
+        // as a portrait (otherwise landscapes read as thumbnails).
         const w = phone
           ? vw * 0.9 * (0.92 + ((jitterS(i) - 0.85) / 0.3) * 0.08)
-          : Math.min(vw * 0.3, 440) * jitterS(i);
+          : (landscape ? Math.min(vw * 0.36, 540) : Math.min(vw * 0.3, 440)) * jitterS(i);
+        const h = (w * p.height) / p.width;
+        const gap = 120 + jitterY(i) * 80;
+        const top = Math.max(y, streamBottom[i % n] + gap);
         // scrollY at which this shot sits ~40% down the viewport, given that
         // it moves by scroll·(speed − 1) on top of the page's own scroll.
-        const centeredAtScroll = (riverTop + y - vh * 0.4) / (2 - speed);
+        const centeredAtScroll = (riverTop + top - vh * 0.4) / (2 - speed);
         el.style.width = `${w}px`;
         el.style.left = `${Math.round(laneX - w / 2 + centeredAtScroll * tan * speed)}px`;
-        el.style.top = `${Math.round(y)}px`;
+        el.style.top = `${Math.round(top)}px`;
         tans[i] = tan * speed;
         lags[i] = speed - 1;
-        maxY = Math.max(maxY, y / (2 - speed));
-        y += (STEP_Y / n) * (0.7 + jitterY(i) * 0.8);
+        streamBottom[i % n] = top + h;
+        maxY = Math.max(maxY, (top + h) / (2 - speed));
+        y = Math.max(y + (STEP_Y / n) * (0.7 + jitterY(i) * 0.8), top);
       });
       drift.current = { tan: tans, lag: lags };
       river.style.setProperty("--river-h", `${Math.round(maxY + vh * 0.6)}px`);
