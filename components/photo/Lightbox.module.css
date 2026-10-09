@@ -2,9 +2,14 @@
    gallery and the home: a solid neutral near-black, the photo alone on the
    stage, small white controls, and a bottom band with the caption, counter
    and (optionally) the filmstrip. Same in light and dark mode: the surround
-   is a viewing condition, not a theme. */
+   is a viewing condition, not a theme. A gutter keeps the photo off the
+   viewport edges (and clear of the × at the top): the stage is inset by it,
+   so the photo refits to the smaller stage, and a click anywhere in the
+   gutter, on all four sides, reaches the dialog and closes the lightbox. */
 .dialog {
   --band: 34px; /* height reserved under the photo for the caption/counter */
+  --gutter: 24px; /* stage inset on the sides and above the band */
+  --gutter-top: 48px; /* clears the 40px × at top: 8px */
   position: fixed;
   inset: 0;
   width: 100%; /* of the viewport, so phone toolbars don't crop the stage */
@@ -23,6 +28,12 @@
 }
 .hasStrip {
   --band: 92px;
+}
+@media (max-width: 767px) {
+  .dialog {
+    --gutter: 12px;
+    --gutter-top: 44px;
+  }
 }
 .dialog::backdrop {
   background: transparent;
@@ -62,9 +73,10 @@
   pointer-events: none;
 }
 
-/* The stage: everything above the band. The photo is centred at the largest
-   size that fits. Clicks on empty stage fall through to the dialog (=
-   backdrop close). Sized from the stage and the photo's ratio (`--ar`), not
+/* The stage: everything above the band, inset by the gutter. The photo is
+   centred at the largest size that fits. Clicks on empty stage (and in the
+   gutter around it) fall through to the dialog (= backdrop close). Sized
+   from the stage and the photo's ratio (`--ar`), not
    the image's natural size: with `sizes="100vw"` the browser
    density-corrects the natural size by whichever srcset descriptor it chose,
    and `width: auto` would lay the image out at a fraction of the viewport. */
@@ -72,7 +84,7 @@
   /* The fitted photo's width, from the stage and the ratio (see .full). */
   --photo-w: min(100cqw, calc(100cqh * var(--ar, 1)));
   position: absolute;
-  inset: 0 0 var(--band) 0;
+  inset: var(--gutter-top) var(--gutter) calc(var(--band) + var(--gutter)) var(--gutter);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,10 +136,11 @@
   z-index: 2; /* above the next zone */
 }
 
-/* Prev/next zones, inside the stage: the empty margin beside the photo plus
-   the outer fifth of the photo, full stage height, invisible; the cursor
-   becomes an arrow there. Rendered only when there is more than one photo. The SVG cursor is a white arrow with a dark outline so it
-   reads over any photo. */
+/* Prev/next zones, inside the stage (so never in the gutter): the empty
+   margin beside the photo plus the outer fifth of the photo, full stage
+   height, invisible; the cursor becomes an arrow there. Rendered only when
+   there is more than one photo. The SVG cursor is a white arrow with a dark
+   outline so it reads over any photo. */
 .zone {
   position: absolute;
   top: 0;
