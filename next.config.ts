@@ -22,8 +22,11 @@ const nextConfig: NextConfig = {
     return [
       { source: "/", has: onPhotosHost, destination: `${site.url}/photo`, permanent: false },
       { source: NOT_PHOTO_OR_ASSET, has: onPhotosHost, destination: `${site.url}/photo/:path`, permanent: false },
-      // /photo/* typed on the subdomain: same page on the root host (absolute destination, so no loop).
-      { source: "/photo/:path*", has: onPhotosHost, destination: `${site.url}/photo/:path*`, permanent: false },
+      // /photo and /photo/* typed on the subdomain: same page on the root host
+      // (absolute destination, so no loop; the bare /photo rule avoids a
+      // trailing-slash hop from an empty :path*).
+      { source: "/photo", has: onPhotosHost, destination: `${site.url}/photo`, permanent: false },
+      { source: "/photo/:path+", has: onPhotosHost, destination: `${site.url}/photo/:path+`, permanent: false },
     ];
   },
   async rewrites() {
