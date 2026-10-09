@@ -1,8 +1,4 @@
 shoot,series,title,place,year,home
-portrait-04,portraits,Window seat,"Penn, Philadelphia",2026,4
-portrait-06,portraits,Headshot,Philadelphia,2026,6
-portrait-11,portraits,Stairwell,"Penn, Philadelphia",2026,9
-portrait-12,portraits,Afternoon,"Penn, Philadelphia",2026,10
 event-01,events,Red,Philadelphia,2026,14
 event-02,events,Solo,Philadelphia,2026,15
 event-03,events,Verse,Philadelphia,2026,16
@@ -14,7 +10,7 @@ event-08,events,Panel,Philadelphia,2026,21
 event-09,events,Magenta,Philadelphia,2026,22
 2026_04-JJCK_grad,portraits,2026 04 JJCK grad,,2026,
 2026_05-AP_grad,portraits,2026 05 AP grad,,2026,
-2026_05-emily_headshots,portraits,2026 05 emily headshots,,2026,
+2026_05-EW_headshots,portraits,2026 05 EW headshots,,2026,
 2026_05-EY_grad,portraits,2026 05 EY grad,,2026,
 2026_05-EYRoomies_grad,portraits,2026 05 EYRoomies grad,,2026,
 2026_05-JH_grad,portraits,2026 05 JH grad,,2026,
@@ -22,3 +18,5 @@ event-09,events,Magenta,Philadelphia,2026,22
 2026_05-JL_grad,portraits,2026 05 JL grad,,2026,
 2026_05-JLin_grad,portraits,2026 05 JLin grad,,2026,
 2026_05-LZ_grad,portraits,2026 05 LZ grad,,2026,
+2026_04-WUHC_Speakers,events,2026 04 WUHC Speakers,,2026,
+2026_04-JR_grad,portraits,2026 04 JR grad,,2026,

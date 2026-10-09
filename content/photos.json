@@ -1,141 +1,5 @@
 [
   {
-    "id": "portrait-04",
-    "file": "portraits/portrait-04.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-04-480.avif",
-        "jpg": "/photos/portrait-04-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-04-960.avif",
-        "jpg": "/photos/portrait-04-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-04-1600.avif",
-        "jpg": "/photos/portrait-04-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAClocy/FICpGj60XuioIA//xAAlEAACAQQABAcAAAAAAAAAAAABAgMABBEhBRQxUSIjMkFDcrH/2gAIAQEAAT8AL4tbb7illmd3CrGCq7yxNLL1z3qUMtgkiqWZRlRVjePJG8hIMg8EmiN1sFhQkWa1jEXxHLZ1XC+e5i9Mu4W9xTx+Y+O4/KRCIvUd9ajup4RiOQrhsHFNdTscs4Y9yor/xAAaEQEAAQUAAAAAAAAAAAAAAAABAAIQEiFR/9oACAECAQE/AB2FirsyJ//EABoRAAICAwAAAAAAAAAAAAAAAAABAhIQUWH/2gAIAQMBAT8Ae+4o3Eqz/9k=",
-    "title": "Window seat",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 4,
-    "rank": 1,
-    "shoot": "portrait-04",
-    "cover": true,
-    "alt": "Window seat, Penn, Philadelphia, 2026"
-  },
-  {
-    "id": "portrait-06",
-    "file": "portraits/portrait-06.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-06-480.avif",
-        "jpg": "/photos/portrait-06-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-06-960.avif",
-        "jpg": "/photos/portrait-06-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-06-1600.avif",
-        "jpg": "/photos/portrait-06-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYDBQECBP/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAAAb9ZlhV4doxZpY8UbCtJf/8QAIxAAAgIBAwMFAAAAAAAAAAAAAQIAAwQFERIiUVITITEygv/aAAgBAQABPwBKB2lRxsjmKrUcodm4n4j4g5fWX2pVj2szbAVt7zRs1Rqt9TqVY0In6SNYu81nJK4gYWAAOOnzmi2oc6+woVYqSohvM1fJ52ejt01zAqNRx8gkE2kgDxG0Nw7Gf//EABYRAQEBAAAAAAAAAAAAAAAAABACMf/aAAgBAgEBPwAyT//EABcRAQADAAAAAAAAAAAAAAAAAAERIEH/2gAIAQMBAT8AxZp//9k=",
-    "title": "Headshot",
-    "place": "Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 6,
-    "rank": 1,
-    "shoot": "portrait-06",
-    "cover": true,
-    "alt": "Headshot, Philadelphia, 2026"
-  },
-  {
-    "id": "portrait-11",
-    "file": "portraits/portrait-11.jpg",
-    "width": 8192,
-    "height": 5464,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-11-480.avif",
-        "jpg": "/photos/portrait-11-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-11-960.avif",
-        "jpg": "/photos/portrait-11-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-11-1600.avif",
-        "jpg": "/photos/portrait-11-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
-    "title": "Stairwell",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 9,
-    "rank": 1,
-    "shoot": "portrait-11",
-    "cover": true,
-    "alt": "Stairwell, Penn, Philadelphia, 2026"
-  },
-  {
-    "id": "portrait-12",
-    "file": "portraits/portrait-12.jpg",
-    "width": 7855,
-    "height": 5239,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-12-480.avif",
-        "jpg": "/photos/portrait-12-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-12-960.avif",
-        "jpg": "/photos/portrait-12-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-12-1600.avif",
-        "jpg": "/photos/portrait-12-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAF+Mcxg1MYo3/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDBAAREjEFUSEzkv/aAAgBAQABPwA2IzOCHTXD2PeXLLqeCBSjO4ck9b61hB3lvyMxlmKqqhvjJb00ksWyeKEELgtWCPtf9HP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgERE1H/2gAIAQIBAT8AhWqb4Ysf/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBEhP/2gAIAQMBAT8AVUaQf//Z",
-    "title": "Afternoon",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 10,
-    "rank": 1,
-    "shoot": "portrait-12",
-    "cover": true,
-    "alt": "Afternoon, Penn, Philadelphia, 2026"
-  },
-  {
     "id": "2026-04-jjck-grad-2026-04-jjck-01",
     "file": "portraits/2026_04-JJCK_grad/2026_04-JJCK_01.jpg",
     "width": 4287,
@@ -612,28 +476,28 @@
     "alt": "2026 04 JJCK grad, 2026 (14 of 14)"
   },
   {
-    "id": "2026-05-ap-grad-mg-7897",
-    "file": "portraits/2026_05-AP_grad/_MG_7897.jpg",
-    "width": 5464,
-    "height": 8192,
+    "id": "2026-05-ap-grad-2026-05-ap-01",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_01.jpg",
+    "width": 5205,
+    "height": 7808,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-05-ap-grad-mg-7897-480.avif",
-        "jpg": "/photos/2026-05-ap-grad-mg-7897-480.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-01-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-01-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-05-ap-grad-mg-7897-960.avif",
-        "jpg": "/photos/2026-05-ap-grad-mg-7897-960.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-01-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-01-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-05-ap-grad-mg-7897-1600.avif",
-        "jpg": "/photos/2026-05-ap-grad-mg-7897-1600.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-01-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-01-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUEA//EABcBAAMBAAAAAAAAAAAAAAAAAAECAwX/2gAMAwEAAhADEAAAAKXVKzaZhdqUG7OgMrec/wD/xAAmEAACAQMDAgcBAAAAAAAAAAABAgMAERIEIUEUIwUTFUJRUmGB/9oACAEBAAE/AJ9S0EdzeNxYliM1tWqkj9NjGFmXEmvObZnRWZxkb8X4pJomABJtz8Gp5I4BqIgO3vYcKfrRZQEDMAQoG4FINSVTCJQANgGrxOJ4iWVVDvPdlB5VL0ArqhL+0ftdfI1wBtU3RNKrPExkvlxYn9qNIMR2Y/6or//EAB0RAAICAQUAAAAAAAAAAAAAAAECAAMREhMiMVH/2gAIAQIBAT8ASxm4quJg+SltLEkdibs//8QAFxEBAAMAAAAAAAAAAAAAAAAAEBEhYf/aAAgBAwEBPwCiNP/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIFBgcB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAAlIl6XCupjDFcqmiLq9Am/wD/xAAlEAACAQMCBgMBAAAAAAAAAAABAgMABCEREgYUIjFBcgUyUXH/2gAIAQEAAT8AvbiCwhHTrnao/TVj8uqyBJIgqs32owxyO7Hvr4riSNgkJ1Zupj61DiWP2FAbNQXLdsn+VxC+7lFTIKvXJ3ELoXXTQijKrMSDVzYwXhhLDEfip7GGVCCKRIhuwctX/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPwCMiLiKf//EABcRAQEBAQAAAAAAAAAAAAAAAAARASH/2gAIAQMBAT8AqtzqP//Z",
     "title": "2026 05 AP grad",
     "place": "",
     "year": 2026,
@@ -643,109 +507,959 @@
     "rank": 1,
     "shoot": "2026_05-AP_grad",
     "cover": true,
-    "alt": "2026 05 AP grad, 2026"
+    "alt": "2026 05 AP grad, 2026 (1 of 26)"
   },
   {
-    "id": "2026-05-emily-headshots-2026-05-emily-01",
-    "file": "portraits/2026_05-emily_headshots/2026_05-emily_01.jpg",
-    "width": 5464,
-    "height": 8192,
+    "id": "2026-05-ap-grad-2026-05-ap-02",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_02.jpg",
+    "width": 5463,
+    "height": 8190,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-01-480.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-01-480.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-02-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-02-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-01-960.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-01-960.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-02-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-02-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-01-1600.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-01-1600.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-02-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-02-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwUE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAABxhcrS3ztIrOHWLW4zQ3//xAAmEAACAQQBAwMFAAAAAAAAAAABAgMABBESBRMxUhUhIkJhgYKR/9oACAEBAAE/AEgGKha1ud+jKj6HDansae1G3ap5ES3mLNgdNvf8Vwd6vqt3Gw1LwqP2SmkXNc1cFbPYSYw4+Pn9q4ORDezvqVYodRRnNczdbydH6Iz/AE1x8LRG3uCwJlJUDxGKM1f/xAAWEQEBAQAAAAAAAAAAAAAAAAAQAjH/2gAIAQIBAT8AMk//xAAYEQACAwAAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPwDHNH//2Q==",
-    "title": "2026 05 emily headshots",
-    "place": "",
-    "year": 2026,
-    "series": "portraits",
-    "home": false,
-    "order": null,
-    "rank": 1,
-    "shoot": "2026_05-emily_headshots",
-    "cover": true,
-    "alt": "2026 05 emily headshots, 2026 (1 of 3)"
-  },
-  {
-    "id": "2026-05-emily-headshots-2026-05-emily-02",
-    "file": "portraits/2026_05-emily_headshots/2026_05-emily_02.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-02-480.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-02-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-02-960.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-02-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-02-1600.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-02-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
-    "title": "2026 05 emily headshots",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwYF/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDAv/aAAwDAQACEAMQAAAA01NCUzRiBV5OaE4a7BwxH//EACgQAAIBAwMDAgcAAAAAAAAAAAECAwAEIQUREhMUIjFRQVJhcoGxwv/aAAgBAQABPwCGcixVQrYgatPc9a3AG56D/uu4lAHgPT5qeQQWaliADDx/JrTZybqSNmHKJCCpOQDsaadfHbICgVfTzM1vnCyKQPtyBUD24vJry5lIldsQx/0ak1I8vBVRfZ3zVu0/nLI4YRAEDb4k7U95BHcXbxWqcuRy+cH2FJrEiqB2lsfqVNf/xAAZEQADAQEBAAAAAAAAAAAAAAAAARECA1L/2gAIAQIBAT8Ay3SaMOIvX2j/xAAbEQABBAMAAAAAAAAAAAAAAAAAAQIRYRIhMf/aAAgBAwEBPwBOOpSWit3BhR//2Q==",
+    "title": "2026 05 AP grad",
     "place": "",
     "year": 2026,
     "series": "portraits",
     "home": false,
     "order": null,
     "rank": 2,
-    "shoot": "2026_05-emily_headshots",
+    "shoot": "2026_05-AP_grad",
     "cover": false,
-    "alt": "2026 05 emily headshots, 2026 (2 of 3)"
+    "alt": "2026 05 AP grad, 2026 (2 of 26)"
   },
   {
-    "id": "2026-05-emily-headshots-2026-05-emily-03",
-    "file": "portraits/2026_05-emily_headshots/2026_05-emily_03.jpg",
+    "id": "2026-05-ap-grad-2026-05-ap-03",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_03.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-03-480.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-03-480.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-03-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-03-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-03-960.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-03-960.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-03-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-03-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-05-emily-headshots-2026-05-emily-03-1600.avif",
-        "jpg": "/photos/2026-05-emily-headshots-2026-05-emily-03-1600.jpg"
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-03-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-03-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABgAFAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAFnXqPKSWhYNFUR6lvZ8H//EACMQAAMAAgIBAwUAAAAAAAAAAAECAwAEBRESFSEyMVFScYL/2gAIAQEAAT8ASA6+mCcnLKrKSvyAPZH7x9UeXxyt568KVc9KiljnE8pCO5qrUGZpFvIn7vjUXvObufTb/wA5Ww2dzSWZBCpFPbDb3zd8KxCU78GogPWHWlr8hrSmz9Kykk/lhr0c/8QAGBEAAwEBAAAAAAAAAAAAAAAAAQIQIVH/2gAIAQIBAT8A5FYDJ//EABoRAAICAwAAAAAAAAAAAAAAAAERABIQIUH/2gAIAQMBAT8AA0Tipq+OKf/Z",
-    "title": "2026 05 emily headshots",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAClocy/FICpGj60XuioIA//xAAlEAACAQQABAcAAAAAAAAAAAABAgMABBEhBRQxUSIjMkFDcrH/2gAIAQEAAT8AL4tbb7illmd3CrGCq7yxNLL1z3qUMtgkiqWZRlRVjePJG8hIMg8EmiN1sFhQkWa1jEXxHLZ1XC+e5i9Mu4W9xTx+Y+O4/KRCIvUd9ajup4RiOQrhsHFNdTscs4Y9yor/xAAaEQEAAQUAAAAAAAAAAAAAAAABAAIQEiFR/9oACAECAQE/AB2FirsyJ//EABoRAAICAwAAAAAAAAAAAAAAAAABAhIQUWH/2gAIAQMBAT8Ae+4o3Eqz/9k=",
+    "title": "2026 05 AP grad",
     "place": "",
     "year": 2026,
     "series": "portraits",
     "home": false,
     "order": null,
     "rank": 3,
-    "shoot": "2026_05-emily_headshots",
+    "shoot": "2026_05-AP_grad",
     "cover": false,
-    "alt": "2026 05 emily headshots, 2026 (3 of 3)"
+    "alt": "2026 05 AP grad, 2026 (3 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-04",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_04.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-04-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-04-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-04-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgQD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/9oADAMBAAIQAxAAAADU5SdppyKx5KHfWbeFxz//xAAiEAACAgICAgIDAAAAAAAAAAACAwERAAQFIRIxFCIyQWH/2gAIAQEAAT8A3JtiP4WEtQvXS4OO/dlm6CoaMDAxHhnKWnWJo+x9Zx22TxhRukmBPZfvuMexknHR9RXeb9gSO6H7XiOSWnlRtfjBUJFj1mZ3MFODyN6hkwSMoi80/iu2lPNEeX44QLObg2Rn/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAFxAhESEyH/2gAIAQIBAT8AbxaOCd6pNcn/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEoH/2gAIAQMBAT8Ad1omS4HT/9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (4 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-05",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_05.jpg",
+    "width": 5236,
+    "height": 7850,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-05-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-05-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-05-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAA1SCaeI0EpRtCor9Z7UJiL//EACUQAAIBAwMCBwAAAAAAAAAAAAECAwAEEQUSMRMiFCFCUWJxwf/aAAgBAQABPwA6hiSHt7gx4+q1a5hN2szsEX5UvTlVXQgqwyDUcgR1VvPD/mK12GSdIdqZetPvoLS38PcPh0Y1JGIJFDIitjhjk4q+DzXGBjbEAO3gs1NpAmYvMWjc+nGamv7uVtzmPd7hFzVlIxVyGJkaTluM1LqF3HIy7ga//8QAHxEAAgECBwAAAAAAAAAAAAAAAQIAAxEQEiEiUZHh/9oACAECAQE/AFcsbHBiLbRrM1Xgd+T/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEGGx/9oACAEDAQE/AIvmEqltI//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (5 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-06",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_06.jpg",
+    "width": 5362,
+    "height": 8039,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-06-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-06-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-06-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGwAAAgEFAAAAAAAAAAAAAAAAAAYEAQIDBQf/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAANjngVz2Zy40w5/KW5wo/iYI/wD/xAAkEAACAQMEAQUBAAAAAAAAAAABAgMABBESITFBExQVUXFygf/aAAgBAQABPwB0Vnf9GrOKIctltXFaBSziRdQIyfirF5fVkOpC7Mh6IoGop5Mb87cmrOS6a81eZfGyjC9fyk1hRmZifoVHcSY5G1W8zRMoBwrHrlWPYr3K/R3Ty50tiv/EABkRAAMAAwAAAAAAAAAAAAAAAAABEhARYf/aAAgBAgEBPwCXSNYrjP/EABoRAAMAAwEAAAAAAAAAAAAAAAABERIiMWL/2gAIAQMBAT8AurKdqMPSP//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (6 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-07",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_07.jpg",
+    "width": 5263,
+    "height": 7890,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-07-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-07-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-07-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQACBAYH/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwL/2gAMAwEAAhADEAAAAEG/O9k76uKiYgpgNhbsIk//xAAkEAACAQQCAgEFAAAAAAAAAAABAgMABBESBSETQSJCYXORsf/aAAgBAQABPwAXOuGVsq/eDVrKrpb4P1n+VyDAXHTZ+Aq2F55obeUaqWC7dHGai5OVXmhfJCu2oqKVZ41cNk4w32NXgk3XVhAdyVyfeOsmrdk0mklbLEj33XGSnwP+Q1yytISzOdUfKimgZHKbD9VYwssJ7Xtq/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECIhEx/9oACAECAQE/AJlKnwqtMjwudM//xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIi/9oACAEDAQE/AFXNk5LVl5L/2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (7 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-08",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_08.jpg",
+    "width": 5319,
+    "height": 7974,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-08-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-08-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-08-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAALZEbDWhhLJaX7JMiUf/xAAiEAACAgICAQUBAAAAAAAAAAABAgMEABIRIVEUIjFhkaL/2gAIAQEAAT8AuWJEc6uddACuRAHQ8YWjJPt/rLLBpiWkGpUBU57JGbSaJwUAIIA18YRLyfg9+Mv1w6mYswdQABllPTXKsHB7rAN9scYqrMDz+5dsvLPUifkqZQxy/NFbvxMgcGNDjK7MSde8/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAIBAxESE//aAAgBAgEBPwCFNSlpmrLnRT//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAEDAQE/AKy7/9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (8 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-09",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_09.jpg",
+    "width": 5324,
+    "height": 7982,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-09-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-09-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-09-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-09-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-09-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-09-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgID/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDBP/aAAwDAQACEAMQAAAA9VFb56nIbOzomkadI0bKf//EACQQAAICAQEJAQEAAAAAAAAAAAECAAMEEQUSEyEiMUFCgXFy/9oACAEBAAE/AKdrCrC4b87Edgo8GYiEUvax63bUzMKtYv8AAjpTXkJW5G4Ld0GHMDpaurciQOWoBER3ZQWtOv5MwFLVqLdm+CVXo99gA6uCN5gdQzDuZfQ9rB61UgqPIE2gNcj60oGM1OMq19RqBJIHqApnBrPos//EABoRAQEAAgMAAAAAAAAAAAAAAAEAAgMSFGL/2gAIAQIBAT8ARYGc+Olyu14v/8QAGhEAAQUBAAAAAAAAAAAAAAAAAAEQESFBYf/aAAgBAwEBPwBKJ4a3/9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 9,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (9 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-10",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_10.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-10-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-10-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-10-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-10-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-10-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-10-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUEA//EABcBAAMBAAAAAAAAAAAAAAAAAAECAwX/2gAMAwEAAhADEAAAAKXVKzaZhdqUG7OgMrec/wD/xAAmEAACAQMDAgcBAAAAAAAAAAABAgMAERIEIUEUIwUTFUJRUmGB/9oACAEBAAE/AJ9S0EdzeNxYliM1tWqkj9NjGFmXEmvObZnRWZxkb8X4pJomABJtz8Gp5I4BqIgO3vYcKfrRZQEDMAQoG4FINSVTCJQANgGrxOJ4iWVVDvPdlB5VL0ArqhL+0ftdfI1wBtU3RNKrPExkvlxYn9qNIMR2Y/6or//EAB0RAAICAQUAAAAAAAAAAAAAAAECAAMREhMiMVH/2gAIAQIBAT8ASxm4quJg+SltLEkdibs//8QAFxEBAAMAAAAAAAAAAAAAAAAAEBEhYf/aAAgBAwEBPwCiNP/Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 10,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (10 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-11",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_11.jpg",
+    "width": 5159,
+    "height": 7738,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-11-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-11-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-11-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-11-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-11-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-11-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAQBAwUCBv/EABUBAQEAAAAAAAAAAAAAAAAAAAME/9oADAMBAAIQAxAAAADyWtS1O0C4U1vb8VumbQB//8QAIhAAAgIBAwUBAQAAAAAAAAAAAQIDEQAEEiEFIjFBUWNy/9oACAEBAAE/AI1beLBbkYDReuCatBwMVo1FSRuG9gHI4Xh02oBvlfF5AjpGsQYp4Lt7/kY4Bkk9d54+Y+xRIXcNuBsVQwNHIncRuKpfPBrF0Aktllv6byTpF3cuRdH/AFyPpjItb8//xAAaEQACAwEBAAAAAAAAAAAAAAABAgAREgMh/9oACAECAQE/AHUGYgRM1Zjcns56eT//xAAeEQEAAgIBBQAAAAAAAAAAAAABAhEAAzEEIVFhgv/aAAgBAwEBPwA6acyKX3jfHusYop4cjs2RIlDRIPrGKq3zn//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 11,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (11 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-12",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_12.jpg",
+    "width": 5115,
+    "height": 7669,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-12-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-12-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-12-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-12-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-12-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-12-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/aAAwDAQACEAMQAAAA5x5kHagpGLNrvQutSXoMf//EACIQAAIBBAEEAwAAAAAAAAAAAAECAwAEERIxBSFBYRNCgf/aAAgBAQABPwCYTSAyIRrxUULhlUyL8ijYg8AezTuUOpwpHI7GkYQRtgEgk/lAbRuV7bru7Hz6pbSGRQz3CBjU86SIyomueSDmrKaGGzkEhwHUBc+StR3MEahREDjzgVJ0y2b64p+nAxIgIwrErUXTYUQAgV//xAAbEQABBQEBAAAAAAAAAAAAAAABAAIDERJRMf/aAAgBAgEBPwAhuBmyaNrLepoYPEY4+Ff/xAAfEQACAgEEAwAAAAAAAAAAAAABAgMRAAQSITETIrH/2gAIAQMBAT8Ah0yHmSgp20b55GSRhJHW+mIzyS7Al+o6+4yl2LHsm8//2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 12,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (12 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-13",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_13.jpg",
+    "width": 5280,
+    "height": 7920,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-13-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-13-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-13-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-13-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-13-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-13-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAMFAgQG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDBP/aAAwDAQACEAMQAAAAn0INHClGuBmi/M1UWdeTf//EACUQAAIBBAEDBAMAAAAAAAAAAAECAwAEERIhBSIxEyMkYUGBof/aAAgBAQABPwC3lAlRdie7GNdhXUoUtEUJypGQajyyg95+1rcI+dSRovHIxxVzIbiBcbZQcDz5qMMq42P9q4i9GJ5DIJJTgAAVDIpmhjiLOHjCtkHhxUlre7n2h+1q9ERsH+OiK+CNTyCDXTIIk6nBkEgQlwPup0LvsEiwR+RX/8QAHBEAAQQDAQAAAAAAAAAAAAAAAAECESESIlFh/9oACAECAQE/AHS2saU09EjFaNeH/8QAGBEBAQADAAAAAAAAAAAAAAAAAQAQEyH/2gAIAQMBAT8AwnQtZf/Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 13,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (13 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-14",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_14.jpg",
+    "width": 5324,
+    "height": 7982,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-14-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-14-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-14-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-14-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-14-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-14-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEEAgP/2gAMAwEAAhADEAAAAFbBC6hS8iBbp0lPROdGZX//xAAiEAACAgIBBQADAAAAAAAAAAABAgMRAAQxEhMhQVFCYYH/2gAIAQEAAT8A7zugIjTkH54OTwSQwBiKVvKn9HDTktxiP1JExJIsj+D1j7Pf0VjV1JBFfjkMjolEDn3kOlI6oG6AASaUEnNjURIlSKKjZkDEnwUF4kG0FAEIavd1eNPvUp7/AD8yTV2N2IGWRWC8E3YzXhnSCNFlNKKFnP/EABsRAAMAAgMAAAAAAAAAAAAAAAABEQIhEiJB/9oACAECAQE/AMuuuNpEvRSqoeKbej//xAAZEQACAwEAAAAAAAAAAAAAAAAAEQECEGH/2gAIAQMBAT8AxQKvT//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 14,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (14 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-15",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_15.jpg",
+    "width": 5245,
+    "height": 7863,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-15-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-15-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-15-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-15-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-15-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-15-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgMB/9oADAMBAAIQAxAAAABKZvyL1B4m852lndIBdNP/xAAjEAACAgIBBAIDAAAAAAAAAAABAgMEABIRBRMhMUFicYKx/9oACAEBAAE/AJLJmsxaFghPrLD6Rygew2U4u3WhVnPOv984TI0lXQEsdcuIpmlRUKgya8HBGB4yvWkE1aMIO40icLt8L5OdXrATb+AdUIXEklZFZig5HPs5HpDL33QM0aMFP5yz27XBAP22+TlDpQsVkcFB+uf/xAAaEQABBQEAAAAAAAAAAAAAAAAAARARISJS/9oACAECAQE/AENdFQ3/xAAYEQADAQEAAAAAAAAAAAAAAAAAESEBUv/aAAgBAwEBPwBweclGf//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 15,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (15 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-16",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_16.jpg",
+    "width": 5137,
+    "height": 7701,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-16-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-16-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-16-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-16-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-16-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-16-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCBQYD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAADk2hIFbK0prXLTabzhriY//8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDABESIQQxFFEFImH/2gAIAQEAAT8AQJHimZKr1SxqFjlzK4gk39WryWsArKRWV2axvUo5DLCpGKSRulvZI0ajvHGiBQMRTF1kJWROt6r5FHhh4M9/pHijn9Ze6kdc222zcaGxQjWJiRvIgbqHkrNeGWFGS+e/d9UvG4T3bxxs1//EABkRAQACAwAAAAAAAAAAAAAAAAEAEBJBYf/aAAgBAgEBPwAGhNzHs//EABYRAQEBAAAAAAAAAAAAAAAAABAhQf/aAAgBAwEBPwAuH//Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 16,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (16 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-17",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_17.jpg",
+    "width": 5440,
+    "height": 8156,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-17-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-17-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-17-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-17-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-17-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-17-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAXAQEBAQEAAAAAAAAAAAAAAAACAAED/9oADAMBAAIQAxAAAADPuoMcmoMENWpBGnbFaWf/xAAhEAACAgIBBAMAAAAAAAAAAAABAgMRAAQhEhMiYRQyQf/aAAgBAQABPwB3Bf3kdPpPFfJDDBYCi6oVh1jJKUBCEIW+3HGaerNbgKx8qoNja2wCQIZDmnBryTL1wLIWU+yBksMurtzmOo0ZrAq6wbOygoqZP0MnIOLL8SbvoW4AWvWbwfelWXuMKboAOHZaDwVmAqwBn//EABgRAAMBAQAAAAAAAAAAAAAAAAABERJh/9oACAECAQE/AMonBSFP/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEQ/9oACAEDAQE/AMiP/9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 17,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (17 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-18",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_18.jpg",
+    "width": 5448,
+    "height": 8168,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-18-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-18-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-18-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-18-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-18-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-18-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUDAgb/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQMCBP/aAAwDAQACEAMQAAAAn95Oa1NkeJXotVSeqBf/xAAmEAACAgIBAwIHAAAAAAAAAAABAgMRAAQhBRITMXEUIjJBUWGR/9oACAEBAAE/AHij7R3D6eRWaZDTDgehwhYyQsPBN+uSzqUIN+9ZFNGp1XRGpozZxpgxvPCsdM4AQHkg81iTwbenAkKUi3GU/Ar74nTJGW/CMk0E29Wcux+UWPfPgE1OnBAbcMpLftsjh3WQETx/w5//xAAYEQADAQEAAAAAAAAAAAAAAAAAARESIv/aAAgBAgEBPwDLgqTlkP/EABgRAQEAAwAAAAAAAAAAAAAAAAARASEx/9oACAEDAQE/ALWertX/2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 18,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (18 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-19",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_19.jpg",
+    "width": 5343,
+    "height": 8010,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-19-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-19-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-19-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-19-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-19-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-19-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAYAQADAQEAAAAAAAAAAAAAAAABAgQDBf/aAAwDAQACEAMQAAAAtpbmckIjJXRWWWafLmaA/wD/xAAjEAACAQQCAgIDAAAAAAAAAAABAgMABBESIVExYQUTMnGR/9oACAEBAAE/AMjIYvjsDnzV9LvbMATjPVYHVbFhoWbHoVIsitIkitk+CTX1cD9UrQsdhcaeitXKrLIDBcK+rDcesGmRhxiiOPJq2+NhjW4l2cyaKc57pkGfyb+1/8QAHREAAgIBBQAAAAAAAAAAAAAAAAECAxESEyEiQf/aAAgBAgEBPwCMVuJmWV1rtx4aGf/EABkRAQADAQEAAAAAAAAAAAAAAAEAAhESIv/aAAgBAwEBPwCr6JhMrVEnRP/Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 19,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (19 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-20",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_20.jpg",
+    "width": 5420,
+    "height": 8126,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-20-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-20-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-20-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-20-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-20-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-20-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgUAAQP/2gAMAwEAAhADEAAAAHbU5q42Z4N0u5PQMCUMwwL/xAAkEAEAAQQCAQMFAAAAAAAAAAABAgADBBESIUExYZEFExQiYv/aAAgBAQABPwAvvKMrkiSnn1Klkcei661pQ7q1l7tx1bX32FXOcLjGUR1BN77qxMvfrOZwTpfFSxc23JIPOO9iNXMmDeZEYcUDQPmvx8PE+1NlMhII67UCpZmGvovujWJb55NsV1vfxX1C3GWLBfEymMP6+a//xAAaEQADAQADAAAAAAAAAAAAAAAAAQITEjFR/9oACAECAQE/ALl0ujjPhMLOjJH/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEmH/2gAIAQMBAT8ApWOWGuPT/9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 20,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (20 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-21",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_21.jpg",
+    "width": 5421,
+    "height": 8128,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-21-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-21-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-21-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-21-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-21-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-21-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgID/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAAyFkmyrpHkKG9hTNdjl//xAAiEAACAgEDBAMAAAAAAAAAAAABAgADBBEhMQUSE1FBYXL/2gAIAQEAAT8AarRwHJOwM6ToLj+0inaUmls1PMgK7A6nbiJRVj5zJUdULqwHqA7TpFNeVY65Ch1G0u6dXXkPZUO0FVOp9+otbkfBmBipRR5O4+R1DfSiPa7csTKyQvPM/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARIf/aAAgBAgEBPwC4jAF//8QAFxEAAwEAAAAAAAAAAAAAAAAAARAhMf/aAAgBAwEBPwA4hV//2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 21,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (21 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-22",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_22.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-22-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-22-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-22-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-22-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-22-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-22-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgH/xAAYAQEAAwEAAAAAAAAAAAAAAAACAAEDBP/aAAwDAQACEAMQAAAAZU6rzt0XI81WZmlbLoF//8QAJBAAAgEEAAUFAAAAAAAAAAAAAQIDAAQREiEiI1FhBTFicYH/2gAIAQEAAT8AsT0k+zV/KwdV3wulW7q0KnbPvxqwl2YxLjpjJJ7tXqPGRT8KtTiBP2rS13Es6zlGkd1Tty01imyO7kOq4DA01lpgJKCvmhaxpYI2owOfHk8atb+eJgHOymlnRhnU1//EABkRAAMAAwAAAAAAAAAAAAAAAAABEQIQYf/aAAgBAgEBPwBrWSk6Q//EABoRAAICAwAAAAAAAAAAAAAAAAABAhEQMXH/2gAIAQMBAT8AlrCprhZ//9k=",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 22,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (22 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-23",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_23.jpg",
+    "width": 7724,
+    "height": 5149,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-23-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-23-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-23-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-23-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-23-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-23-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAABrMX82ezouM//EACEQAAICAgAHAQAAAAAAAAAAAAECAxEAEiEjUVNhkbGh/9oACAEBAAE/AEhieN1ZeDLk+0UiACucv3LBu+uRUqggH2c1jetkuvN/cG/cb8z/xAAWEQADAAAAAAAAAAAAAAAAAAAQESH/2gAIAQIBAT8AdH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AD//2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 23,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (23 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-24",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_24.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-24-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-24-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-24-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-24-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-24-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-24-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEAP/aAAwDAQACEAMQAAAArV1ceWjfIHWhDmzBwTCf/8QAIxAAAgICAgEEAwAAAAAAAAAAAQIDEQAEITETEhRBUVKBof/aAAgBAQABPwDcdLUFjyvFYsjRV42sE9ZIR6ubP6yPWTZ05pZAfKrKqi67yVDB5Ax6TA9qh+1U/wAyHYQRMgPZB6ObMTzc2tlSDgdVRFLiwgGLsFR84u411znvD+Of/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECEiEQ/9oACAECAQE/AGuUe4Vkf//EABgRAAIDAAAAAAAAAAAAAAAAAAABEBEh/9oACAEDAQE/AE0WZH//2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 24,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (24 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-25",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_25.jpg",
+    "width": 5403,
+    "height": 8101,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-25-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-25-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-25-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-25-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-25-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-25-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIAAwT/2gAMAwEAAhADEAAAAFlmSWWPC0Dc23xObjQMAP8A/8QAIxAAAgICAgIBBQAAAAAAAAAAAQIDEQAEEiETMWEiQUJScf/aAAgBAQABPwCOVQe0sd0PnA1SKHcUT2Aao1gRyAUFj5PrIe5ASazZSXzJxid0+545ogrrJ2RfdHsjA0ayIf2YAgD0M10Dxox/IA40DX9K2M1tabaR5YvGghcf2804uEIEjlnskkDDCjG+TZ//xAAbEQADAAIDAAAAAAAAAAAAAAABAhEAEBMhMf/aAAgBAgEBPwBFDHvzOPBCtk1//8QAFREBAQAAAAAAAAAAAAAAAAAAEAL/2gAIAQMBAT8AJP/Z",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 25,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (25 of 26)"
+  },
+  {
+    "id": "2026-05-ap-grad-2026-05-ap-26",
+    "file": "portraits/2026_05-AP_grad/2026_05-AP_26.jpg",
+    "width": 5403,
+    "height": 8101,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-26-480.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-26-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-26-960.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-26-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ap-grad-2026-05-ap-26-1600.avif",
+        "jpg": "/photos/2026-05-ap-grad-2026-05-ap-26-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgME/9oADAMBAAIQAxAAAACN3S+3I9I0IKTRRakwyE//xAAgEAACAQQCAwEAAAAAAAAAAAABAgMAERIhBCITMXFh/9oACAEBAAE/APMFDmy6GgahVH7k5Zg236NKCVBUa+VLByynWFzvdcZMSA8bISSfWjUDKsdsr7JqCO8MZZdkVyIps4/GwUZC+q4uTxZ77EmgIY1CgNoCp4DOAIpGR8gQflO3N4GMCzDEKCLftf/EABoRAQACAwEAAAAAAAAAAAAAAAEAAhESMZH/2gAIAQIBAT8AaGgnZpDpFtlxQ9n/xAAYEQACAwAAAAAAAAAAAAAAAAAAARARMf/aAAgBAwEBPwApjyP/2Q==",
+    "title": "2026 05 AP grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 26,
+    "shoot": "2026_05-AP_grad",
+    "cover": false,
+    "alt": "2026 05 AP grad, 2026 (26 of 26)"
+  },
+  {
+    "id": "2026-05-ew-headshots-2026-05-emily-01",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_01.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwUE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAABxhcrS3ztIrOHWLW4zQ3//xAAmEAACAQQBAwMFAAAAAAAAAAABAgMABBESBRMxUhUhIkJhgYKR/9oACAEBAAE/AEgGKha1ud+jKj6HDansae1G3ap5ES3mLNgdNvf8Vwd6vqt3Gw1LwqP2SmkXNc1cFbPYSYw4+Pn9q4ORDezvqVYodRRnNczdbydH6Iz/AE1x8LRG3uCwJlJUDxGKM1f/xAAWEQEBAQAAAAAAAAAAAAAAAAAQAjH/2gAIAQIBAT8AMk//xAAYEQACAwAAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPwDHNH//2Q==",
+    "title": "2026 05 EW headshots",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_05-EW_headshots",
+    "cover": true,
+    "alt": "2026 05 EW headshots, 2026 (1 of 3)"
+  },
+  {
+    "id": "2026-05-ew-headshots-2026-05-emily-02",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_02.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
+    "title": "2026 05 EW headshots",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_05-EW_headshots",
+    "cover": false,
+    "alt": "2026 05 EW headshots, 2026 (2 of 3)"
+  },
+  {
+    "id": "2026-05-ew-headshots-2026-05-emily-03",
+    "file": "portraits/2026_05-EW_headshots/2026_05-emily_03.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.avif",
+        "jpg": "/photos/2026-05-ew-headshots-2026-05-emily-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABgAFAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAFnXqPKSWhYNFUR6lvZ8H//EACMQAAMAAgIBAwUAAAAAAAAAAAECAwAEBRESFSEyMVFScYL/2gAIAQEAAT8ASA6+mCcnLKrKSvyAPZH7x9UeXxyt568KVc9KiljnE8pCO5qrUGZpFvIn7vjUXvObufTb/wA5Ww2dzSWZBCpFPbDb3zd8KxCU78GogPWHWlr8hrSmz9Kykk/lhr0c/8QAGBEAAwEBAAAAAAAAAAAAAAAAAQIQIVH/2gAIAQIBAT8A5FYDJ//EABoRAAICAwAAAAAAAAAAAAAAAAERABIQIUH/2gAIAQMBAT8AA0Tipq+OKf/Z",
+    "title": "2026 05 EW headshots",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_05-EW_headshots",
+    "cover": false,
+    "alt": "2026 05 EW headshots, 2026 (3 of 3)"
   },
   {
     "id": "2026-05-ey-grad-2026-05-ey-01",
@@ -3706,6 +4420,448 @@
     "alt": "2026 05 LZ grad, 2026 (8 of 8)"
   },
   {
+    "id": "2026-04-jr-grad-2026-04-jr-01",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_01.jpg",
+    "width": 8155,
+    "height": 5439,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-01-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-01-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-01-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAACWxORnSmwz/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDEQAEIRITMZEFIjJB/9oACAEBAAE/AHN1hbaifv2xTl6t95JORojurkKNw7AwDHVGGbUhA5bOTmvF6Vb0pnCadDilTvK4/c1//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERE//aAAgBAgEBPwDJFv/EABURAQEAAAAAAAAAAAAAAAAAAACB/9oACAEDAQE/AEf/2Q==",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_04-JR_grad",
+    "cover": true,
+    "alt": "2026 04 JR grad, 2026 (1 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-02",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_02.jpg",
+    "width": 5461,
+    "height": 8187,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-02-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-02-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-02-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgEDBP/aAAwDAQACEAMQAAAAcc5l7MqxoapxmkrjtkAT/8QAJBAAAgEEAgIBBQAAAAAAAAAAAQIDAAQRIRMxEkEjMlFhgbH/2gAIAQEAAT8AgnjlKKfFQfWdVeqYo0VhsDAIPdXLMspDsF1oZxqomZJRog9fs1cXLyFfqJH8oILkCTOdAVecUdvI5GZguAx9E1ZMXuYkaTCeBT7kYGc6rlniJVJYWHeWG6u5F4JceWSMbNWLLyOSCPjXqjdrrKZ/Jr//xAAaEQADAQADAAAAAAAAAAAAAAAAARECEyEi/9oACAECAQE/APSclotdKiykjjyf/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBEBL/2gAIAQMBAT8ARmnJ/9k=",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (2 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-03",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_03.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-03-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-03-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-03-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAQUG/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIAAwT/2gAMAwEAAhADEAAAAKK/L9XK2ko5Y2LbI8lAf//EACQQAAIBAwMEAwEAAAAAAAAAAAECAwAEERITMkFRYZIUITHC/9oACAEBAAE/ALZo5EjROtXGYogCSrYwy1vqrMNknB61DIVmXwauby4lht55RhG4VcLLcSbqcWA/DQSByC4GvuO/kVhJ4IhNcturqXKpgY6U0U8Z0pNER5Rv5p2AbOD7V8hJAp0t9DHLtRdM8W9q/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREoH/2gAIAQIBAT8AVVWeizFYQwj/xAAXEQADAQAAAAAAAAAAAAAAAAAAEBFR/9oACAEDAQE/AJSGr//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (3 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-04",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_04.jpg",
+    "width": 4341,
+    "height": 6511,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-04-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-04-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-04-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUEBgEDB//EABYBAQEBAAAAAAAAAAAAAAAAAAIBAP/aAAwDAQACEAMQAAAAgtdjiLnRNDbEzoWEWIrNf//EACUQAAIBAwQBBAMAAAAAAAAAAAECAwAEEgUREyExIiRCUXJzgf/aAAgBAQABPwCyteRE7ACrl3V1p9rgnC/w3bKrtDy77dle60RJlSQxYdEJ6qWGWMKIuMFolR9/73U8GU0mfkMRWiy4QzfsFQ3Cs2/0QKuG9xN+ZqPVZrbJFXyQaXWrhJMvsULtpCXYdsa//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERECH/2gAIAQIBAT8ASUIdmf/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBEh/9oACAEDAQE/AG9LHH//2Q==",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (4 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-05",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_05.jpg",
+    "width": 7855,
+    "height": 5239,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-05-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-05-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-05-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAF+Mcxg1MYo3/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDBAAREjEFUSEzkv/aAAgBAQABPwA2IzOCHTXD2PeXLLqeCBSjO4ck9b61hB3lvyMxlmKqqhvjJb00ksWyeKEELgtWCPtf9HP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgERE1H/2gAIAQIBAT8AhWqb4Ysf/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBEhP/2gAIAQMBAT8AVUaQf//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (5 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-06",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_06.jpg",
+    "width": 5461,
+    "height": 8188,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-06-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-06-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-06-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAf/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAACtnWM7mvXmQok/icuXHPyoEp//xAApEAACAgIBAgILAAAAAAAAAAABAgMEABIRBSEUQSIjJDEyQmJxgYKh/9oACAEBAAE/AL7cVv3TJj3zpp9kT7tlu9DLForL8a/MMlv1tj6z+Z0yxGacZDdiWwUq1e1V1B9MsPLjnJujGQSSbojr5MeNsjrwhQHc8/S68ZaCeOpxlndXdtw3u7DGh7gqiAgcfjJOlVZnZm22z//EABoRAAICAwAAAAAAAAAAAAAAAAABAhEDMpH/2gAIAQIBAT8Ay22R1RR0/8QAHBEAAQMFAAAAAAAAAAAAAAAAAAECAxExMnGR/9oACAEDAQE/AIrDsl2VOH//2Q==",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (6 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-07",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_07.jpg",
+    "width": 5409,
+    "height": 8110,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-07-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-07-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-07-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMFBgECBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIDAP/aAAwDAQACEAMQAAAAp7cdMLNEm28qS9DWyVEf/8QAJRAAAgEDAwIHAAAAAAAAAAAAAQIDAAQRBRIhE0EUIjI0UnKB/9oACAEBAAE/AHUZ4rGDB+Vfe8uPvU0uZmdTjJJ44qK3eePqqRiJVLVeyp4ufzD1U0VoNzdIDjgVYpLa6dLKIUKTuFwfiKl0yK5kaVXkUN2NWdmgvGzhgi71BHc0IpJV2RTvE/UC8YK1Jqe3ahgjcoNpZ1BPBr//xAAaEQEAAgMBAAAAAAAAAAAAAAABABECEiEi/9oACAECAQE/AKYjbybejGuxZ//EABoRAAICAwAAAAAAAAAAAAAAAAABAhESISL/2gAIAQMBAT8AE9Iw5crKP//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (7 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-08",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_08.jpg",
+    "width": 8051,
+    "height": 5370,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-08-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-08-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-08-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAAAXWsJlZmZsR//xAAjEAABAwMCBwAAAAAAAAAAAAABAgMEABESI2EFEyEiMUJR/9oACAEBAAE/AJL0QNMYOArtdd6jLBQt64wDC0E743qHxOEmIwDJbBwHtU10sqWQlJ6ZAEbVHiaLbfMPctRc+LvtU2CwXtNAbFvAFf/EABgRAAIDAAAAAAAAAAAAAAAAAAECEBMx/9oACAECAQE/AKkB2P/EABkRAQACAwAAAAAAAAAAAAAAAAEAAhESIf/aAAgBAwEBPwDeyPJgn//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (8 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-09",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_09.jpg",
+    "width": 8192,
+    "height": 5464,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-09-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-09-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-09-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-09-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-09-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-09-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 9,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (9 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-10",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_10.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-10-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-10-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-10-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-10-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-10-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-10-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgUD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAAWrqJypxNEcUSpMtgzBl//8QAJBAAAgEFAAIBBQEAAAAAAAAAAQIDAAQREiEFE8EiIzFBQlH/2gAIAQEAAT8AMzh9AF4pNe6Rt2A4uOak5zUaTTBm+6BsQNY9hVs5ivZ9P2nyKhfEFwO9HxVhMqwEEf2aN0q3Lsi57g0J4Y00LF2wPqB4aTyQj2XUfmj4lzMQbtzUvh5PZr78Z7yri0EcpQyHg/zNf//EABkRAQADAQEAAAAAAAAAAAAAAAEAAhExcf/aAAgBAgEBPwAqQrXCHdHsPZ//xAAYEQEBAAMAAAAAAAAAAAAAAAAAEgEhIv/aAAgBAwEBPwCstodP/9k=",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 10,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (10 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-11",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_11.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-11-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-11-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-11-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-11-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-11-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-11-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAUGAgME/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDBP/aAAwDAQACEAMQAAAA9MQ9UZmXGi5X9n07Ck0bHP/EACQQAAEEAgEDBQEAAAAAAAAAAAEAAgMREiEEIjFBBRNRcYGR/9oACAEBAAE/AJPUJoGHr8UpTnJM4+XFHSmdbh20N2nwS09+DsSXbrWk4WU7gTl11E39XBiEz3wzEGKEPbiHY5u+FJBUj8CMcjW12HgfQTx7XP5XQw4XO3+diqz6jq96X//EABoRAAMBAAMAAAAAAAAAAAAAAAECEQAQIVH/2gAIAQIBAT8AR2JNPC21t37v/8QAGBEAAwEBAAAAAAAAAAAAAAAAARAhETH/2gAIAQMBAT8AAqmzq//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 11,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (11 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-12",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_12.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-12-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-12-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-12-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-12-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-12-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-12-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAMEAQUG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgMEAP/aAAwDAQACEAMQAAAA4WlTVPpECbMWP1xxzjAt/8QAIRAAAgIDAAEFAQAAAAAAAAAAAQIAAwQRIXESEzFRYYH/2gAIAQEAAT8ALNK7AYGjDQ4JdjWYwpdjywEj+QNsSxCjsjfIOvsy7Ksy8FKX1vH16fEVio1rcz0Vq8fJHPdXTD9WBeeYdA9n/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECEiFR/9oACAECAQE/AGkzJL3M0c8P/8QAGREAAwADAAAAAAAAAAAAAAAAAAECERKB/9oACAEDAQE/AIpy8ioa1qpOn//Z",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 12,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (12 of 13)"
+  },
+  {
+    "id": "2026-04-jr-grad-2026-04-jr-13",
+    "file": "portraits/2026_04-JR_grad/2026_04-JR_13.jpg",
+    "width": 5411,
+    "height": 8113,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-13-480.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-13-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-13-960.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-13-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jr-grad-2026-04-jr-13-1600.avif",
+        "jpg": "/photos/2026-04-jr-grad-2026-04-jr-13-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQIG/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwABAv/aAAwDAQACEAMQAAAA9Rh3pSxBADX9rT2URcbf/8QAIhAAAgEFAQABBQAAAAAAAAAAAQIDAAQREiFBgSIjMVKR/9oACAEBAAE/AFvEz1ObFRgg1fSXEzv9tyqscAeChKcDlTyR6OUiV9cbN+tK9uqvvvoCEEnQDnw1nUup8Y1ZzxByU2bmdW4Kmvw5ZxFkg8BOFdhz+io3hkXd5jsSfwOHHM0iRxHKr3UL8CpFT6mEa5yGPx2rO0AgHEYEkjI8Jr//xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIREhD/2gAIAQIBAT8AcLV8ezJ//8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhARMf/aAAgBAwEBPwBTjvjwqlj/2Q==",
+    "title": "2026 04 JR grad",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 13,
+    "shoot": "2026_04-JR_grad",
+    "cover": false,
+    "alt": "2026 04 JR grad, 2026 (13 of 13)"
+  },
+  {
     "id": "event-01",
     "file": "events/event-01.jpg",
     "width": 3611,
@@ -4010,5 +5166,175 @@
     "shoot": "event-09",
     "cover": true,
     "alt": "Magenta, Philadelphia, 2026"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-dsc03309",
+    "file": "events/2026_04-WUHC_Speakers/DSC03309.jpg",
+    "width": 2385,
+    "height": 3578,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03309-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03309-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03309-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03309-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03309-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03309-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEFBP/aAAwDAQACEAMQAAAArp3HORQVmiGZmGCWnhYFcZ//xAAhEAEAAgEEAwADAAAAAAAAAAABAgMABBETIRIxURSRof/aAAgBAQABPwCVfJVOB15G2+OnmgNih6z8WP1zT2l1ZM6Mt1ddZA6RkPXtDKnmrjOAsXK9VqaKpVSDy2V3Pv3K51VlXKbf3187yq3jhtGTsq99Zr9HXXqPFCsnANoGWVwi7E1iPvbZy4eRiS6gEf0Z/8QAHREBAAEEAwEAAAAAAAAAAAAAAQIAAxMxBBASU//aAAgBAgEBPwCzmjOdsKycn5zo8mgF31//xAAdEQACAQQDAAAAAAAAAAAAAAABAgADEBEhEzFR/9oACAEDAQE/AH4yoYzFH1Zs97t//9k=",
+    "title": "2026 04 WUHC Speakers",
+    "place": "",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": true,
+    "alt": "2026 04 WUHC Speakers, 2026 (1 of 5)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-dsc03313",
+    "file": "events/2026_04-WUHC_Speakers/DSC03313.jpg",
+    "width": 4546,
+    "height": 3031,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03313-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03313-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03313-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03313-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03313-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03313-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAME/9oADAMBAAIQAxAAAADWWRly3SiY/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIDEQAEEhMhIjEyUYH/2gAIAQEAAT8AWcR6Aft5xj39V3OToPkJ2juOjxarx49GM0+wl/pyGXY2UWJpiEWDtQHrHmmD31G5cQLvJb6r0xHln//EABsRAAEEAwAAAAAAAAAAAAAAAAIAARETElOR/9oACAECAQE/AKJMSzdoVDbD6v/EABsRAAEEAwAAAAAAAAAAAAAAAAEAAhETElKR/9oACAEDAQE/ALYBGMyrTo3i/9k=",
+    "title": "2026 04 WUHC Speakers",
+    "place": "",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "2026 04 WUHC Speakers, 2026 (2 of 5)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-dsc03333",
+    "file": "events/2026_04-WUHC_Speakers/DSC03333.jpg",
+    "width": 2142,
+    "height": 3213,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03333-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03333-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03333-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03333-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03333-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03333-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCBQYD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAQBBf/aAAwDAQACEAMQAAAAXeq7LmXSERqDVZxul0BlA//EACMQAAIBAwQBBQAAAAAAAAAAAAECAwAEERIhMkFRYXKRobH/2gAIAQEAAT8AjBBgDeTUnKD3n8pxv391ZztcrHJjid6Miu0WM7Oej4q6muklxHGpXFIULk2xTScakXaoJXaRE0HSgyDTSoDhoJSfTAq2nmWIohVQOwozUtzc9zP80ZXJyWNf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQACEhMhUv/aAAgBAgEBPwBqijNS9yrMBHk108z/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAISE1JB/9oACAEDAQE/ABEJk82mSezZbqf/2Q==",
+    "title": "2026 04 WUHC Speakers",
+    "place": "",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "2026 04 WUHC Speakers, 2026 (3 of 5)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-dsc03371",
+    "file": "events/2026_04-WUHC_Speakers/DSC03371.jpg",
+    "width": 5238,
+    "height": 3492,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03371-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03371-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03371-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03371-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03371-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03371-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQP/2gAMAwEAAhADEAAAAKCkyGlRtGk//8QAIBAAAgIDAAEFAAAAAAAAAAAAAQIDEQAEExIhIjJUkv/aAAgBAQABPwCt77kn6znN0WSWZnpSBZybY5vXJm9LvNlGLLb+0KCAMV3k5x+ZDV8sj0VRFDSFjV2c/8QAGxEBAAICAwAAAAAAAAAAAAAAAQMRAAISEzH/2gAIAQIBAT8A6ptjW5LH3CACuA5//8QAGxEBAAICAwAAAAAAAAAAAAAAAQATAyEiMUL/2gAIAQMBAT8Asxi8NnUtH2k//9k=",
+    "title": "2026 04 WUHC Speakers",
+    "place": "",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "2026 04 WUHC Speakers, 2026 (4 of 5)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-dsc03419",
+    "file": "events/2026_04-WUHC_Speakers/DSC03419.jpg",
+    "width": 5932,
+    "height": 3955,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03419-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03419-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03419-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03419-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-dsc03419-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-dsc03419-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABUBAQEAAAAAAAAAAAAAAAAAAAQD/9oADAMBAAIQAxAAAAAmIIHvXNAp/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDEQAEBSESEyQxQXKi/9oACAEBAAE/AJNz3F+Ejii/RGTyzuvkaqQ2wHulxodKhppFv7ZJPI3eKEp082PZvJZHLtbXz85t4DwMzAWXOf/EABsRAQACAgMAAAAAAAAAAAAAAAIBIQASA1GR/9oACAECAQE/AICmbflY+TRo7Op7z//EABkRAAIDAQAAAAAAAAAAAAAAAAECABIxkf/aAAgBAwEBPwAuoxIosoNV5P/Z",
+    "title": "2026 04 WUHC Speakers",
+    "place": "",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "2026 04 WUHC Speakers, 2026 (5 of 5)"
   }
 ]
