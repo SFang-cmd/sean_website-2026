@@ -13,6 +13,8 @@ import styles from "./Gallery.module.css";
 export type GallerySection = Series & { photos: Photo[] };
 
 const GRID_SIZES = "(max-width: 599px) calc(100vw - 56px), (max-width: 800px) 50vw, (max-width: 1400px) 30vw, 420px";
+// A landscape spans two grid columns (full width below 801px).
+const GRID_LAND_SIZES = "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 60vw, 860px";
 const EDITORIAL_SIZES = "(max-width: 815px) calc(100vw - 56px), 760px";
 
 /**
@@ -113,23 +115,25 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
 type OpenFn = (id: string, from?: HTMLElement) => void;
 
 function Cell({ photo: p, view, open }: { photo: Photo; view: GalleryView; open: OpenFn }) {
+  const land = p.width > p.height;
+  const sizes = view === "editorial" ? EDITORIAL_SIZES : land ? GRID_LAND_SIZES : GRID_SIZES;
   return (
     <figure
       id={p.id}
-      className={styles.figure}
+      className={`${styles.figure} ${land ? styles.land : ""}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
         type="button"
         onClick={(e) => open(p.id, e.currentTarget)}
-        className={`${styles.cell} ${p.width > p.height ? styles.land : ""} cursor-pointer`}
+        className={`${styles.cell} ${land ? styles.land : ""} cursor-pointer`}
       >
         <Image
           loader={loaderFor(p)}
           src={srcFor(p)}
           alt={p.alt}
           fill
-          sizes={view === "editorial" ? EDITORIAL_SIZES : GRID_SIZES}
+          sizes={sizes}
           placeholder="blur"
           blurDataURL={p.blur}
         />
@@ -154,25 +158,27 @@ function ShootCard({
 }) {
   const { cover: p, photos, slug } = item;
   const peek = photos.find((x) => x.id !== p.id);
+  const land = p.width > p.height;
+  const sizes = view === "editorial" ? EDITORIAL_SIZES : land ? GRID_LAND_SIZES : GRID_SIZES;
   return (
     <figure
       id={p.id}
       data-shoot={slug}
-      className={`${styles.figure} ${styles.shoot}`}
+      className={`${styles.figure} ${styles.shoot} ${land ? styles.land : ""}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
         type="button"
         onClick={(e) => open(p.id, e.currentTarget)}
         aria-label={`${p.title}, ${photos.length} photos`}
-        className={`${styles.cell} ${p.width > p.height ? styles.land : ""} cursor-pointer`}
+        className={`${styles.cell} ${land ? styles.land : ""} cursor-pointer`}
       >
         <Image
           loader={loaderFor(p)}
           src={srcFor(p)}
           alt={p.alt}
           fill
-          sizes={view === "editorial" ? EDITORIAL_SIZES : GRID_SIZES}
+          sizes={sizes}
           placeholder="blur"
           blurDataURL={p.blur}
         />
@@ -182,7 +188,7 @@ function ShootCard({
             src={srcFor(peek)}
             alt=""
             fill
-            sizes={view === "editorial" ? EDITORIAL_SIZES : GRID_SIZES}
+            sizes={sizes}
             className={styles.peek}
           />
         )}
