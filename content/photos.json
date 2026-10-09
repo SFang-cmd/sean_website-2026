@@ -6213,33 +6213,33 @@
     "alt": "Photo 5 of 16"
   },
   {
-    "id": "home-06-wuhc-room",
-    "file": "home/06-wuhc-room.jpg",
-    "width": 5515,
-    "height": 3677,
+    "id": "home-06-wuhc-panel",
+    "file": "home/06-wuhc-panel.jpg",
+    "width": 5991,
+    "height": 3994,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-06-wuhc-room-480.avif",
-        "jpg": "/photos/home-06-wuhc-room-480.jpg"
+        "avif": "/photos/home-06-wuhc-panel-480.avif",
+        "jpg": "/photos/home-06-wuhc-panel-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-06-wuhc-room-960.avif",
-        "jpg": "/photos/home-06-wuhc-room-960.jpg"
+        "avif": "/photos/home-06-wuhc-panel-960.avif",
+        "jpg": "/photos/home-06-wuhc-panel-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-06-wuhc-room-1600.avif",
-        "jpg": "/photos/home-06-wuhc-room-1600.jpg"
+        "avif": "/photos/home-06-wuhc-panel-1600.avif",
+        "jpg": "/photos/home-06-wuhc-panel-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-06-wuhc-room-2400.avif",
-        "jpg": "/photos/home-06-wuhc-room-2400.jpg"
+        "avif": "/photos/home-06-wuhc-panel-2400.avif",
+        "jpg": "/photos/home-06-wuhc-panel-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/9oADAMBAAIQAxAAAABOIyI1skAD/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQRISJRYQUTUv/aAAgBAQABPwC4aKHyfsfJXC5A7Sr+8guY0WNGBDfNXboZV3LpFGNDwoqWIM6sSdwz1Txjk1lgTur/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAMTImH/2gAIAQIBAT8AKtUWYuz/xAAXEQADAQAAAAAAAAAAAAAAAAAAEyFh/9oACAEDAQE/AG0Zh//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAAbLwzjXsDTOZ//8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREgUUITFSIkGS/9oACAEBAAE/AGctfz7KStY/Rp7LlvZ9yzJnj1jXTW4JBkMjz8qdcOgW6TMdZDJ9iac90pkSYZAS8GuMO1tt9mcia//EABwRAAICAgMAAAAAAAAAAAAAAAECAAMRIRJRYf/aAAgBAgEBPwAI5JzZrwSy1kdl5No9z//EABoRAAIDAQEAAAAAAAAAAAAAAAECABIhUZH/2gAIAQMBAT8AugGJ7EUMoNV0cn//2Q==",
     "title": "",
     "place": "",
     "year": 2026,
