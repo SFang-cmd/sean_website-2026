@@ -1,7 +1,7 @@
 [
   {
     "id": "portrait-01",
-    "file": "portrait-01.jpg",
+    "file": "portraits/portrait-01.jpg",
     "width": 4287,
     "height": 6430,
     "renditions": [
@@ -33,7 +33,7 @@
   },
   {
     "id": "portrait-02",
-    "file": "portrait-02.jpg",
+    "file": "portraits/portrait-02.jpg",
     "width": 4719,
     "height": 7079,
     "renditions": [
@@ -65,7 +65,7 @@
   },
   {
     "id": "portrait-03",
-    "file": "portrait-03.jpg",
+    "file": "portraits/portrait-03.jpg",
     "width": 2732,
     "height": 4096,
     "renditions": [
@@ -97,7 +97,7 @@
   },
   {
     "id": "portrait-04",
-    "file": "portrait-04.jpg",
+    "file": "portraits/portrait-04.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -129,7 +129,7 @@
   },
   {
     "id": "portrait-05",
-    "file": "portrait-05.jpg",
+    "file": "portraits/portrait-05.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -161,7 +161,7 @@
   },
   {
     "id": "portrait-06",
-    "file": "portrait-06.jpg",
+    "file": "portraits/portrait-06.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -193,7 +193,7 @@
   },
   {
     "id": "portrait-07",
-    "file": "portrait-07.jpg",
+    "file": "portraits/portrait-07.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -225,7 +225,7 @@
   },
   {
     "id": "portrait-08",
-    "file": "portrait-08.jpg",
+    "file": "portraits/portrait-08.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -257,7 +257,7 @@
   },
   {
     "id": "portrait-09",
-    "file": "portrait-09.jpg",
+    "file": "portraits/portrait-09.jpg",
     "width": 5440,
     "height": 8156,
     "renditions": [
@@ -289,7 +289,7 @@
   },
   {
     "id": "portrait-10",
-    "file": "portrait-10.jpg",
+    "file": "portraits/portrait-10.jpg",
     "width": 4891,
     "height": 7336,
     "renditions": [
@@ -321,7 +321,7 @@
   },
   {
     "id": "portrait-11",
-    "file": "portrait-11.jpg",
+    "file": "portraits/portrait-11.jpg",
     "width": 8192,
     "height": 5464,
     "renditions": [
@@ -353,7 +353,7 @@
   },
   {
     "id": "portrait-12",
-    "file": "portrait-12.jpg",
+    "file": "portraits/portrait-12.jpg",
     "width": 7855,
     "height": 5239,
     "renditions": [
@@ -385,7 +385,7 @@
   },
   {
     "id": "portrait-13",
-    "file": "portrait-13.jpg",
+    "file": "portraits/portrait-13.jpg",
     "width": 5177,
     "height": 7762,
     "renditions": [
@@ -417,7 +417,7 @@
   },
   {
     "id": "portrait-14",
-    "file": "portrait-14.jpg",
+    "file": "portraits/portrait-14.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
@@ -449,7 +449,7 @@
   },
   {
     "id": "portrait-15",
-    "file": "portrait-15.jpg",
+    "file": "portraits/portrait-15.jpg",
     "width": 4076,
     "height": 2718,
     "renditions": [
@@ -481,7 +481,7 @@
   },
   {
     "id": "event-01",
-    "file": "event-01.jpg",
+    "file": "events/event-01.jpg",
     "width": 3611,
     "height": 5417,
     "renditions": [
@@ -513,7 +513,7 @@
   },
   {
     "id": "event-02",
-    "file": "event-02.jpg",
+    "file": "events/event-02.jpg",
     "width": 5401,
     "height": 3601,
     "renditions": [
@@ -545,7 +545,7 @@
   },
   {
     "id": "event-03",
-    "file": "event-03.jpg",
+    "file": "events/event-03.jpg",
     "width": 5583,
     "height": 3722,
     "renditions": [
@@ -577,7 +577,7 @@
   },
   {
     "id": "event-04",
-    "file": "event-04.jpg",
+    "file": "events/event-04.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
@@ -609,7 +609,7 @@
   },
   {
     "id": "event-05",
-    "file": "event-05.jpg",
+    "file": "events/event-05.jpg",
     "width": 3514,
     "height": 5271,
     "renditions": [
@@ -641,7 +641,7 @@
   },
   {
     "id": "event-06",
-    "file": "event-06.jpg",
+    "file": "events/event-06.jpg",
     "width": 4000,
     "height": 6000,
     "renditions": [
@@ -673,7 +673,7 @@
   },
   {
     "id": "event-07",
-    "file": "event-07.jpg",
+    "file": "events/event-07.jpg",
     "width": 5991,
     "height": 3994,
     "renditions": [
@@ -705,7 +705,7 @@
   },
   {
     "id": "event-08",
-    "file": "event-08.jpg",
+    "file": "events/event-08.jpg",
     "width": 3343,
     "height": 5014,
     "renditions": [
@@ -737,7 +737,7 @@
   },
   {
     "id": "event-09",
-    "file": "event-09.jpg",
+    "file": "events/event-09.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
