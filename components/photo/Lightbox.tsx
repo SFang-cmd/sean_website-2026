@@ -17,8 +17,9 @@ import styles from "./Lightbox.module.css";
  * One look everywhere: a solid neutral near-black (#141414, not #000, so a
  * photo with a black background keeps its edge), the photo alone at the
  * largest size that fits, click-to-zoom (fit ↔ 2× about the clicked point,
- * drag to pan), a close button, and a bottom band with the caption and
- * counter centred (caption hidden while zoomed). Stepping: on each side,
+ * drag to pan), a close button, and a bottom band: the caption and counter
+ * centred, over the filmstrip. The whole band hides while zoomed and the
+ * zoomed photo may pan into its space. Stepping: on each side,
  * the empty stage beside the photo plus the outer fifth of the photo is a
  * prev/next zone (the cursor becomes an arrow there; gone while zoomed so
  * dragging pans) — the side you are on is the way you go, whatever the
@@ -210,7 +211,18 @@ export function Lightbox({
               </>
             )}
           </ZoomableImage>
-          <div className={styles.band}>
+          <div className={`${styles.band} ${zoomed ? styles.bandHidden : ""}`}>
+            <div className={styles.meta}>
+              <p className={styles.caption}>
+                <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
+                {shown.place ? ` · ${shown.place}` : ""} · {shown.year}
+              </p>
+              {count > 1 && (
+                <span className="tabular-nums" aria-live="polite">
+                  {Math.max(index, 0) + 1} / {count}
+                </span>
+              )}
+            </div>
             {strip && (
               <div
                 ref={stripRef}
@@ -242,17 +254,6 @@ export function Lightbox({
                 ))}
               </div>
             )}
-            <div className={styles.meta}>
-              <p className={`${styles.caption} ${zoomed ? styles.captionHidden : ""}`}>
-                <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
-                {shown.place ? ` · ${shown.place}` : ""} · {shown.year}
-              </p>
-              {count > 1 && (
-                <span className="tabular-nums" aria-live="polite">
-                  {Math.max(index, 0) + 1} / {count}
-                </span>
-              )}
-            </div>
           </div>
         </>
       )}
@@ -326,7 +327,10 @@ function ZoomableImage({
   useEffect(() => () => onZoomChange?.(false), [onZoomChange]);
 
   const transform = (z: Zoom) => `translate(${z.tx}px, ${z.ty}px) scale(${ZOOM})`;
-  const clamp = (z: Zoom) => clampPan(z, stageRef.current?.getBoundingClientRect() ?? null);
+  // Clamp to the dialog, not the stage: the band under the stage hides while
+  // zoomed, so the photo may use that space too.
+  const clamp = (z: Zoom) =>
+    clampPan(z, stageRef.current?.parentElement?.getBoundingClientRect() ?? null);
 
   const onClick = (e: React.MouseEvent<HTMLImageElement>) => {
     if (suppressClick.current) {
@@ -419,16 +423,16 @@ function ZoomableImage({
   );
 }
 
-/** Keep the scaled photo inside the stage on each axis: no gap beside it
-    when it is larger than the stage, no overflow when it is smaller. */
-function clampPan(z: Zoom, stage: DOMRect | null): Zoom {
-  const sl = stage?.left ?? 0;
-  const st = stage?.top ?? 0;
-  const sw = stage?.width ?? window.innerWidth;
-  const sh = stage?.height ?? window.innerHeight;
+/** Keep the scaled photo inside `box` on each axis: no gap beside it when it
+    is larger than the box, no overflow when it is smaller. */
+function clampPan(z: Zoom, box: DOMRect | null): Zoom {
+  const sl = box?.left ?? 0;
+  const st = box?.top ?? 0;
+  const sw = box?.width ?? window.innerWidth;
+  const sh = box?.height ?? window.innerHeight;
   const axis = (pos: number, origin: number, size: number, start: number, view: number, t: number) => {
     const scaled = size * ZOOM;
-    const at0 = pos + origin * (1 - ZOOM) - start; // scaled edge at t = 0, relative to the stage
+    const at0 = pos + origin * (1 - ZOOM) - start; // scaled edge at t = 0, relative to the box
     const lo = Math.min(0, view - scaled);
     const hi = Math.max(0, view - scaled);
     return Math.min(hi, Math.max(lo, at0 + t)) - at0;

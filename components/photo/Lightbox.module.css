@@ -16,13 +16,15 @@
   border: 0;
   background: #141414;
   color: #fff;
-  /* A scroll container that never scrolls: wheel/touch over the dialog
-     stops here instead of chaining to the (locked) page underneath. */
-  overflow: auto;
+  /* A scroll container that never scrolls (hidden, not auto: the zoomed
+     photo's transform would otherwise grow a scrollbar): wheel/touch over
+     the dialog stops here instead of chaining to the (locked) page
+     underneath. */
+  overflow: hidden;
   overscroll-behavior: contain;
 }
 .hasStrip {
-  --band: 96px;
+  --band: 92px;
 }
 .dialog::backdrop {
   background: transparent;
@@ -166,7 +168,8 @@
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23000' stroke-opacity='.7' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") 14 14, e-resize;
 }
 
-/* The band: filmstrip (if any) over the caption/counter line. */
+/* The band: the caption/counter line, then the filmstrip (if any). Hidden
+   as a whole while zoomed. */
 .band {
   position: absolute;
   left: 0;
@@ -177,10 +180,13 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+.bandHidden {
+  visibility: hidden;
+}
 .strip {
   display: flex;
   gap: 6px;
-  padding: 4px 12px 8px;
+  padding: 2px 12px 10px;
   overflow-x: auto;
   scrollbar-width: none;
   transition: opacity 240ms ease;
@@ -229,13 +235,13 @@
     opacity: 0;
   }
 }
-/* Caption and counter, centred on one line. */
+/* Caption and counter, centred on one line above the strip. */
 .meta {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 18px;
-  padding: 0 12px 10px;
+  padding: 0 12px 8px;
   font-size: 11px;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
@@ -246,9 +252,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.captionHidden {
-  visibility: hidden;
 }
 
 @media (hover: none) {
