@@ -6072,33 +6072,33 @@
     "alt": "Photo 1 of 16"
   },
   {
-    "id": "home-02-lz-palestra",
-    "file": "home/02-lz-palestra.jpg",
-    "width": 4076,
-    "height": 2718,
+    "id": "home-02-pennyo-duet",
+    "file": "home/02-pennyo-duet.jpg",
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-02-lz-palestra-480.avif",
-        "jpg": "/photos/home-02-lz-palestra-480.jpg"
+        "avif": "/photos/home-02-pennyo-duet-480.avif",
+        "jpg": "/photos/home-02-pennyo-duet-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-02-lz-palestra-960.avif",
-        "jpg": "/photos/home-02-lz-palestra-960.jpg"
+        "avif": "/photos/home-02-pennyo-duet-960.avif",
+        "jpg": "/photos/home-02-pennyo-duet-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-02-lz-palestra-1600.avif",
-        "jpg": "/photos/home-02-lz-palestra-1600.jpg"
+        "avif": "/photos/home-02-pennyo-duet-1600.avif",
+        "jpg": "/photos/home-02-pennyo-duet-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-02-lz-palestra-2400.avif",
-        "jpg": "/photos/home-02-lz-palestra-2400.jpg"
+        "avif": "/photos/home-02-pennyo-duet-2400.avif",
+        "jpg": "/photos/home-02-pennyo-duet-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6111,28 +6111,33 @@
     "alt": "Photo 2 of 16"
   },
   {
-    "id": "home-03-pennyo-blue",
-    "file": "home/03-pennyo-blue.jpg",
-    "width": 4000,
-    "height": 6000,
+    "id": "home-03-lz-palestra",
+    "file": "home/03-lz-palestra.jpg",
+    "width": 4076,
+    "height": 2718,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-03-pennyo-blue-480.avif",
-        "jpg": "/photos/home-03-pennyo-blue-480.jpg"
+        "avif": "/photos/home-03-lz-palestra-480.avif",
+        "jpg": "/photos/home-03-lz-palestra-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-03-pennyo-blue-960.avif",
-        "jpg": "/photos/home-03-pennyo-blue-960.jpg"
+        "avif": "/photos/home-03-lz-palestra-960.avif",
+        "jpg": "/photos/home-03-lz-palestra-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-03-pennyo-blue-1600.avif",
-        "jpg": "/photos/home-03-pennyo-blue-1600.jpg"
+        "avif": "/photos/home-03-lz-palestra-1600.avif",
+        "jpg": "/photos/home-03-lz-palestra-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-03-lz-palestra-2400.avif",
+        "jpg": "/photos/home-03-lz-palestra-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6359,33 +6364,33 @@
     "alt": "Photo 9 of 16"
   },
   {
-    "id": "home-10-pennyo-duet",
-    "file": "home/10-pennyo-duet.jpg",
+    "id": "home-10-pennyo-cast",
+    "file": "home/10-pennyo-cast.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-10-pennyo-duet-480.avif",
-        "jpg": "/photos/home-10-pennyo-duet-480.jpg"
+        "avif": "/photos/home-10-pennyo-cast-480.avif",
+        "jpg": "/photos/home-10-pennyo-cast-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-10-pennyo-duet-960.avif",
-        "jpg": "/photos/home-10-pennyo-duet-960.jpg"
+        "avif": "/photos/home-10-pennyo-cast-960.avif",
+        "jpg": "/photos/home-10-pennyo-cast-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-10-pennyo-duet-1600.avif",
-        "jpg": "/photos/home-10-pennyo-duet-1600.jpg"
+        "avif": "/photos/home-10-pennyo-cast-1600.avif",
+        "jpg": "/photos/home-10-pennyo-cast-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-10-pennyo-duet-2400.avif",
-        "jpg": "/photos/home-10-pennyo-duet-2400.jpg"
+        "avif": "/photos/home-10-pennyo-cast-2400.avif",
+        "jpg": "/photos/home-10-pennyo-cast-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6573,33 +6578,28 @@
     "alt": "Photo 15 of 16"
   },
   {
-    "id": "home-16-pennyo-cast",
-    "file": "home/16-pennyo-cast.jpg",
-    "width": 6000,
-    "height": 4000,
+    "id": "home-16-pennyo-blue",
+    "file": "home/16-pennyo-blue.jpg",
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-16-pennyo-cast-480.avif",
-        "jpg": "/photos/home-16-pennyo-cast-480.jpg"
+        "avif": "/photos/home-16-pennyo-blue-480.avif",
+        "jpg": "/photos/home-16-pennyo-blue-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-16-pennyo-cast-960.avif",
-        "jpg": "/photos/home-16-pennyo-cast-960.jpg"
+        "avif": "/photos/home-16-pennyo-blue-960.avif",
+        "jpg": "/photos/home-16-pennyo-blue-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-16-pennyo-cast-1600.avif",
-        "jpg": "/photos/home-16-pennyo-cast-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/home-16-pennyo-cast-2400.avif",
-        "jpg": "/photos/home-16-pennyo-cast-2400.jpg"
+        "avif": "/photos/home-16-pennyo-blue-1600.avif",
+        "jpg": "/photos/home-16-pennyo-blue-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
     "title": "",
     "place": "",
     "year": 2026,
