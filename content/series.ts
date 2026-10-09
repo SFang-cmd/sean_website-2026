@@ -1,6 +1,6 @@
 /**
  * Gallery series: the sections a client browses by. `slug` is what the
- * `series` column in content/photos.csv must match. Order here is display
+ * `series` column in content/shoots.csv must match (and the folder name under photos/). Order here is display
  * order in the gallery index. Ledes are one sentence; Sean rewrites them.
  */
 export interface Series {
@@ -19,6 +19,11 @@ export const series: Series[] = [
     slug: "events",
     name: "Events",
     lede: "Performances, panels, and the rooms they happen in.",
+  },
+  {
+    slug: "product",
+    name: "Product",
+    lede: "Things, lit on purpose. Studio and on location.",
   },
   {
     slug: "sports",
