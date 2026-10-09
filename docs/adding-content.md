@@ -152,3 +152,7 @@ served resume was **deliberately removed** for privacy — don't re-add
 - `experience` blurbs are authored but not rendered (see above).
 - Still TODO: verify `site.url` domain, favicon (planned "S-patch" = initial
   in a patch cell) + OG images, then deploy.
+
+### Holding photos you can't publish yet
+
+Anything under a folder whose name starts with `_` is ignored by the pipeline, at any level. Use `photos/_hold/<series>/<shoot>/` to stage shoots that are waiting on permission (for example work done for an employer): the originals stay local (`photos/` is gitignored), nothing is rendered into `public/photos/` and nothing reaches the repo or the site. When cleared, move the shoot folder up to `photos/<series>/`, add its row to `content/shoots.csv`, and run `npm run photos`. Remember that everything the pipeline renders is committed and served, linked or not, so "in the repo but not on a page" is still published.

@@ -6,6 +6,8 @@
  *   photos/<series>/<shoot>/cover.jpg   ← the shoot's cover (the gallery card)
  *   photos/<series>/<shoot>/01.jpg ...  ← the rest, ordered by filename
  *   photos/<series>/single.jpg          ← a photo on its own = a one-photo shoot
+ *   photos/_hold/...                    ← ignored entirely (staging for photos
+ *                                          not yet cleared to publish)
  *   photos/home/01.jpg ...              ← the home page: any photos, in
  *                                          filename order; no CSV row needed
  *
@@ -295,7 +297,11 @@ async function listShootFolders(errors: string[]): Promise<Folders> {
     return { shoots: out, home };
   }
   const isImage = (name: string) => IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase());
-  const skip = (name: string) => name.startsWith(".") || IGNORED_FILES.has(name.toLowerCase());
+  // Dotfiles, the private notes, and anything starting with "_" (a hold
+  // area, e.g. photos/_hold/<series>/<shoot>/ for photos that aren't cleared
+  // to publish yet: nothing under it is read, rendered, or committed).
+  const skip = (name: string) =>
+    name.startsWith(".") || name.startsWith("_") || IGNORED_FILES.has(name.toLowerCase());
 
   for (const ser of top) {
     if (skip(ser)) continue;
