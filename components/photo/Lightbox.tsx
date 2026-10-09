@@ -23,8 +23,10 @@ import styles from "./Lightbox.module.css";
  * each side, the empty stage beside the photo plus the outer fifth of the
  * photo is a prev/next zone (the cursor becomes an arrow there) — the side
  * you are on is the way you go, whatever the photo's shape — plus ←/→ and
- * a touch swipe. Closing is the ×, Esc, or a click on the empty stage
- * above/below a photo. With `filmstrip`, the band also holds a
+ * a touch swipe. The stage is inset from the viewport by a gutter (the CSS
+ * `--gutter` / `--gutter-top`), so the photo never touches the edges.
+ * Closing is the ×, Esc, or a click on the empty stage above/below a photo
+ * or anywhere in the gutter. With `filmstrip`, the band also holds a
  * row of thumbnails: the current one outlined, click to jump, the row kept
  * centred on it; on pointer devices it fades out after a short idle and comes
  * back on any movement or key.
