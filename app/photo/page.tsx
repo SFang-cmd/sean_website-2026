@@ -6,7 +6,8 @@ import { Streams } from "@/components/photo/Streams";
 /**
  * B home: hero → the streams → Work with me → footer door. The page is a
  * server component; only the streams are client-side (layout + motion).
- * Copy below is placeholder until Phase 5 (real content).
+ * The hero must stand alone: photos.sean-fang.com is an entry point of its
+ * own, so it says who, where and what without leaning on the A side.
  */
 const workWithMe = {
   email: "sean@sean-fang.com", // placeholder
@@ -21,10 +22,11 @@ export default function PhotoHome() {
       <main>
         <header className="flex min-h-[92vh] flex-col justify-end px-7 pb-12">
           <h1 className="max-w-[14ch] font-serif text-[clamp(40px,7vw,96px)] leading-[0.98] tracking-[-0.01em]">
-            The rest of the time I do the looking myself.
+            Pictures of people, mostly.
           </h1>
           <p className="mt-6 max-w-[44ch] text-muted">
-            Photographer, Philadelphia and New York. Night, street, and from the air. Scroll.
+            Sean Fang, Philadelphia. Graduation portraits, headshots, events, and the occasional
+            drone flight. Scroll.
           </p>
         </header>
 
@@ -36,7 +38,7 @@ export default function PhotoHome() {
         >
           <h2 className="font-serif text-[clamp(32px,5vw,64px)] leading-none">Work with me</h2>
           <p className="mt-4 max-w-[44ch] text-muted">
-            Available for editorial, events, and commissioned work. The fastest way to reach me
+            Available for portraits, events, and commissioned work. The fastest way to reach me
             is email:{" "}
             <a href={`mailto:${workWithMe.email}`} className="text-fg underline underline-offset-4">
               {workWithMe.email}

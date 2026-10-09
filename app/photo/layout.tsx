@@ -3,7 +3,8 @@ import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: { absolute: `${site.name} — Photography` },
-  description: "Photography by Sean Fang: portraits, sports, travel, aerial.",
+  description:
+    "Sean Fang, photographer in Philadelphia. Graduation portraits, headshots, events, and the occasional drone flight.",
   alternates: { canonical: site.photosUrl },
 };
 

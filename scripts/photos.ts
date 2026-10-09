@@ -162,10 +162,18 @@ function humanize(stem: string): string {
   return words ? words[0].toUpperCase() + words.slice(1) : stem;
 }
 
-/** "2026", "2026-05", "05-2026", "05/2026" → 2026. */
+/**
+ * The year out of whatever a spreadsheet made of the cell: "2026", "2026-05",
+ * "05-2026", "05/2026", "May-26", "May 2026", "May-2026". A two-digit year
+ * is 20xx. Only the year is kept.
+ */
 function parseYear(raw: string): number | undefined {
-  const m = /^(?:(\d{4})(?:[-/]\d{1,2})?|\d{1,2}[-/](\d{4}))$/.exec(raw);
-  return m ? Number(m[1] ?? m[2]) : undefined;
+  const t = raw.trim();
+  let m = /^(?:(\d{4})(?:[-/ ]\d{1,2})?|\d{1,2}[-/ ](\d{4}))$/.exec(t);
+  if (m) return Number(m[1] ?? m[2]);
+  m = /^[A-Za-z]{3,9}[-/ ,]+(\d{2}|\d{4})$/.exec(t); // May-26, May 2026
+  if (m) return m[1].length === 2 ? 2000 + Number(m[1]) : Number(m[1]);
+  return undefined;
 }
 
 function parseInteger(raw: string): number | undefined {
@@ -394,7 +402,7 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
     if (yearRaw === "") warnings.push(`${label}: year blank; using ${thisYear}`);
     else {
       const y = parseYear(yearRaw);
-      if (y === undefined) errors.push(`${label}: "year" must be a year (2026, 2026-05 or 05-2026), got "${yearRaw}"`);
+      if (y === undefined) errors.push(`${label}: "year" must be a year (2026, 2026-05, 05-2026 or May-26), got "${yearRaw}"`);
       else year = y;
     }
 

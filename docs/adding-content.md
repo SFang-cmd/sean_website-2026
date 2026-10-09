@@ -107,7 +107,7 @@ is shown.
    | `series` | the series folder (written for you) |
    | `title`  | what shows under the cover and in the lightbox, e.g. `Commencement` |
    | `place`  | e.g. `Penn, Philadelphia` |
-   | `year`   | `2026`, `2026-05` or `05-2026` (only the year is shown) |
+   | `year`   | `2026`, `2026-05`, `05-2026` or `May-26` (whatever the spreadsheet saves; only the year is shown) |
 
    Photos inherit their shoot's title, place and year; alt text is derived
    (`Commencement, Penn, Philadelphia, 2026 (3 of 12)`). Gallery order within
