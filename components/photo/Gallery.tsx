@@ -135,7 +135,8 @@ function Cell({ photo: p, view, open }: { photo: Photo; view: GalleryView; open:
         />
       </button>
       <figcaption className="mt-1.5 text-[12px] text-muted">
-        <i className="font-serif text-[14px] italic text-fg">{p.title}</i> · {p.place} · {p.year}
+        <i className="font-serif text-[14px] italic text-fg">{p.title}</i>
+        {p.place ? ` · ${p.place}` : ""} · {p.year}
       </figcaption>
     </figure>
   );
@@ -188,7 +189,8 @@ function ShootCard({
       </button>
       <figcaption className="mt-1.5 flex items-baseline justify-between gap-3 text-[12px] text-muted">
         <span>
-          <i className="font-serif text-[14px] italic text-fg">{p.title}</i> · {p.place} · {p.year}
+          <i className="font-serif text-[14px] italic text-fg">{p.title}</i>
+          {p.place ? ` · ${p.place}` : ""} · {p.year}
         </span>
         <span className="shrink-0 tabular-nums">{photos.length} photos</span>
       </figcaption>
