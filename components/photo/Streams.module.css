@@ -24,6 +24,22 @@
   height: auto;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
 }
+/* The click target (opens the lightbox): a bare, full-width button around the
+   image, in both the river and the plain list. No touch-action, so touch
+   scrolling over it is untouched. */
+.open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.open:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
+}
 
 /* Scroll-driven version: pure CSS, compositor-only. Longhands on purpose —
    the `animation` shorthand resets `animation-timeline` and the drift snaps. */

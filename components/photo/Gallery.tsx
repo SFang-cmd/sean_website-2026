@@ -1,12 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import type { Series } from "@/content/series";
 import type { Photo } from "@/lib/photos";
 import { setGalleryView, useGalleryView, type GalleryView } from "@/lib/galleryViewStore";
 import { loaderFor, srcFor } from "./photoLoader";
 import { Lightbox } from "./Lightbox";
+import { useLightbox } from "./useLightbox";
 import styles from "./Gallery.module.css";
 
 export type GallerySection = Series & { photos: Photo[] };
@@ -17,64 +18,15 @@ const EDITORIAL_SIZES = "(max-width: 815px) calc(100vw - 56px), 760px";
 /**
  * B gallery: sticky series index + sections (port of b-gallery.html), with a
  * grid/editorial toggle persisted in localStorage and a <dialog> lightbox.
- * Deep links: opening a photo sets `#<id>`; loading with that hash opens it.
+ * Deep links: opening a photo sets `#<id>`; loading with that hash opens it
+ * (see useLightbox).
  */
 export function Gallery({ sections }: { sections: GallerySection[] }) {
   const view = useGalleryView();
   const photos = useMemo(() => sections.flatMap((s) => s.photos), [sections]);
-  const [openId, setOpenId] = useState<string | null>(null);
+  const { index, open, nav, closed } = useLightbox(photos);
   const [active, setActive] = useState<string | null>(null);
-  const opener = useRef<HTMLElement | null>(null);
   const mainRef = useRef<HTMLElement>(null);
-
-  const index = openId === null ? -1 : photos.findIndex((p) => p.id === openId);
-  const current = index >= 0 ? photos[index] : null;
-
-  const setHash = (id: string | null) => {
-    const { pathname, search } = window.location;
-    window.history.replaceState(null, "", id ? `#${id}` : pathname + search);
-  };
-
-  const open = useCallback((id: string, from?: HTMLElement) => {
-    opener.current = from ?? null;
-    setOpenId(id);
-    setHash(id);
-  }, []);
-
-  // Runs once per close, from the dialog's native `close` event (Esc,
-  // backdrop, close button, or the state being dropped): clear the hash and
-  // return focus to the thumbnail that opened the lightbox.
-  const closed = useCallback(() => {
-    setOpenId(null);
-    if (window.location.hash) setHash(null);
-    const el = opener.current;
-    opener.current = null;
-    el?.focus();
-  }, []);
-
-  const nav = useCallback(
-    (delta: number) => {
-      if (index < 0) return;
-      const next = photos[(index + delta + photos.length) % photos.length];
-      setOpenId(next.id);
-      setHash(next.id);
-    },
-    [index, photos],
-  );
-
-  // Deep link on load, and the hash changing underneath us (back button).
-  useEffect(() => {
-    const fromHash = () => {
-      const id = decodeURIComponent(window.location.hash.slice(1));
-      if (photos.some((p) => p.id === id)) {
-        opener.current = document.getElementById(id)?.querySelector("button") ?? null;
-        setOpenId(id);
-      }
-    };
-    fromHash();
-    window.addEventListener("hashchange", fromHash);
-    return () => window.removeEventListener("hashchange", fromHash);
-  }, [photos]);
 
   // Index active state: the series currently in view.
   useEffect(() => {
@@ -156,7 +108,7 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
         ))}
       </main>
 
-      <Lightbox photo={current} index={index} count={photos.length} onNav={nav} onClosed={closed} />
+      <Lightbox photos={photos} index={index} onNav={nav} onClosed={closed} />
     </div>
   );
 }

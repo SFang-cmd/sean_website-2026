@@ -1,0 +1,181 @@
+/* The lightbox: a native <dialog> filling the viewport. Two variants —
+   `paper` (the gallery: page colors, caption, text controls) and `black`
+   (the home: opaque #000, the photo alone, small white controls). */
+.dialog {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 24px 28px;
+  border: 0;
+  background: var(--bg);
+  color: var(--fg);
+  /* A scroll container that never scrolls: wheel/touch over the dialog
+     stops here instead of chaining to the (locked) page underneath. */
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.dialog::backdrop {
+  background: transparent;
+}
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dialogImg {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 136px);
+  object-fit: contain;
+}
+
+/* Open/close fade. Only applied when motion is allowed (not plaintext mode,
+   not reduced motion). Browsers without @starting-style / allow-discrete
+   simply snap, which is the same as the no-motion case. */
+.fade {
+  opacity: 0;
+  transition-property: opacity, display, overlay;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
+  transition-behavior: allow-discrete;
+}
+.fade[open] {
+  opacity: 1;
+}
+@starting-style {
+  .fade[open] {
+    opacity: 0;
+  }
+}
+
+/* Neighbours of the open photo, fetched at the same `sizes` as the real one
+   so stepping is instant. Not display:none — every browser fetches a laid-out
+   image, not all fetch a hidden one. */
+.preload {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---- black variant ---------------------------------------------------- */
+.black {
+  width: 100%; /* of the viewport, so phone toolbars don't crop the stage */
+  height: 100%;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+/* The photo, centred, at the largest size that fits. The stage lets clicks
+   on empty space fall through to the dialog (= backdrop close). Sized from
+   the stage and the photo's ratio (`--ar`), not the image's natural size:
+   with `sizes="100vw"` the browser density-corrects the natural size by
+   whichever srcset descriptor it chose, and `width: auto` would lay the
+   image out at a fraction of the viewport. */
+.stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  container-type: size;
+  pointer-events: none;
+}
+.full {
+  display: block;
+  width: min(100cqw, calc(100cqh * var(--ar, 1)));
+  height: auto;
+  aspect-ratio: var(--ar, auto);
+  max-width: none;
+  max-height: none;
+  pointer-events: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: pinch-zoom; /* one finger pans when zoomed; two go to the browser */
+  cursor: zoom-in;
+}
+.zoomed {
+  cursor: grab;
+}
+.panning {
+  cursor: grabbing;
+}
+.fade .full {
+  transition: transform 180ms ease;
+}
+.fade .panning {
+  transition: none;
+}
+
+/* Controls: small, white, Geist (inherited), readable over any photo. */
+.ctl {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  opacity: 0.85;
+}
+.ctl:hover {
+  opacity: 1;
+}
+.ctl:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+  opacity: 1;
+}
+.close {
+  top: 8px;
+  right: 8px;
+}
+.prev {
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  /* Arrows to the bottom corners so they stay off a full-width photo. */
+  .prev,
+  .next {
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+  .counter {
+    bottom: 12px;
+  }
+}

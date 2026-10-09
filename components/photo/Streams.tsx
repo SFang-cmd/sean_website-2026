@@ -6,6 +6,8 @@ import type { Photo } from "@/lib/photos";
 import { usePlainEnabled } from "@/lib/plainStore";
 import { useReducedMotion } from "@/lib/motion";
 import { loaderFor, srcFor } from "./photoLoader";
+import { Lightbox } from "./Lightbox";
+import { useLightbox } from "./useLightbox";
 import styles from "./Streams.module.css";
 
 /**
@@ -17,6 +19,12 @@ import styles from "./Streams.module.css";
  * animation where `animation-timeline: scroll()` is supported, otherwise a
  * single passive scroll listener + one rAF that writes the transforms.
  * Reduced motion and plaintext mode render a plain single-column list.
+ *
+ * Every shot is a <button> opening the photo in the black Lightbox (fit to
+ * the viewport, ←/→ through the home sequence, `#<id>` deep links). The
+ * button sits inside the <figure> that carries the scroll-driven transform,
+ * so it rides along without touching the motion; it has no touch-action of
+ * its own, so a drag over it still scrolls the page.
  *
  * QA hook: `?motion=raf` forces the rAF fallback in a supporting browser.
  */
@@ -42,34 +50,49 @@ const jitterY = (i: number) => ((i * 37) % 100) / 100;
 const jitterS = (i: number) => 0.85 + (((i * 53) % 100) / 100) * 0.3;
 
 type Mode = "css" | "raf";
-
+type Open = (id: string, from: HTMLElement) => void;
 
 export function Streams({ photos }: { photos: Photo[] }) {
   const plain = usePlainEnabled();
   const reduced = useReducedMotion();
-  if (plain || reduced) return <PlainList photos={photos} />;
-  return <River photos={photos} />;
+  const { index, open, nav, closed } = useLightbox(photos);
+  return (
+    <>
+      {plain || reduced ? (
+        <PlainList photos={photos} onOpen={open} />
+      ) : (
+        <River photos={photos} onOpen={open} />
+      )}
+      <Lightbox variant="black" photos={photos} index={index} onNav={nav} onClosed={closed} />
+    </>
+  );
 }
 
-function PlainList({ photos }: { photos: Photo[] }) {
+function PlainList({ photos, onOpen }: { photos: Photo[]; onOpen: Open }) {
   return (
     <section className="px-7 pb-24" aria-label="Selected photos">
       <ul className="max-w-[760px] space-y-14">
         {photos.map((p, i) => (
           <li key={p.id}>
-            <figure className="m-0">
-              <Image
-                loader={loaderFor(p)}
-                src={srcFor(p)}
-                alt={p.alt}
-                width={p.width}
-                height={p.height}
-                sizes="(max-width: 815px) calc(100vw - 56px), 760px"
-                placeholder="blur"
-                blurDataURL={p.blur}
-                priority={i < 2}
-                className="h-auto w-full"
-              />
+            <figure id={p.id} className="m-0">
+              <button
+                type="button"
+                className={styles.open}
+                onClick={(e) => onOpen(p.id, e.currentTarget)}
+              >
+                <Image
+                  loader={loaderFor(p)}
+                  src={srcFor(p)}
+                  alt={p.alt}
+                  width={p.width}
+                  height={p.height}
+                  sizes="(max-width: 815px) calc(100vw - 56px), 760px"
+                  placeholder="blur"
+                  blurDataURL={p.blur}
+                  priority={i < 2}
+                  className="h-auto w-full"
+                />
+              </button>
             </figure>
           </li>
         ))}
@@ -78,7 +101,7 @@ function PlainList({ photos }: { photos: Photo[] }) {
   );
 }
 
-function River({ photos }: { photos: Photo[] }) {
+function River({ photos, onOpen }: { photos: Photo[]; onOpen: Open }) {
   const riverRef = useRef<HTMLElement>(null);
   const shotRefs = useRef<(HTMLElement | null)[]>([]);
   // Per-shot drift factors from the last layout: x = −scroll·tan, y = scroll·lag.
@@ -197,6 +220,7 @@ function River({ photos }: { photos: Photo[] }) {
       {photos.slice(0, count).map((p, i) => (
         <figure
           key={p.id}
+          id={p.id}
           ref={(el) => {
             shotRefs.current[i] = el;
           }}
@@ -204,17 +228,19 @@ function River({ photos }: { photos: Photo[] }) {
           data-mode={mode ?? undefined}
           style={{ zIndex: i + 1 }}
         >
-          <Image
-            loader={loaderFor(p)}
-            src={srcFor(p)}
-            alt={p.alt}
-            width={p.width}
-            height={p.height}
-            sizes={SIZES}
-            placeholder="blur"
-            blurDataURL={p.blur}
-            priority={i < 2}
-          />
+          <button type="button" className={styles.open} onClick={(e) => onOpen(p.id, e.currentTarget)}>
+            <Image
+              loader={loaderFor(p)}
+              src={srcFor(p)}
+              alt={p.alt}
+              width={p.width}
+              height={p.height}
+              sizes={SIZES}
+              placeholder="blur"
+              blurDataURL={p.blur}
+              priority={i < 2}
+            />
+          </button>
         </figure>
       ))}
     </section>
