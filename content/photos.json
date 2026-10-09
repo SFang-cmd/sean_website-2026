@@ -29,6 +29,8 @@
     "home": true,
     "order": 1,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Six graduates in gowns walk down a tree-lined path"
   },
   {
@@ -61,6 +63,8 @@
     "home": true,
     "order": 2,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Graduates silhouetted in a tall gothic window"
   },
   {
@@ -93,6 +97,8 @@
     "home": true,
     "order": 3,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate in a gown walks a campus path, seen from above"
   },
   {
@@ -125,6 +131,8 @@
     "home": true,
     "order": 4,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate in a white dress sits in a sunlit window holding her cap"
   },
   {
@@ -157,6 +165,8 @@
     "home": true,
     "order": 5,
     "rank": null,
+    "shoot": "grad-2026-a",
+    "cover": true,
     "alt": "A graduate in a white dress sits on the lawn holding her cap"
   },
   {
@@ -189,6 +199,8 @@
     "home": true,
     "order": 6,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Studio headshot in a navy suit, arms crossed"
   },
   {
@@ -221,6 +233,8 @@
     "home": true,
     "order": 7,
     "rank": null,
+    "shoot": "grad-2026-a",
+    "cover": false,
     "alt": "Two graduates in gowns on a stone bench under green leaves"
   },
   {
@@ -253,6 +267,8 @@
     "home": true,
     "order": 9,
     "rank": null,
+    "shoot": "grad-2026-a",
+    "cover": false,
     "alt": "Four graduates posed on the LOVE statue"
   },
   {
@@ -285,6 +301,8 @@
     "home": true,
     "order": 10,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate in a gown tosses her cap in front of a stone building"
   },
   {
@@ -317,6 +335,8 @@
     "home": true,
     "order": 12,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate in white tosses her cap in front of Huntsman Hall"
   },
   {
@@ -349,6 +369,8 @@
     "home": true,
     "order": 13,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate stands at the top of a sunlit staircase"
   },
   {
@@ -381,6 +403,8 @@
     "home": true,
     "order": 15,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate in a white dress reclines in a window seat"
   },
   {
@@ -413,6 +437,8 @@
     "home": true,
     "order": 17,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Three graduates in white seated on an ornate staircase"
   },
   {
@@ -445,6 +471,8 @@
     "home": true,
     "order": 20,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Graduates in white on the steps of a stone archway"
   },
   {
@@ -477,6 +505,8 @@
     "home": true,
     "order": 24,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A graduate alone in the stands of the Palestra"
   },
   {
@@ -509,6 +539,8 @@
     "home": true,
     "order": 8,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer in a red dress performs under red stage light"
   },
   {
@@ -541,6 +573,8 @@
     "home": true,
     "order": 11,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer in a suit performs under orange light"
   },
   {
@@ -573,6 +607,8 @@
     "home": true,
     "order": 14,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer in a brown suit performs under red light"
   },
   {
@@ -605,6 +641,8 @@
     "home": true,
     "order": 16,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Two singers in black and white against a red stage"
   },
   {
@@ -637,6 +675,8 @@
     "home": true,
     "order": 18,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer in a red dress under warm stage light"
   },
   {
@@ -669,6 +709,8 @@
     "home": true,
     "order": 19,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer in a pink dress under blue light"
   },
   {
@@ -701,6 +743,8 @@
     "home": true,
     "order": 21,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "Two speakers in armchairs at a fireside chat"
   },
   {
@@ -733,6 +777,8 @@
     "home": true,
     "order": 22,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A panel on stage beneath a projected title slide"
   },
   {
@@ -765,6 +811,8 @@
     "home": true,
     "order": 23,
     "rank": null,
+    "shoot": null,
+    "cover": false,
     "alt": "A singer at a microphone under magenta light"
   }
 ]

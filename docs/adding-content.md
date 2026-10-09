@@ -70,10 +70,12 @@ Photos are data too: a folder of originals plus one CSV, and a script that
 turns them into the manifest the pages read. You never touch a component.
 
 1. Export from Lightroom as JPEG, long edge ~2400px, into a folder per
-   series under `photos/` (`photos/portraits/`, `photos/sports/`, ...;
-   gitignored, originals stay on your machine). Flat files directly in
-   `photos/` still work. Keep filenames unique across folders: the filename
-   is the photo's id.
+   series under `photos/`, and a folder per **shoot** (one session, one set
+   of people) inside that: `photos/portraits/grad-2026-a/01.jpg`. Singles
+   can sit directly in the series folder. All of it is gitignored; originals
+   stay on your machine. Keep filenames unique across folders: the filename
+   is the photo's id, and it appears in URLs, so use neutral names
+   (`grad-01.jpg`, not a client's name).
 2. Run `npm run photos -- --scaffold` to get a CSV row for every new file
    (series from the folder, title guessed from the filename), then fill in
    the words in `content/photos.csv`:
@@ -88,7 +90,9 @@ turns them into the manifest the pages read. You never touch a component.
    | `home`   | `TRUE` to include on the home streams (aim for 30–40); `TRUE`/`FALSE`, `1`/`0`, `yes`/`no`, any case |
    | `order`  | integer sequence on the home, lower first; blank when `home` is FALSE |
    | `alt`    | one plain sentence describing the image, for screen readers and search |
-   | `rank`   | optional: position within its series in the gallery, lower first. Blank ranks sort after ranked ones, then by filename in natural order, so numbering files `01-`, `02-` is enough |
+   | `rank`   | optional: position within its shoot (or, for singles, its series) in the gallery, lower first. Blank ranks sort after ranked ones, then by filename in natural order, so numbering files `01-`, `02-` is enough |
+   | `shoot`  | optional: the session slug (a-z, 0-9, hyphens) shared by every photo of one shoot; blank = the subfolder name, or a single if there is none |
+   | `cover`  | optional: `TRUE` on the one photo per shoot the gallery shows as its cover; if none is marked the first by rank/filename is used |
 
    If `title`/`alt` are blank the script falls back to the image's embedded
    IPTC/XMP Title and Caption, so captioning in Lightroom also works. If
@@ -110,6 +114,12 @@ turns them into the manifest the pages read. You never touch a component.
    deleted and listed. The manifest is always rewritten, in a stable order
    (series order, then year desc, then title), so diffs stay clean.
 4. Commit and push. The site is static, so that's the deploy.
+
+**How shoots show up.** The gallery lists each shoot once, as its cover with a
+photo count (the second frame peeks on hover); clicking opens the lightbox
+over that shoot's photos. Singles show as themselves. On the home, clicking a
+stream image opens its whole shoot too, so the home is one frame per shoot
+(`home` + `order`) and the gallery holds the sets.
 
 To add a series, add an entry to `content/series.ts`. To take a photo down,
 delete its row (and optionally the original) and re-run the script.

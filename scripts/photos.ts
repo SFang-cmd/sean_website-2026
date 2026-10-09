@@ -42,9 +42,10 @@ const BLUR_QUALITY = 50;
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png"]);
 /** Non-image files allowed in photos/: docs and the private id→original notes. */
 const IGNORED_FILES = new Set(["readme.md", "notes.csv"]);
-const CSV_COLUMNS = ["file", "title", "place", "year", "series", "home", "order", "alt", "rank"] as const;
+const CSV_COLUMNS = ["file", "title", "place", "year", "series", "home", "order", "alt", "rank", "shoot", "cover"] as const;
 /** Columns a CSV may leave out entirely (treated as blank). */
-const OPTIONAL_COLUMNS = new Set<string>(["rank"]);
+const OPTIONAL_COLUMNS = new Set<string>(["rank", "shoot", "cover"]);
+const SHOOT_SLUG = /^[a-z0-9][a-z0-9-]*$/;
 
 const CONCURRENCY = Math.max(1, Math.min(4, Math.floor(os.cpus().length / 2)));
 
@@ -64,6 +65,8 @@ interface Entry {
   home: boolean;
   order: number | null;
   rank: number | null;
+  shoot: string | null;
+  cover: boolean;
   alt: string;
   /** Which fields came from somewhere other than the CSV, for the summary. */
   fallbacks: string[];
@@ -249,20 +252,21 @@ async function listOriginals(errors: string[]): Promise<string[]> {
     }
     files.push(rel);
   };
-  for (const name of names.sort()) {
-    if (name.startsWith(".")) continue;
-    const full = path.join(ORIGINALS_DIR, name);
-    const stat = await fs.stat(full);
-    if (stat.isDirectory()) {
-      const inner = await fs.readdir(full);
-      for (const child of inner.sort()) {
-        const childStat = await fs.stat(path.join(full, child));
-        if (childStat.isFile()) consider(`${name}/${child}`, child);
+  // Up to two folder levels: photos/<series>/<shoot>/<file>.
+  const walk = async (rel: string, depth: number) => {
+    const full = path.join(ORIGINALS_DIR, rel);
+    for (const name of (await fs.readdir(full)).sort()) {
+      if (name.startsWith(".")) continue;
+      const childRel = rel ? `${rel}/${name}` : name;
+      const stat = await fs.stat(path.join(full, name));
+      if (stat.isDirectory()) {
+        if (depth < 2) await walk(childRel, depth + 1);
+      } else if (stat.isFile()) {
+        consider(childRel, name);
       }
-    } else if (stat.isFile()) {
-      consider(name, name);
     }
-  }
+  };
+  await walk("", 0);
   return files;
 }
 
@@ -309,11 +313,29 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
 
     let ser = (row.series ?? "").trim();
     const fallbacks: string[] = [];
-    const folder = file.includes("/") ? file.slice(0, file.indexOf("/")) : "";
+    const parts = file.split("/");
+    const folder = parts.length > 1 ? parts[0] : "";
+    const shootFolder = parts.length > 2 ? parts[1] : "";
     if (!ser && folder) {
       ser = folder;
       fallbacks.push("series ← folder");
     }
+    let shoot: string | null = (row.shoot ?? "").trim() || null;
+    if (!shoot && shootFolder) {
+      shoot = shootFolder;
+      fallbacks.push("shoot ← folder");
+    }
+    if (shoot && !SHOOT_SLUG.test(shoot)) {
+      errors.push(`${label}: shoot "${shoot}" must be a slug (a-z, 0-9, hyphens)`);
+    }
+    const coverRaw = (row.cover ?? "").trim();
+    let cover = false;
+    if (coverRaw !== "") {
+      const b = parseBool(coverRaw);
+      if (b === undefined) errors.push(`${label}: "cover" must be TRUE/FALSE or blank, got "${coverRaw}"`);
+      else cover = b;
+    }
+    if (cover && !shoot) warnings.push(`${label}: cover is TRUE but the photo has no shoot (ignored)`);
     if (!seriesSlugs.has(ser)) {
       errors.push(
         `${label}: series "${ser}" is not in content/series.ts (${[...seriesSlugs].join(", ")})`,
@@ -353,10 +375,29 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
       home: home ?? false,
       order,
       rank,
+      shoot,
+      cover: cover && !!shoot,
       alt: (row.alt ?? "").trim(),
       fallbacks,
     });
   });
+
+  // Every shoot gets exactly one cover: the first by rank/filename if none is marked.
+  const natural = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+  const byShoot = new Map<string, Entry[]>();
+  for (const e of entries) if (e.shoot) (byShoot.get(e.shoot) ?? byShoot.set(e.shoot, []).get(e.shoot)!).push(e);
+  for (const [slug, list] of byShoot) {
+    const covers = list.filter((e) => e.cover);
+    if (covers.length > 1) {
+      errors.push(`shoot "${slug}": ${covers.length} photos marked cover (${covers.map((e) => e.file).join(", ")}); mark one`);
+    } else if (covers.length === 0) {
+      const first = [...list].sort(
+        (a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9) || natural.compare(a.file, b.file),
+      )[0];
+      first.cover = true;
+      warnings.push(`shoot "${slug}": no cover marked; using ${first.file}`);
+    }
+  }
 
   for (const f of files) {
     if (!seenFiles.has(f)) errors.push(`photos/${f}: no row in content/photos.csv`);
@@ -490,6 +531,8 @@ async function build(entry: Entry): Promise<Built> {
     home: entry.home,
     order: entry.order,
     rank: entry.rank,
+    shoot: entry.shoot,
+    cover: entry.cover,
     alt: entry.alt,
   };
   return { photo, regenerated };
@@ -549,16 +592,18 @@ async function scaffold(): Promise<void> {
   }
   const year = String(new Date().getFullYear());
   const lines = missing.map((f) => {
-    const folder = f.includes("/") ? f.slice(0, f.indexOf("/")) : "";
+    const parts = f.split("/");
+    const folder = parts.length > 1 ? parts[0] : "";
+    const shootFolder = parts.length > 2 ? parts[1] : "";
     const stem = path.basename(f).replace(/\.[^.]+$/, "");
-    return [f, titleFromStem(stem), "", year, folder, "FALSE", "", "", ""].map(csvCell).join(",");
+    return [f, titleFromStem(stem), "", year, folder, "FALSE", "", "", "", shootFolder, ""].map(csvCell).join(",");
   });
   let text = await fs.readFile(CSV_PATH, "utf8");
   if (!text.endsWith("\n")) text += "\n";
   await fs.writeFile(CSV_PATH, text + lines.join("\n") + "\n");
   console.log(`npm run photos --scaffold: added ${missing.length} row${missing.length === 1 ? "" : "s"} to content/photos.csv:\n`);
   for (const f of missing) console.log(`  ${f}`);
-  console.log("\nFill in place / alt (and home + order for the home page), then run npm run photos.");
+  console.log("\nFill in place / alt, rank within each shoot, cover TRUE on one photo per shoot,\nand home + order for the home page; then run npm run photos.");
 }
 
 async function main(): Promise<void> {
@@ -601,6 +646,7 @@ async function main(): Promise<void> {
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(photos, null, 2) + "\n");
 
   // Summary
+  const shootCount = new Set(photos.map((p) => p.shoot).filter(Boolean)).size;
   const regenerated = built.filter((b) => b.regenerated).length;
   const skipped = built.length - regenerated;
   const onHome = photos.filter((p) => p.home).length;
@@ -610,6 +656,7 @@ async function main(): Promise<void> {
     fmtTable([
       ["photos", String(photos.length)],
       ["on home", String(onHome)],
+      ["shoots", String(shootCount)],
       ...series.map((s) => [`  ${s.slug}`, String(photos.filter((p) => p.series === s.slug).length)]),
       ["regenerated", String(regenerated)],
       ["skipped (up to date)", String(skipped)],

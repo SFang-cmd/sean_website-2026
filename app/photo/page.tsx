@@ -1,4 +1,4 @@
-import { getHomePhotos } from "@/lib/photos";
+import { getAllPhotos, getHomePhotos } from "@/lib/photos";
 import { PhotoNav } from "@/components/photo/PhotoNav";
 import { PhotoFooter } from "@/components/photo/PhotoFooter";
 import { Streams } from "@/components/photo/Streams";
@@ -28,7 +28,7 @@ export default function PhotoHome() {
           </p>
         </header>
 
-        <Streams photos={photos} />
+        <Streams photos={photos} all={getAllPhotos()} />
 
         <section
           id="work"

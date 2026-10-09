@@ -43,8 +43,17 @@ export interface Photo {
    * 01-/02- prefix on the files is enough to order a shoot.
    */
   rank: number | null;
+  /** Session slug shared by every photo of one shoot; null for a single. */
+  shoot: string | null;
+  /** The one photo per shoot the gallery shows as its cover. */
+  cover: boolean;
   alt: string;
 }
+
+/** A gallery item: a shoot (cover + its photos, in order) or a single photo. */
+export type GalleryItem =
+  | { kind: "shoot"; slug: string; cover: Photo; photos: Photo[] }
+  | { kind: "single"; photo: Photo };
 
 const photos = photosJson as Photo[];
 
@@ -86,6 +95,33 @@ export function getPhotosBySeries(): Map<string, Photo[]> {
     );
   }
   return map;
+}
+
+/** All photos of a shoot, in gallery order (rank, then filename). */
+export function getShootPhotos(slug: string): Photo[] {
+  return photos
+    .filter((p) => p.shoot === slug)
+    .sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9) || natural.compare(a.file, b.file));
+}
+
+/**
+ * Group an ordered photo list into gallery items: each shoot appears once,
+ * at the position of its first photo, as a cover + set; the rest are singles.
+ */
+export function groupShoots(list: Photo[]): GalleryItem[] {
+  const seen = new Set<string>();
+  const items: GalleryItem[] = [];
+  for (const p of list) {
+    if (!p.shoot) {
+      items.push({ kind: "single", photo: p });
+      continue;
+    }
+    if (seen.has(p.shoot)) continue;
+    seen.add(p.shoot);
+    const set = list.filter((x) => x.shoot === p.shoot);
+    items.push({ kind: "shoot", slug: p.shoot, cover: set.find((x) => x.cover) ?? set[0], photos: set });
+  }
+  return items;
 }
 
 export function getPhoto(id: string): Photo | undefined {

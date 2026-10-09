@@ -49,6 +49,18 @@
 .figure:hover .cell img {
   opacity: 0.9;
 }
+/* Shoot covers: the second frame fades in on hover/focus, a hint that there's a set. */
+.shoot .cell img.peek {
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+.shoot:hover .cell img.peek,
+.shoot .cell:focus-visible img.peek {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shoot .cell img.peek { transition: none; }
+}
 
 /* Editorial view: one image at a time, natural ratio, varied widths, more air. */
 .editorial .grid {

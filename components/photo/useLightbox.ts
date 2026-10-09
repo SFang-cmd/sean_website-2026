@@ -14,13 +14,16 @@ import type { Photo } from "@/lib/photos";
  * the gallery figures and the stream shots follow — so deep links and shots
  * mounted after the hash was read still get their focus back.
  */
-export function useLightbox(photos: Photo[]) {
+export function useLightbox(photos: Photo[], listFor?: (id: string) => Photo[]) {
   const [openId, setOpenId] = useState<string | null>(null);
+  // What ←/→ step through for the current open: by default `photos`; with
+  // `listFor`, whatever it returns for the opened id (a shoot's set, say).
+  const [list, setList] = useState<Photo[]>(photos);
   const opener = useRef<HTMLElement | null>(null);
   const lastId = useRef<string | null>(null);
 
-  const index = openId === null ? -1 : photos.findIndex((p) => p.id === openId);
-  const current = index >= 0 ? photos[index] : null;
+  const index = openId === null ? -1 : list.findIndex((p) => p.id === openId);
+  const current = index >= 0 ? list[index] : null;
 
   const show = useCallback((id: string) => {
     lastId.current = id;
@@ -31,9 +34,10 @@ export function useLightbox(photos: Photo[]) {
   const open = useCallback(
     (id: string, from?: HTMLElement) => {
       opener.current = from ?? null;
+      setList(listFor ? listFor(id) : photos);
       show(id);
     },
-    [show],
+    [show, listFor, photos],
   );
 
   // Runs once per close, from the dialog's native `close` event (Esc,
@@ -53,9 +57,9 @@ export function useLightbox(photos: Photo[]) {
   const nav = useCallback(
     (delta: number) => {
       if (index < 0) return;
-      show(photos[(index + delta + photos.length) % photos.length].id);
+      show(list[(index + delta + list.length) % list.length].id);
     },
-    [index, photos, show],
+    [index, list, show],
   );
 
   // Deep link on load, and the hash changing underneath us (back button).
@@ -65,15 +69,16 @@ export function useLightbox(photos: Photo[]) {
       if (photos.some((p) => p.id === id)) {
         opener.current = null;
         lastId.current = id;
+        setList(listFor ? listFor(id) : photos);
         setOpenId(id);
       }
     };
     fromHash();
     window.addEventListener("hashchange", fromHash);
     return () => window.removeEventListener("hashchange", fromHash);
-  }, [photos]);
+  }, [photos, listFor]);
 
-  return { current, index, open, nav, closed };
+  return { current, index, list, open, nav, closed };
 }
 
 function openerFor(id: string): HTMLElement | null {
