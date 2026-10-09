@@ -37,7 +37,7 @@ const STREAMS = [
 const ANGLE = 18;
 const PHONE_ANGLE = 12;
 const PHONE_MAX = 767; // px; below this the streams go ~90vw and 12°
-const STEP_Y = 460; // base vertical spacing, shared across streams (smaller images → tighter)
+const STEP_Y = 640; // base vertical spacing, shared across streams
 const SIZES = "(max-width: 767px) 90vw, (max-width: 1225px) 56vw, 690px";
 
 // A little irregularity in spacing and size so it never reads as a conveyor belt.
