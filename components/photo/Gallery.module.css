@@ -38,8 +38,14 @@
 .figure {
   margin: 0;
 }
+/* Landscapes alternate columns 1–2 and 2–3 within a series (see
+   withLandSides), so the wide frames stagger down the page like masonry.
+   Both are pinned; dense packing fills the single column beside each. */
 .figure.land {
-  grid-column: span 2;
+  grid-column: 1 / span 2;
+}
+.figure.landRight {
+  grid-column: 2 / span 2;
 }
 .cell {
   position: relative;
@@ -118,6 +124,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+  /* Two columns: no third column to stagger into. */
+  .figure.land,
+  .figure.landRight {
+    grid-column: span 2;
+  }
   .cell.land {
     height: calc(1.25 * (100cqw - 12px) / 2);
   }
@@ -128,7 +139,8 @@
     gap: 16px;
   }
   /* One column: nothing to align to, so landscapes keep their own ratio. */
-  .figure.land {
+  .figure.land,
+  .figure.landRight {
     grid-column: auto;
   }
   .cell.land {

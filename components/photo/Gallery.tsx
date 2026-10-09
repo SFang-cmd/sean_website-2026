@@ -93,13 +93,13 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
             </h2>
             <p className="mb-7 max-w-[52ch] text-muted">{s.lede}</p>
             <div className={styles.grid}>
-              {(items.get(s.slug) ?? []).map((item) =>
+              {withLandSides(items.get(s.slug) ?? []).map(([item, side]) =>
                 item.kind === "shoot" && item.photos.length > 1 ? (
-                  <ShootCard key={`shoot-${item.slug}`} item={item} view={view} open={open} />
+                  <ShootCard key={`shoot-${item.slug}`} item={item} view={view} open={open} side={side} />
                 ) : item.kind === "shoot" ? (
-                  <Cell key={item.cover.id} photo={item.cover} view={view} open={open} />
+                  <Cell key={item.cover.id} photo={item.cover} view={view} open={open} side={side} />
                 ) : (
-                  <Cell key={item.photo.id} photo={item.photo} view={view} open={open} />
+                  <Cell key={item.photo.id} photo={item.photo} view={view} open={open} side={side} />
                 ),
               )}
             </div>
@@ -114,13 +114,45 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
 
 type OpenFn = (id: string, from?: HTMLElement) => void;
 
-function Cell({ photo: p, view, open }: { photo: Photo; view: GalleryView; open: OpenFn }) {
+/** Which two columns a landscape takes in the grid; portraits are always "auto". */
+type LandSide = "left" | "right" | "auto";
+
+/**
+ * Landscapes alternate sides within a series — the first spans columns 1–2,
+ * the next 2–3, and so on — so the grid staggers like masonry instead of
+ * stacking every wide frame on the left. Counted here (server render) rather
+ * than with `:nth-child(n of .land)` so it doesn't depend on selector support.
+ */
+function withLandSides(list: GalleryItem[]): [GalleryItem, LandSide][] {
+  let n = 0;
+  return list.map((item) => {
+    const p = item.kind === "shoot" ? item.cover : item.photo;
+    if (p.width <= p.height) return [item, "auto"];
+    return [item, n++ % 2 === 0 ? "left" : "right"];
+  });
+}
+
+function landClass(side: LandSide): string {
+  return side === "auto" ? "" : `${styles.land} ${side === "right" ? styles.landRight : ""}`;
+}
+
+function Cell({
+  photo: p,
+  view,
+  open,
+  side,
+}: {
+  photo: Photo;
+  view: GalleryView;
+  open: OpenFn;
+  side: LandSide;
+}) {
   const land = p.width > p.height;
   const sizes = view === "editorial" ? EDITORIAL_SIZES : land ? GRID_LAND_SIZES : GRID_SIZES;
   return (
     <figure
       id={p.id}
-      className={`${styles.figure} ${land ? styles.land : ""}`}
+      className={`${styles.figure} ${landClass(side)}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
@@ -151,10 +183,12 @@ function ShootCard({
   item,
   view,
   open,
+  side,
 }: {
   item: Extract<GalleryItem, { kind: "shoot" }>;
   view: GalleryView;
   open: OpenFn;
+  side: LandSide;
 }) {
   const { cover: p, photos, slug } = item;
   const peek = photos.find((x) => x.id !== p.id);
@@ -164,7 +198,7 @@ function ShootCard({
     <figure
       id={p.id}
       data-shoot={slug}
-      className={`${styles.figure} ${styles.shoot} ${land ? styles.land : ""}`}
+      className={`${styles.figure} ${styles.shoot} ${landClass(side)}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
