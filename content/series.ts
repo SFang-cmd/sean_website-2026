@@ -16,6 +16,11 @@ export const series: Series[] = [
     lede: "Graduation portraits and headshots. Available light where possible.",
   },
   {
+    slug: "events",
+    name: "Events",
+    lede: "Performances, panels, and the rooms they happen in.",
+  },
+  {
     slug: "sports",
     name: "Sports",
     lede: "Courtside and sideline. NBA games and more.",

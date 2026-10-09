@@ -40,7 +40,8 @@ const BLUR_WIDTH = 20;
 const BLUR_QUALITY = 50;
 
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png"]);
-const IGNORED_FILES = new Set(["readme.md"]);
+/** Non-image files allowed in photos/: docs and the private id→original notes. */
+const IGNORED_FILES = new Set(["readme.md", "notes.csv"]);
 const CSV_COLUMNS = ["file", "title", "place", "year", "series", "home", "order", "alt", "rank"] as const;
 /** Columns a CSV may leave out entirely (treated as blank). */
 const OPTIONAL_COLUMNS = new Set<string>(["rank"]);

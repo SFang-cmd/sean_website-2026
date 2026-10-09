@@ -1,1282 +1,770 @@
 [
   {
-    "id": "placeholder-01",
-    "file": "placeholder-01.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-01",
+    "file": "portrait-01.jpg",
+    "width": 4287,
+    "height": 6430,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-01-480.avif",
-        "jpg": "/photos/placeholder-01-480.jpg"
+        "avif": "/photos/portrait-01-480.avif",
+        "jpg": "/photos/portrait-01-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-01-960.avif",
-        "jpg": "/photos/placeholder-01-960.jpg"
+        "avif": "/photos/portrait-01-960.avif",
+        "jpg": "/photos/portrait-01-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-01-1600.avif",
-        "jpg": "/photos/placeholder-01-1600.jpg"
+        "avif": "/photos/portrait-01-1600.avif",
+        "jpg": "/photos/portrait-01-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIiA3GBMv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMGLqtA2LHytENmkV5XbgC5XbgAf/9k=",
-    "title": "Last train",
-    "place": "Philadelphia",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/aAAwDAQACEAMQAAAAsMoUoUlFMxub3UY6VTHwP//EACIQAAICAQMEAwAAAAAAAAAAAAECAxEABBITMUFRYSEygf/aAAgBAQABPwCCaeQMxJFnJA/ESW9gY0DuFJ8VnKYzGF+rBTk0yMkYU1fXI54EXaO3nF1AJpo2BUhP05qdUq8QUNVKLrucLSMSSrXZBG2/kYdM76l5GYUeo9ZNHKxBDAU+4ejkEQAcmyWdm6+c/8QAGhEAAgIDAAAAAAAAAAAAAAAAABEBEgJRYf/aAAgBAgEBPwBj7JXHRQ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AB//2Q==",
+    "title": "Procession",
+    "place": "Penn, Philadelphia",
     "year": 2026,
-    "series": "travel",
+    "series": "portraits",
     "home": true,
     "order": 1,
     "rank": null,
-    "alt": "A man waits alone on an empty SEPTA platform at night"
+    "alt": "Six graduates in gowns walk down a tree-lined path"
   },
   {
-    "id": "placeholder-02",
-    "file": "placeholder-02.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "portrait-02",
+    "file": "portrait-02.jpg",
+    "width": 4719,
+    "height": 7079,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-02-480.avif",
-        "jpg": "/photos/placeholder-02-480.jpg"
+        "avif": "/photos/portrait-02-480.avif",
+        "jpg": "/photos/portrait-02-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-02-960.avif",
-        "jpg": "/photos/placeholder-02-960.jpg"
+        "avif": "/photos/portrait-02-960.avif",
+        "jpg": "/photos/portrait-02-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-02-1600.avif",
-        "jpg": "/photos/placeholder-02-1600.jpg"
+        "avif": "/photos/portrait-02-1600.avif",
+        "jpg": "/photos/portrait-02-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5lFQqFBDUDVZpooDUKgf/9k=",
-    "title": "Hold still",
-    "place": "Chinatown",
-    "year": 2025,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQADBAYH/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIQAxAAAAAtXKsV57bdE4rwVQjF2X//xAAkEAACAQQBBAIDAAAAAAAAAAABAgMABBESIQUTIjEjMlFhcv/aAAgBAQABPwCxte5GvIAC7HNXVhbBU7L86ZbNXSfLnHsV0RJhFIYtPYTz/dLDImoiEflEqPtk8881PFtK+3sEiuk3scW0B+7sGFQXkbSlRwyhc1O3zS/2aF3JDKWUeWuAc/mouoXMTlg3lrrmknbXnk1//8QAGBEAAwEBAAAAAAAAAAAAAAAAARARAiH/2gAIAQIBAT8AGRF2L//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAwEBPwBdjP/Z",
+    "title": "Window",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
     "series": "portraits",
     "home": true,
     "order": 2,
     "rank": null,
-    "alt": "Graduation portrait under a red awning"
+    "alt": "Graduates silhouetted in a tall gothic window"
   },
   {
-    "id": "placeholder-03",
-    "file": "placeholder-03.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-03",
+    "file": "portrait-03.jpg",
+    "width": 2732,
+    "height": 4096,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-03-480.avif",
-        "jpg": "/photos/placeholder-03-480.jpg"
+        "avif": "/photos/portrait-03-480.avif",
+        "jpg": "/photos/portrait-03-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-03-960.avif",
-        "jpg": "/photos/placeholder-03-960.jpg"
+        "avif": "/photos/portrait-03-960.avif",
+        "jpg": "/photos/portrait-03-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-03-1600.avif",
-        "jpg": "/photos/placeholder-03-1600.jpg"
+        "avif": "/photos/portrait-03-1600.avif",
+        "jpg": "/photos/portrait-03-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDnwdI4GyY+I4Gxgx7u6wE93dYCa//Z",
-    "title": "Flyover",
-    "place": "Jersey shore",
-    "year": 2024,
-    "series": "aerial",
-    "home": true,
-    "order": 3,
-    "rank": null,
-    "alt": "Shoreline from above with a line of surf"
-  },
-  {
-    "id": "placeholder-04",
-    "file": "placeholder-04.jpg",
-    "width": 2400,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-04-480.avif",
-        "jpg": "/photos/placeholder-04-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-04-960.avif",
-        "jpg": "/photos/placeholder-04-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-04-1600.avif",
-        "jpg": "/photos/placeholder-04-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A41qCWqWaM6A1WaAJaAD/2Q==",
-    "title": "Baseline",
-    "place": "Wells Fargo Center",
-    "year": 2023,
-    "series": "sports",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
+    "title": "From above",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 4,
     "rank": null,
-    "alt": "A guard drives baseline past two defenders"
+    "alt": "A graduate in a gown walks a campus path, seen from above"
   },
   {
-    "id": "placeholder-05",
-    "file": "placeholder-05.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "portrait-04",
+    "file": "portrait-04.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-05-480.avif",
-        "jpg": "/photos/placeholder-05-480.jpg"
+        "avif": "/photos/portrait-04-480.avif",
+        "jpg": "/photos/portrait-04-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-05-960.avif",
-        "jpg": "/photos/placeholder-05-960.jpg"
+        "avif": "/photos/portrait-04-960.avif",
+        "jpg": "/photos/portrait-04-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-05-1600.avif",
-        "jpg": "/photos/placeholder-05-1600.jpg"
+        "avif": "/photos/portrait-04-1600.avif",
+        "jpg": "/photos/portrait-04-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOZRUK1QkNQGi01mgEED/9k=",
-    "title": "Neon, wet",
-    "place": "Center City",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAClocy/FICpGj60XuioIA//xAAlEAACAQQABAcAAAAAAAAAAAABAgMABBEhBRQxUSIjMkFDcrH/2gAIAQEAAT8AL4tbb7illmd3CrGCq7yxNLL1z3qUMtgkiqWZRlRVjePJG8hIMg8EmiN1sFhQkWa1jEXxHLZ1XC+e5i9Mu4W9xTx+Y+O4/KRCIvUd9ajup4RiOQrhsHFNdTscs4Y9yor/xAAaEQEAAQUAAAAAAAAAAAAAAAABAAIQEiFR/9oACAECAQE/AB2FirsyJ//EABoRAAICAwAAAAAAAAAAAAAAAAABAhIQUWH/2gAIAQMBAT8Ae+4o3Eqz/9k=",
+    "title": "Window seat",
+    "place": "Penn, Philadelphia",
     "year": 2026,
-    "series": "travel",
+    "series": "portraits",
     "home": true,
     "order": 5,
     "rank": null,
-    "alt": "Rain-slick street reflecting a neon sign"
+    "alt": "A graduate in a white dress sits in a sunlit window holding her cap"
   },
   {
-    "id": "placeholder-06",
-    "file": "placeholder-06.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-05",
+    "file": "portrait-05.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-06-480.avif",
-        "jpg": "/photos/placeholder-06-480.jpg"
+        "avif": "/photos/portrait-05-480.avif",
+        "jpg": "/photos/portrait-05-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-06-960.avif",
-        "jpg": "/photos/placeholder-06-960.jpg"
+        "avif": "/photos/portrait-05-960.avif",
+        "jpg": "/photos/portrait-05-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-06-1600.avif",
-        "jpg": "/photos/placeholder-06-1600.jpg"
+        "avif": "/photos/portrait-05-1600.avif",
+        "jpg": "/photos/portrait-05-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABsQAAICAwEAAAAAAAAAAAAAAAABAyICcYEy/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A57F1Wg2SvK0Y2aVErtwEyO3AB//Z",
-    "title": "Corner store",
-    "place": "West Philly",
-    "year": 2025,
-    "series": "travel",
-    "home": true,
-    "order": 6,
-    "rank": null,
-    "alt": "A corner store lit from inside at dusk"
-  },
-  {
-    "id": "placeholder-07",
-    "file": "placeholder-07.jpg",
-    "width": 2400,
-    "height": 1350,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-07-480.avif",
-        "jpg": "/photos/placeholder-07-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-07-960.avif",
-        "jpg": "/photos/placeholder-07-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-07-1600.avif",
-        "jpg": "/photos/placeholder-07-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQMiMnGBAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aw/LqtCbEsVoTLJq5XbgEZMuABf/Z",
-    "title": "Grid from 400ft",
-    "place": "Camden",
-    "year": 2024,
-    "series": "aerial",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAEC/9oADAMBAAIQAxAAAAB69GWLbC85TtyuzTEkz//EACYQAAICAQIEBwEAAAAAAAAAAAECAxEABBIhMVGhBRMUIkFDYXH/2gAIAQEAAT8AYR+YXLiz+HNUzPHGkAZmVwaC43h4np3hN1/MSNeBCg9zjx79ZpZ4oSwVxbVXtz1Mw+vIknfbaUp5E8M1ER3RvyKGxm5hdntmtmlknqKQrtIBY8zm6Q7RPIZOnwMEzgU7Gx0z/8QAHBEAAgICAwAAAAAAAAAAAAAAAQIAERJRAxOR/9oACAECAQE/AE5CbskzvGj7DiiMossZg25//8QAGREAAwADAAAAAAAAAAAAAAAAAAERAiEy/9oACAEDAQE/AME3XSnL0yI//9k=",
+    "title": "On the grass",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 7,
     "rank": null,
-    "alt": "City blocks seen straight down from a drone"
+    "alt": "A graduate in a white dress sits on the lawn holding her cap"
   },
   {
-    "id": "placeholder-08",
-    "file": "placeholder-08.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "portrait-06",
+    "file": "portrait-06.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-08-480.avif",
-        "jpg": "/photos/placeholder-08-480.jpg"
+        "avif": "/photos/portrait-06-480.avif",
+        "jpg": "/photos/portrait-06-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-08-960.avif",
-        "jpg": "/photos/placeholder-08-960.jpg"
+        "avif": "/photos/portrait-06-960.avif",
+        "jpg": "/photos/portrait-06-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-08-1600.avif",
-        "jpg": "/photos/placeholder-08-1600.jpg"
+        "avif": "/photos/portrait-06-1600.avif",
+        "jpg": "/photos/portrait-06-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdKJazUaM6A1azVqUEEAf/Z",
-    "title": "Blue hour",
-    "place": "Schuylkill",
-    "year": 2023,
-    "series": "travel",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYDBQECBP/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAAAb9ZlhV4doxZpY8UbCtJf/8QAIxAAAgIBAwMFAAAAAAAAAAAAAQIAAwQFERIiUVITITEygv/aAAgBAQABPwBKB2lRxsjmKrUcodm4n4j4g5fWX2pVj2szbAVt7zRs1Rqt9TqVY0In6SNYu81nJK4gYWAAOOnzmi2oc6+woVYqSohvM1fJ52ejt01zAqNRx8gkE2kgDxG0Nw7Gf//EABYRAQEBAAAAAAAAAAAAAAAAABACMf/aAAgBAgEBPwAyT//EABcRAQADAAAAAAAAAAAAAAAAAAERIEH/2gAIAQMBAT8AxZp//9k=",
+    "title": "Headshot",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 8,
     "rank": null,
-    "alt": "The river at blue hour with the skyline behind"
+    "alt": "Studio headshot in a navy suit, arms crossed"
   },
   {
-    "id": "placeholder-09",
-    "file": "placeholder-09.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-07",
+    "file": "portrait-07.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-09-480.avif",
-        "jpg": "/photos/placeholder-09-480.jpg"
+        "avif": "/photos/portrait-07-480.avif",
+        "jpg": "/photos/portrait-07-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-09-960.avif",
-        "jpg": "/photos/placeholder-09-960.jpg"
+        "avif": "/photos/portrait-07-960.avif",
+        "jpg": "/photos/portrait-07-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-09-1600.avif",
-        "jpg": "/photos/placeholder-09-1600.jpg"
+        "avif": "/photos/portrait-07-1600.avif",
+        "jpg": "/photos/portrait-07-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEEIiMy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlg+caQbJh4jQbKJMMh7qgTkPoqAF//9k=",
-    "title": "Passenger",
-    "place": "SEPTA",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAKCWi4XPmpnm+7FotTB4gf/EACMQAAICAQMDBQAAAAAAAAAAAAECAxEABBIhMTJBExRhcYH/2gAIAQEAAT8AIaOB6rzV5J6aRTpvCqQbwamWK1jJ23kE/uYWFFbvqMkCyCVG83+Zr2MepdVA8ZBrDpoWRu4HJ4pdMxshhwt9bY85OTLIWdQDk8G5S0LbbI3385Gs7BGRk2bQhBFdnQ8ZOxSVg33xn//EABsRAAIDAAMAAAAAAAAAAAAAAAABAhEhAxIx/9oACAECAQE/AMksOtYQinx+uxp2z//EABkRAQACAwAAAAAAAAAAAAAAAAABIQIRgf/aAAgBAwEBPwDbrGKlb//Z",
+    "title": "Together",
+    "place": "Penn, Philadelphia",
     "year": 2026,
     "series": "portraits",
-    "home": true,
-    "order": 9,
-    "rank": null,
-    "alt": "A passenger looks out a train window"
-  },
-  {
-    "id": "placeholder-10",
-    "file": "placeholder-10.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-10-480.avif",
-        "jpg": "/photos/placeholder-10-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-10-960.avif",
-        "jpg": "/photos/placeholder-10-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-10-1600.avif",
-        "jpg": "/photos/placeholder-10-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4KUS1QaM6A1azVqUEEAf/9k=",
-    "title": "Fog line",
-    "place": "Fairmount",
-    "year": 2025,
-    "series": "aerial",
     "home": true,
     "order": 10,
     "rank": null,
-    "alt": "Fog sitting in a line over the park from above"
+    "alt": "Two graduates in gowns on a stone bench under green leaves"
   },
   {
-    "id": "placeholder-11",
-    "file": "placeholder-11.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-08",
+    "file": "portrait-08.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-11-480.avif",
-        "jpg": "/photos/placeholder-11-480.jpg"
+        "avif": "/photos/portrait-08-480.avif",
+        "jpg": "/photos/portrait-08-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-11-960.avif",
-        "jpg": "/photos/placeholder-11-960.jpg"
+        "avif": "/photos/portrait-08-960.avif",
+        "jpg": "/photos/portrait-08-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-11-1600.avif",
-        "jpg": "/photos/placeholder-11-1600.jpg"
+        "avif": "/photos/portrait-08-1600.avif",
+        "jpg": "/photos/portrait-08-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdB0jgbJj4jgbKJse7usBPd3WAC/9k=",
-    "title": "After hours",
-    "place": "Fishtown",
-    "year": 2024,
-    "series": "travel",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMBBf/aAAwDAQACEAMQAAAA53RSaHrBSGnOLjHRUgbweP8A/8QAIhAAAgIBAwUBAQAAAAAAAAAAAQIDEQAEMVEFEhMicSEz/9oACAEBAAE/AEnMpC/lb/MVgveB3cNijU16EBc0cKmQOzUpGIlxP3/jkghb2A5xPIR/RgdiNslUFIfQKqo4+km8lEjoygezBT9sXnUYXXWSeEFkIU2vJGS9Kc2RIKyXp7zuGtUpFXnYYmjCooLmwM//xAAcEQEAAgEFAAAAAAAAAAAAAAABAAIhAxMyQZH/2gAIAQIBAT8AvpHUao5K+QBBXOI7ivGf/8QAHxEAAQMDBQAAAAAAAAAAAAAAAgABEQMSIRATQVFh/9oACAEDAQE/ANoyZnZuJ0GoYDbGMz7KsLtf/9k=",
+    "title": "LOVE",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 11,
     "rank": null,
-    "alt": "An empty bar patio after closing"
+    "alt": "Four graduates posed on the LOVE statue"
   },
   {
-    "id": "placeholder-12",
-    "file": "placeholder-12.jpg",
-    "width": 2400,
-    "height": 2400,
+    "id": "portrait-09",
+    "file": "portrait-09.jpg",
+    "width": 5440,
+    "height": 8156,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-12-480.avif",
-        "jpg": "/photos/placeholder-12-480.jpg"
+        "avif": "/photos/portrait-09-480.avif",
+        "jpg": "/photos/portrait-09-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-12-960.avif",
-        "jpg": "/photos/placeholder-12-960.jpg"
+        "avif": "/photos/portrait-09-960.avif",
+        "jpg": "/photos/portrait-09-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-12-1600.avif",
-        "jpg": "/photos/placeholder-12-1600.jpg"
+        "avif": "/photos/portrait-09-1600.avif",
+        "jpg": "/photos/portrait-09-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5KWlqWrQaM6A1WaAJaAD/9k=",
-    "title": "Window seat",
-    "place": "NYC",
-    "year": 2023,
-    "series": "travel",
-    "home": true,
-    "order": 12,
-    "rank": null,
-    "alt": "Manhattan seen from an airplane window"
-  },
-  {
-    "id": "placeholder-13",
-    "file": "placeholder-13.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-13-480.avif",
-        "jpg": "/photos/placeholder-13-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-13-960.avif",
-        "jpg": "/photos/placeholder-13-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-13-1600.avif",
-        "jpg": "/photos/placeholder-13-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdSiVtATQFqVazQNGaA/9k=",
-    "title": "Salt flats",
-    "place": "Utah",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAB9yV2L0BAoMItnfOoViB//xAAkEAABBAIABgMBAAAAAAAAAAACAQMEEQASBSEiM0FRExVxkv/aAAgBAQABPwCVxCUEsGQYJUUCs8GSShGcOyUmrVPF46KEV75LnNMKquWg7KHu7TIswHhFE+PpFFDymq46R73vecUZjJEeNd+Q2m3vIgGy/AHnRM7f1a44rxF0NOV+ZxZoxigl9x0QxpoPtVAB7UMNVxyhVLJbrP/EAB0RAAEEAgMAAAAAAAAAAAAAAAEAAgMREiEUMVH/2gAIAQIBAT8AA61SwKgeWwPeTZ3S5s3jF//EABcRAQEBAQAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8ArYyuX//Z",
+    "title": "Cap toss",
+    "place": "Penn, Philadelphia",
     "year": 2026,
-    "series": "aerial",
+    "series": "portraits",
     "home": true,
     "order": 13,
     "rank": null,
-    "alt": "A single car crossing white salt flats from above"
+    "alt": "A graduate in a gown tosses her cap in front of a stone building"
   },
   {
-    "id": "placeholder-14",
-    "file": "placeholder-14.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-10",
+    "file": "portrait-10.jpg",
+    "width": 4891,
+    "height": 7336,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-14-480.avif",
-        "jpg": "/photos/placeholder-14-480.jpg"
+        "avif": "/photos/portrait-10-480.avif",
+        "jpg": "/photos/portrait-10-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-14-960.avif",
-        "jpg": "/photos/placeholder-14-960.jpg"
+        "avif": "/photos/portrait-10-960.avif",
+        "jpg": "/photos/portrait-10-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-14-1600.avif",
-        "jpg": "/photos/placeholder-14-1600.jpg"
+        "avif": "/photos/portrait-10-1600.avif",
+        "jpg": "/photos/portrait-10-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOfB0jgbJi6RwNklGPd3WAnv7WAQ/9k=",
-    "title": "Underpass",
-    "place": "Philadelphia",
-    "year": 2025,
-    "series": "travel",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwYB/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/9oADAMBAAIQAxAAAACxayOPprEwhbW0vGIy5oSX/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQACEQMSFTFRUiEyU2Jxgf/aAAgBAQABPwAkRqE554I1ak9gVnqi3UFoiArBsgYCrF9jrD1ALvxolU33MadwCsNT5rEATFUiWlp+FYVnkX//xAAbEQACAQUAAAAAAAAAAAAAAAAAARECAxATUf/aAAgBAgEBPwBYptNNTBqfT//EABoRAQACAwEAAAAAAAAAAAAAAAEAEQIDURT/2gAIAQMBAT8Ab7KezLeIgNz0Y8Z//9k=",
+    "title": "Huntsman",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 14,
     "rank": null,
-    "alt": "A cyclist passing under a rail bridge"
+    "alt": "A graduate in white tosses her cap in front of Huntsman Hall"
   },
   {
-    "id": "placeholder-15",
-    "file": "placeholder-15.jpg",
-    "width": 2400,
-    "height": 1350,
+    "id": "portrait-11",
+    "file": "portrait-11.jpg",
+    "width": 8192,
+    "height": 5464,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-15-480.avif",
-        "jpg": "/photos/placeholder-15-480.jpg"
+        "avif": "/photos/portrait-11-480.avif",
+        "jpg": "/photos/portrait-11-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-15-960.avif",
-        "jpg": "/photos/placeholder-15-960.jpg"
+        "avif": "/photos/portrait-11-960.avif",
+        "jpg": "/photos/portrait-11-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-15-1600.avif",
-        "jpg": "/photos/placeholder-15-1600.jpg"
+        "avif": "/photos/portrait-11-1600.avif",
+        "jpg": "/photos/portrait-11-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAaEAACAgMAAAAAAAAAAAAAAAAAAQJxAyIy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDNB6RoGxY8RohhFOd7qgFz9qgA/9k=",
-    "title": "Rooftop",
-    "place": "Center City",
-    "year": 2024,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
+    "title": "Stairwell",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
     "series": "portraits",
-    "home": true,
-    "order": 15,
-    "rank": null,
-    "alt": "Portrait on a rooftop with the city out of focus"
-  },
-  {
-    "id": "placeholder-16",
-    "file": "placeholder-16.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-16-480.avif",
-        "jpg": "/photos/placeholder-16-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-16-960.avif",
-        "jpg": "/photos/placeholder-16-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-16-1600.avif",
-        "jpg": "/photos/placeholder-16-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDFSiWoQaM6A1azVqUE0SgP/9k=",
-    "title": "Crosswalk",
-    "place": "Chinatown",
-    "year": 2023,
-    "series": "travel",
     "home": true,
     "order": 16,
     "rank": null,
-    "alt": "Pedestrians crossing under a paper lantern"
+    "alt": "A graduate stands at the top of a sunlit staircase"
   },
   {
-    "id": "placeholder-17",
-    "file": "placeholder-17.jpg",
-    "width": 2400,
-    "height": 1600,
+    "id": "portrait-12",
+    "file": "portrait-12.jpg",
+    "width": 7855,
+    "height": 5239,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-17-480.avif",
-        "jpg": "/photos/placeholder-17-480.jpg"
+        "avif": "/photos/portrait-12-480.avif",
+        "jpg": "/photos/portrait-12-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-17-960.avif",
-        "jpg": "/photos/placeholder-17-960.jpg"
+        "avif": "/photos/portrait-12-960.avif",
+        "jpg": "/photos/portrait-12-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-17-1600.avif",
-        "jpg": "/photos/placeholder-17-1600.jpg"
+        "avif": "/photos/portrait-12-1600.avif",
+        "jpg": "/photos/portrait-12-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlxdI4GyY+I4GzNLHu7rAT2d1gEv/Z",
-    "title": "Dock",
-    "place": "Jersey shore",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAF+Mcxg1MYo3/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDBAAREjEFUSEzkv/aAAgBAQABPwA2IzOCHTXD2PeXLLqeCBSjO4ck9b61hB3lvyMxlmKqqhvjJb00ksWyeKEELgtWCPtf9HP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgERE1H/2gAIAQIBAT8AhWqb4Ysf/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBEhP/2gAIAQMBAT8AVUaQf//Z",
+    "title": "Afternoon",
+    "place": "Penn, Philadelphia",
     "year": 2026,
-    "series": "aerial",
+    "series": "portraits",
     "home": true,
     "order": 17,
     "rank": null,
-    "alt": "A wooden dock reaching into still water"
+    "alt": "A graduate in a white dress reclines in a window seat"
   },
   {
-    "id": "placeholder-18",
-    "file": "placeholder-18.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "portrait-13",
+    "file": "portrait-13.jpg",
+    "width": 5177,
+    "height": 7762,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-18-480.avif",
-        "jpg": "/photos/placeholder-18-480.jpg"
+        "avif": "/photos/portrait-13-480.avif",
+        "jpg": "/photos/portrait-13-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-18-960.avif",
-        "jpg": "/photos/placeholder-18-960.jpg"
+        "avif": "/photos/portrait-13-960.avif",
+        "jpg": "/photos/portrait-13-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-18-1600.avif",
-        "jpg": "/photos/placeholder-18-1600.jpg"
+        "avif": "/photos/portrait-13-1600.avif",
+        "jpg": "/photos/portrait-13-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACA//EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOrNprNYVIagNFprNAIIH//Z",
-    "title": "Tide line",
-    "place": "Jersey shore",
-    "year": 2025,
-    "series": "aerial",
-    "home": true,
-    "order": 18,
-    "rank": null,
-    "alt": "The tide line drawn across sand from above"
-  },
-  {
-    "id": "placeholder-19",
-    "file": "placeholder-19.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-19-480.avif",
-        "jpg": "/photos/placeholder-19-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-19-960.avif",
-        "jpg": "/photos/placeholder-19-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-19-1600.avif",
-        "jpg": "/photos/placeholder-19-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIiA3GBMv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMGLqtA2LHytENmkV5XbgC5XbgAf/9k=",
-    "title": "Shift change",
-    "place": "SEPTA",
-    "year": 2024,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/aAAwDAQACEAMQAAAApX0pT16xypQOkmTEGphgp//EACEQAAIBBAIDAQEAAAAAAAAAAAECAwAEESESYRMxQRUi/9oACAEBAAE/AAJyQMhuXoGrCCKOeUuyMSu19gCrlJXdTCqIvBRgHGxV7JMsUMUUewwOFAH8/SezTRTcHlTOXbifgwakuJrZvCtw5Cd1+ipkmkIJWFDjsk09/wAEV1hyqqo45DaY1dTrPO0io6ZxrApxxARDtgS+aaQykK2hoALpddV4pBoSGv/EABkRAQADAQEAAAAAAAAAAAAAAAECESEAEP/aAAgBAgEBPwAkib1ydviG35//xAAcEQABBAMBAAAAAAAAAAAAAAABABESIQIQIlH/2gAIAQMBAT8APYNKRxrxTYNr/9k=",
+    "title": "Three",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
     "series": "portraits",
     "home": true,
     "order": 19,
     "rank": null,
-    "alt": "A conductor steps off a train at the end of a shift"
+    "alt": "Three graduates in white seated on an ornate staircase"
   },
   {
-    "id": "placeholder-20",
-    "file": "placeholder-20.jpg",
-    "width": 2400,
-    "height": 2400,
+    "id": "portrait-14",
+    "file": "portrait-14.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-20-480.avif",
-        "jpg": "/photos/placeholder-20-480.jpg"
+        "avif": "/photos/portrait-14-480.avif",
+        "jpg": "/photos/portrait-14-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-20-960.avif",
-        "jpg": "/photos/placeholder-20-960.jpg"
+        "avif": "/photos/portrait-14-960.avif",
+        "jpg": "/photos/portrait-14-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-20-1600.avif",
-        "jpg": "/photos/placeholder-20-1600.jpg"
+        "avif": "/photos/portrait-14-1600.avif",
+        "jpg": "/photos/portrait-14-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5lrIlqFGiaAtSgDNoAP/2Q==",
-    "title": "Free throw",
-    "place": "Palestra",
-    "year": 2023,
-    "series": "sports",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEDAP/aAAwDAQACEAMQAAAAuO/nTXR7LdcHVNIsn//EACUQAAIABgAFBQAAAAAAAAAAAAECAAMEERIhBRMUIlEyQUJhYv/aAAgBAQABPwBAFlOCCFsbWiuqMJqco+kaMJVGYodpY7gDEmcGUi2txW5GU590It9ArFNKdqaQSwHZFJLTklTqa+YC+BaE4UWVcpmRZ1LW8RK4UrLcVBVPgPzFOZoGsdkEmDUhb5Kb4nax1bEDbAAWUXvYR//EABgRAAMBAQAAAAAAAAAAAAAAAAABESEi/9oACAECAQE/AJEjDnCI/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQESH/2gAIAQMBAT8AUUzT/9k=",
+    "title": "On the steps",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
     "home": true,
     "order": 20,
     "rank": null,
-    "alt": "A player at the line, crowd blurred behind"
+    "alt": "Graduates in white on the steps of a stone archway"
   },
   {
-    "id": "placeholder-21",
-    "file": "placeholder-21.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "portrait-15",
+    "file": "portrait-15.jpg",
+    "width": 4076,
+    "height": 2718,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-21-480.avif",
-        "jpg": "/photos/placeholder-21-480.jpg"
+        "avif": "/photos/portrait-15-480.avif",
+        "jpg": "/photos/portrait-15-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-21-960.avif",
-        "jpg": "/photos/placeholder-21-960.jpg"
+        "avif": "/photos/portrait-15-960.avif",
+        "jpg": "/photos/portrait-15-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-21-1600.avif",
-        "jpg": "/photos/placeholder-21-1600.jpg"
+        "avif": "/photos/portrait-15-1600.avif",
+        "jpg": "/photos/portrait-15-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4RaqKtAQ1A1WaaKA1CoH/9k=",
-    "title": "Tip-off",
-    "place": "Wells Fargo Center",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "title": "The Palestra",
+    "place": "Penn, Philadelphia",
     "year": 2026,
-    "series": "sports",
-    "home": true,
-    "order": 21,
-    "rank": null,
-    "alt": "Two centers jumping for the opening tip"
-  },
-  {
-    "id": "placeholder-22",
-    "file": "placeholder-22.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-22-480.avif",
-        "jpg": "/photos/placeholder-22-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-22-960.avif",
-        "jpg": "/photos/placeholder-22-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-22-1600.avif",
-        "jpg": "/photos/placeholder-22-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABInECAzKB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDi4uCoNk48qg2Utluc1QJ3OfgA/9k=",
-    "title": "Sideline",
-    "place": "Franklin Field",
-    "year": 2025,
-    "series": "sports",
+    "series": "portraits",
     "home": true,
     "order": 22,
     "rank": null,
-    "alt": "Players watching from the sideline in the rain"
+    "alt": "A graduate alone in the stands of the Palestra"
   },
   {
-    "id": "placeholder-23",
-    "file": "placeholder-23.jpg",
-    "width": 2400,
-    "height": 1350,
+    "id": "event-01",
+    "file": "event-01.jpg",
+    "width": 3611,
+    "height": 5417,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-23-480.avif",
-        "jpg": "/photos/placeholder-23-480.jpg"
+        "avif": "/photos/event-01-480.avif",
+        "jpg": "/photos/event-01-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-23-960.avif",
-        "jpg": "/photos/placeholder-23-960.jpg"
+        "avif": "/photos/event-01-960.avif",
+        "jpg": "/photos/event-01-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-23-1600.avif",
-        "jpg": "/photos/placeholder-23-1600.jpg"
+        "avif": "/photos/event-01-1600.avif",
+        "jpg": "/photos/event-01-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQJxAyIygf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMqL0VA2KPCoTNUKsz3VARy9eABf/9k=",
-    "title": "Commencement",
-    "place": "College Green",
-    "year": 2024,
-    "series": "portraits",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAGQEAAQUAAAAAAAAAAAAAAAAAAwECBAUG/9oADAMBAAIQAxAAAADh2V0i67cVFMhsq2SikqMP/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxESIRMxIkFC/9oACAEBAAE/AC9B6yCZ5OaC4AE9noKEtmeA1zax96ulmo3vM1Zavoqd3HHba2VkDRulFIOW6UsZlY0A/S4nDWl//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQIUH/2gAIAQIBAT8ALNUf/8QAHREAAQQCAwAAAAAAAAAAAAAAAQACAxEEEhQhQf/aAAgBAwEBPwA5oa8A+rkBRHfGno27tW9f/9k=",
+    "title": "Red",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 3,
+    "rank": null,
+    "alt": "A singer in a red dress performs under red stage light"
+  },
+  {
+    "id": "event-02",
+    "file": "event-02.jpg",
+    "width": 5401,
+    "height": 3601,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-02-480.avif",
+        "jpg": "/photos/event-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-02-960.avif",
+        "jpg": "/photos/event-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-02-1600.avif",
+        "jpg": "/photos/event-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAABBf/aAAwDAQACEAMQAAAAWzT0TbGhEAP/xAAdEAACAwACAwAAAAAAAAAAAAABAgADBBEhIkFR/9oACAEBAAE/AG08xNoct5Aw6jLWKqxHwzNYRXe/sLLtboygKO1Bn//EABkRAQACAwAAAAAAAAAAAAAAAAEAAgQUMf/aAAgBAgEBPwDWq1YYinJ//8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAEAgMigf/aAAgBAwEBPwBs94+sbmsUWf/Z",
+    "title": "Solo",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 6,
+    "rank": null,
+    "alt": "A singer in a suit performs under orange light"
+  },
+  {
+    "id": "event-03",
+    "file": "event-03.jpg",
+    "width": 5583,
+    "height": 3722,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-03-480.avif",
+        "jpg": "/photos/event-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-03-960.avif",
+        "jpg": "/photos/event-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-03-1600.avif",
+        "jpg": "/photos/event-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAX/2gAMAwEAAhADEAAAAMqS1k3LRIAd/8QAHhABAAEFAAMBAAAAAAAAAAAAAQIAAwQSIRExYaH/2gAIAQEAAT8AuZARfQVby9jkvIcKMqRUrrKdyCcIn7WHA3A4MtahdZb/ACSV/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESAv/aAAgBAgEBPwBYUsg//8QAGREAAgMBAAAAAAAAAAAAAAAAAREAAgMx/9oACAEDAQE/ALbrWoHEXBoCHP/Z",
+    "title": "Verse",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 9,
+    "rank": null,
+    "alt": "A singer in a brown suit performs under red light"
+  },
+  {
+    "id": "event-04",
+    "file": "event-04.jpg",
+    "width": 6000,
+    "height": 4000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-04-480.avif",
+        "jpg": "/photos/event-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-04-960.avif",
+        "jpg": "/photos/event-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-04-1600.avif",
+        "jpg": "/photos/event-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
+    "title": "Duet",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 12,
+    "rank": null,
+    "alt": "Two singers in black and white against a red stage"
+  },
+  {
+    "id": "event-05",
+    "file": "event-05.jpg",
+    "width": 3514,
+    "height": 5271,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-05-480.avif",
+        "jpg": "/photos/event-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-05-960.avif",
+        "jpg": "/photos/event-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-05-1600.avif",
+        "jpg": "/photos/event-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAf/aAAwDAQACEAMQAAAAyb6uE2rWKBJkzKr3O5nGW//EACQQAAIBAwMEAwEAAAAAAAAAAAECAwAEEQUSIRMxMmEiQVGR/9oACAEBAAE/AE0JR5E1a6RB0ycCk06EKOKmnZ0cJydhq1F3biR5mG11jI55yR2oXXuraYmYLgncrLx7FM26VnVnKxjGG/ldX3WmXEaNI7KxYAUk0ZS4lMeVC/ff5E1F4DknP7X/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQISAxEjUf/aAAgBAgEBPwC2acJOx19ZXTaKI//EABsRAAIDAAMAAAAAAAAAAAAAAAACAQMSEyEy/9oACAEDAQE/AMVIyxCR2ZUqy1emb0ckn//Z",
+    "title": "Warm",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 15,
+    "rank": null,
+    "alt": "A singer in a red dress under warm stage light"
+  },
+  {
+    "id": "event-06",
+    "file": "event-06.jpg",
+    "width": 4000,
+    "height": 6000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-06-480.avif",
+        "jpg": "/photos/event-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-06-960.avif",
+        "jpg": "/photos/event-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-06-1600.avif",
+        "jpg": "/photos/event-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
+    "title": "Blue",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 18,
+    "rank": null,
+    "alt": "A singer in a pink dress under blue light"
+  },
+  {
+    "id": "event-07",
+    "file": "event-07.jpg",
+    "width": 5991,
+    "height": 3994,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-07-480.avif",
+        "jpg": "/photos/event-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-07-960.avif",
+        "jpg": "/photos/event-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-07-1600.avif",
+        "jpg": "/photos/event-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAAbLwzjXsDTOZ//8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREgUUITFSIkGS/9oACAEBAAE/AGctfz7KStY/Rp7LlvZ9yzJnj1jXTW4JBkMjz8qdcOgW6TMdZDJ9iac90pkSYZAS8GuMO1tt9mcia//EABwRAAICAgMAAAAAAAAAAAAAAAECAAMRIRJRYf/aAAgBAgEBPwAI5JzZrwSy1kdl5No9z//EABoRAAIDAQEAAAAAAAAAAAAAAAECABIhUZH/2gAIAQMBAT8AugGJ7EUMoNV0cn//2Q==",
+    "title": "Fireside",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
+    "home": true,
+    "order": 21,
+    "rank": null,
+    "alt": "Two speakers in armchairs at a fireside chat"
+  },
+  {
+    "id": "event-08",
+    "file": "event-08.jpg",
+    "width": 3343,
+    "height": 5014,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/event-08-480.avif",
+        "jpg": "/photos/event-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/event-08-960.avif",
+        "jpg": "/photos/event-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/event-08-1600.avif",
+        "jpg": "/photos/event-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEAwUG/8QAFwEBAAMAAAAAAAAAAAAAAAAABAECA//aAAwDAQACEAMQAAAAmuyuKrzgBdnWZUm1OcRb/8QAJxAAAgEDAgMJAAAAAAAAAAAAAQIDAAQRBUESISITIzEyU1RxgZH/2gAIAQEAAT8AtLCG5RnMZZuNs86OjW/pGnRIppkQYUPWn3trBEySScJ7RtjR1Gy9yv6anmie5uGVgVL8j9Uj8eO7HnK0HiZpAY8BPE0Jrc5wu+1O8Y6TGBv00BDjpQr8MRUk6K2FBAr/xAAfEQACAQIHAAAAAAAAAAAAAAAAAgEhYQMEEhMiQZH/2gAIAQIBAT8AWOK16HidbUJy2Fc2Fv6f/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAEQMSE1H/2gAIAQMBAT8AsW1rEYaiDM86t6J//9k=",
+    "title": "Panel",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
     "home": true,
     "order": 23,
     "rank": null,
-    "alt": "A graduate in a cap and gown on College Green"
+    "alt": "A panel on stage beneath a projected title slide"
   },
   {
-    "id": "placeholder-24",
-    "file": "placeholder-24.jpg",
-    "width": 1920,
-    "height": 2400,
+    "id": "event-09",
+    "file": "event-09.jpg",
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/placeholder-24-480.avif",
-        "jpg": "/photos/placeholder-24-480.jpg"
+        "avif": "/photos/event-09-480.avif",
+        "jpg": "/photos/event-09-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/placeholder-24-960.avif",
-        "jpg": "/photos/placeholder-24-960.jpg"
+        "avif": "/photos/event-09-960.avif",
+        "jpg": "/photos/event-09-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/placeholder-24-1600.avif",
-        "jpg": "/photos/placeholder-24-1600.jpg"
+        "avif": "/photos/event-09-1600.avif",
+        "jpg": "/photos/event-09-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOfFQrSpDUBotNZoBBKP/9k=",
-    "title": "Headshot, north light",
-    "place": "Studio",
-    "year": 2023,
-    "series": "portraits",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBBP/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAIuy1m9QcJz/AP/EABsQAQEAAwEBAQAAAAAAAAAAAAECAAMRIRMx/9oACAEBAAE/ANZN0xEde+AZPz/GTE1dfDHdsiW4pmuiJmvbbrlqleY25//EABoRAAICAwAAAAAAAAAAAAAAAAATARECMVH/2gAIAQIBAT8AdkyNVQ2OH//EABwRAQABBAMAAAAAAAAAAAAAAAEAAgQREhMjUv/aAAgBAwEBPwAu+wNTGqzno8E//9k=",
+    "title": "Magenta",
+    "place": "Philadelphia",
+    "year": 2026,
+    "series": "events",
     "home": true,
     "order": 24,
     "rank": null,
-    "alt": "A headshot lit by a north-facing window"
-  },
-  {
-    "id": "placeholder-25",
-    "file": "placeholder-25.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-25-480.avif",
-        "jpg": "/photos/placeholder-25-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-25-960.avif",
-        "jpg": "/photos/placeholder-25-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-25-1600.avif",
-        "jpg": "/photos/placeholder-25-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAaEAADAAMBAAAAAAAAAAAAAAAAASIDcYEC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDD8uVoTYk5WhNlk1eV1wCOV1wAL//Z",
-    "title": "Locust Walk",
-    "place": "University City",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 25,
-    "rank": null,
-    "alt": "Graduation portrait under the trees on Locust Walk"
-  },
-  {
-    "id": "placeholder-26",
-    "file": "placeholder-26.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-26-480.avif",
-        "jpg": "/photos/placeholder-26-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-26-960.avif",
-        "jpg": "/photos/placeholder-26-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-26-1600.avif",
-        "jpg": "/photos/placeholder-26-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOdKJazUaM6A1azVqUEEAf/Z",
-    "title": "Fast break",
-    "place": "Palestra",
-    "year": 2025,
-    "series": "sports",
-    "home": true,
-    "order": 26,
-    "rank": null,
-    "alt": "A fast break seen from behind the basket"
-  },
-  {
-    "id": "placeholder-27",
-    "file": "placeholder-27.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-27-480.avif",
-        "jpg": "/photos/placeholder-27-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-27-960.avif",
-        "jpg": "/photos/placeholder-27-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-27-1600.avif",
-        "jpg": "/photos/placeholder-27-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEEIiMy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlg+caQbJh4jQbKJMMh7qgTkPoqAF//9k=",
-    "title": "Overtime",
-    "place": "Wells Fargo Center",
-    "year": 2024,
-    "series": "sports",
-    "home": true,
-    "order": 27,
-    "rank": null,
-    "alt": "Bench reaction in the final seconds of overtime"
-  },
-  {
-    "id": "placeholder-28",
-    "file": "placeholder-28.jpg",
-    "width": 2400,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-28-480.avif",
-        "jpg": "/photos/placeholder-28-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-28-960.avif",
-        "jpg": "/photos/placeholder-28-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-28-1600.avif",
-        "jpg": "/photos/placeholder-28-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4LKVNqhuidAVU0ASAD//2Q==",
-    "title": "Morning market",
-    "place": "Italian Market",
-    "year": 2023,
-    "series": "travel",
-    "home": true,
-    "order": 28,
-    "rank": null,
-    "alt": "Produce stands opening on a cold morning"
-  },
-  {
-    "id": "placeholder-29",
-    "file": "placeholder-29.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-29-480.avif",
-        "jpg": "/photos/placeholder-29-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-29-960.avif",
-        "jpg": "/photos/placeholder-29-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-29-1600.avif",
-        "jpg": "/photos/placeholder-29-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4BaqKomENQNVmmigNQqB/9k=",
-    "title": "Boardwalk",
-    "place": "Jersey shore",
-    "year": 2026,
-    "series": "aerial",
-    "home": true,
-    "order": 29,
-    "rank": null,
-    "alt": "The boardwalk and beach umbrellas from above"
-  },
-  {
-    "id": "placeholder-30",
-    "file": "placeholder-30.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-30-480.avif",
-        "jpg": "/photos/placeholder-30-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-30-960.avif",
-        "jpg": "/photos/placeholder-30-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-30-1600.avif",
-        "jpg": "/photos/placeholder-30-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABAiIDMnGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDkRdI8DZMdFwNloY5ndcBOZ38AF//Z",
-    "title": "Reservoir",
-    "place": "Fairmount",
-    "year": 2025,
-    "series": "aerial",
-    "home": true,
-    "order": 30,
-    "rank": null,
-    "alt": "The reservoir and tree line from 400 feet"
-  },
-  {
-    "id": "placeholder-31",
-    "file": "placeholder-31.jpg",
-    "width": 2400,
-    "height": 1350,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-31-480.avif",
-        "jpg": "/photos/placeholder-31-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-31-960.avif",
-        "jpg": "/photos/placeholder-31-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-31-1600.avif",
-        "jpg": "/photos/placeholder-31-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAAICAwEAAAAAAAAAAAAAAAABIjICA3GB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5xOK4DYKq4DNhjY5eEGdiBP/2Q==",
-    "title": "Warmups",
-    "place": "Franklin Field",
-    "year": 2024,
-    "series": "sports",
-    "home": true,
-    "order": 31,
-    "rank": null,
-    "alt": "Sprinters warming up in lane one"
-  },
-  {
-    "id": "placeholder-32",
-    "file": "placeholder-32.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-32-480.avif",
-        "jpg": "/photos/placeholder-32-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-32-960.avif",
-        "jpg": "/photos/placeholder-32-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-32-1600.avif",
-        "jpg": "/photos/placeholder-32-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4UolqShozoDVrNWpQTRKA//Z",
-    "title": "Two of them",
-    "place": "Rittenhouse",
-    "year": 2023,
-    "series": "portraits",
-    "home": true,
-    "order": 32,
-    "rank": null,
-    "alt": "A couple's portrait on a park bench"
-  },
-  {
-    "id": "placeholder-33",
-    "file": "placeholder-33.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-33-480.avif",
-        "jpg": "/photos/placeholder-33-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-33-960.avif",
-        "jpg": "/photos/placeholder-33-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-33-1600.avif",
-        "jpg": "/photos/placeholder-33-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiNxBCL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOaDrjiDZMHXHA2EYdDsWAnoftYAP//Z",
-    "title": "Ferry",
-    "place": "NYC",
-    "year": 2026,
-    "series": "travel",
-    "home": true,
-    "order": 33,
-    "rank": null,
-    "alt": "Passengers on the deck of the Staten Island ferry"
-  },
-  {
-    "id": "placeholder-34",
-    "file": "placeholder-34.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-34-480.avif",
-        "jpg": "/photos/placeholder-34-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-34-960.avif",
-        "jpg": "/photos/placeholder-34-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-34-1600.avif",
-        "jpg": "/photos/placeholder-34-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDFSiWoQaM6A1azVqUE0SgP/9k=",
-    "title": "Night court",
-    "place": "South Philly",
-    "year": 2025,
-    "series": "sports",
-    "home": true,
-    "order": 34,
-    "rank": null,
-    "alt": "A pickup game under floodlights"
-  },
-  {
-    "id": "placeholder-35",
-    "file": "placeholder-35.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-35-480.avif",
-        "jpg": "/photos/placeholder-35-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-35-960.avif",
-        "jpg": "/photos/placeholder-35-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-35-1600.avif",
-        "jpg": "/photos/placeholder-35-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlxdI4GyY+I4GzNLHu7rAT2d1gEv/Z",
-    "title": "Causeway",
-    "place": "Utah",
-    "year": 2024,
-    "series": "aerial",
-    "home": true,
-    "order": 35,
-    "rank": null,
-    "alt": "A causeway dividing two colors of water"
-  },
-  {
-    "id": "placeholder-36",
-    "file": "placeholder-36.jpg",
-    "width": 2400,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-36-480.avif",
-        "jpg": "/photos/placeholder-36-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-36-960.avif",
-        "jpg": "/photos/placeholder-36-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-36-1600.avif",
-        "jpg": "/photos/placeholder-36-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBA//EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOjLS1lrCmidAVU0ASAD/9k=",
-    "title": "Last light",
-    "place": "Schuylkill",
-    "year": 2023,
-    "series": "travel",
-    "home": true,
-    "order": 36,
-    "rank": null,
-    "alt": "Rowers on the river in the last light"
-  },
-  {
-    "id": "placeholder-37",
-    "file": "placeholder-37.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-37-480.avif",
-        "jpg": "/photos/placeholder-37-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-37-960.avif",
-        "jpg": "/photos/placeholder-37-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-37-1600.avif",
-        "jpg": "/photos/placeholder-37-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOEKhWkSGoDRaazQCCB//9k=",
-    "title": "Press row",
-    "place": "Wells Fargo Center",
-    "year": 2026,
-    "series": "sports",
-    "home": false,
-    "order": null,
-    "rank": null,
-    "alt": "The view from press row during a timeout"
-  },
-  {
-    "id": "placeholder-38",
-    "file": "placeholder-38.jpg",
-    "width": 2400,
-    "height": 1600,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-38-480.avif",
-        "jpg": "/photos/placeholder-38-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-38-960.avif",
-        "jpg": "/photos/placeholder-38-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-38-1600.avif",
-        "jpg": "/photos/placeholder-38-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABoQAAIDAQEAAAAAAAAAAAAAAAABAiJxAzL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOVF0jgbJj4WBshTLs7rAT2d1gA//9k=",
-    "title": "Senior portrait",
-    "place": "Locust Walk",
-    "year": 2025,
-    "series": "portraits",
-    "home": false,
-    "order": null,
-    "rank": null,
-    "alt": "Senior portrait in front of the Quad gate"
-  },
-  {
-    "id": "placeholder-39",
-    "file": "placeholder-39.jpg",
-    "width": 2400,
-    "height": 1350,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-39-480.avif",
-        "jpg": "/photos/placeholder-39-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-39-960.avif",
-        "jpg": "/photos/placeholder-39-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-39-1600.avif",
-        "jpg": "/photos/placeholder-39-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABsQAAICAwEAAAAAAAAAAAAAAAABAnEDIjKB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A58XpGg2THhUGMGOZ7qgTm78BNf/Z",
-    "title": "Inlet",
-    "place": "Jersey shore",
-    "year": 2024,
-    "series": "aerial",
-    "home": false,
-    "order": null,
-    "rank": null,
-    "alt": "A tidal inlet from directly above"
-  },
-  {
-    "id": "placeholder-40",
-    "file": "placeholder-40.jpg",
-    "width": 1920,
-    "height": 2400,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/placeholder-40-480.avif",
-        "jpg": "/photos/placeholder-40-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/placeholder-40-960.avif",
-        "jpg": "/photos/placeholder-40-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/placeholder-40-1600.avif",
-        "jpg": "/photos/placeholder-40-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A41SiVSwTQFqVazQNGaA//9k=",
-    "title": "Platform",
-    "place": "30th Street",
-    "year": 2023,
-    "series": "travel",
-    "home": false,
-    "order": null,
-    "rank": null,
-    "alt": "Travelers on a platform at 30th Street Station"
+    "alt": "A singer at a microphone under magenta light"
   }
 ]
