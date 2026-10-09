@@ -26,15 +26,18 @@ import styles from "./Streams.module.css";
 /** Shots mounted immediately; the rest follow after MOUNT_REST_AFTER_MS. */
 const INITIAL_SHOTS = 8;
 const MOUNT_REST_AFTER_MS = 400;
+// Lanes sit apart (22% / 50% / 78%) and images are ~30vw so the streams drift
+// without covering each other; earlier lanes at 42/58 with ~48vw images
+// overlapped too much with real photos.
 const STREAMS = [
-  { angleMul: +1.0, lane: 0.42, speed: 1.0 },
-  { angleMul: -1.0, lane: 0.58, speed: 0.86 },
+  { angleMul: +1.0, lane: 0.22, speed: 1.0 },
+  { angleMul: -1.0, lane: 0.78, speed: 0.86 },
   { angleMul: +0.5, lane: 0.5, speed: 0.74 },
 ];
 const ANGLE = 18;
 const PHONE_ANGLE = 12;
 const PHONE_MAX = 767; // px; below this the streams go ~90vw and 12°
-const STEP_Y = 640; // base vertical spacing, shared across streams
+const STEP_Y = 460; // base vertical spacing, shared across streams (smaller images → tighter)
 const SIZES = "(max-width: 767px) 90vw, (max-width: 1225px) 56vw, 690px";
 
 // A little irregularity in spacing and size so it never reads as a conveyor belt.
@@ -135,7 +138,7 @@ function River({ photos }: { photos: Photo[] }) {
         const laneX = vw * def.lane;
         const w = phone
           ? vw * 0.9 * (0.92 + ((jitterS(i) - 0.85) / 0.3) * 0.08)
-          : Math.min(vw * 0.62, 760) * 0.78 * jitterS(i);
+          : Math.min(vw * 0.3, 440) * jitterS(i);
         // scrollY at which this shot sits ~40% down the viewport, given that
         // it moves by scroll·(speed − 1) on top of the page's own scroll.
         const centeredAtScroll = (riverTop + y - vh * 0.4) / (2 - speed);
