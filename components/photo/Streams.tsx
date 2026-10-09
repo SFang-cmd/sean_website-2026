@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { Photo } from "@/lib/photos";
 import { usePlainEnabled } from "@/lib/plainStore";
@@ -58,24 +58,13 @@ type Mode = "css" | "raf";
 type Open = (id: string, from: HTMLElement) => void;
 
 /**
- * `photos` are the home picks (what the streams show); `all` is the whole
- * manifest, so a click can open the clicked shot's full shoot (every photo of
- * that session, in gallery order), not just the home sequence. A shot with
- * no shoot opens alone.
+ * `photos` is the home set (photos/home/, filename order): what the streams
+ * show and what the lightbox steps through, with the filmstrip.
  */
-export function Streams({ photos, all }: { photos: Photo[]; all: Photo[] }) {
+export function Streams({ photos }: { photos: Photo[] }) {
   const plain = usePlainEnabled();
   const reduced = useReducedMotion();
-  const listFor = useCallback(
-    (id: string) => {
-      const p = all.find((x) => x.id === id) ?? photos.find((x) => x.id === id);
-      if (!p) return photos;
-      if (!p.shoot) return [p];
-      return all.filter((x) => x.shoot === p.shoot);
-    },
-    [all, photos],
-  );
-  const { index, list, open, nav, closed } = useLightbox(photos, listFor);
+  const { index, list, open, nav, closed } = useLightbox(photos);
   return (
     <>
       {plain || reduced ? (
@@ -83,7 +72,7 @@ export function Streams({ photos, all }: { photos: Photo[]; all: Photo[] }) {
       ) : (
         <River photos={photos} onOpen={open} />
       )}
-      <Lightbox photos={list} index={index} onNav={nav} onClosed={closed} />
+      <Lightbox photos={list} index={index} onNav={nav} onClosed={closed} filmstrip />
     </>
   );
 }

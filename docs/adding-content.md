@@ -71,20 +71,32 @@ writing. You never touch a component.
 
 ```
 photos/                      ← gitignored; originals stay on your machine
+  home/                      ← THE HOME PAGE: any photos, shown in filename
+    01.jpg 02.jpg ...           order; no CSV row, no words. Not a series.
   portraits/
-    ek-2026-05/              ← one shoot = one session, one set of people
-      cover.jpg              ← the cover (gallery card + home pick)
-      01.jpg 02.jpg ...      ← the rest, shown in filename order
+    2026_05-EK_grad/         ← one shoot = one session, one set of people
+      cover.jpg              ← the cover (the gallery card)
+      2026_05-EK_01.jpg ...  ← the rest, shown in filename order
     headshot-01.jpg          ← a photo on its own = a one-photo shoot
-  events/  sports/  travel/  aerial/
+  events/  product/  sports/  travel/  aerial/
 ```
 
-1. Export from Lightroom as JPEG, long edge ~2400px, into
-   `photos/<series>/<shoot>/`. Shoot folder names are slugs (lowercase,
-   hyphens) and are public (they appear in the manifest and image URLs), so
-   use neutral ones: initials plus date (`ek-2026-05`) works. Name the cover
-   `cover.jpg`; if there is none the first file by name is used. Who/what
-   each shoot is can go in `photos/notes.csv`, which never ships.
+**Home page.** Drop photos into `photos/home/` and run `npm run photos`.
+That is the whole home: the streams deal those photos down the page in
+filename order (`01-…`, `02-…` works; so does any name that sorts the way
+you want), and clicking one opens the lightbox over the home set with the
+filmstrip. They can be copies of gallery photos or anything else; the home
+never looks at the gallery. Years come from EXIF for the manifest; nothing
+is shown.
+
+1. Export from Lightroom as JPEG into `photos/<series>/<shoot>/`. Shoot
+   folder names may use letters, digits, hyphens and underscores and are
+   public (they appear in the manifest and image URLs), so use neutral ones:
+   date plus initials (`2026_05-EK_grad`) is the convention, with files
+   named `2026_05-EK_01.jpg …` in capture order. Name the cover `cover.jpg`;
+   if there is none the first file by name is used. Who/what each shoot is
+   can go in `photos/notes.csv`, which never ships. Don't edit inside
+   `photos/` while a run is going.
 2. Run `npm run photos -- --scaffold`: it appends a row to
    `content/shoots.csv` for every shoot folder that has none.
 3. Fill in the row:
@@ -95,8 +107,7 @@ photos/                      ← gitignored; originals stay on your machine
    | `series` | the series folder (written for you) |
    | `title`  | what shows under the cover and in the lightbox, e.g. `Commencement` |
    | `place`  | e.g. `Penn, Philadelphia` |
-   | `year`   | number |
-   | `home`   | a position (1, 2, 3 …) to put the shoot's cover on the home streams, in that order; blank = not on the home |
+   | `year`   | `2026`, `2026-05` or `05-2026` (only the year is shown) |
 
    Photos inherit their shoot's title, place and year; alt text is derived
    (`Commencement, Penn, Philadelphia, 2026 (3 of 12)`). Gallery order within
@@ -104,15 +115,19 @@ photos/                      ← gitignored; originals stay on your machine
 4. Run `npm run photos`. It is strict: a shoot folder without a row, a row
    without a folder, two `cover*` files in one shoot, or a bad cell stops it
    before anything is written. It writes `public/photos/` and
-   `content/photos.json`; commit both. Re-runs only process changed images.
+   `content/photos.json`; commit both, plus `content/photos.build.json` (the
+   record it uses to tell a replaced original from an untouched one).
+   Re-runs only process changed images; `--force` redoes everything.
 
 **How it shows up.** The gallery lists each shoot once, as its cover with a
 photo count (the second frame peeks on hover); clicking opens the lightbox
-over that shoot. One-photo shoots show as plain cells. On the home, each
-shoot with a `home` position contributes its cover, and clicking a stream
-image opens the whole shoot.
+over that shoot. One-photo shoots show as plain cells. In the grid, a
+landscape cover spans two columns, so keep at least one portrait shoot
+after each landscape (row order) to avoid a hole. The home is
+`photos/home/` and nothing else.
 
-To add a series, add an entry to `content/series.ts` and create the folder.
+To add a series, add an entry to `content/series.ts` and create the folder
+(empty series are not rendered).
 To take a shoot down, remove its folder and its row, and re-run the script.
 
 ## Adding a notes/blog section (future)

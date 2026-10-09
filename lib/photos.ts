@@ -31,13 +31,13 @@ export interface Photo {
   title: string;
   place: string;
   year: number;
-  /** Must match a `slug` in content/series.ts. */
+  /** A `slug` in content/series.ts, or "home" for photos/home/ (never in the gallery). */
   series: string;
-  /** Appears on the B home streams. */
+  /** From photos/home/: appears on the B home streams, nowhere else. */
   home: boolean;
-  /** Sequence on the home; lower first. Set on covers of shoots with a home position. */
+  /** Home photos: 1-based position in filename order. Null otherwise. */
   order: number | null;
-  /** 1-based position within its shoot (filename order). */
+  /** 1-based position within its shoot (filename order). Null for home photos. */
   rank: number | null;
   /** The shoot (session) slug; a single is a one-photo shoot named after its file. */
   shoot: string | null;
@@ -57,16 +57,9 @@ export function getAllPhotos(): Photo[] {
   return photos;
 }
 
-/** Home-page selection, in `order` (then year desc, then title). */
+/** The home page: photos/home/ in filename order. */
 export function getHomePhotos(): Photo[] {
-  return photos
-    .filter((p) => p.home)
-    .sort(
-      (a, b) =>
-        (a.order ?? 1e9) - (b.order ?? 1e9) ||
-        b.year - a.year ||
-        a.title.localeCompare(b.title),
-    );
+  return photos.filter((p) => p.home).sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
 }
 
 /**
@@ -78,6 +71,7 @@ export function getPhotosBySeries(): Map<string, Photo[]> {
   const map = new Map<string, Photo[]>();
   for (const s of series) map.set(s.slug, []);
   for (const p of photos) {
+    if (p.home) continue; // photos/home/ is the home page, not a series
     if (!map.has(p.series)) map.set(p.series, []);
     map.get(p.series)!.push(p);
   }

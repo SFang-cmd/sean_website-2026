@@ -212,10 +212,12 @@ export function Lightbox({
           </Stage>
           <div className={styles.band}>
             <div className={styles.meta}>
-              <p className={styles.caption}>
-                <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
-                {shown.place ? ` · ${shown.place}` : ""} · {shown.year}
-              </p>
+              {shown.title && (
+                <p className={styles.caption}>
+                  <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
+                  {shown.place ? ` · ${shown.place}` : ""} · {shown.year}
+                </p>
+              )}
               {count > 1 && (
                 <span className="tabular-nums" aria-live="polite">
                   {Math.max(index, 0) + 1} / {count}
