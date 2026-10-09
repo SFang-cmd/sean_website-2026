@@ -1,5 +1,1 @@
-file,title,place,year,series,home,order,alt
-sample-01.jpg,Last train,Philadelphia,2026,travel,TRUE,1,A man waits alone on an empty SEPTA platform at night
-sample-02.jpg,Hold still,Chinatown,2026,portraits,TRUE,2,Graduation portrait under a red awning
-sample-03.jpg,Flyover,Jersey shore,2025,aerial,FALSE,,Shoreline from above with a line of surf
-sample-04.jpg,,Philadelphia,2024,portraits,TRUE,3,
+file,title,place,year,series,home,order,alt,rank

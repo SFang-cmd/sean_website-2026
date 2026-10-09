@@ -37,6 +37,12 @@ export interface Photo {
   home: boolean;
   /** Sequence on the home; lower first. Ignored when `home` is false. */
   order: number | null;
+  /**
+   * Position within its series in the gallery; lower first, blank after all
+   * ranked ones. Ties fall back to the filename in natural order, so a
+   * 01-/02- prefix on the files is enough to order a shoot.
+   */
+  rank: number | null;
   alt: string;
 }
 
@@ -58,7 +64,12 @@ export function getHomePhotos(): Photo[] {
     );
 }
 
-/** Photos grouped by series slug, series order preserved, newest first within. */
+const natural = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+
+/**
+ * Photos grouped by series slug, series order preserved. Within a series:
+ * rank (blank last), then filename in natural order, then newest first.
+ */
 export function getPhotosBySeries(): Map<string, Photo[]> {
   const map = new Map<string, Photo[]>();
   for (const s of series) map.set(s.slug, []);
@@ -66,7 +77,14 @@ export function getPhotosBySeries(): Map<string, Photo[]> {
     if (!map.has(p.series)) map.set(p.series, []);
     map.get(p.series)!.push(p);
   }
-  for (const list of map.values()) list.sort((a, b) => b.year - a.year);
+  for (const list of map.values()) {
+    list.sort(
+      (a, b) =>
+        (a.rank ?? 1e9) - (b.rank ?? 1e9) ||
+        natural.compare(a.file, b.file) ||
+        b.year - a.year,
+    );
+  }
   return map;
 }
 

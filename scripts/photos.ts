@@ -1,5 +1,5 @@
 /**
- * npm run photos [--force]
+ * npm run photos [--force] [--scaffold]
  *
  * The B-side photo pipeline. Reads content/photos.csv and the originals in
  * photos/, writes optimized renditions to public/photos/ and the manifest to
@@ -41,7 +41,9 @@ const BLUR_QUALITY = 50;
 
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png"]);
 const IGNORED_FILES = new Set(["readme.md"]);
-const CSV_COLUMNS = ["file", "title", "place", "year", "series", "home", "order", "alt"] as const;
+const CSV_COLUMNS = ["file", "title", "place", "year", "series", "home", "order", "alt", "rank"] as const;
+/** Columns a CSV may leave out entirely (treated as blank). */
+const OPTIONAL_COLUMNS = new Set<string>(["rank"]);
 
 const CONCURRENCY = Math.max(1, Math.min(4, Math.floor(os.cpus().length / 2)));
 
@@ -60,6 +62,7 @@ interface Entry {
   series: string;
   home: boolean;
   order: number | null;
+  rank: number | null;
   alt: string;
   /** Which fields came from somewhere other than the CSV, for the summary. */
   fallbacks: string[];
@@ -75,6 +78,7 @@ interface Built {
 
 const args = new Set(process.argv.slice(2));
 const FORCE = args.has("--force");
+const SCAFFOLD = args.has("--scaffold");
 
 if (args.has("--help") || args.has("-h")) {
   console.log(
@@ -82,7 +86,9 @@ if (args.has("--help") || args.has("-h")) {
       "usage: npm run photos [-- --force]",
       "",
       "Reads content/photos.csv + photos/, writes public/photos/ and content/photos.json.",
-      "  --force   regenerate every rendition even if outputs are up to date",
+      "  --force     regenerate every rendition even if outputs are up to date",
+      "  --scaffold  append a CSV row for every file in photos/ that has none",
+      "              (series from the folder, title from the filename), then stop",
     ].join("\n"),
   );
   process.exit(0);
@@ -207,7 +213,9 @@ async function readRows(errors: string[], warnings: string[]): Promise<CsvRow[]>
   const headerLine = text.replace(/^﻿/, "").split(/\r?\n/, 1)[0] ?? "";
   const header = headerLine.split(",").map((h) => h.trim());
   for (const col of CSV_COLUMNS) {
-    if (!header.includes(col)) errors.push(`CSV is missing the "${col}" column`);
+    if (!header.includes(col) && !OPTIONAL_COLUMNS.has(col)) {
+      errors.push(`CSV is missing the "${col}" column`);
+    }
   }
   for (const col of header) {
     if (!(CSV_COLUMNS as readonly string[]).includes(col)) {
@@ -218,6 +226,11 @@ async function readRows(errors: string[], warnings: string[]): Promise<CsvRow[]>
   return records as CsvRow[];
 }
 
+/**
+ * Originals live either flat in photos/ or one level down in a folder named
+ * after a series (photos/portraits/grad-01.jpg). Returned keys are relative
+ * to photos/ with forward slashes, which is what the CSV's `file` column holds.
+ */
 async function listOriginals(errors: string[]): Promise<string[]> {
   let names: string[];
   try {
@@ -227,15 +240,27 @@ async function listOriginals(errors: string[]): Promise<string[]> {
     return [];
   }
   const files: string[] = [];
-  for (const name of names.sort()) {
-    if (name.startsWith(".") || IGNORED_FILES.has(name.toLowerCase())) continue;
-    const stat = await fs.stat(path.join(ORIGINALS_DIR, name));
-    if (!stat.isFile()) continue;
+  const consider = (rel: string, name: string) => {
+    if (name.startsWith(".") || IGNORED_FILES.has(name.toLowerCase())) return;
     if (!IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase())) {
-      errors.push(`photos/${name}: not a JPEG/PNG (only .jpg, .jpeg, .png are accepted)`);
-      continue;
+      errors.push(`photos/${rel}: not a JPEG/PNG (only .jpg, .jpeg, .png are accepted)`);
+      return;
     }
-    files.push(name);
+    files.push(rel);
+  };
+  for (const name of names.sort()) {
+    if (name.startsWith(".")) continue;
+    const full = path.join(ORIGINALS_DIR, name);
+    const stat = await fs.stat(full);
+    if (stat.isDirectory()) {
+      const inner = await fs.readdir(full);
+      for (const child of inner.sort()) {
+        const childStat = await fs.stat(path.join(full, child));
+        if (childStat.isFile()) consider(`${name}/${child}`, child);
+      }
+    } else if (stat.isFile()) {
+      consider(name, name);
+    }
   }
   return files;
 }
@@ -268,7 +293,7 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
       errors.push(`${label}: no such file in photos/`);
     }
 
-    const stem = file.replace(/\.[^.]+$/, "");
+    const stem = path.basename(file).replace(/\.[^.]+$/, "");
     const id = slugify(stem);
     if (!id) {
       errors.push(`${label}: filename produces an empty id`);
@@ -281,7 +306,13 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
     const year = parseInteger(row.year ?? "");
     if (year === undefined) errors.push(`${label}: "year" must be an integer, got "${row.year}"`);
 
-    const ser = (row.series ?? "").trim();
+    let ser = (row.series ?? "").trim();
+    const fallbacks: string[] = [];
+    const folder = file.includes("/") ? file.slice(0, file.indexOf("/")) : "";
+    if (!ser && folder) {
+      ser = folder;
+      fallbacks.push("series ← folder");
+    }
     if (!seriesSlugs.has(ser)) {
       errors.push(
         `${label}: series "${ser}" is not in content/series.ts (${[...seriesSlugs].join(", ")})`,
@@ -302,6 +333,14 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
       warnings.push(`${label}: home is TRUE but "order" is blank (will sort after ordered photos)`);
     }
 
+    const rankRaw = (row.rank ?? "").trim();
+    let rank: number | null = null;
+    if (rankRaw !== "") {
+      const n = parseInteger(rankRaw);
+      if (n === undefined) errors.push(`${label}: "rank" must be an integer or blank, got "${rankRaw}"`);
+      else rank = n;
+    }
+
     entries.push({
       id,
       file,
@@ -312,8 +351,9 @@ async function collectEntries(errors: string[], warnings: string[]): Promise<Ent
       series: ser,
       home: home ?? false,
       order,
+      rank,
       alt: (row.alt ?? "").trim(),
-      fallbacks: [],
+      fallbacks,
     });
   });
 
@@ -448,6 +488,7 @@ async function build(entry: Entry): Promise<Built> {
     series: entry.series,
     home: entry.home,
     order: entry.order,
+    rank: entry.rank,
     alt: entry.alt,
   };
   return { photo, regenerated };
@@ -479,7 +520,51 @@ async function removeOrphans(photos: Photo[]): Promise<string[]> {
 // ---------------------------------------------------------------------------
 // Main
 
+/** Humanize a filename stem for a scaffolded title: "01-grad_walk" → "Grad walk". */
+function titleFromStem(stem: string): string {
+  const t = stem.replace(/^\d+[-_ ]*/, "").replace(/[-_]+/g, " ").trim();
+  return t ? t[0].toUpperCase() + t.slice(1) : stem;
+}
+
+/** A CSV cell, quoted when needed. */
+function csvCell(v: string): string {
+  return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+}
+
+/**
+ * --scaffold: for every original without a CSV row, append a row with the
+ * folder as series, a title guessed from the filename, this year, home FALSE,
+ * and blank order/alt/rank. The words are yours to fill in afterwards.
+ */
+async function scaffold(): Promise<void> {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const [rows, files] = await Promise.all([readRows(errors, warnings), listOriginals(errors)]);
+  const listed = new Set(rows.map((r) => (r.file ?? "").trim()));
+  const missing = files.filter((f) => !listed.has(f));
+  if (!missing.length) {
+    console.log("npm run photos --scaffold: every file already has a row.");
+    return;
+  }
+  const year = String(new Date().getFullYear());
+  const lines = missing.map((f) => {
+    const folder = f.includes("/") ? f.slice(0, f.indexOf("/")) : "";
+    const stem = path.basename(f).replace(/\.[^.]+$/, "");
+    return [f, titleFromStem(stem), "", year, folder, "FALSE", "", "", ""].map(csvCell).join(",");
+  });
+  let text = await fs.readFile(CSV_PATH, "utf8");
+  if (!text.endsWith("\n")) text += "\n";
+  await fs.writeFile(CSV_PATH, text + lines.join("\n") + "\n");
+  console.log(`npm run photos --scaffold: added ${missing.length} row${missing.length === 1 ? "" : "s"} to content/photos.csv:\n`);
+  for (const f of missing) console.log(`  ${f}`);
+  console.log("\nFill in place / alt (and home + order for the home page), then run npm run photos.");
+}
+
 async function main(): Promise<void> {
+  if (SCAFFOLD) {
+    await scaffold();
+    return;
+  }
   const errors: string[] = [];
   const warnings: string[] = [];
 
@@ -498,12 +583,16 @@ async function main(): Promise<void> {
   const built = await pool(entries, CONCURRENCY, build);
 
   const seriesIndex = new Map(series.map((s, i) => [s.slug, i]));
+  // Manifest order = gallery order: series, then rank (blank last), then the
+  // filename in natural order (so 01-, 02-, ... prefixes work), then title.
+  const natural = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
   const photos = built
     .map((b) => b.photo)
     .sort(
       (a, b) =>
         seriesIndex.get(a.series)! - seriesIndex.get(b.series)! ||
-        b.year - a.year ||
+        (a.rank ?? 1e9) - (b.rank ?? 1e9) ||
+        natural.compare(a.file, b.file) ||
         a.title.localeCompare(b.title),
     );
 

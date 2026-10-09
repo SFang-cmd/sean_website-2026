@@ -69,9 +69,14 @@ outside `content/work/`). To reorder, edit `order`.
 Photos are data too: a folder of originals plus one CSV, and a script that
 turns them into the manifest the pages read. You never touch a component.
 
-1. Export from Lightroom as JPEG, long edge ~2400px, into `photos/`
-   (gitignored; originals stay on your machine).
-2. Add a row per photo to `content/photos.csv`:
+1. Export from Lightroom as JPEG, long edge ~2400px, into a folder per
+   series under `photos/` (`photos/portraits/`, `photos/sports/`, ...;
+   gitignored, originals stay on your machine). Flat files directly in
+   `photos/` still work. Keep filenames unique across folders: the filename
+   is the photo's id.
+2. Run `npm run photos -- --scaffold` to get a CSV row for every new file
+   (series from the folder, title guessed from the filename), then fill in
+   the words in `content/photos.csv`:
 
    | column   | meaning |
    | -------- | ------- |
@@ -79,10 +84,11 @@ turns them into the manifest the pages read. You never touch a component.
    | `title`  | shown in italics under the image |
    | `place`  | shown after the title |
    | `year`   | integer; gallery sorts newest first |
-   | `series` | one of the `slug`s in `content/series.ts` (portraits, sports, travel, aerial) |
+   | `series` | one of the `slug`s in `content/series.ts`; blank = the folder name |
    | `home`   | `TRUE` to include on the home streams (aim for 30–40); `TRUE`/`FALSE`, `1`/`0`, `yes`/`no`, any case |
    | `order`  | integer sequence on the home, lower first; blank when `home` is FALSE |
    | `alt`    | one plain sentence describing the image, for screen readers and search |
+   | `rank`   | optional: position within its series in the gallery, lower first. Blank ranks sort after ranked ones, then by filename in natural order, so numbering files `01-`, `02-` is enough |
 
    If `title`/`alt` are blank the script falls back to the image's embedded
    IPTC/XMP Title and Caption, so captioning in Lightroom also works. If

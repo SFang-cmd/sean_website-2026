@@ -128,6 +128,7 @@ async function main() {
       series: seed.series,
       home,
       order: home ? i + 1 : null,
+      rank: null,
       alt: seed.alt,
     });
     process.stdout.write(`${id} ${width}x${height}\n`);

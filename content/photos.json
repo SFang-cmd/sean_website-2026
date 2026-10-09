@@ -28,6 +28,7 @@
     "series": "travel",
     "home": true,
     "order": 1,
+    "rank": null,
     "alt": "A man waits alone on an empty SEPTA platform at night"
   },
   {
@@ -59,6 +60,7 @@
     "series": "portraits",
     "home": true,
     "order": 2,
+    "rank": null,
     "alt": "Graduation portrait under a red awning"
   },
   {
@@ -90,6 +92,7 @@
     "series": "aerial",
     "home": true,
     "order": 3,
+    "rank": null,
     "alt": "Shoreline from above with a line of surf"
   },
   {
@@ -121,6 +124,7 @@
     "series": "sports",
     "home": true,
     "order": 4,
+    "rank": null,
     "alt": "A guard drives baseline past two defenders"
   },
   {
@@ -152,6 +156,7 @@
     "series": "travel",
     "home": true,
     "order": 5,
+    "rank": null,
     "alt": "Rain-slick street reflecting a neon sign"
   },
   {
@@ -183,6 +188,7 @@
     "series": "travel",
     "home": true,
     "order": 6,
+    "rank": null,
     "alt": "A corner store lit from inside at dusk"
   },
   {
@@ -214,6 +220,7 @@
     "series": "aerial",
     "home": true,
     "order": 7,
+    "rank": null,
     "alt": "City blocks seen straight down from a drone"
   },
   {
@@ -245,6 +252,7 @@
     "series": "travel",
     "home": true,
     "order": 8,
+    "rank": null,
     "alt": "The river at blue hour with the skyline behind"
   },
   {
@@ -276,6 +284,7 @@
     "series": "portraits",
     "home": true,
     "order": 9,
+    "rank": null,
     "alt": "A passenger looks out a train window"
   },
   {
@@ -307,6 +316,7 @@
     "series": "aerial",
     "home": true,
     "order": 10,
+    "rank": null,
     "alt": "Fog sitting in a line over the park from above"
   },
   {
@@ -338,6 +348,7 @@
     "series": "travel",
     "home": true,
     "order": 11,
+    "rank": null,
     "alt": "An empty bar patio after closing"
   },
   {
@@ -369,6 +380,7 @@
     "series": "travel",
     "home": true,
     "order": 12,
+    "rank": null,
     "alt": "Manhattan seen from an airplane window"
   },
   {
@@ -400,6 +412,7 @@
     "series": "aerial",
     "home": true,
     "order": 13,
+    "rank": null,
     "alt": "A single car crossing white salt flats from above"
   },
   {
@@ -431,6 +444,7 @@
     "series": "travel",
     "home": true,
     "order": 14,
+    "rank": null,
     "alt": "A cyclist passing under a rail bridge"
   },
   {
@@ -462,6 +476,7 @@
     "series": "portraits",
     "home": true,
     "order": 15,
+    "rank": null,
     "alt": "Portrait on a rooftop with the city out of focus"
   },
   {
@@ -493,6 +508,7 @@
     "series": "travel",
     "home": true,
     "order": 16,
+    "rank": null,
     "alt": "Pedestrians crossing under a paper lantern"
   },
   {
@@ -524,6 +540,7 @@
     "series": "aerial",
     "home": true,
     "order": 17,
+    "rank": null,
     "alt": "A wooden dock reaching into still water"
   },
   {
@@ -555,6 +572,7 @@
     "series": "aerial",
     "home": true,
     "order": 18,
+    "rank": null,
     "alt": "The tide line drawn across sand from above"
   },
   {
@@ -586,6 +604,7 @@
     "series": "portraits",
     "home": true,
     "order": 19,
+    "rank": null,
     "alt": "A conductor steps off a train at the end of a shift"
   },
   {
@@ -617,6 +636,7 @@
     "series": "sports",
     "home": true,
     "order": 20,
+    "rank": null,
     "alt": "A player at the line, crowd blurred behind"
   },
   {
@@ -648,6 +668,7 @@
     "series": "sports",
     "home": true,
     "order": 21,
+    "rank": null,
     "alt": "Two centers jumping for the opening tip"
   },
   {
@@ -679,6 +700,7 @@
     "series": "sports",
     "home": true,
     "order": 22,
+    "rank": null,
     "alt": "Players watching from the sideline in the rain"
   },
   {
@@ -710,6 +732,7 @@
     "series": "portraits",
     "home": true,
     "order": 23,
+    "rank": null,
     "alt": "A graduate in a cap and gown on College Green"
   },
   {
@@ -741,6 +764,7 @@
     "series": "portraits",
     "home": true,
     "order": 24,
+    "rank": null,
     "alt": "A headshot lit by a north-facing window"
   },
   {
@@ -772,6 +796,7 @@
     "series": "portraits",
     "home": true,
     "order": 25,
+    "rank": null,
     "alt": "Graduation portrait under the trees on Locust Walk"
   },
   {
@@ -803,6 +828,7 @@
     "series": "sports",
     "home": true,
     "order": 26,
+    "rank": null,
     "alt": "A fast break seen from behind the basket"
   },
   {
@@ -834,6 +860,7 @@
     "series": "sports",
     "home": true,
     "order": 27,
+    "rank": null,
     "alt": "Bench reaction in the final seconds of overtime"
   },
   {
@@ -865,6 +892,7 @@
     "series": "travel",
     "home": true,
     "order": 28,
+    "rank": null,
     "alt": "Produce stands opening on a cold morning"
   },
   {
@@ -896,6 +924,7 @@
     "series": "aerial",
     "home": true,
     "order": 29,
+    "rank": null,
     "alt": "The boardwalk and beach umbrellas from above"
   },
   {
@@ -927,6 +956,7 @@
     "series": "aerial",
     "home": true,
     "order": 30,
+    "rank": null,
     "alt": "The reservoir and tree line from 400 feet"
   },
   {
@@ -958,6 +988,7 @@
     "series": "sports",
     "home": true,
     "order": 31,
+    "rank": null,
     "alt": "Sprinters warming up in lane one"
   },
   {
@@ -989,6 +1020,7 @@
     "series": "portraits",
     "home": true,
     "order": 32,
+    "rank": null,
     "alt": "A couple's portrait on a park bench"
   },
   {
@@ -1020,6 +1052,7 @@
     "series": "travel",
     "home": true,
     "order": 33,
+    "rank": null,
     "alt": "Passengers on the deck of the Staten Island ferry"
   },
   {
@@ -1051,6 +1084,7 @@
     "series": "sports",
     "home": true,
     "order": 34,
+    "rank": null,
     "alt": "A pickup game under floodlights"
   },
   {
@@ -1082,6 +1116,7 @@
     "series": "aerial",
     "home": true,
     "order": 35,
+    "rank": null,
     "alt": "A causeway dividing two colors of water"
   },
   {
@@ -1113,6 +1148,7 @@
     "series": "travel",
     "home": true,
     "order": 36,
+    "rank": null,
     "alt": "Rowers on the river in the last light"
   },
   {
@@ -1144,6 +1180,7 @@
     "series": "sports",
     "home": false,
     "order": null,
+    "rank": null,
     "alt": "The view from press row during a timeout"
   },
   {
@@ -1175,6 +1212,7 @@
     "series": "portraits",
     "home": false,
     "order": null,
+    "rank": null,
     "alt": "Senior portrait in front of the Quad gate"
   },
   {
@@ -1206,6 +1244,7 @@
     "series": "aerial",
     "home": false,
     "order": null,
+    "rank": null,
     "alt": "A tidal inlet from directly above"
   },
   {
@@ -1237,6 +1276,7 @@
     "series": "travel",
     "home": false,
     "order": null,
+    "rank": null,
     "alt": "Travelers on a platform at 30th Street Station"
   }
 ]
