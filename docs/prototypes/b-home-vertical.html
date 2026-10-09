@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B home: vertical vs angled</title>
+<style>
+  :root { --bg: #f7f5f0; --fg: #141311; --muted: #6e6a62; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141414; --fg: #ecebe7; --muted: #9a978f; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+  header { position: fixed; inset: 0 0 auto 0; z-index: 10; display: flex; justify-content: space-between; align-items: baseline; padding: 20px 28px; mix-blend-mode: difference; color: #fff; }
+  header .name { font-family: Georgia, "Instrument Serif", serif; font-size: 22px; }
+  .hero { position: relative; z-index: 2; padding: 34vh 28px 0; pointer-events: none; }
+  .hero h1 { font-family: Georgia, "Instrument Serif", serif; font-weight: 400; font-size: clamp(40px, 7vw, 92px); line-height: 1; margin: 0 0 14px; letter-spacing: -0.01em; }
+  .hero p { margin: 0; color: var(--muted); font-size: 15px; }
+  .river { position: relative; overflow-x: clip; isolation: isolate; }
+  .shot { position: absolute; margin: 0; will-change: transform; }
+  .shot img { display: block; width: 100%; height: auto; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+  .after { position: relative; z-index: 2; background: var(--bg); padding: 80px 28px 120px; border-top: 1px solid rgba(128,128,128,.25); }
+  /* knobs */
+  .panel { position: fixed; right: 16px; bottom: 16px; z-index: 20; width: 260px; padding: 12px 14px; background: rgba(20,20,20,.92); color: #eee; border-radius: 8px; font: 12px/1.5 ui-monospace, Menlo, monospace; }
+  .panel label { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin: 4px 0; }
+  .panel input[type=range] { width: 130px; }
+  .panel select { width: 130px; font: inherit; }
+  .panel .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .panel button { font: inherit; font-size: 11px; padding: 3px 7px; background: #333; color: #eee; border: 1px solid #555; border-radius: 4px; cursor: pointer; }
+  .panel button.on { background: #eee; color: #111; }
+  .panel .hint { color: #999; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<header><span class="name">Sean Fang</span><nav>Gallery &nbsp;&nbsp; Work with me &nbsp;&nbsp; <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.08em;opacity:.7">on the clock</span></nav></header>
+<section class="hero"><h1>Your resident wallflower.</h1><p>Sean Fang. Here for this moment, and the one right after it. Scroll.</p></section>
+<div class="river" id="river"></div>
+<section class="after"><h2 style="font-family:Georgia,serif;font-weight:400;font-size:28px;margin:0 0 8px">Work with me</h2><p style="color:var(--muted)">(the section after the river, so you can see the shots leave)</p></section>
+
+<div class="panel">
+  <div class="presets">
+    <button data-preset="current">current (18°)</button>
+    <button data-preset="vertical">vertical, 3 lanes</button>
+    <button data-preset="scatter">vertical, scattered</button>
+    <button data-preset="scatterWide">vertical, wide sizes</button>
+  </div>
+  <label>angle <span id="v-angle"></span><input type="range" id="angle" min="0" max="24" step="1"></label>
+  <label>speed spread <span id="v-spread"></span><input type="range" id="spread" min="0" max="1" step="0.05"></label>
+  <label>size variance <span id="v-size"></span><input type="range" id="size" min="0" max="1" step="0.05"></label>
+  <label>layout <select id="layout"><option value="lanes">3 lanes (22/50/78)</option><option value="scatter">scattered x</option></select></label>
+  <label>step y <span id="v-step"></span><input type="range" id="step" min="320" max="900" step="20"></label>
+  <div class="hint">speed spread 0 = everything moves with the page; 1 = fastest shot moves 1.5× the page, slowest 0.6×</div>
+</div>
+
+<script>
+const BASE = 'http://localhost:3026/photos/';
+const PHOTOS = [
+  ['home-01-eyroomies-window',5464,8192],['home-02-pennyo-duet',6000,4000],['home-03-lz-palestra',4076,2718],
+  ['home-04-ap-window',5236,7850],['home-05-jjck-toss',5257,7886],['home-06-wuhc-panel',5991,3994],
+  ['home-07-jh-quatrefoil',5441,8158],['home-08-jlin-lift',8149,5435],['home-09-jje-steps',5007,7511],
+  ['home-10-pennyo-cast',6000,4000],['home-11-ey-walk',5222,7829],['home-12-jr-stair',8192,5464],
+  ['home-13-jh-huntsman',4891,7336],['home-14-lz-above',2732,4096],['home-15-ew-studio',5464,8192],['home-16-pennyo-blue',4000,6000],
+];
+const STREAMS = [
+  { angleMul: +1.0, lane: 0.22, speed: 1.0 },
+  { angleMul: -1.0, lane: 0.78, speed: 0.86 },
+  { angleMul: +0.5, lane: 0.50, speed: 0.74 },
+];
+const PRESETS = {
+  current:     { angle: 18, spread: 0.35, size: 0.35, layout: 'lanes',   step: 640 },
+  vertical:    { angle: 0,  spread: 0.6,  size: 0.35, layout: 'lanes',   step: 560 },
+  scatter:     { angle: 0,  spread: 0.8,  size: 0.5,  layout: 'scatter', step: 480 },
+  scatterWide: { angle: 0,  spread: 1.0,  size: 1.0,  layout: 'scatter', step: 440 },
+};
+const jitterY = i => ((i * 37) % 100) / 100;
+const jitterS = i => (((i * 53) % 100) / 100) - 0.5;      // -0.5..0.5
+const jitterX = i => (((i * 71) % 100) / 100);             // 0..1
+const river = document.getElementById('river');
+const knobs = { angle: 18, spread: 0.35, size: 0.35, layout: 'lanes', step: 640 };
+let shots = [];
+
+function build() {
+  river.innerHTML = '';
+  shots = [];
+  const W = innerWidth;
+  const ys = [0, 0, 0];
+  PHOTOS.forEach(([id, w, h], i) => {
+    const s = STREAMS[i % 3];
+    const land = w > h;
+    // size: base 36vw landscape / 30vw portrait, varied by ±(size knob × 45%)
+    const base = land ? 0.36 : 0.30;
+    const vw = base * (1 + jitterS(i) * 0.9 * knobs.size);
+    const width = Math.round(W * vw);
+    const height = Math.round(width * h / w);
+    // x: lanes or scattered across the page (keeping the image inside)
+    const laneX = s.lane * W - width / 2;
+    const scatterX = jitterX(i) * (W - width);
+    const x = knobs.layout === 'lanes' ? laneX : scatterX;
+    // y: per-stream stack like the site, with the ~30% jitter
+    const k = i % 3;
+    const y = ys[k];
+    ys[k] += knobs.step * (0.85 + jitterY(i) * 0.3) + (knobs.layout === 'scatter' ? 0 : 0);
+    // speed: stream speeds spread around 1 by the knob (1 = page speed)
+    const spreadSpeed = 1 + (s.speed - 0.87) * (knobs.spread / 0.13) * 0.5; // 0.5 .. 1.5 at spread 1
+    const speed = knobs.spread === 0 ? 1 : spreadSpeed;
+    const fig = document.createElement('figure');
+    fig.className = 'shot';
+    fig.style.cssText = `left:${x}px;top:${y}px;width:${width}px;z-index:${i+1}`;
+    fig.innerHTML = `<img src="${BASE}${id}-960.jpg" width="${w}" height="${h}" alt="" loading="lazy" decoding="async">`;
+    river.appendChild(fig);
+    shots.push({ el: fig, y, height, speed, angleMul: s.angleMul });
+  });
+  const tallest = Math.max(...shots.map(s => s.y + s.height));
+  river.style.height = Math.round(tallest + 200) + 'px';
+  render();
+}
+function render() {
+  const tan = Math.tan(knobs.angle * Math.PI / 180);
+  for (const s of shots) {
+    // shots rest where they were laid out at scroll 0; from there each one
+    // moves at its own speed (1 = with the page) and, if angled, sideways
+    // in proportion to its own travel
+    const extra = -scrollY * (s.speed - 1);
+    const dx = s.angleMul * tan * scrollY * s.speed;
+    s.el.style.transform = `translate3d(${dx.toFixed(1)}px, ${extra.toFixed(1)}px, 0)`;
+  }
+}
+let raf = 0;
+addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; render(); }); }, { passive: true });
+addEventListener('resize', build);
+
+// knobs
+const $ = id => document.getElementById(id);
+function applyKnobs(p) {
+  Object.assign(knobs, p);
+  $('angle').value = knobs.angle; $('spread').value = knobs.spread; $('size').value = knobs.size; $('layout').value = knobs.layout; $('step').value = knobs.step;
+  $('v-angle').textContent = knobs.angle + '°'; $('v-spread').textContent = knobs.spread; $('v-size').textContent = knobs.size; $('v-step').textContent = knobs.step + 'px';
+  document.querySelectorAll('[data-preset]').forEach(b => b.classList.toggle('on', JSON.stringify(PRESETS[b.dataset.preset]) === JSON.stringify(knobs)));
+  build();
+}
+for (const id of ['angle','spread','size','step']) $(id).addEventListener('input', e => applyKnobs({ [id]: +e.target.value }));
+$('layout').addEventListener('change', e => applyKnobs({ layout: e.target.value }));
+document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => applyKnobs({ ...PRESETS[b.dataset.preset] })));
+const preset = new URLSearchParams(location.search).get('preset') || 'current';
+applyKnobs({ ...PRESETS[preset] });
+</script>
+</body>
+</html>

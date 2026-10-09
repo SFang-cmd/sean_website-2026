@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B home: depth field</title>
+<style>
+  :root { --bg: #f7f5f0; --fg: #141311; --muted: #6e6a62; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141414; --fg: #ecebe7; --muted: #9a978f; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+  header { position: fixed; inset: 0 0 auto 0; z-index: 10; display: flex; justify-content: space-between; align-items: baseline; padding: 20px 28px; mix-blend-mode: difference; color: #fff; }
+  header .name { font-family: Georgia, "Instrument Serif", serif; font-size: 22px; }
+  .hero { position: relative; z-index: 2; padding: 34vh 28px 0; pointer-events: none; }
+  .hero h1 { font-family: Georgia, "Instrument Serif", serif; font-weight: 400; font-size: clamp(40px, 7vw, 92px); line-height: 1; margin: 0 0 14px; letter-spacing: -0.01em; }
+  .hero p { margin: 0; color: var(--muted); font-size: 15px; }
+  .river { position: relative; overflow-x: clip; isolation: isolate; }
+  .shot { position: absolute; margin: 0; will-change: transform; }
+  .shot img { display: block; width: 100%; height: auto; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+  .shot .tag { position: absolute; left: 6px; top: 6px; padding: 2px 5px; background: rgba(0,0,0,.7); color: #fff; font: 10px/1.3 ui-monospace, Menlo, monospace; display: none; }
+  body.debug .shot .tag { display: block; }
+  body.debug .shot.warn img { outline: 3px solid #e33; outline-offset: -3px; }
+  .after { position: relative; z-index: 2; background: var(--bg); padding: 80px 28px 120px; border-top: 1px solid rgba(128,128,128,.25); }
+  .panel { position: fixed; right: 16px; bottom: 16px; z-index: 20; width: 272px; padding: 12px 14px; background: rgba(20,20,20,.92); color: #eee; border-radius: 8px; font: 12px/1.5 ui-monospace, Menlo, monospace; }
+  .panel label { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin: 4px 0; }
+  .panel input[type=range] { width: 120px; }
+  .panel .row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .panel button { font: inherit; font-size: 11px; padding: 3px 7px; background: #333; color: #eee; border: 1px solid #555; border-radius: 4px; cursor: pointer; }
+  .panel button.on { background: #eee; color: #111; }
+  .panel .hint { color: #999; font-size: 11px; margin-top: 6px; }
+  .panel .stat { color: #bbb; font-size: 11px; margin-top: 4px; white-space: pre-line; }
+</style>
+</head>
+<body>
+<header><span class="name">Sean Fang</span><nav>Gallery &nbsp;&nbsp; Work with me &nbsp;&nbsp; <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.08em;opacity:.7">on the clock</span></nav></header>
+<section class="hero"><h1>Your resident wallflower.</h1><p>Sean Fang. Here for this moment, and the one right after it. Scroll.</p></section>
+<div class="river" id="river"></div>
+<section class="after"><h2 style="font-family:Georgia,serif;font-weight:400;font-size:28px;margin:0 0 8px">Work with me</h2><p style="color:var(--muted)">(the section after the river)</p></section>
+
+<div class="panel">
+  <div class="row">
+    <button id="reroll">reroll seed</button>
+    <button id="auto">auto seed</button>
+    <button id="debug">show occlusion</button>
+  </div>
+  <label>distribution <select id="dist"><option value="best">best candidate (blue noise)</option><option value="random">pure random</option></select></label>
+  <label>seed <span id="v-seed"></span><input type="range" id="seed" min="1" max="60" step="1"></label>
+  <label>near speed <span id="v-fast"></span><input type="range" id="fast" min="1" max="2" step="0.05"></label>
+  <label>far speed <span id="v-slow"></span><input type="range" id="slow" min="0.3" max="1" step="0.05"></label>
+  <label>near size vw <span id="v-big"></span><input type="range" id="big" min="24" max="56" step="1"></label>
+  <label>far size vw <span id="v-small"></span><input type="range" id="small" min="10" max="30" step="1"></label>
+  <label>target fill <span id="v-fill"></span><input type="range" id="fill" min="0.15" max="0.8" step="0.05"></label>
+  <label>middle band <span id="v-band"></span><input type="range" id="band" min="0.4" max="1" step="0.05"></label>
+  <label>covered cap <span id="v-cap"></span><input type="range" id="cap" min="0.05" max="0.6" step="0.05"></label>
+  <div class="stat" id="stat"></div>
+  <div class="hint">depth drives everything: nearer = bigger, faster, on top. Placement tries 80 spots per shot and keeps the one that hides the least of any other shot over the whole scroll. "covered" = the most of a shot hidden by nearer shots at any scroll while it is in the middle band. Red outline = over the cap. "auto seed" searches 40 seeds for the lowest worst case (and fewest fill dips) at the current knobs. "fill" = share of the viewport covered by photos at a scroll position; the next shot enters when it drops under the target, so the stream never comes in waves.</div>
+</div>
+
+<script>
+const BASE = 'http://localhost:3026/photos/';
+const PHOTOS = [
+  ['home-01-eyroomies-window',5464,8192],['home-02-pennyo-duet',6000,4000],['home-03-lz-palestra',4076,2718],
+  ['home-04-ap-window',5236,7850],['home-05-jjck-toss',5257,7886],['home-06-wuhc-panel',5991,3994],
+  ['home-07-jh-quatrefoil',5441,8158],['home-08-jlin-lift',8149,5435],['home-09-jje-steps',5007,7511],
+  ['home-10-pennyo-cast',6000,4000],['home-11-ey-walk',5222,7829],['home-12-jr-stair',8192,5464],
+  ['home-13-jh-huntsman',4891,7336],['home-14-lz-above',2732,4096],['home-15-ew-studio',5464,8192],['home-16-pennyo-blue',4000,6000],
+];
+const knobs = { seed: 7, fast: 1.5, slow: 0.6, big: 42, small: 18, fill: 0.4, band: 0.7, cap: 0.2 };
+let dist = 'best';
+const PHI = 0.6180339887;
+const river = document.getElementById('river');
+let shots = [];
+let R = 0; // river top in page coords
+
+function rng(seed) { let a = seed * 1337 + 1; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const lerp = (a, b, t) => a + (b - a) * t;
+
+// Where a shot is on screen at scroll s (vertical-only motion).
+const screenTop = (sh, s) => R + sh.y - s * sh.speed;
+// Scroll range over which a shot is visible.
+const visRange = (sh, H) => [(R + sh.y - H) / sh.speed, (R + sh.y + sh.h) / sh.speed];
+function overlapFrac(a, b, s) { // fraction of the FARTHER shot's area covered by the nearer one at scroll s
+  const far = a.d < b.d ? a : b, near = far === a ? b : a;
+  const fy = screenTop(far, s), ny = screenTop(near, s);
+  const ox = Math.max(0, Math.min(far.x + far.w, near.x + near.w) - Math.max(far.x, near.x));
+  const oy = Math.max(0, Math.min(fy + far.h, ny + near.h) - Math.max(fy, ny));
+  return (ox * oy) / (far.w * far.h);
+}
+// The rule: while a shot's centre is inside the middle band of the viewport
+// it must stay prominent, so this is the LARGEST fraction of the farther
+// shot covered by the nearer one at ANY scroll position where the farther
+// shot is in that band. Passes are allowed only near the top/bottom edges.
+function inBand(sh, s, H) {
+  const c = screenTop(sh, s) + sh.h / 2;
+  return c > H * (1 - knobs.band) / 2 && c < H * (1 + knobs.band) / 2;
+}
+function coveredInBand(a, b, H) {
+  const far = a.d < b.d ? a : b;
+  const [a0, a1] = visRange(a, H), [b0, b1] = visRange(b, H);
+  const s0 = Math.max(a0, b0), s1 = Math.min(a1, b1);
+  if (s1 <= s0) return 0;
+  let m = 0;
+  const N = 40;
+  for (let k = 0; k <= N; k++) {
+    const sc = lerp(s0, s1, k / N);
+    if (inBand(far, sc, H)) m = Math.max(m, overlapFrac(a, b, sc));
+  }
+  return m;
+}
+
+function build() {
+  river.innerHTML = '';
+  shots = [];
+  const W = innerWidth, H = innerHeight;
+  const rand = rng(knobs.seed);
+  R = river.getBoundingClientRect().top + scrollY;
+  // Stratified depths, shuffled: every shot gets a distinct depth, spread evenly.
+  const depths = PHOTOS.map((_, i) => (i + 0.5) / PHOTOS.length);
+  for (let i = depths.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [depths[i], depths[j]] = [depths[j], depths[i]]; }
+  // Fraction of the viewport covered by placed shots at scroll s (clipped to the viewport).
+  const fillAt = (s, extra) => {
+    let a = 0;
+    const all = extra ? shots.concat([extra]) : shots;
+    for (const o of all) {
+      const t = screenTop(o, s);
+      const vis = Math.max(0, Math.min(t + o.h, H) - Math.max(t, 0));
+      a += vis * o.w;
+    }
+    return a / (W * H);
+  };
+  // Start "before" scroll 0 so the first shots already sit in the fold under
+  // the hero instead of all arriving from the bottom edge one by one.
+  let sEntry = -H;
+  PHOTOS.forEach(([id, pw, ph], i) => {
+    const d = depths[i];
+    const land = pw > ph;
+    const vw = lerp(knobs.small, knobs.big, d) * (land ? 1.2 : 1) / 100;
+    const w = Math.round(W * vw), h = Math.round(w * ph / pw);
+    const speed = lerp(knobs.slow, knobs.fast, d);
+    // Screen-time placement: march the scroll forward from the previous
+    // entry until the fill drops under the target; that is when this shot
+    // should appear at the bottom edge. Its layout y follows from its speed.
+    // Look ahead: a shot entering at the bottom edge adds nothing yet, so
+    // trigger on the fill a third of a viewport further on, which is about
+    // when this one is properly in.
+    const ahead = 0.35 * H;
+    let s = sEntry;
+    while (s < 60000 && fillAt(s + ahead) >= knobs.fill) s += 10;
+    const yEnter = Math.max(0, H + s * speed - R);
+    // Candidates: x free (blue noise + coverage), y from on time to a little
+    // late (a late arrival lets a pass happen off-band, at a small fill cost).
+    let best = null;
+    for (let c = 0; c < 80; c++) {
+      const cx = dist === 'random' ? Math.round(rand() * (W - w)) : Math.round(rand() * (W - w));
+      const late = rand() * 0.25 * H;
+      const cy = Math.round(yEnter + late);
+      const cand = { x: cx, y: cy, w, h, d, speed };
+      let cost = late / H * 2;
+      for (const o of shots) {
+        const m = coveredInBand(cand, o, H);
+        cost += m * m * 10 + (m > knobs.cap ? 12 : 0);
+      }
+      if (dist === 'best') {
+        let minD = Infinity;
+        for (const o of shots) {
+          const dx = ((cx + w / 2) - (o.x + o.w / 2)) / W;
+          const dy = ((cy + h / 2) - (o.y + o.h / 2)) / H;
+          if (Math.abs(dy) < 1.5) minD = Math.min(minD, Math.hypot(dx, dy));
+        }
+        if (minD !== Infinity) cost -= Math.min(minD, 0.6) * 6;
+      }
+      if (!best || cost < best.cost) best = { ...cand, cost };
+    }
+    sEntry = (R + best.y - H) / best.speed;
+    const fig = document.createElement('figure');
+    fig.className = 'shot';
+    fig.style.cssText = `left:${best.x}px;top:${best.y}px;width:${w}px;z-index:${Math.round(d * 100) + 1}`;
+    fig.innerHTML = `<img src="${BASE}${id}-960.jpg" width="${pw}" height="${ph}" alt="" loading="lazy" decoding="async"><span class="tag"></span>`;
+    river.appendChild(fig);
+    shots.push({ ...best, el: fig, id });
+  });
+  // River height: long enough that the slowest, lowest shot has left the viewport before the next section arrives.
+  const end = Math.max(...shots.map(s => (R + s.y + s.h) / s.speed));
+  river.style.height = Math.round(end - R + 80) + 'px';
+  // Diagnostics: worst in-band coverage per shot, and the fill profile over the scroll.
+  let worst = 0, over = 0;
+  for (const a of shots) {
+    const [v0, v1] = visRange(a, H);
+    let m = 0;
+    for (let k = 0; k <= 60; k++) {
+      const sc = lerp(v0, v1, k / 60);
+      if (!inBand(a, sc, H)) continue;
+      let tot = 0;
+      for (const b of shots) if (b !== a && b.d > a.d) tot += overlapFrac(a, b, sc);
+      m = Math.max(m, Math.min(1, tot));
+    }
+    a.maxOcc = m; worst = Math.max(worst, m); if (m > knobs.cap) over++;
+    a.el.querySelector('.tag').textContent = `d${a.d.toFixed(2)} ×${a.speed.toFixed(2)} covered ${Math.round(m * 100)}%`;
+    a.el.classList.toggle('warn', m > knobs.cap);
+  }
+  const firstIn = Math.min(...shots.map(a => visRange(a, H)[0]));
+  const lastOut = Math.max(...shots.map(a => visRange(a, H)[1]));
+  // Profile over the river proper: from scroll 0 until the last shot starts leaving.
+  const fills = [], at = [];
+  for (let sc = 0; sc <= lastOut - H; sc += 20) { fills.push(fillAt(sc)); at.push(sc); }
+  const fMin = Math.min(...fills), fMax = Math.max(...fills), fMean = fills.reduce((p, c) => p + c, 0) / fills.length;
+  window.__fillAt = at[fills.indexOf(fMin)];
+  window.__worst = { worst: +worst.toFixed(2), over, fillMin: +fMin.toFixed(2), fillMean: +fMean.toFixed(2), fillMax: +fMax.toFixed(2) };
+  document.getElementById('stat').textContent = `worst: a shot ${Math.round(worst * 100)}% covered while in the middle ${Math.round(knobs.band * 100)}%; ${over} over the cap\nviewport fill over the scroll: min ${Math.round(fMin * 100)}%, mean ${Math.round(fMean * 100)}%, max ${Math.round(fMax * 100)}% (target ${Math.round(knobs.fill * 100)}%)\nriver ${river.style.height}`;
+  render();
+}
+function render() {
+  for (const s of shots) s.el.style.transform = `translate3d(0, ${(-scrollY * (s.speed - 1)).toFixed(1)}px, 0)`;
+}
+let raf = 0;
+addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; render(); }); }, { passive: true });
+addEventListener('resize', build);
+
+const $ = id => document.getElementById(id);
+const q = new URLSearchParams(location.search);
+function apply(p) {
+  Object.assign(knobs, p);
+  for (const k of ['seed','fast','slow','big','small','fill','band','cap']) { $(k).value = knobs[k]; $('v-' + k).textContent = knobs[k]; }
+  build();
+}
+for (const k of ['seed','fast','slow','big','small','fill','band','cap']) $(k).addEventListener('input', e => apply({ [k]: +e.target.value }));
+$('reroll').addEventListener('click', () => apply({ seed: (knobs.seed % 60) + 1 }));
+$('dist').addEventListener('change', e => { dist = e.target.value; build(); });
+$('auto').addEventListener('click', () => {
+  let bestSeed = knobs.seed, bestKey = Infinity;
+  for (let sd = 1; sd <= 40; sd++) { knobs.seed = sd; build(); const key = window.__worst.over * 10 + window.__worst.worst; if (key < bestKey) { bestKey = key; bestSeed = sd; } }
+  apply({ seed: bestSeed });
+});
+if (q.get('dist')) { dist = q.get('dist'); $('dist').value = dist; }
+$('debug').addEventListener('click', () => { document.body.classList.toggle('debug'); $('debug').classList.toggle('on'); });
+apply(Object.fromEntries([...q].filter(([k]) => k in knobs).map(([k, v]) => [k, +v])));
+window.__field = () => shots.map(s => ({ id: s.id.slice(5, 12), d: +s.d.toFixed(2), speed: +s.speed.toFixed(2), x: s.x, y: s.y, w: s.w, hid: Math.round(s.maxOcc * 100) }));
+</script>
+</body>
+</html>
