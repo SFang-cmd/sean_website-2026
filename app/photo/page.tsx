@@ -9,9 +9,11 @@ import { Streams } from "@/components/photo/Streams";
  * The hero must stand alone: photos.sean-fang.com is an entry point of its
  * own, so it says who, where and what without leaning on the A side.
  */
+// The same inbox as the engineering side, but spelled out and clickable:
+// a client should be able to tap it. (A obfuscates its copy against scrapers.)
 const workWithMe = {
-  email: "sean@sean-fang.com", // placeholder
-  instagram: "seanfang", // placeholder handle
+  email: "sfangcmd@gmail.com",
+  instagram: "seanfangphoto",
 };
 
 export default function PhotoHome() {
