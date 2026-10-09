@@ -17,7 +17,7 @@ const BACK_LABEL = "on the clock";
  * under it.
  */
 export function PhotoNav({ blend = false }: { blend?: boolean }) {
-  const link = "text-[13px] underline-offset-4 hover:underline";
+  const link = "whitespace-nowrap text-[13px] underline-offset-4 hover:underline";
   return (
     <header
       className={
@@ -26,20 +26,21 @@ export function PhotoNav({ blend = false }: { blend?: boolean }) {
           : "flex items-baseline justify-between border-b border-line px-7 py-5"
       }
     >
-      <Link href="/photo" className="font-serif text-[22px] leading-none">
+      <Link href="/photo" className="whitespace-nowrap font-serif text-[22px] leading-none">
         {site.name}
       </Link>
       <nav className="flex items-baseline gap-6">
         <Link href="/photo/gallery" className={link}>
           Gallery
         </Link>
-        <Link href="/photo#work" className={link}>
+        {/* Hidden on phones: it's a section a scroll away, and the row can't fit four items. */}
+        <Link href="/photo#work" className={`${link} hidden sm:inline`}>
           Work with me
         </Link>
         <SideLink
           href="/"
           hardHref={site.url}
-          className={`font-mono text-[11px] tracking-[0.08em] underline-offset-4 hover:underline ${blend ? "opacity-70" : "text-muted"}`}
+          className={`whitespace-nowrap font-mono text-[11px] tracking-[0.08em] underline-offset-4 hover:underline ${blend ? "opacity-70" : "text-muted"}`}
         >
           {BACK_LABEL}
         </SideLink>
