@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { series } from "@/content/series";
 import { getPhotosBySeries } from "@/lib/photos";
 import { site } from "@/content/site";
+import { photoCanonicalBase } from "@/lib/host";
 import { PhotoNav } from "@/components/photo/PhotoNav";
 import { PhotoFooter } from "@/components/photo/PhotoFooter";
 import { Gallery } from "@/components/photo/Gallery";
 
 export const metadata: Metadata = {
   title: { absolute: `Gallery — ${site.name}` },
-  alternates: { canonical: `${site.photosUrl}/gallery` },
+  alternates: { canonical: `${photoCanonicalBase(site.url, site.photosUrl)}/gallery` },
 };
 
 /**

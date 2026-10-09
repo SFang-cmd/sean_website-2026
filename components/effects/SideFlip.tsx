@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, type MouseEvent, type ReactNode } from "react";
 import { prefersReducedMotion } from "@/lib/a11y";
-import { rootHostHref, usePhotosHost } from "@/lib/host";
+import { rootHostHref } from "@/lib/host";
+import { usePhotosHost } from "@/lib/useHost";
 import { usePlainEnabled } from "@/lib/plainStore";
 import {
   isSideTransitionInFlight,

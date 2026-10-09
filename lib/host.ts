@@ -1,5 +1,3 @@
-import { useSyncExternalStore } from "react";
-
 /**
  * The photography side has two addresses: `/photo/*` on the root host, and
  * `photos.sean-fang.com/*`, a host alias that `next.config.ts` rewrites onto
@@ -12,25 +10,27 @@ import { useSyncExternalStore } from "react";
  */
 export const PHOTOS_HOSTS = ["photos.sean-fang.com", "photos.localhost"] as const;
 
+/**
+ * How the photos host behaves. `"redirect"` (current): every request on it
+ * is sent to the root host's /photo/* (one address, the A↔B door is always
+ * an in-app route change, no cross-origin load). `"alias"`: the host serves
+ * /photo/* in place, B links drop the prefix, the door out is a hard load
+ * behind the wave (slower, Sean found the load beat noticeable). Flip this
+ * one constant to bring the alias back; next.config.ts, the canonical URLs
+ * and the sitemap follow it.
+ */
+export const PHOTOS_HOST_MODE: "redirect" | "alias" = "redirect";
+
+/** Canonical base for the B side: the alias host when it serves pages, else the root host's /photo. */
+export function photoCanonicalBase(rootUrl: string, photosUrl: string): string {
+  return PHOTOS_HOST_MODE === "alias" ? photosUrl : `${rootUrl}/photo`;
+}
+
 /** Regex (no anchors; Next adds them) for `has: [{ type: "host" }]` rules. */
 export const PHOTOS_HOST_PATTERN = PHOTOS_HOSTS.map((h) => h.replace(/\./g, "\\.")).join("|");
 
 export function isPhotosHost(hostname: string): boolean {
   return (PHOTOS_HOSTS as readonly string[]).includes(hostname.toLowerCase());
-}
-
-const noop = () => () => {};
-const readClient = () => isPhotosHost(window.location.hostname);
-const readServer = () => false;
-
-/**
- * True when the page is being viewed through the photos host alias. The
- * server snapshot is `false` (pages are static; the host is unknown at
- * build time), so on the alias the first client render corrects it right
- * after hydration, without a mismatch warning.
- */
-export function usePhotosHost(): boolean {
-  return useSyncExternalStore(noop, readClient, readServer);
 }
 
 /**
@@ -43,12 +43,4 @@ export function rootHostHref(href: string): string {
   if (hostname !== "photos.localhost") return href;
   const u = new URL(href, window.location.href);
   return `${protocol}//localhost${port ? `:${port}` : ""}${u.pathname}${u.search}${u.hash}`;
-}
-
-/**
- * Prefix for B-side in-app links: "" on the alias (so the address bar reads
- * `/gallery`, not `/photo/gallery`), "/photo" on the root host.
- */
-export function usePhotoBase(): string {
-  return usePhotosHost() ? "" : "/photo";
 }

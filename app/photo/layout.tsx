@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
+import { photoCanonicalBase } from "@/lib/host";
 
 export const metadata: Metadata = {
   title: { absolute: `${site.name} — Photography` },
   description: "Sean Fang, photographer. Here for this moment, and the one right after it.",
-  alternates: { canonical: site.photosUrl },
+  alternates: { canonical: photoCanonicalBase(site.url, site.photosUrl) },
 };
 
 /**

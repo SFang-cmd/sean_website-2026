@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { site } from "@/content/site";
-import { usePhotoBase } from "@/lib/host";
+import { usePhotoBase } from "@/lib/useHost";
 import { SideLink } from "@/components/effects/SideFlip";
 
 /**

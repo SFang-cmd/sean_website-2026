@@ -26,12 +26,13 @@ The site has two faces in one Next app:
 - **B side** (`/photo`, `/photo/gallery`): photography, client-facing.
   Paper, no grid, no accent, Instrument Serif. Lives in `app/photo/` with
   its own layout, which scopes the B token set via the `.b` class.
-  Canonical host `photos.sean-fang.com` is a rewrite onto `/photo/*`
-  (`next.config.ts`; the alias hosts, including the local stand-in
-  `photos.localhost`, live in `lib/host.ts`). On the alias, B's own links
-  drop the `/photo` prefix (`usePhotoBase`) and the door to A is a full
-  cross-origin load behind the shrink wave (`SideLink` + `runShrinkWave`'s
-  `hard` option), since "/" there is rewritten back onto B.
+  `photos.sean-fang.com` is a second address for it; `PHOTOS_HOST_MODE` in
+  `lib/host.ts` decides: `"redirect"` (current) sends every request there to
+  `sean-fang.com/photo/*` (307), so both doors stay in-app route changes;
+  `"alias"` serves `/photo/*` in place via a host rewrite, B's links drop the
+  prefix (`usePhotoBase`) and the door to A is a cross-origin load behind the
+  shrink wave (`runShrinkWave`'s `hard` option). Canonical URLs and the
+  sitemap follow the mode (`photoCanonicalBase`).
 
 The root `app/layout.tsx` only sets fonts and metadata. Plan and decisions:
 `docs/plan-two-sides.md`; visual prototypes: `docs/prototypes/`.
