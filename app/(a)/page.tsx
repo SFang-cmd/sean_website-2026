@@ -83,7 +83,12 @@ export default function Home() {
           <p className="max-w-[54ch] text-[15px] leading-relaxed text-muted">
             {site.contact}
           </p>
-          <p className="mt-3 text-[15px] font-medium text-accent">{site.email}</p>
+          <a
+            href={`mailto:${site.email}`}
+            className="mt-3 inline-block text-[15px] font-medium text-accent underline-offset-4 hover:underline"
+          >
+            {site.email}
+          </a>
         </section>
       </main>
       <Footer />
