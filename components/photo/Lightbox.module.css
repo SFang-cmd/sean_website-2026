@@ -69,6 +69,8 @@
    density-corrects the natural size by whichever srcset descriptor it chose,
    and `width: auto` would lay the image out at a fraction of the viewport. */
 .stage {
+  /* The fitted photo's width, from the stage and the ratio (see .full). */
+  --photo-w: min(100cqw, calc(100cqh * var(--ar, 1)));
   position: absolute;
   inset: 0 0 var(--band) 0;
   display: flex;
@@ -79,7 +81,7 @@
 }
 .full {
   display: block;
-  width: min(100cqw, calc(100cqh * var(--ar, 1)));
+  width: var(--photo-w);
   height: auto;
   aspect-ratio: var(--ar, auto);
   max-width: none;
@@ -135,18 +137,20 @@
   z-index: 2; /* above the next zone */
 }
 
-/* Prev/next zones: the outer fifth of the stage on each side, invisible,
-   over the photo; the cursor becomes an arrow there. Rendered only when there
-   is more than one photo and not zoomed. The SVG cursor is a white arrow
-   with a dark outline so it reads over any photo. */
+/* Prev/next zones, inside the stage: the empty margin beside the photo plus
+   the outer fifth of the photo, full stage height, invisible; the cursor
+   becomes an arrow there. Rendered only when there is more than one photo
+   and not zoomed. The SVG cursor is a white arrow with a dark outline so it
+   reads over any photo. */
 .zone {
   position: absolute;
   top: 0;
-  bottom: var(--band);
-  width: 20%;
+  bottom: 0;
+  width: calc((100cqw - var(--photo-w)) / 2 + var(--photo-w) * 0.2);
   padding: 0;
   border: 0;
   background: none;
+  pointer-events: auto;
   z-index: 1;
 }
 .zone:focus-visible {

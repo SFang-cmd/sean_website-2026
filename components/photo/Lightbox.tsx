@@ -18,10 +18,12 @@ import styles from "./Lightbox.module.css";
  * photo with a black background keeps its edge), the photo alone at the
  * largest size that fits, click-to-zoom (fit ↔ 2× about the clicked point,
  * drag to pan), a close button, and a bottom band with the caption and
- * counter centred (caption hidden while zoomed). Stepping: the outer fifth
- * of the stage on each side is a prev/next zone (the cursor becomes an
- * arrow there; gone while zoomed so dragging pans), plus ←/→ and a touch
- * swipe. With `filmstrip`, the band also holds a
+ * counter centred (caption hidden while zoomed). Stepping: on each side,
+ * the empty stage beside the photo plus the outer fifth of the photo is a
+ * prev/next zone (the cursor becomes an arrow there; gone while zoomed so
+ * dragging pans) — the side you are on is the way you go, whatever the
+ * photo's shape — plus ←/→ and a touch swipe. Closing is the ×, Esc, or a
+ * click on the empty stage above/below a photo. With `filmstrip`, the band also holds a
  * row of thumbnails: the current one outlined, click to jump, the row kept
  * centred on it; on pointer devices it fades out after a short idle and comes
  * back on any movement or key.
@@ -190,23 +192,24 @@ export function Lightbox({
           >
             ×
           </button>
-          <ZoomableImage key={shown.id} photo={shown} onZoomChange={setZoomed} />
-          {count > 1 && !zoomed && (
-            <>
-              <button
-                type="button"
-                onClick={() => onNav(-1)}
-                className={`${styles.zone} ${styles.zonePrev}`}
-                aria-label="Previous photo"
-              />
-              <button
-                type="button"
-                onClick={() => onNav(1)}
-                className={`${styles.zone} ${styles.zoneNext}`}
-                aria-label="Next photo"
-              />
-            </>
-          )}
+          <ZoomableImage key={shown.id} photo={shown} onZoomChange={setZoomed}>
+            {count > 1 && !zoomed && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => onNav(-1)}
+                  className={`${styles.zone} ${styles.zonePrev}`}
+                  aria-label="Previous photo"
+                />
+                <button
+                  type="button"
+                  onClick={() => onNav(1)}
+                  className={`${styles.zone} ${styles.zoneNext}`}
+                  aria-label="Next photo"
+                />
+              </>
+            )}
+          </ZoomableImage>
           <div className={styles.band}>
             {strip && (
               <div
@@ -301,9 +304,12 @@ interface Zoom {
 function ZoomableImage({
   photo,
   onZoomChange,
+  children,
 }: {
   photo: Photo;
   onZoomChange?: (zoomed: boolean) => void;
+  /** Overlays laid out inside the stage (the prev/next zones). */
+  children?: React.ReactNode;
 }) {
   const [zoom, setZoom] = useState<Zoom | null>(null);
   const [panning, setPanning] = useState(false);
@@ -380,7 +386,11 @@ function ZoomableImage({
   };
 
   return (
-    <div ref={stageRef} className={styles.stage}>
+    <div
+      ref={stageRef}
+      className={styles.stage}
+      style={{ "--ar": `${photo.width} / ${photo.height}` } as React.CSSProperties}
+    >
       <Image
         loader={loaderFor(photo)}
         src={srcFor(photo)}
@@ -396,12 +406,7 @@ function ZoomableImage({
           .filter(Boolean)
           .join(" ")}
         style={
-          {
-            "--ar": `${photo.width} / ${photo.height}`,
-            ...(zoom
-              ? { transform: transform(zoom), transformOrigin: `${zoom.ox}px ${zoom.oy}px` }
-              : {}),
-          } as React.CSSProperties
+          zoom ? { transform: transform(zoom), transformOrigin: `${zoom.ox}px ${zoom.oy}px` } : undefined
         }
         onClick={onClick}
         onPointerDown={onPointerDown}
@@ -409,6 +414,7 @@ function ZoomableImage({
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
       />
+      {children}
     </div>
   );
 }
