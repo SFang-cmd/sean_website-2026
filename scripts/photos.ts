@@ -17,6 +17,11 @@
  * Shoot folder names are kept as-is as the shoot key (e.g. 2026_05-EK) and
  * slugified only for the output ids/URLs (2026-05-ek-cover).
  *
+ * Incremental: a photo is skipped when its renditions exist, are newer than
+ * the original, and the original is the same file the last run recorded in
+ * content/photos.build.json (size + mtime) — so a replaced original is
+ * rebuilt even if the new file's timestamp is older. --force rebuilds all.
+ *
  * Strict by design: a shoot folder without a row, a row without a folder, a
  * bad cell, two covers in one shoot — every problem is printed and the script
  * exits 1 before writing anything. See docs/adding-content.md → "Adding photos".
@@ -37,6 +42,10 @@ import type { Photo, Rendition } from "../lib/photos";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CSV_PATH = path.join(ROOT, "content", "shoots.csv");
 const MANIFEST_PATH = path.join(ROOT, "content", "photos.json");
+/** Per-photo source signatures (size + mtime) from the last run, so a
+    replaced original is rebuilt even when the new file's mtime is older
+    than the renditions (Finder copies keep the source's timestamp). */
+const BUILD_PATH = path.join(ROOT, "content", "photos.build.json");
 const ORIGINALS_DIR = path.join(ROOT, "photos");
 const OUTPUT_DIR = path.join(ROOT, "public", "photos");
 /** Site-relative URL prefix of the renditions. */
@@ -101,6 +110,8 @@ interface Entry {
 interface Built {
   photo: Photo;
   regenerated: boolean;
+  /** Source signature to record for the next run (see BUILD_PATH). */
+  signature: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -148,6 +159,20 @@ function parseInteger(raw: string): number | undefined {
 }
 
 const natural = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+
+/** "size-mtime" of a file: cheap, and different for any realistic edit. */
+async function signatureOf(p: string): Promise<string> {
+  const st = await fs.stat(p);
+  return `${st.size}-${Math.round(st.mtimeMs)}`;
+}
+
+async function readBuildRecord(): Promise<Record<string, string> | null> {
+  try {
+    return JSON.parse(await fs.readFile(BUILD_PATH, "utf8")) as Record<string, string>;
+  } catch {
+    return null;
+  }
+}
 
 async function mtimeOf(p: string): Promise<number | null> {
   try {
@@ -434,7 +459,10 @@ function altFor(e: Entry): string {
   return e.total > 1 ? `${where} (${e.rank} of ${e.total})` : where;
 }
 
-async function build(entry: Entry): Promise<Built> {
+/** `previous` is the last run's signatures, or null when there is no record
+    yet (then only the mtime rule applies, so adopting the record does not
+    force a full rebuild). */
+async function build(entry: Entry, previous: Record<string, string> | null): Promise<Built> {
   const meta = await sharp(entry.sourcePath).metadata();
   const width = meta.autoOrient?.width ?? meta.width;
   const height = meta.autoOrient?.height ?? meta.height;
@@ -446,8 +474,12 @@ async function build(entry: Entry): Promise<Built> {
     path.join(OUTPUT_DIR, outputName(entry.id, w, "jpg")),
   ]);
 
+  // Up to date = every output exists and is newer than the source, AND the
+  // source is the same file the last run saw (its signature matches). The
+  // signature check is what catches a replaced original with an older mtime.
+  const signature = await signatureOf(entry.sourcePath);
   let regenerated = false;
-  let upToDate = !FORCE;
+  let upToDate = !FORCE && (previous === null || previous[entry.id] === signature);
   if (upToDate) {
     const sourceMtime = (await mtimeOf(entry.sourcePath)) ?? Infinity;
     for (const out of outputs) {
@@ -511,7 +543,8 @@ async function build(entry: Entry): Promise<Built> {
     cover: entry.cover,
     alt: altFor(entry),
   };
-  return { photo, regenerated };
+  return { photo, regenerated,
+    signature };
 }
 
 // ---------------------------------------------------------------------------
@@ -591,7 +624,8 @@ async function main(): Promise<void> {
   }
 
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
-  const built = await pool(entries, CONCURRENCY, build);
+  const previous = await readBuildRecord();
+  const built = await pool(entries, CONCURRENCY, (e) => build(e, previous));
 
   // Manifest order = gallery order: series, then the shoot's row order in
   // the CSV, then position within the shoot (filename order).
@@ -611,6 +645,10 @@ async function main(): Promise<void> {
 
   const removed = await removeOrphans(photos);
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(photos, null, 2) + "\n");
+  const record = Object.fromEntries(
+    built.map((b) => [b.photo.id, b.signature] as const).sort(([a], [b]) => a.localeCompare(b)),
+  );
+  await fs.writeFile(BUILD_PATH, JSON.stringify(record, null, 2) + "\n");
 
   // Summary
   const shoots = new Set(photos.map((p) => p.shoot));
