@@ -51,7 +51,7 @@ export const site: SiteContent = {
   learningHref: "https://github.com/SFang-cmd/obiKnowledge",
   contact:
     "Feel free to reach out — about ML, a project, or anything at all. Just send an email:",
-  email: "sfangcmd@gmail.com",
+  email: "sfangcmd [at] gmail [dot] com",
   tag: "> tag: here to do cool things. [0.98]",
   nav: [
     { label: "about", href: "#about" },
