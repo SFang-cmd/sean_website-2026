@@ -1,107 +1,5 @@
 [
   {
-    "id": "portrait-01",
-    "file": "portraits/portrait-01.jpg",
-    "width": 4287,
-    "height": 6430,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-01-480.avif",
-        "jpg": "/photos/portrait-01-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-01-960.avif",
-        "jpg": "/photos/portrait-01-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-01-1600.avif",
-        "jpg": "/photos/portrait-01-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/aAAwDAQACEAMQAAAAsMoUoUlFMxub3UY6VTHwP//EACIQAAICAQMEAwAAAAAAAAAAAAECAxEABBITMUFRYSEygf/aAAgBAQABPwCCaeQMxJFnJA/ESW9gY0DuFJ8VnKYzGF+rBTk0yMkYU1fXI54EXaO3nF1AJpo2BUhP05qdUq8QUNVKLrucLSMSSrXZBG2/kYdM76l5GYUeo9ZNHKxBDAU+4ejkEQAcmyWdm6+c/8QAGhEAAgIDAAAAAAAAAAAAAAAAABEBEgJRYf/aAAgBAgEBPwBj7JXHRQ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AB//2Q==",
-    "title": "Procession",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 1,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Six graduates in gowns walk down a tree-lined path"
-  },
-  {
-    "id": "portrait-02",
-    "file": "portraits/portrait-02.jpg",
-    "width": 4719,
-    "height": 7079,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-02-480.avif",
-        "jpg": "/photos/portrait-02-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-02-960.avif",
-        "jpg": "/photos/portrait-02-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-02-1600.avif",
-        "jpg": "/photos/portrait-02-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQADBAYH/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIQAxAAAAAtXKsV57bdE4rwVQjF2X//xAAkEAACAQQBBAIDAAAAAAAAAAABAgMABBESIQUTIjEjMlFhcv/aAAgBAQABPwCxte5GvIAC7HNXVhbBU7L86ZbNXSfLnHsV0RJhFIYtPYTz/dLDImoiEflEqPtk8881PFtK+3sEiuk3scW0B+7sGFQXkbSlRwyhc1O3zS/2aF3JDKWUeWuAc/mouoXMTlg3lrrmknbXnk1//8QAGBEAAwEBAAAAAAAAAAAAAAAAARARAiH/2gAIAQIBAT8AGRF2L//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAwEBPwBdjP/Z",
-    "title": "Window",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 2,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Graduates silhouetted in a tall gothic window"
-  },
-  {
-    "id": "portrait-03",
-    "file": "portraits/portrait-03.jpg",
-    "width": 2732,
-    "height": 4096,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-03-480.avif",
-        "jpg": "/photos/portrait-03-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-03-960.avif",
-        "jpg": "/photos/portrait-03-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-03-1600.avif",
-        "jpg": "/photos/portrait-03-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
-    "title": "From above",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 3,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate in a gown walks a campus path, seen from above"
-  },
-  {
     "id": "portrait-04",
     "file": "portraits/portrait-04.jpg",
     "width": 5464,
@@ -130,31 +28,99 @@
     "series": "portraits",
     "home": true,
     "order": 4,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate in a white dress sits in a sunlit window holding her cap"
+    "rank": 1,
+    "shoot": "portrait-04",
+    "cover": true,
+    "alt": "Window seat, Penn, Philadelphia, 2026"
   },
   {
-    "id": "portrait-05",
-    "file": "portraits/portrait-05.jpg",
+    "id": "grad-2026-a-02",
+    "file": "portraits/grad-2026-a/02.jpg",
     "width": 5464,
     "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/portrait-05-480.avif",
-        "jpg": "/photos/portrait-05-480.jpg"
+        "avif": "/photos/grad-2026-a-02-480.avif",
+        "jpg": "/photos/grad-2026-a-02-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/portrait-05-960.avif",
-        "jpg": "/photos/portrait-05-960.jpg"
+        "avif": "/photos/grad-2026-a-02-960.avif",
+        "jpg": "/photos/grad-2026-a-02-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/portrait-05-1600.avif",
-        "jpg": "/photos/portrait-05-1600.jpg"
+        "avif": "/photos/grad-2026-a-02-1600.avif",
+        "jpg": "/photos/grad-2026-a-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAKCWi4XPmpnm+7FotTB4gf/EACMQAAICAQMDBQAAAAAAAAAAAAECAxEABBIhMTJBExRhcYH/2gAIAQEAAT8AIaOB6rzV5J6aRTpvCqQbwamWK1jJ23kE/uYWFFbvqMkCyCVG83+Zr2MepdVA8ZBrDpoWRu4HJ4pdMxshhwt9bY85OTLIWdQDk8G5S0LbbI3385Gs7BGRk2bQhBFdnQ8ZOxSVg33xn//EABsRAAIDAAMAAAAAAAAAAAAAAAABAhEhAxIx/9oACAECAQE/AMksOtYQinx+uxp2z//EABkRAQACAwAAAAAAAAAAAAAAAAABIQIRgf/aAAgBAwEBPwDbrGKlb//Z",
+    "title": "On the grass",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "grad-2026-a",
+    "cover": false,
+    "alt": "On the grass, Penn, Philadelphia, 2026 (1 of 3)"
+  },
+  {
+    "id": "grad-2026-a-03",
+    "file": "portraits/grad-2026-a/03.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/grad-2026-a-03-480.avif",
+        "jpg": "/photos/grad-2026-a-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/grad-2026-a-03-960.avif",
+        "jpg": "/photos/grad-2026-a-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/grad-2026-a-03-1600.avif",
+        "jpg": "/photos/grad-2026-a-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMBBf/aAAwDAQACEAMQAAAA53RSaHrBSGnOLjHRUgbweP8A/8QAIhAAAgIBAwUBAQAAAAAAAAAAAQIDEQAEMVEFEhMicSEz/9oACAEBAAE/AEnMpC/lb/MVgveB3cNijU16EBc0cKmQOzUpGIlxP3/jkghb2A5xPIR/RgdiNslUFIfQKqo4+km8lEjoygezBT9sXnUYXXWSeEFkIU2vJGS9Kc2RIKyXp7zuGtUpFXnYYmjCooLmwM//xAAcEQEAAgEFAAAAAAAAAAAAAAABAAIhAxMyQZH/2gAIAQIBAT8AvpHUao5K+QBBXOI7ivGf/8QAHxEAAQMDBQAAAAAAAAAAAAAAAgABEQMSIRATQVFh/9oACAEDAQE/ANoyZnZuJ0GoYDbGMz7KsLtf/9k=",
+    "title": "On the grass",
+    "place": "Penn, Philadelphia",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "grad-2026-a",
+    "cover": false,
+    "alt": "On the grass, Penn, Philadelphia, 2026 (2 of 3)"
+  },
+  {
+    "id": "grad-2026-a-cover",
+    "file": "portraits/grad-2026-a/cover.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/grad-2026-a-cover-480.avif",
+        "jpg": "/photos/grad-2026-a-cover-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/grad-2026-a-cover-960.avif",
+        "jpg": "/photos/grad-2026-a-cover-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/grad-2026-a-cover-1600.avif",
+        "jpg": "/photos/grad-2026-a-cover-1600.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAEC/9oADAMBAAIQAxAAAAB69GWLbC85TtyuzTEkz//EACYQAAICAQIEBwEAAAAAAAAAAAECAxEABBIhMVGhBRMUIkFDYXH/2gAIAQEAAT8AYR+YXLiz+HNUzPHGkAZmVwaC43h4np3hN1/MSNeBCg9zjx79ZpZ4oSwVxbVXtz1Mw+vIknfbaUp5E8M1ER3RvyKGxm5hdntmtmlknqKQrtIBY8zm6Q7RPIZOnwMEzgU7Gx0z/8QAHBEAAgICAwAAAAAAAAAAAAAAAQIAERJRAxOR/9oACAECAQE/AE5CbskzvGj7DiiMossZg25//8QAGREAAwADAAAAAAAAAAAAAAAAAAERAiEy/9oACAEDAQE/AME3XSnL0yI//9k=",
@@ -164,10 +130,10 @@
     "series": "portraits",
     "home": true,
     "order": 5,
-    "rank": null,
+    "rank": 3,
     "shoot": "grad-2026-a",
     "cover": true,
-    "alt": "A graduate in a white dress sits on the lawn holding her cap"
+    "alt": "On the grass, Penn, Philadelphia, 2026 (3 of 3)"
   },
   {
     "id": "portrait-06",
@@ -198,112 +164,10 @@
     "series": "portraits",
     "home": true,
     "order": 6,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Studio headshot in a navy suit, arms crossed"
-  },
-  {
-    "id": "portrait-07",
-    "file": "portraits/portrait-07.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-07-480.avif",
-        "jpg": "/photos/portrait-07-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-07-960.avif",
-        "jpg": "/photos/portrait-07-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-07-1600.avif",
-        "jpg": "/photos/portrait-07-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAKCWi4XPmpnm+7FotTB4gf/EACMQAAICAQMDBQAAAAAAAAAAAAECAxEABBIhMTJBExRhcYH/2gAIAQEAAT8AIaOB6rzV5J6aRTpvCqQbwamWK1jJ23kE/uYWFFbvqMkCyCVG83+Zr2MepdVA8ZBrDpoWRu4HJ4pdMxshhwt9bY85OTLIWdQDk8G5S0LbbI3385Gs7BGRk2bQhBFdnQ8ZOxSVg33xn//EABsRAAIDAAMAAAAAAAAAAAAAAAABAhEhAxIx/9oACAECAQE/AMksOtYQinx+uxp2z//EABkRAQACAwAAAAAAAAAAAAAAAAABIQIRgf/aAAgBAwEBPwDbrGKlb//Z",
-    "title": "Together",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 7,
-    "rank": null,
-    "shoot": "grad-2026-a",
-    "cover": false,
-    "alt": "Two graduates in gowns on a stone bench under green leaves"
-  },
-  {
-    "id": "portrait-08",
-    "file": "portraits/portrait-08.jpg",
-    "width": 5464,
-    "height": 8192,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-08-480.avif",
-        "jpg": "/photos/portrait-08-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-08-960.avif",
-        "jpg": "/photos/portrait-08-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-08-1600.avif",
-        "jpg": "/photos/portrait-08-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMBBf/aAAwDAQACEAMQAAAA53RSaHrBSGnOLjHRUgbweP8A/8QAIhAAAgIBAwUBAQAAAAAAAAAAAQIDEQAEMVEFEhMicSEz/9oACAEBAAE/AEnMpC/lb/MVgveB3cNijU16EBc0cKmQOzUpGIlxP3/jkghb2A5xPIR/RgdiNslUFIfQKqo4+km8lEjoygezBT9sXnUYXXWSeEFkIU2vJGS9Kc2RIKyXp7zuGtUpFXnYYmjCooLmwM//xAAcEQEAAgEFAAAAAAAAAAAAAAABAAIhAxMyQZH/2gAIAQIBAT8AvpHUao5K+QBBXOI7ivGf/8QAHxEAAQMDBQAAAAAAAAAAAAAAAgABEQMSIRATQVFh/9oACAEDAQE/ANoyZnZuJ0GoYDbGMz7KsLtf/9k=",
-    "title": "LOVE",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 9,
-    "rank": null,
-    "shoot": "grad-2026-a",
-    "cover": false,
-    "alt": "Four graduates posed on the LOVE statue"
-  },
-  {
-    "id": "portrait-09",
-    "file": "portraits/portrait-09.jpg",
-    "width": 5440,
-    "height": 8156,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-09-480.avif",
-        "jpg": "/photos/portrait-09-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-09-960.avif",
-        "jpg": "/photos/portrait-09-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-09-1600.avif",
-        "jpg": "/photos/portrait-09-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAB9yV2L0BAoMItnfOoViB//xAAkEAABBAIABgMBAAAAAAAAAAACAQMEEQASBSEiM0FRExVxkv/aAAgBAQABPwCVxCUEsGQYJUUCs8GSShGcOyUmrVPF46KEV75LnNMKquWg7KHu7TIswHhFE+PpFFDymq46R73vecUZjJEeNd+Q2m3vIgGy/AHnRM7f1a44rxF0NOV+ZxZoxigl9x0QxpoPtVAB7UMNVxyhVLJbrP/EAB0RAAEEAgMAAAAAAAAAAAAAAAEAAgMREiEUMVH/2gAIAQIBAT8AA61SwKgeWwPeTZ3S5s3jF//EABcRAQEBAQAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8ArYyuX//Z",
-    "title": "Cap toss",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 10,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate in a gown tosses her cap in front of a stone building"
+    "rank": 1,
+    "shoot": "portrait-06",
+    "cover": true,
+    "alt": "Headshot, Philadelphia, 2026"
   },
   {
     "id": "portrait-10",
@@ -333,11 +197,11 @@
     "year": 2026,
     "series": "portraits",
     "home": true,
-    "order": 12,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate in white tosses her cap in front of Huntsman Hall"
+    "order": 8,
+    "rank": 1,
+    "shoot": "portrait-10",
+    "cover": true,
+    "alt": "Huntsman, Penn, Philadelphia, 2026"
   },
   {
     "id": "portrait-11",
@@ -367,11 +231,11 @@
     "year": 2026,
     "series": "portraits",
     "home": true,
-    "order": 13,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate stands at the top of a sunlit staircase"
+    "order": 9,
+    "rank": 1,
+    "shoot": "portrait-11",
+    "cover": true,
+    "alt": "Stairwell, Penn, Philadelphia, 2026"
   },
   {
     "id": "portrait-12",
@@ -401,45 +265,11 @@
     "year": 2026,
     "series": "portraits",
     "home": true,
-    "order": 15,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A graduate in a white dress reclines in a window seat"
-  },
-  {
-    "id": "portrait-13",
-    "file": "portraits/portrait-13.jpg",
-    "width": 5177,
-    "height": 7762,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/portrait-13-480.avif",
-        "jpg": "/photos/portrait-13-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/portrait-13-960.avif",
-        "jpg": "/photos/portrait-13-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/portrait-13-1600.avif",
-        "jpg": "/photos/portrait-13-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/aAAwDAQACEAMQAAAApX0pT16xypQOkmTEGphgp//EACEQAAIBBAIDAQEAAAAAAAAAAAECAwAEESESYRMxQRUi/9oACAEBAAE/AAJyQMhuXoGrCCKOeUuyMSu19gCrlJXdTCqIvBRgHGxV7JMsUMUUewwOFAH8/SezTRTcHlTOXbifgwakuJrZvCtw5Cd1+ipkmkIJWFDjsk09/wAEV1hyqqo45DaY1dTrPO0io6ZxrApxxARDtgS+aaQykK2hoALpddV4pBoSGv/EABkRAQADAQEAAAAAAAAAAAAAAAECESEAEP/aAAgBAgEBPwAkib1ydviG35//xAAcEQABBAMBAAAAAAAAAAAAAAABABESIQIQIlH/2gAIAQMBAT8APYNKRxrxTYNr/9k=",
-    "title": "Three",
-    "place": "Penn, Philadelphia",
-    "year": 2026,
-    "series": "portraits",
-    "home": true,
-    "order": 17,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Three graduates in white seated on an ornate staircase"
+    "order": 10,
+    "rank": 1,
+    "shoot": "portrait-12",
+    "cover": true,
+    "alt": "Afternoon, Penn, Philadelphia, 2026"
   },
   {
     "id": "portrait-14",
@@ -469,11 +299,11 @@
     "year": 2026,
     "series": "portraits",
     "home": true,
-    "order": 20,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Graduates in white on the steps of a stone archway"
+    "order": 12,
+    "rank": 1,
+    "shoot": "portrait-14",
+    "cover": true,
+    "alt": "On the steps, Penn, Philadelphia, 2026"
   },
   {
     "id": "portrait-15",
@@ -503,11 +333,1303 @@
     "year": 2026,
     "series": "portraits",
     "home": true,
-    "order": 24,
-    "rank": null,
-    "shoot": null,
+    "order": 13,
+    "rank": 1,
+    "shoot": "portrait-15",
+    "cover": true,
+    "alt": "The Palestra, Penn, Philadelphia, 2026"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-01",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_01.jpg",
+    "width": 4287,
+    "height": 6430,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-01-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-01-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-01-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/aAAwDAQACEAMQAAAAsMoUoUlFMxub3UY6VTHwP//EACIQAAICAQMEAwAAAAAAAAAAAAECAxEABBITMUFRYSEygf/aAAgBAQABPwCCaeQMxJFnJA/ESW9gY0DuFJ8VnKYzGF+rBTk0yMkYU1fXI54EXaO3nF1AJpo2BUhP05qdUq8QUNVKLrucLSMSSrXZBG2/kYdM76l5GYUeo9ZNHKxBDAU+4ejkEQAcmyWdm6+c/8QAGhEAAgIDAAAAAAAAAAAAAAAAABEBEgJRYf/aAAgBAgEBPwBj7JXHRQ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AB//2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_04-JJCK",
+    "cover": true,
+    "alt": "2026 04 JJCK, 2026 (1 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-02",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_02.jpg",
+    "width": 5257,
+    "height": 7886,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-02-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-02-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-02-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwL/2gAMAwEAAhADEAAAAKO2VThWYNNOBfLbG0QYf//EACMQAAICAQMEAwEAAAAAAAAAAAECAxEABBIxEyJBYSFx0eH/2gAIAQEAAT8A0w37gJVZbAAHj0clAEFpsN8+iMkcK5A/M00hjdSDxZNZrJ1YLSADlvvNRCXktbX4FjJZK1SpGa3uhK848800kXfSyuK9GqOQalIYkV+pwCO28CCTXXuIJQYmmg6irbf0G7zqRUBsIoeDn//EABsRAAICAwEAAAAAAAAAAAAAAAABESESMUFR/9oACAECAQE/AJSerKIS4YL0/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AHT/2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_04-JJCK",
     "cover": false,
-    "alt": "A graduate alone in the stands of the Palestra"
+    "alt": "2026 04 JJCK, 2026 (2 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-03",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_03.jpg",
+    "width": 7933,
+    "height": 5291,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-03-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-03-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-03-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAACS9vJ1UoI//8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQSEzFRBREiMnGC/9oACAEBAAE/ALqJbqMRxeUjyCoOnNa3MUzJii7/AKHcVq2zKnqcRjztUUaKqsoAbmsmaURuSykbGtNVJAAA+V//xAAYEQACAwAAAAAAAAAAAAAAAAAAARESUf/aAAgBAgEBPwCCi1n/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8AXH//2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (3 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-04",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_04.jpg",
+    "width": 5376,
+    "height": 8060,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-04-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-04-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-04-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwQF/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQMAAgT/2gAMAwEAAhADEAAAAF/v4WKj7TGJNk1li0ryFhD/AP/EACUQAAICAQQABgMAAAAAAAAAAAECAwQAERITIQUUMTJxkUJRov/aAAgBAQABPwCs9idxEzOyBG2qfrGikqWasDPptA3gehypo0C9ejMP6OUa1jn5UhbYFPZBA7bLNKZ5+QkmTkUa6dd4bscLMh7IPwcXxSrSSKDQn4/HHllDu3K3uUA649SKVy7SkknsnLir5uNCPdsP2cM4H7wyRk66Nn//xAAaEQEAAwADAAAAAAAAAAAAAAABAAIRECFR/9oACAECAQE/AMdcIlvJbsOP/8QAGBEBAQADAAAAAAAAAAAAAAAAACEBETH/2gAIAQMBAT8A3yoxFf/Z",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (4 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-05",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_05.jpg",
+    "width": 4631,
+    "height": 6946,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-05-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-05-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-05-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQADBAYH/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIQAxAAAAA5TKqV57blE4pwNQrEWX//xAAjEAABBAICAgIDAAAAAAAAAAACAAEDEQQSISIFEyMxQVFy/9oACAEBAAE/AMLFaQB7MzCOyysHFcW9JVUdlaygf23X23K8KE7QyPEQM2zB2QQyhqMLxjcQAdtf75U0G0p7/bE7LxWbFHtj33I9mUGYBS03BDqpi+eb+3TZhwykQt21pnv8OofI5MR7sXfWlHOWtly9r//EABgRAAMBAQAAAAAAAAAAAAAAAAEQEQIh/9oACAECAQE/ABkRdi//xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8AXYz/2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (5 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-06",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_06.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-06-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-06-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-06-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwQG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAB4qnJhr0osLhJVXavYMQ//xAAkEAACAQQABwADAAAAAAAAAAABAhEAAwQhBRITIjFRcUKCwf/aAAgBAQABPwDGA6aEk+BTR1v3/tTpflWeK4yoiyQY3qny7K3gGJGwZj3R4jjGIcePdZGYguMqCOXTRG5p3Z1cuVDPtQNjXmKXEs3kR+f8fYFZlt071utBO1rGtBgwnaXDVrEHTXvj4K//xAAZEQADAAMAAAAAAAAAAAAAAAAAARESITH/2gAIAQIBAT8AfEUujFn/xAAZEQADAAMAAAAAAAAAAAAAAAAAARESIVH/2gAIAQMBAT8AVrIxLZkun//Z",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (6 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-07",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_07.jpg",
+    "width": 6440,
+    "height": 4293,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-07-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-07-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-07-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAAtJOudE4uL/AP/EAB0QAAICAwEBAQAAAAAAAAAAAAECAAMEERIxEyL/2gAIAQEAAT8AxqKmA6l2NWoUqfTqU33KgVbPyPOhuVWOSFB1CbAoT6NroGLlWuOnYlj6Z//EABgRAAIDAAAAAAAAAAAAAAAAAAABElFh/9oACAECAQE/AGtIuz//xAAYEQADAQEAAAAAAAAAAAAAAAAAARFBAv/aAAgBAwEBPwDm4ip4f//Z",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (7 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-08",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_08.jpg",
+    "width": 5442,
+    "height": 8159,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-08-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-08-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-08-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAGAEAAgMAAAAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAGuXF89tY6SMFbclGWWCX//EACMQAAIBAwQCAwEAAAAAAAAAAAECAwAEEQUSEyExYhUiQWH/2gAIAQEAAT8ALuG2hckDPiuRzkhegQPFLzOA2G79M0rbLhz60rDgkH9FRPiJBj8q+vN08AjZcCXvurK4WI3A6CkjAzXykqgABTS6faciZgT7eAKi0u2lZyY16NRaQt4ZZA+3EjLX/8QAGREAAwADAAAAAAAAAAAAAAAAAAERAjFB/9oACAECAQE/AIiI4LFzZ//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8ApWYPHD//2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (8 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-09",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_09.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-09-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-09-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-09-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-09-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-09-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-09-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQMC/9oADAMBAAIQAxAAAAB1Ee4WUIGk66c+FCXgf//EACMQAAICAgEDBQEAAAAAAAAAAAECABEDEiEEMVETFGFikXH/2gAIAQEAAT8AxJbgqLJNVMuu7AHsPFR8mjVpEcALTVyZlYWhBBbkH7f2MPUYttXxOqVkZQxFNr2PlojIcOe2p2zLp+x+lyZG2DcGUrrqVFT22NWtQB44mh+v5P/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDEyEi/9oACAECAQE/AGrKI5/NNdNkj//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8AH//Z",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 9,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (9 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-10",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_10.jpg",
+    "width": 8192,
+    "height": 5464,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-10-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-10-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-10-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-10-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-10-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-10-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAQD/9oADAMBAAIQAxAAAACbhWhxUwLB0//EACEQAAIBAwMFAAAAAAAAAAAAAAECEQADBBIhIhMxUWFx/9oACAEBAAE/AL2K+OXEA6WAnzNWiuwYCae2s7VkXCVtSJ1cG9irrb6o5Ad/ldRngzFf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARAv/aAAgBAgEBPwB4HS1v/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEQMhQf/aAAgBAwEBPwBZJKnZp8P/2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 10,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (10 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-11",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_11.jpg",
+    "width": 7930,
+    "height": 5289,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-11-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-11-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-11-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-11-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-11-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-11-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAA0EGihTIv/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAyEREgQTIkJR/9oACAEBAAE/ADK2blMMhGuLJT2QiOSg0huG0tk+BnwUMLq3Pk4mgEeID7kL/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREv/aAAgBAgEBPwBSGWf/xAAYEQEBAAMAAAAAAAAAAAAAAAABABESIf/aAAgBAwEBPwBXPLYv/9k=",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 11,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (11 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-12",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_12.jpg",
+    "width": 4963,
+    "height": 7444,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-12-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-12-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-12-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-12-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-12-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-12-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAKiaSNU8tAwdLeMYDeD/AP/EACQQAAICAgIBAwUAAAAAAAAAAAECAxEAEgQhMRMUUQUiQZGh/9oACAEBAAE/AJYfWYy7gGRr1+Lx+CS1ev1dWMfixRHWwcleGNOolZtbqvx8nFkgjdFJWQOCfA6x049j7V8YOWsIkeSQtH0ra9nvHYKHvkR3oV1AFUMWZNRcuS/ToXTQk1YP6z2EV3Z857CH4/mf/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQASISL/2gAIAQIBAT8AxZvXJFb/xAAaEQACAgMAAAAAAAAAAAAAAAAAARITISJh/9oACAEDAQE/ALCa6a5E0j//2Q==",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 12,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (12 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-13",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_13.jpg",
+    "width": 5009,
+    "height": 7514,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-13-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-13-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-13-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-13-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-13-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-13-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMBBQIEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAP/2gAMAwEAAhADEAAAALdeJNasYA6qOijeauLgVv/EACAQAAEEAQQDAAAAAAAAAAAAAAEAAgMRBAUxUXEVIWL/2gAIAQEAAT8AJNIyfJRkb0jGHdItsjegFVLMyHY8Qe0+7qubUeZI+QAubRdVK0/TseRoDuQm6Vi3svHQ8r//xAAbEQACAQUAAAAAAAAAAAAAAAAAEQEQEhMiYf/aAAgBAgEBPwCluqUGPp//xAAbEQABBAMAAAAAAAAAAAAAAAAAARAREyEiUv/aAAgBAwEBPwBrNpzBcnJ//9k=",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 13,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (13 of 14)"
+  },
+  {
+    "id": "2026-04-jjck-2026-04-jjck-14",
+    "file": "portraits/2026_04-JJCK/2026_04-JJCK_14.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-14-480.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-14-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-14-960.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-14-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-jjck-2026-04-jjck-14-1600.avif",
+        "jpg": "/photos/2026-04-jjck-2026-04-jjck-14-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAJnFqi1mBsh1qBsTKncr/8QAJRAAAgEDAgUFAAAAAAAAAAAAAQIDAAQREjIFEyExQRUiJFFh/9oACAEBAAE/AEt3gV1ZTJbncPK/ooWA5yISTE+MOv1U9sI3K4FeoxlnQa8A4JBHYGoTaOmdR0t7wrkDrV8fkNVhJDMRAqb9XMB8igUSPl6dusBs7cHAFXqKkidScoDmuHASzoCSO/UVEIlRlWMDT5riYc3OQRsFf//EABkRAQACAwAAAAAAAAAAAAAAAAEAAhARMf/aAAgBAgEBPwAxYNk5P//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEv/aAAgBAwEBPwBm2f/Z",
+    "title": "2026 04 JJCK",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 14,
+    "shoot": "2026_04-JJCK",
+    "cover": false,
+    "alt": "2026 04 JJCK, 2026 (14 of 14)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-01",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_01.jpg",
+    "width": 5177,
+    "height": 7762,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-01-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-01-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-01-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/aAAwDAQACEAMQAAAApX0pT16xypQOkmTEGphgp//EACEQAAIBBAIDAQEAAAAAAAAAAAECAwAEESESYRMxQRUi/9oACAEBAAE/AAJyQMhuXoGrCCKOeUuyMSu19gCrlJXdTCqIvBRgHGxV7JMsUMUUewwOFAH8/SezTRTcHlTOXbifgwakuJrZvCtw5Cd1+ipkmkIJWFDjsk09/wAEV1hyqqo45DaY1dTrPO0io6ZxrApxxARDtgS+aaQykK2hoALpddV4pBoSGv/EABkRAQADAQEAAAAAAAAAAAAAAAECESEAEP/aAAgBAgEBPwAkib1ydviG35//xAAcEQABBAMBAAAAAAAAAAAAAAABABESIQIQIlH/2gAIAQMBAT8APYNKRxrxTYNr/9k=",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_05-JJE",
+    "cover": true,
+    "alt": "2026 05 JJE, 2026 (1 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-02",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_02.jpg",
+    "width": 5433,
+    "height": 8145,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-02-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-02-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-02-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQC/9oADAMBAAIQAxAAAADNvRpPXeOeHK82NEOpBRS//8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDEQAEEiExQQUyUf/aAAgBAQABPwAvMfK2CK66vNDUVZZmk9r0LojNoyrLUCPw4r7vNmdYDrxBAtlixA7o5PFJHCJEL3M3G/AGPvbiOyGf69YN6MzSswJWGI5L8jGODGHkgCrQPKr7zZmWaeSRUZAxuqBwngFWM0x5FyfZx5XkNSMx7/erwxOPEhz/xAAZEQADAQEBAAAAAAAAAAAAAAABAiEAEBH/2gAIAQIBAT8AVmBGpsypfef/xAAaEQACAwEBAAAAAAAAAAAAAAABAgARIRAT/9oACAEDAQE/AGpgayehGQvlc//Z",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (2 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-03",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_03.jpg",
+    "width": 5285,
+    "height": 7923,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-03-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-03-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-03-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQADBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/aAAwDAQACEAMQAAAALT0PmrQuanJiDyHW9lIf/8QAIxAAAgICAgEEAwAAAAAAAAAAAQIDEQAhBBIxBRMiUSMkwf/aAAgBAQABPwD8xcKSGJz06COL3+xRiRsHYGcxJpZ2eNYwpAoDOdLI8S9YaKgIoQAUAL3ggmIILAGVjfn4rX9OSczko7p77nqSNn6yP1JP2SxPSKr+zetY3qMcXRhGxRVHw02j4Oc7kLyeTJKkbIGrVDDccQRaJkBLX4xp2csGPUNVqgAGvGe04qpDWf/EABsRAAEEAwAAAAAAAAAAAAAAAAEAAhARISJR/9oACAECAQE/AA8g3a26gzNx/8QAHBEAAQMFAAAAAAAAAAAAAAAAEQABEhAhImGx/9oACAEDAQE/AHzYBTFlMMNdp//Z",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (3 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-04",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_04.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-04-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-04-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-04-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAYF/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/2gAMAwEAAhADEAAAAEjmvHVmCYOm52MTdaBxSCP/xAAkEAACAgIBAwQDAAAAAAAAAAABAgMEABESISIxBRRBUWFyof/aAAgBAQABPwCGt7u2IgSECcmOT0XjFh06pHOYzjKNnQytYlimkaNCXat/QcgvALM7x8lsTgEft2ZLHwldd+CRlS0I3duIYhPDfnplitVmrmRNjgSQF6AlRjA7Ozs4S4bzsHWx96OReq2liMB4lDyBPz3YWOf/xAAcEQADAAEFAAAAAAAAAAAAAAAAAQJRAxESIUH/2gAIAQIBAT8AnTioS9ycawSlPQ5vc//EABoRAAIDAQEAAAAAAAAAAAAAAAECAANBERL/2gAIAQMBAT8Aax1cnJ6U7GYtw7sD18n/2Q==",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (4 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-05",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_05.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-05-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-05-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-05-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/2gAMAwEAAhADEAAAAH0bdg6eWHEE6uhyL1DkRJ1//8QAIRABAAEEAQUBAQAAAAAAAAAAAQIAAwQRIRITIjFBMlL/2gAIAQEAAT8Aw8Uzcq717LdsiIfVq7hzhjxv+4s5xkfyxklSPJ0VjZN+1PL7UHktzU+a4axciUrUse5EIZBOUd+1l5Uw5eT3WJmFvuHi9XTBH4LWVC3cwmYDHpJRX9b9UiKUM4y2JoSWnkUozsrsdqc92gDX33utrzuv/8QAHhEAAgEDBQAAAAAAAAAAAAAAAAIBAxESEzFBUYH/2gAIAQIBAT8A00ZIXmxi3QsRG3hhUP/EAB4RAAICAQUBAAAAAAAAAAAAAAECABEDEhMxQVGB/9oACAEDAQE/ADkdXJ6viah7Ga6J+zcxz//Z",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (5 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-06",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_06.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-06-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-06-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-06-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFwEBAQEBAAAAAAAAAAAAAAAABAABAv/aAAwDAQACEAMQAAAAyaJvicwaIsmC9yTeVpQXX//EACYQAAIBAgQFBQAAAAAAAAAAAAECAwARBBIhQQUTFCIxQlFhgbL/2gAIAQEAAT8AxTh5LigjyzJEg7nP0Bual4GsZUGa5y0kTzN2gm3n40rhqtHjoWddeV+t6xuKRZVDL6Nq4NNG8012ysIr2rESRdBYsquVK3Y6tl8Cj1Jtad7AWGt6CjMD7G9HMyO76sZM1c0jc1//xAAcEQABBAMBAAAAAAAAAAAAAAAAAQIDERIiUTH/2gAIAQIBAT8AhjTW/DBvBG8Qt5//xAAdEQABAwUBAAAAAAAAAAAAAAAAAgMRARITMVEy/9oACAEDAQE/AHXPUbMiul3akIP/2Q==",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (6 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-07",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_07.jpg",
+    "width": 5114,
+    "height": 7667,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-07-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-07-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-07-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgUE/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQMEAP/aAAwDAQACEAMQAAAAo3NRO5JxlC9Yx4wkSEf/xAAlEAABBAAFBAMBAAAAAAAAAAABAAIDEQQSEyExQUJhkQUiJFL/2gAIAQEAAT8AMnkbrK+aOnDavYWMf+mTKbGyEb4I4mPIc67Ne+Ovla2P0JJMlRV9jwR0KLr4WIfHNPI2RgqGF3H9FT/IuijMFMvKA7bjbdB7QO1ap03xO7nB2Yc2EWOHcj5aF//EABoRAAICAwAAAAAAAAAAAAAAAAABAxIREzH/2gAIAQIBAT8AhgeTUhOnGWP/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAMCERIh/9oACAEDAQE/ALbiFzMjs9CaJ//Z",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (7 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-08",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_08.jpg",
+    "width": 5435,
+    "height": 8148,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-08-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-08-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-08-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEA//aAAwDAQACEAMQAAAA4+ckNdUrFOWuZMDIxAMP/8QAIRAAAgICAgIDAQAAAAAAAAAAAQIDEQAEE0ESUQUxgiL/2gAIAQEAAT8ADVjgzI1dimzbYrsyr6OQmSOIc6/1TOE78Rj/ACDlJginxTsez9Yzgm83Akry/a8cDX+sm3NVNTZ1+MiQiv0uCqwbTycisxtgxsdsezjeZJLENeWnrP/EAB0RAAEDBQEAAAAAAAAAAAAAAAABAgMREhMhImH/2gAIAQIBAT8AihcimH0bzqpep//EABwRAAIBBQEAAAAAAAAAAAAAAAABAgMREhNBUf/aAAgBAwEBPwCdRM3vwlaXDBH/2Q==",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (8 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-09",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_09.jpg",
+    "width": 5325,
+    "height": 7987,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-09-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-09-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-09-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-09-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-09-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-09-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwYE/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAASrWCmHsiokhfouTeKh6M/8QAIhAAAgICAgICAwAAAAAAAAAAAQIDEQAhBBITYVJxBTFR/9oACAEBAAE/AOeWRYgG0e5JY/wkDBJIjKQwsEHIYwPINkd9WfQz8pEfDEe11ofZOCOQyR9r2aBIwlkJthZ9eqyLgPPyI1cglVdxZ+IyGBJphD+mTY+wBjcPl/LGaVJRJCwV6IsrejkHBjimM12+K2s//8QAGREBAAIDAAAAAAAAAAAAAAAAAAEREnGB/9oACAECAQE/AF7cYw//xAAYEQACAwAAAAAAAAAAAAAAAAAAARAREv/aAAgBAwEBPwCLNM//2Q==",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 9,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (9 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-10",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_10.jpg",
+    "width": 5007,
+    "height": 7511,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-10-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-10-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-10-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-10-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-10-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-10-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 10,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (10 of 11)"
+  },
+  {
+    "id": "2026-05-jje-2026-05-jje-11",
+    "file": "portraits/2026_05-JJE/2026_05-JJE_11.jpg",
+    "width": 7987,
+    "height": 5325,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jje-2026-05-jje-11-480.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-11-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jje-2026-05-jje-11-960.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-11-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jje-2026-05-jje-11-1600.avif",
+        "jpg": "/photos/2026-05-jje-2026-05-jje-11-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAHzTMvOg0Az/xAAjEAABBAIBAwUAAAAAAAAAAAABAgMEEQASMgUhIjFBQmKS/9oACAEBAAE/AJ8tDXyIFeo9gMRNVYGpvsP0NsEaVIt3TkTyXrnUQG0t35FbK8jIDyoxQA2LAofQbYKrP//EABsRAAIBBQAAAAAAAAAAAAAAAAECAAMREkFR/9oACAECAQE/AFphQBu0wXk//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAwEBPwBZSs//2Q==",
+    "title": "2026 05 JJE",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 11,
+    "shoot": "2026_05-JJE",
+    "cover": false,
+    "alt": "2026 05 JJE, 2026 (11 of 11)"
+  },
+  {
+    "id": "2026-05-jl-2026-05-jl-01",
+    "file": "portraits/2026_05-JL/2026_05-JL_01.jpg",
+    "width": 5440,
+    "height": 8156,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jl-2026-05-jl-01-480.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jl-2026-05-jl-01-960.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jl-2026-05-jl-01-1600.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAB9yV2L0BAoMItnfOoViB//xAAkEAABBAIABgMBAAAAAAAAAAACAQMEEQASBSEiM0FRExVxkv/aAAgBAQABPwCVxCUEsGQYJUUCs8GSShGcOyUmrVPF46KEV75LnNMKquWg7KHu7TIswHhFE+PpFFDymq46R73vecUZjJEeNd+Q2m3vIgGy/AHnRM7f1a44rxF0NOV+ZxZoxigl9x0QxpoPtVAB7UMNVxyhVLJbrP/EAB0RAAEEAgMAAAAAAAAAAAAAAAEAAgMREiEUMVH/2gAIAQIBAT8AA61SwKgeWwPeTZ3S5s3jF//EABcRAQEBAQAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8ArYyuX//Z",
+    "title": "2026 05 JL",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_05-JL",
+    "cover": true,
+    "alt": "2026 05 JL, 2026 (1 of 5)"
+  },
+  {
+    "id": "2026-05-jl-2026-05-jl-02",
+    "file": "portraits/2026_05-JL/2026_05-JL_02.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jl-2026-05-jl-02-480.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jl-2026-05-jl-02-960.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jl-2026-05-jl-02-1600.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQADBgT/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgME/9oADAMBAAIQAxAAAABrQvPOzsbWXy871YEheXsZ/8QAJBAAAgEEAQMFAQAAAAAAAAAAAQIDAAQRIRIFIjETFUJxgpH/2gAIAQEAAT8AykSrIRyy2t1HJ2gqSBgEVaXEkiOZDsSMutaBqSXGiO1QN/dRX3IYCqBxBTBz25xsVb3KellBokk+BuuqGCO0mliDFyBw86NWgYzWiMXCgEOQDokk4pAEUCNtfyuqWAjsJ5S+QI/ArpcJkvEDOxPDl+mUV7ey/MGv/8QAHREAAgICAwEAAAAAAAAAAAAAAQIAAxExEiEiUv/aAAgBAgEBPwBalQeVAzAOtSps0WMdjM52fbT/xAAZEQEAAgMAAAAAAAAAAAAAAAAAAQISITH/2gAIAQMBAT8AhPW2Fn//2Q==",
+    "title": "2026 05 JL",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_05-JL",
+    "cover": false,
+    "alt": "2026 05 JL, 2026 (2 of 5)"
+  },
+  {
+    "id": "2026-05-jl-2026-05-jl-03",
+    "file": "portraits/2026_05-JL/2026_05-JL_03.jpg",
+    "width": 5368,
+    "height": 8048,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jl-2026-05-jl-03-480.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jl-2026-05-jl-03-960.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jl-2026-05-jl-03-1600.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAC5rKyzvaEiqpc5ckSHQjhnP//EACIQAAICAgICAgMAAAAAAAAAAAECAxEAIQQxBRIUIkFScf/aAAgBAQABPwCSYwQiM3ZUHXdfnBKUv0A7IrIeYZYYpG+pZbIGSSiZ7Zj+u8HPJnkQhdU4IPYORGNYYlUkgLo3nNgEPGkZpRaAsFq954yN5OQ32ACx7vI0EaKgWwooZznf4so1sVniob5LP7HSdZG8SoARv+DP/8QAHREAAgIBBQAAAAAAAAAAAAAAAQIAAyEEERIxYf/aAAgBAgEBPwAVhV2UTj5EZmosYnIOINTYB0DP/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAECERL/2gAIAQMBAT8Aq1suZf/Z",
+    "title": "2026 05 JL",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_05-JL",
+    "cover": false,
+    "alt": "2026 05 JL, 2026 (3 of 5)"
+  },
+  {
+    "id": "2026-05-jl-2026-05-jl-04",
+    "file": "portraits/2026_05-JL/2026_05-JL_04.jpg",
+    "width": 5450,
+    "height": 8171,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jl-2026-05-jl-04-480.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jl-2026-05-jl-04-960.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jl-2026-05-jl-04-1600.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUBBgIDBP/EABcBAQEBAQAAAAAAAAAAAAAAAAMEAAH/2gAMAwEAAhADEAAAAErivOyr3GQ3ENn4YlwKxT//xAAnEAACAgICAAMJAAAAAAAAAAABAgMRAAQSEwUiQRQVITFRY3GRkv/aAAgBAQABPwDxSW96Y/dfNWeZ4kXmaC0BksvBq7qzaQ9wJ9WJ/eaMwAIIFIaYeooXjdUh5EDJI2eeNEWzfyGaet7HrTuqh3cFv6za1eqUhH+FXkaojih5nUWfyLrNRNn3xJE0iml8x+qDNsyQ7U8Xa54OQM//xAAbEQACAgMBAAAAAAAAAAAAAAABEQACEhNhcf/aAAgBAgEBPwDJv2DSg6lygYvF2f/EABkRAQADAQEAAAAAAAAAAAAAAAEAAhESE//aAAgBAwEBPwDAY+muJL2NJ2z/2Q==",
+    "title": "2026 05 JL",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_05-JL",
+    "cover": false,
+    "alt": "2026 05 JL, 2026 (4 of 5)"
+  },
+  {
+    "id": "2026-05-jl-2026-05-jl-05",
+    "file": "portraits/2026_05-JL/2026_05-JL_05.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-jl-2026-05-jl-05-480.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-jl-2026-05-jl-05-960.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-jl-2026-05-jl-05-1600.avif",
+        "jpg": "/photos/2026-05-jl-2026-05-jl-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQb/xAAXAQEBAQEAAAAAAAAAAAAAAAADAgEE/9oADAMBAAIQAxAAAACbQiWC66AG3zzmsjLRLGH/xAAlEAACAgICAAUFAAAAAAAAAAABAgMRAAQFEhUhIlGRJDJSc6H/2gAIAQEAAT8A5qT6/Z/a2aU8rQovbyF/3CG/M5vq5mZ2FdnLZx7VIkATsTH3FEYZkJ9NVksfaWGM3RcD5zVRY+cREFKIzj8abuOal9jggvY1Df3Oi/Iu83wujv60kKC3jZM8T3fdM//EABoRAAICAwAAAAAAAAAAAAAAAAERAAIQEoH/2gAIAQIBAT8A2ZxVs9iM/8QAGxEAAwACAwAAAAAAAAAAAAAAAAERA1ESIZH/2gAIAQMBAT8AiUp1oyNTw5vZ/9k=",
+    "title": "2026 05 JL",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_05-JL",
+    "cover": false,
+    "alt": "2026 05 JL, 2026 (5 of 5)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-01",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_01.jpg",
+    "width": 5436,
+    "height": 8150,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-01-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-01-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-01-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAb/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgH/2gAMAwEAAhADEAAAAMzFOF7BmImCjo+ceLo0Hf/EACcQAAIBAwIEBwEAAAAAAAAAAAEDAgAEESFxEhMzYQUjMUFicpGx/9oACAEBAAE/AGddm9cNW/QV9aMJSuWmM4jU+poKbkgyWO5kNaU2K1wgZwyBvVwW89wUAZE++9KL5xROTdI8UOEa5xrrSCeSvam2hC5SDDgRPb+V4ZbNk9Pm4D1TZ+HFGw+df//EABgRAAMBAQAAAAAAAAAAAAAAAAACEhFS/9oACAECAQE/AChaltUluT//xAAaEQACAgMAAAAAAAAAAAAAAAAAARESMVKh/9oACAEDAQE/ACyLOcFnr0//2Q==",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_05-LZ",
+    "cover": true,
+    "alt": "2026 05 LZ, 2026 (1 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-02",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_02.jpeg",
+    "width": 2725,
+    "height": 4086,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-02-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-02-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-02-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAAJCYm1YbOcAtTm2nWwwT/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABBFBIRITMTQUInEy/9oACAEBAAE/AJPYfA3XRgVa+unFGN2uZSjKOT5IG6WOYsV+oxskAH8qFxFEqMyZGd5q5cpPMw1nilu5ZSVWIFEKr1c7NWwzCvA3qr60dopEVk6vH84q2eZ7lolfHdODnx+18dhgdyv/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQISIYH/2gAIAQIBAT8AMiFLltrZw//EABsRAAICAwEAAAAAAAAAAAAAAAABEiECA1FS/9oACAEDAQE/ACSFsyVRV9JPwf/Z",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (2 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-03",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_03.jpeg",
+    "width": 4076,
+    "height": 2718,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-03-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-03-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-03-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (3 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-04",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_04.jpeg",
+    "width": 2679,
+    "height": 4017,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-04-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-04-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-04-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-04-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAABAACAwUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAPFKf1E0iPC7BNpwS5P/xAAhEAACAwABAwUAAAAAAAAAAAABAgADERIEIUEiMVFicf/aAAgBAQABPwCxCpwqw/REsBqrTPbZk6xquoCnuCoPj5Owtnac/uZXfW49Qwy2nlpBEKkHCICuDBBy8GLUzd9E/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPwBOohM//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwBqMpc//9k=",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (4 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-05",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_05.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-05-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-05-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-05-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAKhNAvSLxzpFrXMHM2Bn/8QAJhAAAgEDBAAGAwAAAAAAAAAAAQIDABESBAUTISMxQVFhgUJxkv/aAAgBAQABPwBNySESAMX5FxJb8fkUN4RXgbBG4haxHT/uptUzPcZ/XVMj3AxPYqeOaIoqJmXS/XdqGh1MoDm/2GrcuTSiMoilX9b1A/NrPFsQidAfNPPHEbZSe9b1FnBDJ6o+H90mUGcKJFePIElfMUmnTEHAG/uTX//EAB0RAAECBwAAAAAAAAAAAAAAAAEAEQIDEBIhUVL/2gAIAQIBAT8AEIcAFWS+0+Bun//EAB0RAQABAwUAAAAAAAAAAAAAAAEAAhESIjJBUWH/2gAIAQMBAT8ABTLiauptaqb2GZeE/9k=",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (5 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-06",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_06.jpeg",
+    "width": 2732,
+    "height": 4096,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-06-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-06-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-06-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (6 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-07",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_07.jpeg",
+    "width": 4002,
+    "height": 6000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-07-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-07-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-07-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAALI3mw03IDQblnCueKKf/8QAHxAAAgMBAAIDAQAAAAAAAAAAAQIAAxEhMUESIlGB/9oACAEBAAE/ALq9U4NaDi41a7BTnkJLbdXUs77AHj+xjZ8NH2B8GWWWltLevUFYJwYNEuAppCjBnI79705EvK5+y0lt2OhLHs//xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIREjED/9oACAECAQE/AIx9OOmZRBPLvrLR/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERIUH/2gAIAQMBAT8ArMcaf//Z",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (7 of 8)"
+  },
+  {
+    "id": "2026-05-lz-2026-05-lz-08",
+    "file": "portraits/2026_05-LZ/2026_05-LZ_08.jpg",
+    "width": 5124,
+    "height": 7683,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-05-lz-2026-05-lz-08-480.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-05-lz-2026-05-lz-08-960.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-05-lz-2026-05-lz-08-1600.avif",
+        "jpg": "/photos/2026-05-lz-2026-05-lz-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAMEAQIF/8QAGAEAAgMAAAAAAAAAAAAAAAAAAAMBAgT/2gAMAwEAAhADEAAAAN+fmTOyolGVoTXOwaLIP//EACMQAAICAQQCAgMAAAAAAAAAAAECABEDBBIhgSJCEzJBYaH/2gAIAQEAAT8AXI7biG4ANwuVrcSbFqPx3FLOAVGTpTM+pKZKViBVNQ4M8gRtIv7H9XEfKy84y3Zj+dIvAF2W/kx6LaXLv7UINLXCuCJsCdTWZ2wN8SEj2JmDNqHUlcgq/ZQTP//EABoRAQACAwEAAAAAAAAAAAAAAAIAARARIjH/2gAIAQIBAT8AAqvMEkHU4n//xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAwEBPwBj/9k=",
+    "title": "2026 05 LZ",
+    "place": "",
+    "year": 2026,
+    "series": "portraits",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_05-LZ",
+    "cover": false,
+    "alt": "2026 05 LZ, 2026 (8 of 8)"
   },
   {
     "id": "event-01",
@@ -537,11 +1659,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 8,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer in a red dress performs under red stage light"
+    "order": 14,
+    "rank": 1,
+    "shoot": "event-01",
+    "cover": true,
+    "alt": "Red, Philadelphia, 2026"
   },
   {
     "id": "event-02",
@@ -571,11 +1693,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 11,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer in a suit performs under orange light"
+    "order": 15,
+    "rank": 1,
+    "shoot": "event-02",
+    "cover": true,
+    "alt": "Solo, Philadelphia, 2026"
   },
   {
     "id": "event-03",
@@ -605,11 +1727,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 14,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer in a brown suit performs under red light"
+    "order": 16,
+    "rank": 1,
+    "shoot": "event-03",
+    "cover": true,
+    "alt": "Verse, Philadelphia, 2026"
   },
   {
     "id": "event-04",
@@ -639,11 +1761,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 16,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Two singers in black and white against a red stage"
+    "order": 17,
+    "rank": 1,
+    "shoot": "event-04",
+    "cover": true,
+    "alt": "Duet, Philadelphia, 2026"
   },
   {
     "id": "event-05",
@@ -674,10 +1796,10 @@
     "series": "events",
     "home": true,
     "order": 18,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer in a red dress under warm stage light"
+    "rank": 1,
+    "shoot": "event-05",
+    "cover": true,
+    "alt": "Warm, Philadelphia, 2026"
   },
   {
     "id": "event-06",
@@ -708,10 +1830,10 @@
     "series": "events",
     "home": true,
     "order": 19,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer in a pink dress under blue light"
+    "rank": 1,
+    "shoot": "event-06",
+    "cover": true,
+    "alt": "Blue, Philadelphia, 2026"
   },
   {
     "id": "event-07",
@@ -741,11 +1863,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 21,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "Two speakers in armchairs at a fireside chat"
+    "order": 20,
+    "rank": 1,
+    "shoot": "event-07",
+    "cover": true,
+    "alt": "Fireside, Philadelphia, 2026"
   },
   {
     "id": "event-08",
@@ -775,11 +1897,11 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 22,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A panel on stage beneath a projected title slide"
+    "order": 21,
+    "rank": 1,
+    "shoot": "event-08",
+    "cover": true,
+    "alt": "Panel, Philadelphia, 2026"
   },
   {
     "id": "event-09",
@@ -809,10 +1931,10 @@
     "year": 2026,
     "series": "events",
     "home": true,
-    "order": 23,
-    "rank": null,
-    "shoot": null,
-    "cover": false,
-    "alt": "A singer at a microphone under magenta light"
+    "order": 22,
+    "rank": 1,
+    "shoot": "event-09",
+    "cover": true,
+    "alt": "Magenta, Philadelphia, 2026"
   }
 ]

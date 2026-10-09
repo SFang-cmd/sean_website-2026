@@ -35,17 +35,13 @@ export interface Photo {
   series: string;
   /** Appears on the B home streams. */
   home: boolean;
-  /** Sequence on the home; lower first. Ignored when `home` is false. */
+  /** Sequence on the home; lower first. Set on covers of shoots with a home position. */
   order: number | null;
-  /**
-   * Position within its series in the gallery; lower first, blank after all
-   * ranked ones. Ties fall back to the filename in natural order, so a
-   * 01-/02- prefix on the files is enough to order a shoot.
-   */
+  /** 1-based position within its shoot (filename order). */
   rank: number | null;
-  /** Session slug shared by every photo of one shoot; null for a single. */
+  /** The shoot (session) slug; a single is a one-photo shoot named after its file. */
   shoot: string | null;
-  /** The one photo per shoot the gallery shows as its cover. */
+  /** The one photo per shoot the gallery shows as its cover (and the home pick). */
   cover: boolean;
   alt: string;
 }
@@ -73,11 +69,10 @@ export function getHomePhotos(): Photo[] {
     );
 }
 
-const natural = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
-
 /**
- * Photos grouped by series slug, series order preserved. Within a series:
- * rank (blank last), then filename in natural order, then newest first.
+ * Photos grouped by series slug, series order preserved. Within a series the
+ * manifest order is kept: it is already shoot row order, then position in
+ * the shoot (see scripts/photos.ts).
  */
 export function getPhotosBySeries(): Map<string, Photo[]> {
   const map = new Map<string, Photo[]>();
@@ -86,22 +81,12 @@ export function getPhotosBySeries(): Map<string, Photo[]> {
     if (!map.has(p.series)) map.set(p.series, []);
     map.get(p.series)!.push(p);
   }
-  for (const list of map.values()) {
-    list.sort(
-      (a, b) =>
-        (a.rank ?? 1e9) - (b.rank ?? 1e9) ||
-        natural.compare(a.file, b.file) ||
-        b.year - a.year,
-    );
-  }
   return map;
 }
 
-/** All photos of a shoot, in gallery order (rank, then filename). */
+/** All photos of a shoot, in manifest (= gallery) order. */
 export function getShootPhotos(slug: string): Photo[] {
-  return photos
-    .filter((p) => p.shoot === slug)
-    .sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9) || natural.compare(a.file, b.file));
+  return photos.filter((p) => p.shoot === slug);
 }
 
 /**

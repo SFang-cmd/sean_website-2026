@@ -92,8 +92,10 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
             <p className="mb-7 max-w-[52ch] text-muted">{s.lede}</p>
             <div className={styles.grid}>
               {(items.get(s.slug) ?? []).map((item) =>
-                item.kind === "shoot" ? (
+                item.kind === "shoot" && item.photos.length > 1 ? (
                   <ShootCard key={`shoot-${item.slug}`} item={item} view={view} open={open} />
+                ) : item.kind === "shoot" ? (
+                  <Cell key={item.cover.id} photo={item.cover} view={view} open={open} />
                 ) : (
                   <Cell key={item.photo.id} photo={item.photo} view={view} open={open} />
                 ),

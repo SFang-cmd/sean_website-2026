@@ -66,67 +66,54 @@ outside `content/work/`). To reorder, edit `order`.
 
 ## Adding photos (B side)
 
-Photos are data too: a folder of originals plus one CSV, and a script that
-turns them into the manifest the pages read. You never touch a component.
+The folder is the organization. One CSV row per **shoot** is the only
+writing. You never touch a component.
 
-1. Export from Lightroom as JPEG, long edge ~2400px, into a folder per
-   series under `photos/`, and a folder per **shoot** (one session, one set
-   of people) inside that: `photos/portraits/grad-2026-a/01.jpg`. Singles
-   can sit directly in the series folder. All of it is gitignored; originals
-   stay on your machine. Keep filenames unique across folders: the filename
-   is the photo's id, and it appears in URLs, so use neutral names
-   (`grad-01.jpg`, not a client's name).
-2. Run `npm run photos -- --scaffold` to get a CSV row for every new file
-   (series from the folder, title guessed from the filename), then fill in
-   the words in `content/photos.csv`:
+```
+photos/                      ← gitignored; originals stay on your machine
+  portraits/
+    ek-2026-05/              ← one shoot = one session, one set of people
+      cover.jpg              ← the cover (gallery card + home pick)
+      01.jpg 02.jpg ...      ← the rest, shown in filename order
+    headshot-01.jpg          ← a photo on its own = a one-photo shoot
+  events/  sports/  travel/  aerial/
+```
+
+1. Export from Lightroom as JPEG, long edge ~2400px, into
+   `photos/<series>/<shoot>/`. Shoot folder names are slugs (lowercase,
+   hyphens) and are public (they appear in the manifest and image URLs), so
+   use neutral ones: initials plus date (`ek-2026-05`) works. Name the cover
+   `cover.jpg`; if there is none the first file by name is used. Who/what
+   each shoot is can go in `photos/notes.csv`, which never ships.
+2. Run `npm run photos -- --scaffold`: it appends a row to
+   `content/shoots.csv` for every shoot folder that has none.
+3. Fill in the row:
 
    | column   | meaning |
    | -------- | ------- |
-   | `file`   | filename in `photos/` — must match exactly (case included); `.jpg`, `.jpeg` or `.png` |
-   | `title`  | shown in italics under the image |
-   | `place`  | shown after the title |
-   | `year`   | integer; gallery sorts newest first |
-   | `series` | one of the `slug`s in `content/series.ts`; blank = the folder name |
-   | `home`   | `TRUE` to include on the home streams (aim for 30–40); `TRUE`/`FALSE`, `1`/`0`, `yes`/`no`, any case |
-   | `order`  | integer sequence on the home, lower first; blank when `home` is FALSE |
-   | `alt`    | one plain sentence describing the image, for screen readers and search |
-   | `rank`   | optional: position within its shoot (or, for singles, its series) in the gallery, lower first. Blank ranks sort after ranked ones, then by filename in natural order, so numbering files `01-`, `02-` is enough |
-   | `shoot`  | optional: the session slug (a-z, 0-9, hyphens) shared by every photo of one shoot; blank = the subfolder name, or a single if there is none |
-   | `cover`  | optional: `TRUE` on the one photo per shoot the gallery shows as its cover; if none is marked the first by rank/filename is used |
+   | `shoot`  | the folder name (written for you) |
+   | `series` | the series folder (written for you) |
+   | `title`  | what shows under the cover and in the lightbox, e.g. `Commencement` |
+   | `place`  | e.g. `Penn, Philadelphia` |
+   | `year`   | number |
+   | `home`   | a position (1, 2, 3 …) to put the shoot's cover on the home streams, in that order; blank = not on the home |
 
-   If `title`/`alt` are blank the script falls back to the image's embedded
-   IPTC/XMP Title and Caption, so captioning in Lightroom also works. If
-   there is no embedded text either, `title` becomes the filename
-   ("last-train_02" → "Last train 02") and `alt` becomes the title. The
-   run summary lists every row that used a fallback.
-3. Run `npm run photos`. It is strict: a row without a file, a file without
-   a row, a duplicate `file`, an unknown `series`, or a non-integer `year`/
-   `order` is an error, not a warning. It prints every problem at once and
-   writes nothing. On success it writes renditions at 480/960/1600px wide
-   (AVIF + JPEG, never upscaled) to `public/photos/<id>-<width>.*` and the
-   manifest to `content/photos.json`; commit both. `<id>` is the filename
-   stem slugified (`Tiny Pic_01.JPG` → `tiny-pic-01`), so two files that
-   differ only by case or punctuation are an error.
+   Photos inherit their shoot's title, place and year; alt text is derived
+   (`Commencement, Penn, Philadelphia, 2026 (3 of 12)`). Gallery order within
+   a series is the row order in the CSV, so reordering shoots is moving lines.
+4. Run `npm run photos`. It is strict: a shoot folder without a row, a row
+   without a folder, two `cover*` files in one shoot, or a bad cell stops it
+   before anything is written. It writes `public/photos/` and
+   `content/photos.json`; commit both. Re-runs only process changed images.
 
-   Re-runs are incremental: a photo is skipped when all its outputs are
-   newer than the original. `npm run photos -- --force` regenerates
-   everything. Outputs in `public/photos/` for ids no longer in the CSV are
-   deleted and listed. The manifest is always rewritten, in a stable order
-   (series order, then year desc, then title), so diffs stay clean.
-4. Commit and push. The site is static, so that's the deploy.
-
-**How shoots show up.** The gallery lists each shoot once, as its cover with a
+**How it shows up.** The gallery lists each shoot once, as its cover with a
 photo count (the second frame peeks on hover); clicking opens the lightbox
-over that shoot's photos. Singles show as themselves. On the home, clicking a
-stream image opens its whole shoot too, so the home is one frame per shoot
-(`home` + `order`) and the gallery holds the sets.
+over that shoot. One-photo shoots show as plain cells. On the home, each
+shoot with a `home` position contributes its cover, and clicking a stream
+image opens the whole shoot.
 
-To add a series, add an entry to `content/series.ts`. To take a photo down,
-delete its row (and optionally the original) and re-run the script.
-
-The rows currently in `photos.csv` are placeholders for synthetic sample
-images (`sample-01..04.jpg`), generated locally during development; the
-committed `photos.json` is `[]` until real originals go through the script.
+To add a series, add an entry to `content/series.ts` and create the folder.
+To take a shoot down, remove its folder and its row, and re-run the script.
 
 ## Adding a notes/blog section (future)
 
