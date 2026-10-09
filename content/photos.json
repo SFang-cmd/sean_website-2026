@@ -5280,7 +5280,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-01-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQUA/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEBf/aAAwDAQACEAMQAAAAWKS6NXRcH//EAB4QAAIBBAMBAAAAAAAAAAAAAAECAwAREiEEBTFx/9oACAEBAAE/AF5xALX8FR9i02w+sQbWqbsFR7EmlfOJk8yXZFK5i5IVALYFSKmZHclowT9Nf//EABgRAQEAAwAAAAAAAAAAAAAAAAEAAxET/9oACAECAQE/ADEabkX/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQMSIf/aAAgBAwEBPwByai5//9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5295,8 +5295,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-02",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_02.jpg",
-    "width": 5583,
-    "height": 3722,
+    "width": 5442,
+    "height": 3628,
     "renditions": [
       {
         "width": 480,
@@ -5319,7 +5319,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAX/2gAMAwEAAhADEAAAAMqS1k3LRIAd/8QAHhABAAEFAAMBAAAAAAAAAAAAAQIAAwQSIRExYaH/2gAIAQEAAT8AuZARfQVby9jkvIcKMqRUrrKdyCcIn7WHA3A4MtahdZb/ACSV/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESAv/aAAgBAgEBPwBYUsg//8QAGREAAgMBAAAAAAAAAAAAAAAAAREAAgMx/9oACAEDAQE/ALbrWoHEXBoCHP/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAKLOeeg0aJnBD//EACAQAQABBAICAwAAAAAAAAAAAAECAAMEERIhIqExQ5H/2gAIAQEAAT8As5dkYnCPk1czrNnSxNMiP7TmQioBWCJa4Ly8fmrP2dDsT1uok4mue+321//EABkRAAIDAQAAAAAAAAAAAAAAAAAhARITYv/aAAgBAgEBPwDOEynR/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQARIVH/2gAIAQMBAT8AW1yZyf/Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5334,8 +5334,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-03",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_03.jpg",
-    "width": 5401,
-    "height": 3601,
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
@@ -5358,7 +5358,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAABBf/aAAwDAQACEAMQAAAAWzT0TbGhEAP/xAAdEAACAwACAwAAAAAAAAAAAAABAgADBBEhIkFR/9oACAEBAAE/AG08xNoct5Aw6jLWKqxHwzNYRXe/sLLtboygKO1Bn//EABkRAQACAwAAAAAAAAAAAAAAAAEAAgQUMf/aAAgBAgEBPwDWq1YYinJ//8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAEAgMigf/aAAgBAwEBPwBs94+sbmsUWf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAADBf/aAAwDAQACEAMQAAAAgbk9b6PiBTP/xAAfEAEAAQQBBQAAAAAAAAAAAAABAgADERIhEzFBUXH/2gAIAQEAAT8Ajct5DEe1N6ASCJXVi+uOK2xOCGFonLe5nwjW6L9r/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAAxEEEv/aAAgBAgEBPwC3scWvWuaPUUjBon//xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIDERIhUf/aAAgBAwEBPwCk1pSuZS6f/9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5373,8 +5373,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-04",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_04.jpg",
-    "width": 4000,
-    "height": 6000,
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
@@ -5390,9 +5390,14 @@
         "width": 1600,
         "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-04-1600.avif",
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-04-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-04-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-04-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5407,8 +5412,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-05",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_05.jpg",
-    "width": 3611,
-    "height": 5417,
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
@@ -5426,7 +5431,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-05-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAGQEAAQUAAAAAAAAAAAAAAAAAAwECBAUG/9oADAMBAAIQAxAAAADh2V0i67cVFMhsq2SikqMP/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxESIRMxIkFC/9oACAEBAAE/AC9B6yCZ5OaC4AE9noKEtmeA1zax96ulmo3vM1Zavoqd3HHba2VkDRulFIOW6UsZlY0A/S4nDWl//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQIUH/2gAIAQIBAT8ALNUf/8QAHREAAQQCAwAAAAAAAAAAAAAAAQACAxEEEhQhQf/aAAgBAwEBPwA5oa8A+rkBRHfGno27tW9f/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUBBAIDBv/EABgBAAMBAQAAAAAAAAAAAAAAAAEEBQID/9oADAMBAAIQAxAAAADqIV6o1h4IglVTsUerLUwMNf/EACEQAAICAgEEAwAAAAAAAAAAAAECAAMEERIhIjFBE1FS/9oACAEBAAE/AENfIkAR7UBgvSLcY2QrHo3vU+YzBy3uSwt5WxhMewrf3d3L89ByEeyzfbrUw8Uobguuth9zDpsbI2SPJhou+1n/xAAcEQABAwUAAAAAAAAAAAAAAAARAAECEBIjMVH/2gAIAQIBAT8ALq+XUI5Bqn//xAAdEQABAgcAAAAAAAAAAAAAAAAAFCIBERITITEy/9oACAEDAQE/AE7sxEhqzV1Maf/Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5441,8 +5446,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-06",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_06.jpg",
-    "width": 3514,
-    "height": 5271,
+    "width": 3529,
+    "height": 5294,
     "renditions": [
       {
         "width": 480,
@@ -5460,7 +5465,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-06-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAf/aAAwDAQACEAMQAAAAyb6uE2rWKBJkzKr3O5nGW//EACQQAAIBAwMEAwEAAAAAAAAAAAECAwAEEQUSIRMxMmEiQVGR/9oACAEBAAE/AE0JR5E1a6RB0ycCk06EKOKmnZ0cJydhq1F3biR5mG11jI55yR2oXXuraYmYLgncrLx7FM26VnVnKxjGG/ldX3WmXEaNI7KxYAUk0ZS4lMeVC/ff5E1F4DknP7X/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQISAxEjUf/aAAgBAgEBPwC2acJOx19ZXTaKI//EABsRAAIDAAMAAAAAAAAAAAAAAAACAQMSEyEy/9oACAEDAQE/AMVIyxCR2ZUqy1emb0ckn//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQQCBQb/2gAMAwEAAhADEAAAAJqWRpdVrmaGaVNqzaTRyBr/xAAlEAABBAEDAgcAAAAAAAAAAAABAAIDEhEEEyEiQTFCUVJiccH/2gAIAQEAAT8AEqdLyhMo3Xc0WAyfHsop7uf1AjAqtxQS104Oc8LT0zM4e/j6Vls105NvKey0uD0/L8UlWHGSePRf/8QAHBEBAAEEAwAAAAAAAAAAAAAAAQACAxESIVFh/9oACAECAQE/AClc+TVnGtxO4BP/xAAbEQADAAIDAAAAAAAAAAAAAAAAAQIDBBFBUf/aAAgBAwEBPwB1M3E90cIptZNWX4PIkf/Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5475,8 +5480,8 @@
   {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-07",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_07.jpg",
-    "width": 6000,
-    "height": 4000,
+    "width": 5802,
+    "height": 3868,
     "renditions": [
       {
         "width": 480,
@@ -5499,7 +5504,7 @@
         "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-07-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBBP/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAIuy1m9QcJz/AP/EABsQAQEAAwEBAQAAAAAAAAAAAAECAAMRIRMx/9oACAEBAAE/ANZN0xEde+AZPz/GTE1dfDHdsiW4pmuiJmvbbrlqleY25//EABoRAAICAwAAAAAAAAAAAAAAAAATARECMVH/2gAIAQIBAT8AdkyNVQ2OH//EABwRAQABBAMAAAAAAAAAAAAAAAEAAgQREhMjUv/aAAgBAwEBPwAu+wNTGqzno8E//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/aAAwDAQACEAMQAAAAoii7UltGGKF//8QAHhAAAgICAwEBAAAAAAAAAAAAAQIDEQAEEiExQVH/2gAIAQEAAT8AjmIPRxNt5Jn5erVHGn5MWPpyFi23qR/Hko5vRJrPcYq0JrNaZ3i7/c//xAAcEQEAAgEFAAAAAAAAAAAAAAACAQMABCQxUZH/2gAIAQIBAT8Aeo3VVcdKV5gsLBUcTGf/xAAdEQACAgEFAAAAAAAAAAAAAAABAgADBBEUIUFh/9oACAEDAQE/AK8JdpdYeyoXw6y3Eauxkbkgz//Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5512,33 +5517,28 @@
     "alt": "PennYo Concert, UPenn, 2026 (7 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02371",
-    "file": "events/2026_03-PennYo_Concert/DSC02371.jpg",
-    "width": 6000,
-    "height": 4000,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-08",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_08.jpg",
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02371-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02371-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02371-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02371-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02371-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02371-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02371-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02371-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-08-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQUA/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEBf/aAAwDAQACEAMQAAAAWKS6NXRcH//EAB4QAAIBBAMBAAAAAAAAAAAAAAECAwAREiEEBTFx/9oACAEBAAE/AF5xALX8FR9i02w+sQbWqbsFR7EmlfOJk8yXZFK5i5IVALYFSKmZHclowT9Nf//EABgRAQEAAwAAAAAAAAAAAAAAAAEAAxET/9oACAECAQE/ADEabkX/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQMSIf/aAAgBAwEBPwByai5//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5551,33 +5551,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (8 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02384",
-    "file": "events/2026_03-PennYo_Concert/DSC02384.jpg",
-    "width": 5442,
-    "height": 3628,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-09",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_09.jpg",
+    "width": 5023,
+    "height": 3349,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02384-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02384-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02384-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02384-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02384-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02384-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02384-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02384-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-09-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAKLOeeg0aJnBD//EACAQAQABBAICAwAAAAAAAAAAAAECAAMEERIhIqExQ5H/2gAIAQEAAT8As5dkYnCPk1czrNnSxNMiP7TmQioBWCJa4Ly8fmrP2dDsT1uok4mue+321//EABkRAAIDAQAAAAAAAAAAAAAAAAAhARITYv/aAAgBAgEBPwDOEynR/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQARIVH/2gAIAQMBAT8AW1yZyf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//aAAwDAQACEAMQAAAA4t1apM2yIIr/xAAiEAABBAEDBQEAAAAAAAAAAAACAAEDBCEREhMFIiNxc7H/2gAIAQEAAT8Ahr8vJqTNtF3VAIilZpPzX2ukbQryCORaYtFETPatO4DiLCo9sk74xESoP4j+hL//xAAYEQEBAQEBAAAAAAAAAAAAAAABAgAScf/aAAgBAgEBPwBVmvNcLS9O/8QAGREBAQEAAwAAAAAAAAAAAAAAAgEAAxJS/9oACAEDAQE/ADxmMyerMCOs3//Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5590,28 +5590,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (9 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02423",
-    "file": "events/2026_03-PennYo_Concert/DSC02423.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-10",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_10.jpg",
     "width": 4000,
-    "height": 6000,
+    "height": 2667,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02423-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02423-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02423-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02423-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02423-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02423-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-10-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUBBAIDBv/EABgBAAMBAQAAAAAAAAAAAAAAAAEEBQID/9oADAMBAAIQAxAAAADqIV6o1h4IglVTsUerLUwMNf/EACEQAAICAgEEAwAAAAAAAAAAAAECAAMEERIhIjFBE1FS/9oACAEBAAE/AENfIkAR7UBgvSLcY2QrHo3vU+YzBy3uSwt5WxhMewrf3d3L89ByEeyzfbrUw8Uobguuth9zDpsbI2SPJhou+1n/xAAcEQABAwUAAAAAAAAAAAAAAAARAAECEBIjMVH/2gAIAQIBAT8ALq+XUI5Bqn//xAAdEQABAgcAAAAAAAAAAAAAAAAAFCIBERITITEy/9oACAEDAQE/AE7sxEhqzV1Maf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//aAAwDAQACEAMQAAAAjOg3lFlOIhW//8QAHxAAAwACAgIDAAAAAAAAAAAAAQIDAAQREhMxJFGx/9oACAEBAAE/ANSItXqxIXqSTkISOlYFx5O3oEH1iP2RD9qM0dOT7CyHK/GLMcCrDYusgVBh+HISW0ZOwHPRc//EABkRAQACAwAAAAAAAAAAAAAAAAEAEQIEEv/aAAgBAgEBPwDJ6sFIa9k//8QAGxEAAgIDAQAAAAAAAAAAAAAAAREAAgMSIYH/2gAIAQMBAT8Ax0qNWH1H2MCf/9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5624,28 +5629,28 @@
     "alt": "PennYo Concert, UPenn, 2026 (10 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02443",
-    "file": "events/2026_03-PennYo_Concert/DSC02443.jpg",
-    "width": 3529,
-    "height": 5294,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-11",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_11.jpg",
+    "width": 3487,
+    "height": 5231,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02443-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02443-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02443-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02443-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02443-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02443-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-11-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQQCBQb/2gAMAwEAAhADEAAAAJqWRpdVrmaGaVNqzaTRyBr/xAAlEAABBAEDAgcAAAAAAAAAAAABAAIDEhEEEyEiQTFCUVJiccH/2gAIAQEAAT8AEqdLyhMo3Xc0WAyfHsop7uf1AjAqtxQS104Oc8LT0zM4e/j6Vls105NvKey0uD0/L8UlWHGSePRf/8QAHBEBAAEEAwAAAAAAAAAAAAAAAQACAxESIVFh/9oACAECAQE/AClc+TVnGtxO4BP/xAAbEQADAAIDAAAAAAAAAAAAAAAAAQIDBBFBUf/aAAgBAwEBPwB1M3E90cIptZNWX4PIkf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAYAQADAQEAAAAAAAAAAAAAAAACBAUBBv/aAAwDAQACEAMQAAAA6UVX42tVFDRjxK2VBu0LCY//xAAfEAACAwACAgMAAAAAAAAAAAABAgADBBESYWIhIlL/2gAIAQEAAT8ARlAM5XiCwQPKNZuturKcGszvNOlqxWqsAXb5PrM2m1dKhVPd7vt58TtLVFiqD+pXhSnSbA5PDAgH2naf/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAAxITIVH/2gAIAQIBAT8AAcqfFE2WStqkrYEdImE//8QAGREAAgMBAAAAAAAAAAAAAAAAABEBAiET/9oACAEDAQE/AJppyMUIR//Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5658,33 +5663,28 @@
     "alt": "PennYo Concert, UPenn, 2026 (11 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02459",
-    "file": "events/2026_03-PennYo_Concert/DSC02459.jpg",
-    "width": 6000,
-    "height": 4000,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-12",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_12.jpg",
+    "width": 3611,
+    "height": 5417,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02459-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02459-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02459-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02459-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02459-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02459-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02459-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02459-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-12-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAADBf/aAAwDAQACEAMQAAAAgbk9b6PiBTP/xAAfEAEAAQQBBQAAAAAAAAAAAAABAgADERIhEzFBUXH/2gAIAQEAAT8Ajct5DEe1N6ASCJXVi+uOK2xOCGFonLe5nwjW6L9r/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAAxEEEv/aAAgBAgEBPwC3scWvWuaPUUjBon//xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIDERIhUf/aAAgBAwEBPwCk1pSuZS6f/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAGQEAAQUAAAAAAAAAAAAAAAAAAwECBAUG/9oADAMBAAIQAxAAAADh2V0i67cVFMhsq2SikqMP/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxESIRMxIkFC/9oACAEBAAE/AC9B6yCZ5OaC4AE9noKEtmeA1zax96ulmo3vM1Zavoqd3HHba2VkDRulFIOW6UsZlY0A/S4nDWl//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQIUH/2gAIAQIBAT8ALNUf/8QAHREAAQQCAwAAAAAAAAAAAAAAAQACAxEEEhQhQf/aAAgBAwEBPwA5oa8A+rkBRHfGno27tW9f/9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5697,33 +5697,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (12 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02491",
-    "file": "events/2026_03-PennYo_Concert/DSC02491.jpg",
-    "width": 5802,
-    "height": 3868,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-13",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_13.jpg",
+    "width": 5401,
+    "height": 3601,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02491-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02491-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02491-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02491-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02491-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02491-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02491-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02491-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-13-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/aAAwDAQACEAMQAAAAoii7UltGGKF//8QAHhAAAgICAwEBAAAAAAAAAAAAAQIDEQAEEiExQVH/2gAIAQEAAT8AjmIPRxNt5Jn5erVHGn5MWPpyFi23qR/Hko5vRJrPcYq0JrNaZ3i7/c//xAAcEQEAAgEFAAAAAAAAAAAAAAACAQMABCQxUZH/2gAIAQIBAT8Aeo3VVcdKV5gsLBUcTGf/xAAdEQACAgEFAAAAAAAAAAAAAAABAgADBBEUIUFh/9oACAEDAQE/AK8JdpdYeyoXw6y3Eauxkbkgz//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAABBf/aAAwDAQACEAMQAAAAWzT0TbGhEAP/xAAdEAACAwACAwAAAAAAAAAAAAABAgADBBEhIkFR/9oACAEBAAE/AG08xNoct5Aw6jLWKqxHwzNYRXe/sLLtboygKO1Bn//EABkRAQACAwAAAAAAAAAAAAAAAAEAAgQUMf/aAAgBAgEBPwDWq1YYinJ//8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAEAgMigf/aAAgBAwEBPwBs94+sbmsUWf/Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5736,33 +5736,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (13 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02550",
-    "file": "events/2026_03-PennYo_Concert/DSC02550.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-14",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_14.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02550-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02550-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02550-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02550-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02550-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02550-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02550-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02550-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-14-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5775,33 +5775,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (14 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02623",
-    "file": "events/2026_03-PennYo_Concert/DSC02623.jpg",
-    "width": 5023,
-    "height": 3349,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-15",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_15.jpg",
+    "width": 5583,
+    "height": 3722,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02623-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02623-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02623-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02623-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02623-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02623-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02623-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02623-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-15-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//aAAwDAQACEAMQAAAA4t1apM2yIIr/xAAiEAABBAEDBQEAAAAAAAAAAAACAAEDBCEREhMFIiNxc7H/2gAIAQEAAT8Ahr8vJqTNtF3VAIilZpPzX2ukbQryCORaYtFETPatO4DiLCo9sk74xESoP4j+hL//xAAYEQEBAQEBAAAAAAAAAAAAAAABAgAScf/aAAgBAgEBPwBVmvNcLS9O/8QAGREBAQEAAwAAAAAAAAAAAAAAAgEAAxJS/9oACAEDAQE/ADxmMyerMCOs3//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAX/2gAMAwEAAhADEAAAAMqS1k3LRIAd/8QAHhABAAEFAAMBAAAAAAAAAAAAAQIAAwQSIRExYaH/2gAIAQEAAT8AuZARfQVby9jkvIcKMqRUrrKdyCcIn7WHA3A4MtahdZb/ACSV/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESAv/aAAgBAgEBPwBYUsg//8QAGREAAgMBAAAAAAAAAAAAAAAAAREAAgMx/9oACAEDAQE/ALbrWoHEXBoCHP/Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5814,33 +5814,28 @@
     "alt": "PennYo Concert, UPenn, 2026 (15 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02634",
-    "file": "events/2026_03-PennYo_Concert/DSC02634.jpg",
-    "width": 4000,
-    "height": 2667,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-16",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_16.jpg",
+    "width": 3514,
+    "height": 5271,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02634-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02634-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02634-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02634-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02634-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02634-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02634-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02634-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-16-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//aAAwDAQACEAMQAAAAjOg3lFlOIhW//8QAHxAAAwACAgIDAAAAAAAAAAAAAQIDAAQREhMxJFGx/9oACAEBAAE/ANSItXqxIXqSTkISOlYFx5O3oEH1iP2RD9qM0dOT7CyHK/GLMcCrDYusgVBh+HISW0ZOwHPRc//EABkRAQACAwAAAAAAAAAAAAAAAAEAEQIEEv/aAAgBAgEBPwDJ6sFIa9k//8QAGxEAAgIDAQAAAAAAAAAAAAAAAREAAgMSIYH/2gAIAQMBAT8Ax0qNWH1H2MCf/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAf/aAAwDAQACEAMQAAAAyb6uE2rWKBJkzKr3O5nGW//EACQQAAIBAwMEAwEAAAAAAAAAAAECAwAEEQUSIRMxMmEiQVGR/9oACAEBAAE/AE0JR5E1a6RB0ycCk06EKOKmnZ0cJydhq1F3biR5mG11jI55yR2oXXuraYmYLgncrLx7FM26VnVnKxjGG/ldX3WmXEaNI7KxYAUk0ZS4lMeVC/ff5E1F4DknP7X/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQISAxEjUf/aAAgBAgEBPwC2acJOx19ZXTaKI//EABsRAAIDAAMAAAAAAAAAAAAAAAACAQMSEyEy/9oACAEDAQE/AMVIyxCR2ZUqy1emb0ckn//Z",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5853,28 +5848,33 @@
     "alt": "PennYo Concert, UPenn, 2026 (16 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc02665",
-    "file": "events/2026_03-PennYo_Concert/DSC02665.jpg",
-    "width": 3487,
-    "height": 5231,
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-17",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_17.jpg",
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02665-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02665-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02665-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02665-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc02665-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc02665-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-17-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAYAQADAQEAAAAAAAAAAAAAAAACBAUBBv/aAAwDAQACEAMQAAAA6UVX42tVFDRjxK2VBu0LCY//xAAfEAACAwACAgMAAAAAAAAAAAABAgADBBESYWIhIlL/2gAIAQEAAT8ARlAM5XiCwQPKNZuturKcGszvNOlqxWqsAXb5PrM2m1dKhVPd7vt58TtLVFiqD+pXhSnSbA5PDAgH2naf/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAAxITIVH/2gAIAQIBAT8AAcqfFE2WStqkrYEdImE//8QAGREAAgMBAAAAAAAAAAAAAAAAABEBAiET/9oACAEDAQE/AJppyMUIR//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBBP/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAIuy1m9QcJz/AP/EABsQAQEAAwEBAQAAAAAAAAAAAAECAAMRIRMx/9oACAEBAAE/ANZN0xEde+AZPz/GTE1dfDHdsiW4pmuiJmvbbrlqleY25//EABoRAAICAwAAAAAAAAAAAAAAAAATARECMVH/2gAIAQIBAT8AdkyNVQ2OH//EABwRAQABBAMAAAAAAAAAAAAAAAEAAgQREhMjUv/aAAgBAwEBPwAu+wNTGqzno8E//9k=",
     "title": "PennYo Concert",
     "place": "UPenn",
     "year": 2026,
@@ -5887,25 +5887,25 @@
     "alt": "PennYo Concert, UPenn, 2026 (17 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc03166",
-    "file": "events/2026_03-PennYo_Concert/DSC03166.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-18",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_18.jpg",
     "width": 3457,
     "height": 5185,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03166-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03166-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03166-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03166-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03166-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03166-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-18-1600.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwACBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMFBgT/2gAMAwEAAhADEAAAAOMU2qBhUwFnCDL6WtTkP//EACEQAAICAgIBBQAAAAAAAAAAAAECABEDIRASQSJCcbHx/9oACAEBAAE/AKmXC+EgNVkXwGC+o+JlytkAOQMo9nkb3XBVWEJcqq9z1B0DBVbIjEdTX1EOx8ylP5P/xAAfEQABAwQDAQAAAAAAAAAAAAABAAMEAhESIhMhUcH/2gAIAQIBAT8AkTm2JTLWuHfJ8V6FO3mUXpFjig6AAPF//8QAGxEAAQQDAAAAAAAAAAAAAAAAAgADESEBEBL/2gAIAQMBAT8ABvpss3NRoKBQv//Z",
@@ -5921,30 +5921,30 @@
     "alt": "PennYo Concert, UPenn, 2026 (18 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc03262",
-    "file": "events/2026_03-PennYo_Concert/DSC03262.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-19",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_19.jpg",
     "width": 5303,
     "height": 3535,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03262-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03262-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03262-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03262-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03262-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03262-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03262-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03262-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-19-2400.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAAH/2gAMAwEAAhADEAAAAEsn9wH9Imiz/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMEMVESIWGx/9oACAEBAAE/AMW8rO63waH2PnY3XUTZfGiDK6lioax0ZqmtnKewf2HIwBokejNXYcoxclz5csbM/8QAGxEAAgEFAAAAAAAAAAAAAAAAAQIAAwQSIUH/2gAIAQIBAT8AakoYa5GtxkZ//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECAyH/2gAIAQMBAT8AjRuWTtxH/9k=",
@@ -5960,30 +5960,30 @@
     "alt": "PennYo Concert, UPenn, 2026 (19 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc03269",
-    "file": "events/2026_03-PennYo_Concert/DSC03269.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-20",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_20.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03269-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03269-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03269-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03269-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03269-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03269-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03269-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03269-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-20-2400.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwQG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQMEBf/aAAwDAQACEAMQAAAAonm9s2o7EYG//8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxEEEiEiFFNh/9oACAEBAAE/AG5o303FqTJI5XkkV2sEWFFKTPE72cuH1ZUjxBLRrrSw3uOOy1//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRE//aAAgBAgEBPwDmlUjnGz//xAAZEQACAwEAAAAAAAAAAAAAAAABAgADURH/2gAIAQMBAT8AW9mSw4TyJYSqnRP/2Q==",
@@ -5999,30 +5999,30 @@
     "alt": "PennYo Concert, UPenn, 2026 (20 of 21)"
   },
   {
-    "id": "2026-03-pennyo-concert-dsc03276",
-    "file": "events/2026_03-PennYo_Concert/DSC03276.jpg",
+    "id": "2026-03-pennyo-concert-2026-03-pennyo-21",
+    "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_21.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03276-480.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03276-480.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-480.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03276-960.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03276-960.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-960.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03276-1600.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03276-1600.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-1600.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2026-03-pennyo-concert-dsc03276-2400.avif",
-        "jpg": "/photos/2026-03-pennyo-concert-dsc03276-2400.jpg"
+        "avif": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-2400.avif",
+        "jpg": "/photos/2026-03-pennyo-concert-2026-03-pennyo-21-2400.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAIqZFn1aBPA//8QAIBABAAIBBAIDAAAAAAAAAAAAAQIDABESMoEEYSExM//aAAgBAQABPwCFVogiajt95uUV+jl6MKLZxjKmcLYJyHTpHIXWk927jIOoo5bOcavh5Mhzxfy7c//EABgRAAMBAQAAAAAAAAAAAAAAAAABIQIT/9oACAECAQE/AOdQ8U//xAAbEQEAAgIDAAAAAAAAAAAAAAACAAEEMRQhQf/aAAgBAwEBPwDmuy96gynYPfk//9k=",
@@ -6038,33 +6038,28 @@
     "alt": "PennYo Concert, UPenn, 2026 (21 of 21)"
   },
   {
-    "id": "home-01-placeholder",
-    "file": "home/01-placeholder.jpg",
-    "width": 7933,
-    "height": 5291,
+    "id": "home-01-eyroomies-window",
+    "file": "home/01-eyroomies-window.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-01-placeholder-480.avif",
-        "jpg": "/photos/home-01-placeholder-480.jpg"
+        "avif": "/photos/home-01-eyroomies-window-480.avif",
+        "jpg": "/photos/home-01-eyroomies-window-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-01-placeholder-960.avif",
-        "jpg": "/photos/home-01-placeholder-960.jpg"
+        "avif": "/photos/home-01-eyroomies-window-960.avif",
+        "jpg": "/photos/home-01-eyroomies-window-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-01-placeholder-1600.avif",
-        "jpg": "/photos/home-01-placeholder-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/home-01-placeholder-2400.avif",
-        "jpg": "/photos/home-01-placeholder-2400.jpg"
+        "avif": "/photos/home-01-eyroomies-window-1600.avif",
+        "jpg": "/photos/home-01-eyroomies-window-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAACS9vJ1UoI//8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQSEzFRBREiMnGC/9oACAEBAAE/ALqJbqMRxeUjyCoOnNa3MUzJii7/AKHcVq2zKnqcRjztUUaKqsoAbmsmaURuSykbGtNVJAAA+V//xAAYEQACAwAAAAAAAAAAAAAAAAAAARESUf/aAAgBAgEBPwCCi1n/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEWH/2gAIAQMBAT8AXH//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYC/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/9oADAMBAAIQAxAAAABSxqvxOxQwJuHORtpH2KCb/8QAIRAAAgICAQUBAQAAAAAAAAAAAQIDEQAEEgUTISJBFIL/2gAIAQEAAT8AijBDvV+fGbHSZIgbAYrGHevlmslj4ORmsxYKI/tNyqx6nB1JP1Sd305xKovyMljVnJBFZobB1451Fe0dDN6D8+hDKVBcC2/rO+jV8xZuK8QMk6nuya5geXlHX0C87rDP/8QAGhEAAwADAQAAAAAAAAAAAAAAAAERAgMSUf/aAAgBAgEBPwDDXU7aLrwyjTOD/8QAGxEBAAICAwAAAAAAAAAAAAAAAQACIVEDEhP/2gAIAQMBAT8AvyInXJMblVGerqf/2Q==",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6074,31 +6069,36 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 1 of 5"
+    "alt": "Photo 1 of 16"
   },
   {
-    "id": "home-02-placeholder",
-    "file": "home/02-placeholder.jpg",
-    "width": 5072,
-    "height": 7604,
+    "id": "home-02-lz-palestra",
+    "file": "home/02-lz-palestra.jpg",
+    "width": 4076,
+    "height": 2718,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-02-placeholder-480.avif",
-        "jpg": "/photos/home-02-placeholder-480.jpg"
+        "avif": "/photos/home-02-lz-palestra-480.avif",
+        "jpg": "/photos/home-02-lz-palestra-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-02-placeholder-960.avif",
-        "jpg": "/photos/home-02-placeholder-960.jpg"
+        "avif": "/photos/home-02-lz-palestra-960.avif",
+        "jpg": "/photos/home-02-lz-palestra-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-02-placeholder-1600.avif",
-        "jpg": "/photos/home-02-placeholder-1600.jpg"
+        "avif": "/photos/home-02-lz-palestra-1600.avif",
+        "jpg": "/photos/home-02-lz-palestra-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-02-lz-palestra-2400.avif",
+        "jpg": "/photos/home-02-lz-palestra-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCBQYB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQIEBf/aAAwDAQACEAMQAAAAhc5lnGOkCTtPokOhT4+S/wD/xAAlEAACAQQABQUBAAAAAAAAAAABAgMABAUREyEiMWESQUJSkXL/2gAIAQEAAT8Aiuw0sW10fesgyxpGUboPbdCAsAUYaqLiKwITZCkH9qW8SWPhMdnpKH+qjnmRFXQ5eN1loUtsfIsad2UNWPiY5C23zAhDH8qS1jLdBIHg6rLq4x8+z9axamS5LLy1axivRMPnX//EABwRAAICAgMAAAAAAAAAAAAAAAABAjEREiFRUv/aAAgBAgEBPwBwnUVwYXoVGq6R/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIYH/2gAIAQMBAT8ASenSER//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6108,36 +6108,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 2 of 5"
+    "alt": "Photo 2 of 16"
   },
   {
-    "id": "home-03-placeholder",
-    "file": "home/03-placeholder.jpg",
-    "width": 8192,
-    "height": 5464,
+    "id": "home-03-pennyo-blue",
+    "file": "home/03-pennyo-blue.jpg",
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-03-placeholder-480.avif",
-        "jpg": "/photos/home-03-placeholder-480.jpg"
+        "avif": "/photos/home-03-pennyo-blue-480.avif",
+        "jpg": "/photos/home-03-pennyo-blue-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-03-placeholder-960.avif",
-        "jpg": "/photos/home-03-placeholder-960.jpg"
+        "avif": "/photos/home-03-pennyo-blue-960.avif",
+        "jpg": "/photos/home-03-pennyo-blue-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-03-placeholder-1600.avif",
-        "jpg": "/photos/home-03-placeholder-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/home-03-placeholder-2400.avif",
-        "jpg": "/photos/home-03-placeholder-2400.jpg"
+        "avif": "/photos/home-03-pennyo-blue-1600.avif",
+        "jpg": "/photos/home-03-pennyo-blue-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6147,31 +6142,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 3 of 5"
+    "alt": "Photo 3 of 16"
   },
   {
-    "id": "home-04-placeholder",
-    "file": "home/04-placeholder.jpg",
-    "width": 5205,
-    "height": 7808,
+    "id": "home-04-ap-window",
+    "file": "home/04-ap-window.jpg",
+    "width": 5236,
+    "height": 7850,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-04-placeholder-480.avif",
-        "jpg": "/photos/home-04-placeholder-480.jpg"
+        "avif": "/photos/home-04-ap-window-480.avif",
+        "jpg": "/photos/home-04-ap-window-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-04-placeholder-960.avif",
-        "jpg": "/photos/home-04-placeholder-960.jpg"
+        "avif": "/photos/home-04-ap-window-960.avif",
+        "jpg": "/photos/home-04-ap-window-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-04-placeholder-1600.avif",
-        "jpg": "/photos/home-04-placeholder-1600.jpg"
+        "avif": "/photos/home-04-ap-window-1600.avif",
+        "jpg": "/photos/home-04-ap-window-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIFBgcB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAAlIl6XCupjDFcqmiLq9Am/wD/xAAlEAACAQMCBgMBAAAAAAAAAAABAgMABCEREgYUIjFBcgUyUXH/2gAIAQEAAT8AvbiCwhHTrnao/TVj8uqyBJIgqs32owxyO7Hvr4riSNgkJ1Zupj61DiWP2FAbNQXLdsn+VxC+7lFTIKvXJ3ELoXXTQijKrMSDVzYwXhhLDEfip7GGVCCKRIhuwctX/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPwCMiLiKf//EABcRAQEBAQAAAAAAAAAAAAAAAAARASH/2gAIAQMBAT8AqtzqP//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAA1SCaeI0EpRtCor9Z7UJiL//EACUQAAIBAwMCBwAAAAAAAAAAAAECAwAEEQUSMRMiFCFCUWJxwf/aAAgBAQABPwA6hiSHt7gx4+q1a5hN2szsEX5UvTlVXQgqwyDUcgR1VvPD/mK12GSdIdqZetPvoLS38PcPh0Y1JGIJFDIitjhjk4q+DzXGBjbEAO3gs1NpAmYvMWjc+nGamv7uVtzmPd7hFzVlIxVyGJkaTluM1LqF3HIy7ga//8QAHxEAAgECBwAAAAAAAAAAAAAAAQIAAxEQEiEiUZHh/9oACAECAQE/AFcsbHBiLbRrM1Xgd+T/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEGGx/9oACAEDAQE/AIvmEqltI//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6181,31 +6176,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 4 of 5"
+    "alt": "Photo 4 of 16"
   },
   {
-    "id": "home-05-placeholder",
-    "file": "home/05-placeholder.jpg",
-    "width": 3611,
-    "height": 5417,
+    "id": "home-05-jjck-toss",
+    "file": "home/05-jjck-toss.jpg",
+    "width": 5257,
+    "height": 7886,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-05-placeholder-480.avif",
-        "jpg": "/photos/home-05-placeholder-480.jpg"
+        "avif": "/photos/home-05-jjck-toss-480.avif",
+        "jpg": "/photos/home-05-jjck-toss-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-05-placeholder-960.avif",
-        "jpg": "/photos/home-05-placeholder-960.jpg"
+        "avif": "/photos/home-05-jjck-toss-960.avif",
+        "jpg": "/photos/home-05-jjck-toss-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-05-placeholder-1600.avif",
-        "jpg": "/photos/home-05-placeholder-1600.jpg"
+        "avif": "/photos/home-05-jjck-toss-1600.avif",
+        "jpg": "/photos/home-05-jjck-toss-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAGQEAAQUAAAAAAAAAAAAAAAAAAwECBAUG/9oADAMBAAIQAxAAAADh2V0i67cVFMhsq2SikqMP/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxESIRMxIkFC/9oACAEBAAE/AC9B6yCZ5OaC4AE9noKEtmeA1zax96ulmo3vM1Zavoqd3HHba2VkDRulFIOW6UsZlY0A/S4nDWl//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQIUH/2gAIAQIBAT8ALNUf/8QAHREAAQQCAwAAAAAAAAAAAAAAAQACAxEEEhQhQf/aAAgBAwEBPwA5oa8A+rkBRHfGno27tW9f/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwL/2gAMAwEAAhADEAAAAKO2VThWYNNOBfLbG0QYf//EACMQAAICAQMEAwEAAAAAAAAAAAECAxEABBIxEyJBYSFx0eH/2gAIAQEAAT8A0w37gJVZbAAHj0clAEFpsN8+iMkcK5A/M00hjdSDxZNZrJ1YLSADlvvNRCXktbX4FjJZK1SpGa3uhK848800kXfSyuK9GqOQalIYkV+pwCO28CCTXXuIJQYmmg6irbf0G7zqRUBsIoeDn//EABsRAAICAwEAAAAAAAAAAAAAAAABESESMUFR/9oACAECAQE/AJSerKIS4YL0/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AHT/2Q==",
     "title": "",
     "place": "",
     "year": 2026,
@@ -6215,6 +6210,405 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 5 of 5"
+    "alt": "Photo 5 of 16"
+  },
+  {
+    "id": "home-06-wuhc-room",
+    "file": "home/06-wuhc-room.jpg",
+    "width": 5515,
+    "height": 3677,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-06-wuhc-room-480.avif",
+        "jpg": "/photos/home-06-wuhc-room-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-06-wuhc-room-960.avif",
+        "jpg": "/photos/home-06-wuhc-room-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-06-wuhc-room-1600.avif",
+        "jpg": "/photos/home-06-wuhc-room-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-06-wuhc-room-2400.avif",
+        "jpg": "/photos/home-06-wuhc-room-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/9oADAMBAAIQAxAAAABOIyI1skAD/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQRISJRYQUTUv/aAAgBAQABPwC4aKHyfsfJXC5A7Sr+8guY0WNGBDfNXboZV3LpFGNDwoqWIM6sSdwz1Txjk1lgTur/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAMTImH/2gAIAQIBAT8AKtUWYuz/xAAXEQADAQAAAAAAAAAAAAAAAAAAEyFh/9oACAEDAQE/AG0Zh//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 6,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 6 of 16"
+  },
+  {
+    "id": "home-07-jh-quatrefoil",
+    "file": "home/07-jh-quatrefoil.jpg",
+    "width": 5441,
+    "height": 8158,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-07-jh-quatrefoil-480.avif",
+        "jpg": "/photos/home-07-jh-quatrefoil-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-07-jh-quatrefoil-960.avif",
+        "jpg": "/photos/home-07-jh-quatrefoil-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-07-jh-quatrefoil-1600.avif",
+        "jpg": "/photos/home-07-jh-quatrefoil-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQIG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAG9bfOlSC2FrswsFNkks/8QAIxAAAgEDBAIDAQAAAAAAAAAAAQIDAAQRBRITQSExFCJRYf/aAAgBAQABPwCzjtYpGa6mReJsCL2KZEWVrUurxSLmNh+HqpoNkjIw8qcVBxQzzWnGvA/3U9f1avHd9QkkSPZEACuO9tXlkZpQ69qKg1hi8aTqyqGqWWBJSyq7KA3jOMgj1TaheOciTYOlAzRzjNfLkZmUqtPepGxUqfFf/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECElER/9oACAECAQE/AHVorLDuJFp6z//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhESUf/aAAgBAwEBPwBXbNRMoqPEf//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 7,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 7 of 16"
+  },
+  {
+    "id": "home-08-jlin-lift",
+    "file": "home/08-jlin-lift.jpg",
+    "width": 8149,
+    "height": 5435,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-08-jlin-lift-480.avif",
+        "jpg": "/photos/home-08-jlin-lift-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-08-jlin-lift-960.avif",
+        "jpg": "/photos/home-08-jlin-lift-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-08-jlin-lift-1600.avif",
+        "jpg": "/photos/home-08-jlin-lift-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-08-jlin-lift-2400.avif",
+        "jpg": "/photos/home-08-jlin-lift-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAAAG7PQLRIUd//EACMQAAEDAwMFAQAAAAAAAAAAAAEAAgMEERIFEyEiUVJTkeL/2gAIAQEAAT8AdIe+PPiUIJIKd8lR0Mez9IVUcl3crTZNirYcc3AE3K1SRz9wO9+PxquGcYhf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECERMiQv/aAAgBAgEBPwDWKsyJ8H//xAAVEQEBAAAAAAAAAAAAAAAAAAAQIf/aAAgBAwEBPwCn/9k=",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 8,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 8 of 16"
+  },
+  {
+    "id": "home-09-ew-studio",
+    "file": "home/09-ew-studio.jpg",
+    "width": 5464,
+    "height": 8192,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-09-ew-studio-480.avif",
+        "jpg": "/photos/home-09-ew-studio-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-09-ew-studio-960.avif",
+        "jpg": "/photos/home-09-ew-studio-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-09-ew-studio-1600.avif",
+        "jpg": "/photos/home-09-ew-studio-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 9,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 9 of 16"
+  },
+  {
+    "id": "home-10-pennyo-duet",
+    "file": "home/10-pennyo-duet.jpg",
+    "width": 6000,
+    "height": 4000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-10-pennyo-duet-480.avif",
+        "jpg": "/photos/home-10-pennyo-duet-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-10-pennyo-duet-960.avif",
+        "jpg": "/photos/home-10-pennyo-duet-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-10-pennyo-duet-1600.avif",
+        "jpg": "/photos/home-10-pennyo-duet-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-10-pennyo-duet-2400.avif",
+        "jpg": "/photos/home-10-pennyo-duet-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/2gAMAwEAAhADEAAAAIuHSC73eJJP/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAEQMhEhMUIkFR/9oACAEBAAE/AEDsOQArf38gyJZ5EjRqdgOxMHHw6I29m5jZiMlm/eZF6nZAboz/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIDESEi/9oACAECAQE/AFVHjQ61ln//xAAeEQEAAQMFAQAAAAAAAAAAAAACAQAEEQMFEiExYf/aAAgBAwEBPwBbhqybgw59XH5iKF20AlPcmM1//9k=",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 10,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 10 of 16"
+  },
+  {
+    "id": "home-11-ey-walk",
+    "file": "home/11-ey-walk.jpg",
+    "width": 5222,
+    "height": 7829,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-11-ey-walk-480.avif",
+        "jpg": "/photos/home-11-ey-walk-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-11-ey-walk-960.avif",
+        "jpg": "/photos/home-11-ey-walk-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-11-ey-walk-1600.avif",
+        "jpg": "/photos/home-11-ey-walk-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADPpyrOUjGGz1ab13cBYUf/xAAiEAEBAAEDBAIDAAAAAAAAAAABAhEAAwQFEiExInEQE1H/2gAIAQEAAT8A4u6zSK4ya6hszsdsD3eMuo3LgxI4+9TL+wJltPYa392q3SEtmYFK0S1MuMeA9a43EOJ2XMZV8q/LXK2u/k8ep2sZKKfZg1XTeMue2j6HUny0bKTTdtojL/Px/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAIRARAiQVH/2gAIAQIBAT8AZctEU4Rb/8QAGREAAwADAAAAAAAAAAAAAAAAAAEREjFR/9oACAEDAQE/AMW6+ERoh//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 11,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 11 of 16"
+  },
+  {
+    "id": "home-12-jr-stair",
+    "file": "home/12-jr-stair.jpg",
+    "width": 8192,
+    "height": 5464,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-12-jr-stair-480.avif",
+        "jpg": "/photos/home-12-jr-stair-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-12-jr-stair-960.avif",
+        "jpg": "/photos/home-12-jr-stair-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-12-jr-stair-1600.avif",
+        "jpg": "/photos/home-12-jr-stair-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-12-jr-stair-2400.avif",
+        "jpg": "/photos/home-12-jr-stair-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 12,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 12 of 16"
+  },
+  {
+    "id": "home-13-jh-huntsman",
+    "file": "home/13-jh-huntsman.jpg",
+    "width": 4891,
+    "height": 7336,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-13-jh-huntsman-480.avif",
+        "jpg": "/photos/home-13-jh-huntsman-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-13-jh-huntsman-960.avif",
+        "jpg": "/photos/home-13-jh-huntsman-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-13-jh-huntsman-1600.avif",
+        "jpg": "/photos/home-13-jh-huntsman-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwYB/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/9oADAMBAAIQAxAAAACxayOPprEwhbW0vGIy5oSX/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQACEQMSFTFRUiEyU2Jxgf/aAAgBAQABPwAkRqE554I1ak9gVnqi3UFoiArBsgYCrF9jrD1ALvxolU33MadwCsNT5rEATFUiWlp+FYVnkX//xAAbEQACAQUAAAAAAAAAAAAAAAAAARECAxATUf/aAAgBAgEBPwBYptNNTBqfT//EABoRAQACAwEAAAAAAAAAAAAAAAEAEQIDURT/2gAIAQMBAT8Ab7KezLeIgNz0Y8Z//9k=",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 13,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 13 of 16"
+  },
+  {
+    "id": "home-14-lz-above",
+    "file": "home/14-lz-above.jpg",
+    "width": 2732,
+    "height": 4096,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-14-lz-above-480.avif",
+        "jpg": "/photos/home-14-lz-above-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-14-lz-above-960.avif",
+        "jpg": "/photos/home-14-lz-above-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-14-lz-above-1600.avif",
+        "jpg": "/photos/home-14-lz-above-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 14,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 14 of 16"
+  },
+  {
+    "id": "home-15-jje-steps",
+    "file": "home/15-jje-steps.jpg",
+    "width": 5007,
+    "height": 7511,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-15-jje-steps-480.avif",
+        "jpg": "/photos/home-15-jje-steps-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-15-jje-steps-960.avif",
+        "jpg": "/photos/home-15-jje-steps-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-15-jje-steps-1600.avif",
+        "jpg": "/photos/home-15-jje-steps-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 15,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 15 of 16"
+  },
+  {
+    "id": "home-16-pennyo-cast",
+    "file": "home/16-pennyo-cast.jpg",
+    "width": 6000,
+    "height": 4000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-16-pennyo-cast-480.avif",
+        "jpg": "/photos/home-16-pennyo-cast-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-16-pennyo-cast-960.avif",
+        "jpg": "/photos/home-16-pennyo-cast-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-16-pennyo-cast-1600.avif",
+        "jpg": "/photos/home-16-pennyo-cast-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-16-pennyo-cast-2400.avif",
+        "jpg": "/photos/home-16-pennyo-cast-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 16,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 16 of 16"
   }
 ]
