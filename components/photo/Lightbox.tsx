@@ -17,8 +17,11 @@ import styles from "./Lightbox.module.css";
  * One look everywhere: a solid neutral near-black (#141414, not #000, so a
  * photo with a black background keeps its edge), the photo alone at the
  * largest size that fits, click-to-zoom (fit ↔ 2× about the clicked point,
- * drag to pan), small white controls, and a bottom band with the caption
- * (hidden while zoomed) and counter. With `filmstrip`, the band also holds a
+ * drag to pan), a close button, and a bottom band with the caption and
+ * counter centred (caption hidden while zoomed). Stepping: the outer fifth
+ * of the stage on each side is a prev/next zone (the cursor becomes an
+ * arrow there; gone while zoomed so dragging pans), plus ←/→ and a touch
+ * swipe. With `filmstrip`, the band also holds a
  * row of thumbnails: the current one outlined, click to jump, the row kept
  * centred on it; on pointer devices it fades out after a short idle and comes
  * back on any movement or key.
@@ -188,24 +191,20 @@ export function Lightbox({
             ×
           </button>
           <ZoomableImage key={shown.id} photo={shown} onZoomChange={setZoomed} />
-          {count > 1 && (
+          {count > 1 && !zoomed && (
             <>
               <button
                 type="button"
                 onClick={() => onNav(-1)}
-                className={`${styles.ctl} ${styles.prev}`}
+                className={`${styles.zone} ${styles.zonePrev}`}
                 aria-label="Previous photo"
-              >
-                ←
-              </button>
+              />
               <button
                 type="button"
                 onClick={() => onNav(1)}
-                className={`${styles.ctl} ${styles.next}`}
+                className={`${styles.zone} ${styles.zoneNext}`}
                 aria-label="Next photo"
-              >
-                →
-              </button>
+              />
             </>
           )}
           <div className={styles.band}>

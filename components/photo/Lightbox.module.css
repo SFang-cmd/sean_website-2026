@@ -132,17 +132,34 @@
 .close {
   top: 8px;
   right: 8px;
+  z-index: 2; /* above the next zone */
 }
-.prev,
-.next {
-  top: calc(50% - var(--band) / 2);
-  transform: translateY(-50%);
+
+/* Prev/next zones: the outer fifth of the stage on each side, invisible,
+   over the photo; the cursor becomes an arrow there. Rendered only when there
+   is more than one photo and not zoomed. The SVG cursor is a white arrow
+   with a dark outline so it reads over any photo. */
+.zone {
+  position: absolute;
+  top: 0;
+  bottom: var(--band);
+  width: 20%;
+  padding: 0;
+  border: 0;
+  background: none;
+  z-index: 1;
 }
-.prev {
-  left: 8px;
+.zone:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.6);
+  outline-offset: -6px;
 }
-.next {
-  right: 8px;
+.zonePrev {
+  left: 0;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M18 5 L9 14 L18 23' fill='none' stroke='%23000' stroke-opacity='.7' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/><path d='M18 5 L9 14 L18 23' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") 14 14, w-resize;
+}
+.zoneNext {
+  right: 0;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23000' stroke-opacity='.7' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 5 L19 14 L10 23' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") 14 14, e-resize;
 }
 
 /* The band: filmstrip (if any) over the caption/counter line. */
@@ -208,11 +225,12 @@
     opacity: 0;
   }
 }
+/* Caption and counter, centred on one line. */
 .meta {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
+  gap: 18px;
   padding: 0 12px 10px;
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -229,17 +247,10 @@
   visibility: hidden;
 }
 
-@media (max-width: 767px) {
-  /* Arrows to the band's corners so they stay off a full-width photo;
-     swipe does the stepping anyway. */
-  .prev,
-  .next {
-    top: auto;
-    bottom: calc(var(--band) - 40px);
-    transform: none;
-  }
-  .hasStrip .prev,
-  .hasStrip .next {
-    display: none;
+@media (hover: none) {
+  /* Touch: swipe steps; the zones stay as big tap targets but without a
+     cursor there is nothing to show. */
+  .zone {
+    cursor: default;
   }
 }
