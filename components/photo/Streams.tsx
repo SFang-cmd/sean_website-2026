@@ -20,7 +20,7 @@ import styles from "./Streams.module.css";
  * single passive scroll listener + one rAF that writes the transforms.
  * Reduced motion and plaintext mode render a plain single-column list.
  *
- * Every shot is a <button> opening the photo in the black Lightbox (fit to
+ * Every shot is a <button> opening the photo in the Lightbox (fit to
  * the viewport, ←/→ through the home sequence, `#<id>` deep links). The
  * button sits inside the <figure> that carries the scroll-driven transform,
  * so it rides along without touching the motion; it has no touch-action of
@@ -83,7 +83,7 @@ export function Streams({ photos, all }: { photos: Photo[]; all: Photo[] }) {
       ) : (
         <River photos={photos} onOpen={open} />
       )}
-      <Lightbox variant="black" photos={list} index={index} onNav={nav} onClosed={closed} />
+      <Lightbox photos={list} index={index} onNav={nav} onClosed={closed} />
     </>
   );
 }

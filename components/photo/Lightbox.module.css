@@ -1,39 +1,34 @@
-/* The lightbox: a native <dialog> filling the viewport. Two variants —
-   `paper` (the gallery: page colors, caption, text controls) and `black`
-   (the home: opaque #000, the photo alone, small white controls). */
+/* The lightbox: a native <dialog> filling the viewport. One look for the
+   gallery and the home: a solid neutral near-black, the photo alone on the
+   stage, small white controls, and a bottom band with the caption, counter
+   and (optionally) the filmstrip. Same in light and dark mode: the surround
+   is a viewing condition, not a theme. */
 .dialog {
+  --band: 34px; /* height reserved under the photo for the caption/counter */
   position: fixed;
   inset: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%; /* of the viewport, so phone toolbars don't crop the stage */
+  height: 100%;
   max-width: none;
   max-height: none;
   margin: 0;
-  padding: 24px 28px;
+  padding: 0;
   border: 0;
-  background: var(--bg);
-  color: var(--fg);
+  background: #141414;
+  color: #fff;
   /* A scroll container that never scrolls: wheel/touch over the dialog
      stops here instead of chaining to the (locked) page underneath. */
   overflow: auto;
   overscroll-behavior: contain;
 }
+.hasStrip {
+  --band: 96px;
+}
 .dialog::backdrop {
   background: transparent;
 }
 .dialog[open] {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.dialogImg {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: calc(100vh - 136px);
-  object-fit: contain;
 }
 
 /* Open/close fade. Only applied when motion is allowed (not plaintext mode,
@@ -67,23 +62,15 @@
   pointer-events: none;
 }
 
-/* ---- black variant ---------------------------------------------------- */
-.black {
-  width: 100%; /* of the viewport, so phone toolbars don't crop the stage */
-  height: 100%;
-  padding: 0;
-  background: #000;
-  color: #fff;
-}
-/* The photo, centred, at the largest size that fits. The stage lets clicks
-   on empty space fall through to the dialog (= backdrop close). Sized from
-   the stage and the photo's ratio (`--ar`), not the image's natural size:
-   with `sizes="100vw"` the browser density-corrects the natural size by
-   whichever srcset descriptor it chose, and `width: auto` would lay the
-   image out at a fraction of the viewport. */
+/* The stage: everything above the band. The photo is centred at the largest
+   size that fits. Clicks on empty stage fall through to the dialog (=
+   backdrop close). Sized from the stage and the photo's ratio (`--ar`), not
+   the image's natural size: with `sizes="100vw"` the browser
+   density-corrects the natural size by whichever srcset descriptor it chose,
+   and `width: auto` would lay the image out at a fraction of the viewport. */
 .stage {
   position: absolute;
-  inset: 0;
+  inset: 0 0 var(--band) 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,36 +133,113 @@
   top: 8px;
   right: 8px;
 }
+.prev,
+.next {
+  top: calc(50% - var(--band) / 2);
+  transform: translateY(-50%);
+}
 .prev {
   left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .next {
   right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
 }
-.counter {
+
+/* The band: filmstrip (if any) over the caption/counter line. */
+.band {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--band);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.strip {
+  display: flex;
+  gap: 6px;
+  padding: 4px 12px 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  transition: opacity 240ms ease;
+}
+.strip::-webkit-scrollbar {
+  display: none;
+}
+/* Centre the row when it is narrower than the viewport, scroll when wider
+   (`justify-content: center` would clip the start of an overflowing row). */
+.thumb:first-child {
+  margin-left: auto;
+}
+.thumb:last-child {
+  margin-right: auto;
+}
+.thumb {
+  flex: none;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: none;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+.thumb img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+.thumb:hover {
+  opacity: 0.8;
+}
+.thumb[aria-current="true"] {
+  opacity: 1;
+  box-shadow: 0 0 0 1px #fff;
+}
+.thumb:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  opacity: 1;
+}
+/* Idle: the strip fades on devices with a hover pointer; on touch it stays. */
+@media (hover: hover) {
+  .strip.idle {
+    opacity: 0;
+  }
+}
+.meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 12px 10px;
   font-size: 11px;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.7);
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
-  pointer-events: none;
+  color: rgba(255, 255, 255, 0.6);
 }
+.caption {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.captionHidden {
+  visibility: hidden;
+}
+
 @media (max-width: 767px) {
-  /* Arrows to the bottom corners so they stay off a full-width photo. */
+  /* Arrows to the band's corners so they stay off a full-width photo;
+     swipe does the stepping anyway. */
   .prev,
   .next {
     top: auto;
-    bottom: 0;
+    bottom: calc(var(--band) - 40px);
     transform: none;
   }
-  .counter {
-    bottom: 12px;
+  .hasStrip .prev,
+  .hasStrip .next {
+    display: none;
   }
 }

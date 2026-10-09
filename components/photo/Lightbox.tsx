@@ -9,29 +9,35 @@ import { loaderFor, srcFor } from "./photoLoader";
 import styles from "./Lightbox.module.css";
 
 /**
- * Native <dialog> lightbox. `showModal()` gives us the top layer, Esc, a
- * focus trap and an inert page for free; we add ←/→, prev/next buttons,
- * backdrop-click close and a body scroll lock.
+ * Native <dialog> lightbox, shared by the gallery and the home streams.
+ * `showModal()` gives us the top layer, Esc, a focus trap and an inert page
+ * for free; we add ←/→, prev/next buttons, backdrop-click close, a body
+ * scroll lock and a touch swipe.
  *
- * Two variants. `paper` (the gallery): page colors, the caption under the
- * photo, text controls. `black` (the home): an opaque #000 backdrop, the
- * photo alone at the largest size that fits, small white controls, and a
- * click-to-zoom (fit ↔ 2× about the clicked point, drag to pan).
+ * One look everywhere: a solid neutral near-black (#141414, not #000, so a
+ * photo with a black background keeps its edge), the photo alone at the
+ * largest size that fits, click-to-zoom (fit ↔ 2× about the clicked point,
+ * drag to pan), small white controls, and a bottom band with the caption
+ * (hidden while zoomed) and counter. With `filmstrip`, the band also holds a
+ * row of thumbnails: the current one outlined, click to jump, the row kept
+ * centred on it; on pointer devices it fades out after a short idle and comes
+ * back on any movement or key.
  *
  * One close path: every way out (Esc, backdrop, the close button, the
  * parent dropping the index) ends in the native `close` event, and only that
  * event calls `onClosed`, so the parent's cleanup (hash, focus return)
  * runs exactly once whichever way the dialog went.
  *
- * Open/close is a 180 ms fade unless plaintext mode or reduced motion is on.
- * The previous and next photos are fetched while one is open.
+ * Open/close is a 180 ms fade unless plaintext mode or reduced motion is on
+ * (then nothing fades, and the filmstrip never hides). The previous and next
+ * photos are fetched while one is open.
  */
 export function Lightbox({
   photos,
   index,
   onNav,
   onClosed,
-  variant = "paper",
+  filmstrip = false,
 }: {
   photos: Photo[];
   /** Index into `photos` of the open photo; −1 when closed. */
@@ -39,7 +45,8 @@ export function Lightbox({
   onNav: (delta: number) => void;
   /** Fired after the dialog has actually closed, whatever closed it. */
   onClosed: () => void;
-  variant?: "paper" | "black";
+  /** Show the thumbnail strip (when there is more than one photo). */
+  filmstrip?: boolean;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const plain = usePlainEnabled();
@@ -49,12 +56,15 @@ export function Lightbox({
   const count = photos.length;
   const open = photo !== null;
   const close = () => ref.current?.close();
+  const [zoomed, setZoomed] = useState(false);
 
   // Keep the last photo through the close fade, so the image doesn't vanish
   // a frame before the backdrop does.
   const last = useRef<Photo | null>(null);
   if (photo) last.current = photo;
   const shown = photo ?? last.current;
+
+  const strip = filmstrip && count > 1;
 
   const neighbours =
     index >= 0 && count > 1
@@ -102,8 +112,55 @@ export function Lightbox({
     };
   }, [open]);
 
-  const black = variant === "black";
-  const className = [styles.dialog, black ? styles.black : "", fade ? styles.fade : ""]
+  // Filmstrip idle: hide after IDLE_MS without input; any pointer movement,
+  // key or step brings it back. Only when motion is allowed (otherwise it
+  // stays), and the CSS limits the hide to hover-capable devices.
+  const [idle, setIdle] = useState(false);
+  useEffect(() => {
+    if (!open || !strip || !fade) return;
+    let t: ReturnType<typeof setTimeout>;
+    const wake = () => {
+      setIdle(false);
+      clearTimeout(t);
+      t = setTimeout(() => setIdle(true), IDLE_MS);
+    };
+    wake();
+    const events = ["pointermove", "pointerdown", "keydown"] as const;
+    for (const ev of events) window.addEventListener(ev, wake);
+    return () => {
+      clearTimeout(t);
+      for (const ev of events) window.removeEventListener(ev, wake);
+      setIdle(false);
+    };
+  }, [open, strip, fade, index]);
+
+  // Keep the current thumbnail centred in the strip.
+  const stripRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = stripRef.current;
+    if (!el || index < 0) return;
+    const thumb = el.children[index] as HTMLElement | undefined;
+    if (!thumb) return;
+    const left = thumb.offsetLeft - (el.clientWidth - thumb.offsetWidth) / 2;
+    el.scrollTo({ left, behavior: fade ? "smooth" : "auto" });
+  }, [index, fade, strip]);
+
+  // Touch swipe steps when not zoomed (zoomed, one finger pans the photo).
+  const swipe = useRef<{ x: number; y: number } | null>(null);
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType !== "touch" || zoomed || (e.target as HTMLElement).closest("button")) return;
+    swipe.current = { x: e.clientX, y: e.clientY };
+  };
+  const onPointerUp = (e: React.PointerEvent) => {
+    const s = swipe.current;
+    swipe.current = null;
+    if (!s || zoomed) return;
+    const dx = e.clientX - s.x;
+    const dy = e.clientY - s.y;
+    if (Math.abs(dx) > SWIPE_PX && Math.abs(dx) > Math.abs(dy) * 1.5) onNav(dx < 0 ? 1 : -1);
+  };
+
+  const className = [styles.dialog, strip ? styles.hasStrip : "", fade ? styles.fade : ""]
     .filter(Boolean)
     .join(" ");
 
@@ -111,13 +168,15 @@ export function Lightbox({
     <dialog
       ref={ref}
       className={className}
-      aria-labelledby={black ? undefined : "lightbox-caption"}
-      aria-label={black ? (shown?.alt ?? "Photo") : undefined}
+      aria-label={shown?.alt ?? "Photo"}
       onClick={(e) => {
         if (e.target === e.currentTarget) close();
       }}
+      onPointerDown={onPointerDown}
+      onPointerUp={onPointerUp}
+      onPointerCancel={() => (swipe.current = null)}
     >
-      {shown && (black ? (
+      {shown && (
         <>
           <button
             type="button"
@@ -128,77 +187,73 @@ export function Lightbox({
           >
             ×
           </button>
-          <ZoomableImage key={shown.id} photo={shown} />
-          <button
-            type="button"
-            onClick={() => onNav(-1)}
-            className={`${styles.ctl} ${styles.prev}`}
-            aria-label="Previous photo"
-          >
-            ←
-          </button>
-          <button
-            type="button"
-            onClick={() => onNav(1)}
-            className={`${styles.ctl} ${styles.next}`}
-            aria-label="Next photo"
-          >
-            →
-          </button>
-          <span className={`${styles.counter} tabular-nums`} aria-live="polite">
-            {Math.max(index, 0) + 1} / {count}
-          </span>
-        </>
-      ) : (
-        <>
-          <figure className="m-0 flex max-h-full max-w-full flex-col items-center">
-            <Image
-              key={shown.id}
-              loader={loaderFor(shown)}
-              src={srcFor(shown)}
-              alt={shown.alt}
-              width={shown.width}
-              height={shown.height}
-              sizes="100vw"
-              placeholder="blur"
-              blurDataURL={shown.blur}
-              className={styles.dialogImg}
-            />
-            <figcaption id="lightbox-caption" className="mt-3 text-center text-[12px] text-muted">
-              <i className="font-serif text-[14px] italic text-fg">{shown.title}</i> · {shown.place}{" "}
-              · {shown.year}
-            </figcaption>
-          </figure>
-          <div className="mt-5 flex items-baseline gap-6 text-[12px] text-muted">
-            <button
-              type="button"
-              onClick={() => onNav(-1)}
-              className="cursor-pointer underline-offset-4 hover:underline"
-              aria-label="Previous photo"
-            >
-              ← prev
-            </button>
-            <span className="tabular-nums" aria-live="polite">
-              {Math.max(index, 0) + 1} / {count}
-            </span>
-            <button
-              type="button"
-              onClick={() => onNav(1)}
-              className="cursor-pointer underline-offset-4 hover:underline"
-              aria-label="Next photo"
-            >
-              next →
-            </button>
-            <button
-              type="button"
-              onClick={close}
-              className="cursor-pointer underline-offset-4 hover:underline"
-            >
-              close
-            </button>
+          <ZoomableImage key={shown.id} photo={shown} onZoomChange={setZoomed} />
+          {count > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={() => onNav(-1)}
+                className={`${styles.ctl} ${styles.prev}`}
+                aria-label="Previous photo"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                onClick={() => onNav(1)}
+                className={`${styles.ctl} ${styles.next}`}
+                aria-label="Next photo"
+              >
+                →
+              </button>
+            </>
+          )}
+          <div className={styles.band}>
+            {strip && (
+              <div
+                ref={stripRef}
+                className={`${styles.strip} ${idle ? styles.idle : ""}`}
+                role="list"
+                aria-label="Photos in this set"
+              >
+                {photos.map((p, i) => (
+                  <button
+                    key={p.id}
+                    type="button"
+                    role="listitem"
+                    className={styles.thumb}
+                    aria-current={i === index ? "true" : undefined}
+                    aria-label={`Photo ${i + 1} of ${count}`}
+                    tabIndex={idle ? -1 : 0}
+                    onClick={() => onNav(i - index)}
+                  >
+                    <Image
+                      loader={loaderFor(p)}
+                      src={srcFor(p)}
+                      alt=""
+                      width={Math.round((THUMB_H * p.width) / p.height)}
+                      height={THUMB_H}
+                      sizes={`${THUMB_H * 2}px`}
+                      draggable={false}
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+            <div className={styles.meta}>
+              <p className={`${styles.caption} ${zoomed ? styles.captionHidden : ""}`}>
+                <i className="font-serif text-[13px] italic text-white/85">{shown.title}</i>
+                {shown.place ? ` · ${shown.place}` : ""} · {shown.year}
+              </p>
+              {count > 1 && (
+                <span className="tabular-nums" aria-live="polite">
+                  {Math.max(index, 0) + 1} / {count}
+                </span>
+              )}
+            </div>
           </div>
         </>
-      ))}
+      )}
       {open && neighbours.length > 0 && (
         <div className={styles.preload} aria-hidden="true">
           {neighbours.map((p) => (
@@ -220,6 +275,9 @@ export function Lightbox({
 }
 
 const ZOOM = 2;
+const THUMB_H = 48;
+const IDLE_MS = 2000;
+const SWIPE_PX = 50;
 
 /** Zoom state: origin and pan in px, plus the fitted image's box so panning
     can be clamped to the viewport without re-measuring a transformed element. */
@@ -235,21 +293,35 @@ interface Zoom {
 }
 
 /**
- * The black variant's photo. Click toggles fit ↔ 2× scaled about the clicked
- * point (so that spot stays put); while zoomed, dragging pans, clamped so the
- * photo never leaves the viewport. The drag writes the transform straight to
- * the element and commits to state on release. Pinch gestures are left to
- * the browser (`touch-action: pinch-zoom`).
+ * The photo. Click toggles fit ↔ 2× scaled about the clicked point (so that
+ * spot stays put); while zoomed, dragging pans, clamped so the photo never
+ * leaves the stage. The drag writes the transform straight to the element
+ * and commits to state on release. Pinch gestures are left to the browser
+ * (`touch-action: pinch-zoom`).
  */
-function ZoomableImage({ photo }: { photo: Photo }) {
+function ZoomableImage({
+  photo,
+  onZoomChange,
+}: {
+  photo: Photo;
+  onZoomChange?: (zoomed: boolean) => void;
+}) {
   const [zoom, setZoom] = useState<Zoom | null>(null);
   const [panning, setPanning] = useState(false);
   const drag = useRef<{ x: number; y: number; tx: number; ty: number; moved: boolean } | null>(
     null,
   );
   const suppressClick = useRef(false);
+  const stageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    onZoomChange?.(zoom !== null);
+  }, [zoom, onZoomChange]);
+  // Remounted per photo (key={id}), so report "not zoomed" when going away.
+  useEffect(() => () => onZoomChange?.(false), [onZoomChange]);
 
   const transform = (z: Zoom) => `translate(${z.tx}px, ${z.ty}px) scale(${ZOOM})`;
+  const clamp = (z: Zoom) => clampPan(z, stageRef.current?.getBoundingClientRect() ?? null);
 
   const onClick = (e: React.MouseEvent<HTMLImageElement>) => {
     if (suppressClick.current) {
@@ -262,7 +334,7 @@ function ZoomableImage({ photo }: { photo: Photo }) {
     }
     const r = e.currentTarget.getBoundingClientRect();
     setZoom(
-      clampPan({
+      clamp({
         ox: e.clientX - r.left,
         oy: e.clientY - r.top,
         tx: 0,
@@ -289,7 +361,7 @@ function ZoomableImage({ photo }: { photo: Photo }) {
     const dy = e.clientY - d.y;
     if (!d.moved && Math.hypot(dx, dy) > 4) d.moved = true;
     if (!d.moved) return;
-    const z = clampPan({ ...zoom, tx: d.tx + dx, ty: d.ty + dy });
+    const z = clamp({ ...zoom, tx: d.tx + dx, ty: d.ty + dy });
     d.tx = z.tx - dx;
     d.ty = z.ty - dy;
     e.currentTarget.style.transform = transform(z);
@@ -304,12 +376,12 @@ function ZoomableImage({ photo }: { photo: Photo }) {
       suppressClick.current = true;
       const dx = e.clientX - d.x;
       const dy = e.clientY - d.y;
-      setZoom(clampPan({ ...zoom, tx: d.tx + dx, ty: d.ty + dy }));
+      setZoom(clamp({ ...zoom, tx: d.tx + dx, ty: d.ty + dy }));
     }
   };
 
   return (
-    <div className={styles.stage}>
+    <div ref={stageRef} className={styles.stage}>
       <Image
         loader={loaderFor(photo)}
         src={srcFor(photo)}
@@ -342,21 +414,23 @@ function ZoomableImage({ photo }: { photo: Photo }) {
   );
 }
 
-/** Keep the scaled photo inside the viewport on each axis: no gap beside it
-    when it is larger than the viewport, no overflow when it is smaller. */
-function clampPan(z: Zoom): Zoom {
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
-  const axis = (pos: number, origin: number, size: number, view: number, t: number) => {
+/** Keep the scaled photo inside the stage on each axis: no gap beside it
+    when it is larger than the stage, no overflow when it is smaller. */
+function clampPan(z: Zoom, stage: DOMRect | null): Zoom {
+  const sl = stage?.left ?? 0;
+  const st = stage?.top ?? 0;
+  const sw = stage?.width ?? window.innerWidth;
+  const sh = stage?.height ?? window.innerHeight;
+  const axis = (pos: number, origin: number, size: number, start: number, view: number, t: number) => {
     const scaled = size * ZOOM;
-    const at0 = pos + origin * (1 - ZOOM); // scaled edge at t = 0
+    const at0 = pos + origin * (1 - ZOOM) - start; // scaled edge at t = 0, relative to the stage
     const lo = Math.min(0, view - scaled);
     const hi = Math.max(0, view - scaled);
     return Math.min(hi, Math.max(lo, at0 + t)) - at0;
   };
   return {
     ...z,
-    tx: axis(z.left, z.ox, z.w, vw, z.tx),
-    ty: axis(z.top, z.oy, z.h, vh, z.ty),
+    tx: axis(z.left, z.ox, z.w, sl, sw, z.tx),
+    ty: axis(z.top, z.oy, z.h, st, sh, z.ty),
   };
 }

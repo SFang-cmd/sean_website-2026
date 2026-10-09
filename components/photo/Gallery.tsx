@@ -107,7 +107,7 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
         ))}
       </main>
 
-      <Lightbox photos={list} index={index} onNav={nav} onClosed={closed} />
+      <Lightbox photos={list} index={index} onNav={nav} onClosed={closed} filmstrip />
     </div>
   );
 }
