@@ -28,9 +28,19 @@ export const metadata: Metadata = {
 };
 
 /**
+ * Colour-scheme bootstrap, run before first paint. Mirrors lib/themeStore.ts:
+ * a stored "light"/"dark" becomes `<html data-theme>`; anything else (or no
+ * storage) leaves the attribute off so CSS follows `prefers-color-scheme`.
+ * Inline so the stylesheet never paints the wrong scheme for a frame.
+ */
+const themeBootstrap = `try{var t=localStorage.getItem("color-scheme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}`;
+
+/**
  * Root layout: fonts + metadata only. Each side of the site owns its own
  * chrome — see app/(a)/layout.tsx (engineering: patch grid, 648px column)
  * and app/photo/layout.tsx (photography: paper, full width, no grid).
+ * `suppressHydrationWarning` on <html>: the bootstrap script may add
+ * `data-theme` before React hydrates.
  */
 export default function RootLayout({
   children,
@@ -41,7 +51,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${GeistSans.variable} ${GeistMono.variable} ${serif.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
+      </head>
       <body className="antialiased" suppressHydrationWarning>
         {children}
       </body>
