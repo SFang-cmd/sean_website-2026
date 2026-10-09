@@ -14,7 +14,6 @@ import { useHighlightingEnabled } from "@/lib/highlightStore";
 import { usePlainEnabled } from "@/lib/plainStore";
 import { theme } from "@/config/theme";
 
-const FOUND_KEY = "door-found";
 
 /**
  * Wraps an inline element (usually a link) and lights up the backdrop grid
@@ -24,9 +23,10 @@ const FOUND_KEY = "door-found";
  * `rows` forces the block to exactly N rows centred on the element; `idle`
  * ="flicker" keeps a few of the element's cells faintly flickering while
  * nobody is hovering (the door: the one link the model can't stop looking
- * at). Idle cells follow the element on scroll/resize; the flicker stops for
- * good once the visitor has clicked through (localStorage `door-found`), and
- * is off entirely under plaintext mode, highlighting-off, or reduced motion.
+ * at). Idle cells follow the element on scroll/resize; the flicker persists
+ * across visits and clicks (an earlier version stopped for good after the
+ * first click-through, which read as the door breaking), and is off entirely
+ * under plaintext mode, highlighting-off, or reduced motion.
  */
 export function PatchHighlight({
   children,
@@ -46,7 +46,6 @@ export function PatchHighlight({
   const [cells, setCells] = useState<PatchCell[]>([]);
   const [lit, setLit] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [found, setFound] = useState(false);
   const [idleCells, setIdleCells] = useState<PatchCell[]>([]);
   const [flick, setFlick] = useState<Record<number, number>>({});
   const highlightingOn = useHighlightingEnabled();
@@ -54,15 +53,10 @@ export function PatchHighlight({
   const highlightingEnabled = highlightingOn && !plain;
   const still = prefersReducedMotion();
   const idleOn =
-    idle === "flicker" && highlightingEnabled && !still && mounted && !found;
+    idle === "flicker" && highlightingEnabled && !still && mounted;
 
   useEffect(() => {
     setMounted(true);
-    try {
-      setFound(window.localStorage.getItem(FOUND_KEY) === "1");
-    } catch {
-      /* private browsing — flicker every visit */
-    }
     return () => {
       clearTimeout(tapTimer.current);
       cancelAnimationFrame(rafId.current);
@@ -174,16 +168,6 @@ export function PatchHighlight({
     };
   }, [idleOn, idleCells]);
 
-  const markFound = () => {
-    if (idle !== "flicker" || found) return;
-    setFound(true);
-    try {
-      window.localStorage.setItem(FOUND_KEY, "1");
-    } catch {
-      /* in-memory only */
-    }
-  };
-
   return (
     <>
       <span
@@ -192,7 +176,6 @@ export function PatchHighlight({
         onMouseLeave={hide}
         onFocus={() => show()}
         onBlur={hide}
-        onClickCapture={markFound}
         // Touch has no hover: flash the wave on tap, then redirect after 300ms
         // to ensure users see the full animation.
         onPointerDown={(e) => {
@@ -202,12 +185,10 @@ export function PatchHighlight({
           // A side-door link runs its own transition from the tap's click
           // event; just flash the highlight and let the tap through.
           if (link.hasAttribute("data-side-link")) {
-            markFound();
             show({ x: e.clientX, y: e.clientY });
             return;
           }
           e.preventDefault();
-          markFound();
           show({ x: e.clientX, y: e.clientY });
           clearTimeout(tapTimer.current);
           tapTimer.current = setTimeout(() => {

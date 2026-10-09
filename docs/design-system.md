@@ -136,9 +136,10 @@ cells tall (`theme.door.rows`, centred on the text) and never fully rests:
 idle, a few random cells of the block flicker faintly
 (`theme.door.flickerPerSec` ticks/s, `flickerCells` per tick, peak
 `flickerAlpha`), as if the model keeps glancing at it. Hover is the ordinary
-ripple; click runs the shrink wave (SideFlip). The flicker stops for good once
-the visitor has used the door (localStorage `door-found`), and is off under
-plaintext mode, highlighting-off, or reduced motion. Prototype history:
+ripple; click runs the shrink wave (SideFlip). The flicker persists across
+visits and clicks (it used to stop for good after the first click-through via
+localStorage `door-found`; Sean found that read as the door breaking), and is
+off under plaintext mode, highlighting-off, or reduced motion. Prototype history:
 `docs/prototypes/door-lab*.html`.
 
 ### Plaintext mode
