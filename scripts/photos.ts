@@ -543,8 +543,7 @@ async function build(entry: Entry, previous: Record<string, string> | null): Pro
     cover: entry.cover,
     alt: altFor(entry),
   };
-  return { photo, regenerated,
-    signature };
+  return { photo, regenerated, signature };
 }
 
 // ---------------------------------------------------------------------------
