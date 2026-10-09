@@ -21,9 +21,9 @@ export const series: Series[] = [
     lede: "Performances, panels, and the rooms they happen in.",
   },
   {
-    slug: "product",
-    name: "Product",
-    lede: "Things, lit on purpose. Studio and on location.",
+    slug: "commercial",
+    name: "Commercial",
+    lede: "Product, food, and brand work. Lit on purpose, studio or on location.",
   },
   {
     slug: "sports",

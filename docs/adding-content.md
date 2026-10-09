@@ -78,7 +78,7 @@ photos/                      ← gitignored; originals stay on your machine
       cover.jpg              ← the cover (the gallery card)
       2026_05-EK_01.jpg ...  ← the rest, shown in filename order
     headshot-01.jpg          ← a photo on its own = a one-photo shoot
-  events/  product/  sports/  travel/  aerial/
+  events/  commercial/  sports/  travel/  aerial/
 ```
 
 **Home page.** Drop photos into `photos/home/` and run `npm run photos`.

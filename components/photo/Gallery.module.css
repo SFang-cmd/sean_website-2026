@@ -22,30 +22,31 @@
   scroll-margin-top: 48px;
 }
 
-/* Grid view: uniform cells, fast to scan. Portraits are 4:5 in one column;
-   a landscape spans two columns and is pinned to the portrait row height
-   (computed from the grid's own width via container units, so a row of only
-   landscapes keeps the same height). Dense packing back-fills the slot a
-   wrapped landscape leaves behind with the next portrait, so rows stay flush;
-   that portrait is the one item that can appear out of sequence. */
+/* Grid view: a 6-unit row. Portraits take 2 units (a third) at 4:5; a
+   landscape takes 4 beside a portrait (pinned to the portrait row height),
+   3 beside another landscape, or 6 alone (both at their 3:2). Rows are
+   packed server-side (Gallery.tsx packRows), so DOM order is visual order
+   and the CSS only applies spans. Dense packing is kept for the tablet
+   grid, where the rows re-flow. */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-flow: row dense;
   gap: 20px;
   container-type: inline-size;
 }
 .figure {
   margin: 0;
+  grid-column: span 2;
 }
-/* Landscapes alternate columns 1–2 and 2–3 within a series (see
-   withLandSides), so the wide frames stagger down the page like masonry.
-   Both are pinned; dense packing fills the single column beside each. */
-.figure.land {
-  grid-column: 1 / span 2;
+.figure.l4 {
+  grid-column: span 4;
 }
-.figure.landRight {
-  grid-column: 2 / span 2;
+.figure.l3 {
+  grid-column: span 3;
+}
+.figure.l6 {
+  grid-column: span 6;
 }
 .cell {
   position: relative;
@@ -55,9 +56,15 @@
   aspect-ratio: 4 / 5;
   background: var(--line);
 }
+/* Beside a portrait: the portrait cell's height (two units + one gap wide, 4:5). */
 .cell.land {
   aspect-ratio: auto;
-  height: calc(1.25 * (100cqw - 40px) / 3);
+  height: calc(1.25 * (2 * (100cqw - 100px) / 6 + 20px));
+}
+.l3 .cell,
+.l6 .cell {
+  height: auto;
+  aspect-ratio: 3 / 2;
 }
 .cell img {
   object-fit: cover;
@@ -120,17 +127,19 @@
   .main {
     padding-top: 0;
   }
+  /* Two portraits per row, or one landscape full width at its own ratio. */
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
-  /* Two columns: no third column to stagger into. */
-  .figure.land,
-  .figure.landRight {
-    grid-column: span 2;
+  .figure.l3,
+  .figure.l4,
+  .figure.l6 {
+    grid-column: span 4;
   }
   .cell.land {
-    height: calc(1.25 * (100cqw - 12px) / 2);
+    height: auto;
+    aspect-ratio: 3 / 2;
   }
 }
 @media (max-width: 599px) {
@@ -138,13 +147,10 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  /* One column: nothing to align to, so landscapes keep their own ratio. */
-  .figure.land,
-  .figure.landRight {
+  .figure,
+  .figure.l3,
+  .figure.l4,
+  .figure.l6 {
     grid-column: auto;
-  }
-  .cell.land {
-    height: auto;
-    aspect-ratio: 3 / 2;
   }
 }

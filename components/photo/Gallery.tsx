@@ -12,9 +12,15 @@ import styles from "./Gallery.module.css";
 
 export type GallerySection = Series & { photos: Photo[] };
 
-const GRID_SIZES = "(max-width: 599px) calc(100vw - 56px), (max-width: 800px) 50vw, (max-width: 1400px) 30vw, 420px";
-// A landscape spans two grid columns (full width below 801px).
-const GRID_LAND_SIZES = "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 60vw, 860px";
+// `sizes` per span (see packRows): a portrait is a third of the row, a paired
+// landscape two thirds, a half landscape a half, a lone one the whole row;
+// below 801px landscapes are full width and portraits half.
+const SIZES: Record<Span, string> = {
+  2: "(max-width: 599px) calc(100vw - 56px), (max-width: 800px) 50vw, (max-width: 1400px) 30vw, 420px",
+  3: "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 45vw, 640px",
+  4: "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 60vw, 860px",
+  6: "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 90vw, 1300px",
+};
 const EDITORIAL_SIZES = "(max-width: 815px) calc(100vw - 56px), 760px";
 
 /**
@@ -93,13 +99,13 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
             </h2>
             <p className="mb-7 max-w-[52ch] text-muted">{s.lede}</p>
             <div className={styles.grid}>
-              {withLandSides(items.get(s.slug) ?? []).map(([item, side]) =>
+              {packRows(items.get(s.slug) ?? []).map(([item, span]) =>
                 item.kind === "shoot" && item.photos.length > 1 ? (
-                  <ShootCard key={`shoot-${item.slug}`} item={item} view={view} open={open} side={side} />
+                  <ShootCard key={`shoot-${item.slug}`} item={item} view={view} open={open} span={span} />
                 ) : item.kind === "shoot" ? (
-                  <Cell key={item.cover.id} photo={item.cover} view={view} open={open} side={side} />
+                  <Cell key={item.cover.id} photo={item.cover} view={view} open={open} span={span} />
                 ) : (
-                  <Cell key={item.photo.id} photo={item.photo} view={view} open={open} side={side} />
+                  <Cell key={item.photo.id} photo={item.photo} view={view} open={open} span={span} />
                 ),
               )}
             </div>
@@ -114,45 +120,86 @@ export function Gallery({ sections }: { sections: GallerySection[] }) {
 
 type OpenFn = (id: string, from?: HTMLElement) => void;
 
-/** Which two columns a landscape takes in the grid; portraits are always "auto". */
-type LandSide = "left" | "right" | "auto";
+/** Columns of the 6-unit grid an item takes: portrait 2, landscape 4 beside
+    a portrait, 3 beside another landscape, 6 alone. */
+type Span = 2 | 3 | 4 | 6;
+
+const coverOf = (item: GalleryItem) => (item.kind === "shoot" ? item.cover : item.photo);
+const isLand = (item: GalleryItem) => coverOf(item).width > coverOf(item).height;
 
 /**
- * Landscapes alternate sides within a series — the first spans columns 1–2,
- * the next 2–3, and so on — so the grid staggers like masonry instead of
- * stacking every wide frame on the left. Counted here (server render) rather
- * than with `:nth-child(n of .land)` so it doesn't depend on selector support.
+ * Pack a series into full rows (server render, so the whole section is
+ * known). Rows are: portrait + landscape (the landscape two thirds, sides
+ * alternating), three portraits, two landscapes at half width, or one
+ * landscape full width. Landscapes stay near their CSV position; a
+ * portrait row is only taken when enough portraits remain to still pair
+ * with every later landscape, so nothing is left to sit alone with a hole
+ * beside it. The only short row possible is a final one of portraits.
+ * Returns the items in visual order with their spans; the CSS just applies
+ * the spans.
  */
-function withLandSides(list: GalleryItem[]): [GalleryItem, LandSide][] {
-  let n = 0;
-  return list.map((item) => {
-    const p = item.kind === "shoot" ? item.cover : item.photo;
-    if (p.width <= p.height) return [item, "auto"];
-    return [item, n++ % 2 === 0 ? "left" : "right"];
-  });
+function packRows(list: GalleryItem[]): [GalleryItem, Span][] {
+  const out: [GalleryItem, Span][] = [];
+  const rest = [...list];
+  const takeFirst = (land: boolean): GalleryItem | undefined => {
+    const i = rest.findIndex((it) => isLand(it) === land);
+    return i < 0 ? undefined : rest.splice(i, 1)[0];
+  };
+  let pairs = 0;
+  while (rest.length) {
+    const x = rest.shift()!;
+    const portraitsLeft = rest.filter((it) => !isLand(it)).length + (isLand(x) ? 0 : 1);
+    const landsLeft = rest.filter(isLand).length + (isLand(x) ? 1 : 0);
+    if (isLand(x)) {
+      const p = takeFirst(false);
+      if (p) {
+        // Alternate which side the landscape sits on.
+        if (pairs++ % 2 === 0) out.push([x, 4], [p, 2]);
+        else out.push([p, 2], [x, 4]);
+      } else {
+        const l = takeFirst(true);
+        if (l) out.push([x, 3], [l, 3]);
+        else out.push([x, 6]);
+      }
+    } else if (landsLeft > 0 && portraitsLeft - 3 < landsLeft) {
+      // Not enough portraits to spare three: pair this one with the next landscape.
+      const l = takeFirst(true)!;
+      if (pairs++ % 2 === 0) out.push([l, 4], [x, 2]);
+      else out.push([x, 2], [l, 4]);
+    } else {
+      out.push([x, 2]);
+      for (let k = 0; k < 2; k++) {
+        const p = takeFirst(false);
+        if (p) out.push([p, 2]);
+      }
+    }
+  }
+  return out;
 }
 
-function landClass(side: LandSide): string {
-  return side === "auto" ? "" : `${styles.land} ${side === "right" ? styles.landRight : ""}`;
+const SPAN_CLASS: Record<Span, string> = { 2: "", 3: styles.l3, 4: styles.l4, 6: styles.l6 };
+
+function spanClass(span: Span): string {
+  return span === 2 ? "" : `${styles.land} ${SPAN_CLASS[span]}`;
 }
 
 function Cell({
   photo: p,
   view,
   open,
-  side,
+  span,
 }: {
   photo: Photo;
   view: GalleryView;
   open: OpenFn;
-  side: LandSide;
+  span: Span;
 }) {
   const land = p.width > p.height;
-  const sizes = view === "editorial" ? EDITORIAL_SIZES : land ? GRID_LAND_SIZES : GRID_SIZES;
+  const sizes = view === "editorial" ? EDITORIAL_SIZES : SIZES[span];
   return (
     <figure
       id={p.id}
-      className={`${styles.figure} ${landClass(side)}`}
+      className={`${styles.figure} ${spanClass(span)}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
@@ -183,22 +230,22 @@ function ShootCard({
   item,
   view,
   open,
-  side,
+  span,
 }: {
   item: Extract<GalleryItem, { kind: "shoot" }>;
   view: GalleryView;
   open: OpenFn;
-  side: LandSide;
+  span: Span;
 }) {
   const { cover: p, photos, slug } = item;
   const peek = photos.find((x) => x.id !== p.id);
   const land = p.width > p.height;
-  const sizes = view === "editorial" ? EDITORIAL_SIZES : land ? GRID_LAND_SIZES : GRID_SIZES;
+  const sizes = view === "editorial" ? EDITORIAL_SIZES : SIZES[span];
   return (
     <figure
       id={p.id}
       data-shoot={slug}
-      className={`${styles.figure} ${styles.shoot} ${landClass(side)}`}
+      className={`${styles.figure} ${styles.shoot} ${spanClass(span)}`}
       style={{ "--ar": `${p.width} / ${p.height}` } as React.CSSProperties}
     >
       <button
