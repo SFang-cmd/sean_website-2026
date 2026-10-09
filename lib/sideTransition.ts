@@ -252,7 +252,14 @@ export interface WaveOptions {
   origin: { x: number; y: number };
   arriving: Side;
   /** Performs the route change; resolves once the arriving route is in the DOM. */
-  navigate: () => Promise<void>;
+  navigate?: () => Promise<void>;
+  /**
+   * Absolute URL to load instead of a client navigation (the door out of
+   * the photos host alias, where "/" is rewritten back onto B). The wave
+   * then reveals the arriving side's background rather than its content,
+   * holds that background, and loads the URL once the last tile is gone.
+   */
+  hard?: string;
 }
 
 /** Elements never worth cloning into the overlay. */
@@ -318,7 +325,7 @@ const SLOW_FRAMES_TO_BAIL = 6;
  * page has mounted, the holes show its background; after, its real content.
  * Everything it adds to the DOM is removed when it ends.
  */
-export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions): Promise<void> {
+export async function runShrinkWave({ origin, arriving, navigate, hard }: WaveOptions): Promise<void> {
   if (inFlight) return;
   inFlight = true;
 
@@ -330,8 +337,8 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
   const arrivingTokens = readSideTokens(arriving);
   const color = signatureColor(arriving, arrivingTokens);
 
-  // Under the overlay: the arriving background (until the new route is in),
-  // then only the dot flashes.
+  // Under the overlay: the arriving background (until the new route is in,
+  // or for the whole wave on a cross-host door), then only the dot flashes.
   const canvas = makeCanvas(width, height);
   canvas.style.zIndex = String(OVERLAY_Z - 1);
   document.body.appendChild(canvas);
@@ -342,6 +349,10 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
   overlay.style.clipPath = clipPathAt(wave, 0);
 
   let cleaned = false;
+  // A cross-host door keeps the (fully clipped) copy and the background
+  // canvas up until the new document replaces this one: `pagehide` cleans
+  // up, or the safety timer does if the load never starts.
+  let holding = false;
   const cleanup = () => {
     if (cleaned) return;
     cleaned = true;
@@ -365,13 +376,14 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
     // Give the ripple a short head start first: mounting the arriving page
     // blocks painting for a beat, and it reads better once the wave is
     // visibly underway than as a hitch at the very start.
-    const nav = new Promise<void>((resolve) =>
-      setTimeout(resolve, theme.timing.sideNavHeadStartMs),
-    )
-      .then(navigate)
-      .then(() => {
-        arrived = true;
-      });
+    const nav =
+      hard || !navigate
+        ? Promise.resolve()
+        : new Promise<void>((resolve) => setTimeout(resolve, theme.timing.sideNavHeadStartMs))
+            .then(navigate)
+            .then(() => {
+              arrived = true;
+            });
     await new Promise<void>((resolve) => {
       // Frame time, not wall time: a stalled frame (the arriving page laying
       // out, image decode) advances the wave by at most one short step, and
@@ -391,7 +403,13 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
           overlay.style.clipPath = "none";
           overlay.style.transition = `opacity ${theme.timing.sideFadeMs}ms ease`;
           overlay.style.opacity = "0";
-          if (ctx) ctx.clearRect(0, 0, width, height);
+          if (ctx) {
+            ctx.clearRect(0, 0, width, height);
+            if (hard) {
+              ctx.fillStyle = arrivingTokens.bg;
+              ctx.fillRect(0, 0, width, height);
+            }
+          }
           setTimeout(resolve, theme.timing.sideFadeMs);
           return;
         }
@@ -403,10 +421,22 @@ export async function runShrinkWave({ origin, arriving, navigate }: WaveOptions)
       requestAnimationFrame(frame);
     });
     await nav;
+    if (hard) {
+      // The copy is clipped to nothing; keep the arriving background under
+      // it (a cross-origin load has no paint holding, so the canvas is what
+      // covers the gap until the new document's first paint).
+      if (ctx) {
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = arrivingTokens.bg;
+        ctx.fillRect(0, 0, width, height);
+      }
+      holding = true;
+      window.location.assign(hard);
+    }
   } catch {
     /* the route change still happened; just make sure nothing is left behind */
   } finally {
-    cleanup();
+    if (!holding) cleanup();
   }
 }
 

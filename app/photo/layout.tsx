@@ -14,5 +14,12 @@ export const metadata: Metadata = {
  * Instrument Serif itself is loaded in the root layout (A's door uses it too).
  */
 export default function PhotoLayout({ children }: { children: React.ReactNode }) {
-  return <div className="b min-h-screen bg-bg text-fg">{children}</div>;
+  return (
+    <>
+      {/* On the photos host alias the door to A is a cross-origin load; warm
+          the connection so the wave lands on a page that's already coming. */}
+      <link rel="preconnect" href={site.url} />
+      <div className="b min-h-screen bg-bg text-fg">{children}</div>
+    </>
+  );
 }

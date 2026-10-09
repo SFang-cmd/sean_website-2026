@@ -27,7 +27,11 @@ The site has two faces in one Next app:
   Paper, no grid, no accent, Instrument Serif. Lives in `app/photo/` with
   its own layout, which scopes the B token set via the `.b` class.
   Canonical host `photos.sean-fang.com` is a rewrite onto `/photo/*`
-  (`next.config.ts`).
+  (`next.config.ts`; the alias hosts, including the local stand-in
+  `photos.localhost`, live in `lib/host.ts`). On the alias, B's own links
+  drop the `/photo` prefix (`usePhotoBase`) and the door to A is a full
+  cross-origin load behind the shrink wave (`SideLink` + `runShrinkWave`'s
+  `hard` option), since "/" there is rewritten back onto B.
 
 The root `app/layout.tsx` only sets fonts and metadata. Plan and decisions:
 `docs/plan-two-sides.md`; visual prototypes: `docs/prototypes/`.

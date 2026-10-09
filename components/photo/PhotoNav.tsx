@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { site } from "@/content/site";
+import { usePhotoBase } from "@/lib/host";
 import { SideLink } from "@/components/effects/SideFlip";
 
 /**
@@ -10,14 +13,16 @@ import { SideLink } from "@/components/effects/SideFlip";
 const BACK_LABEL = "on the clock";
 
 /**
- * B chrome: name in serif (→ /photo), then Gallery, Work with me, and the
- * low-key door back to A. `blend` is the home variant: fixed over the
+ * B chrome: name in serif (→ B home), then Gallery, Work with me, and the
+ * low-key door back to A. Links are host-aware (lib/host.ts): on the photos
+ * host alias they drop the `/photo` prefix so the address bar stays clean. `blend` is the home variant: fixed over the
  * streams, white text in `mix-blend-mode: difference`, so it reads dark on
  * paper, light on charcoal, and inverted over whatever image is passing
  * under it.
  */
 export function PhotoNav({ blend = false }: { blend?: boolean }) {
   const link = "whitespace-nowrap text-[13px] underline-offset-4 hover:underline";
+  const base = usePhotoBase();
   return (
     <header
       className={
@@ -26,15 +31,15 @@ export function PhotoNav({ blend = false }: { blend?: boolean }) {
           : "flex items-baseline justify-between border-b border-line px-7 py-5"
       }
     >
-      <Link href="/photo" className="whitespace-nowrap font-serif text-[22px] leading-none">
+      <Link href={base || "/"} className="whitespace-nowrap font-serif text-[22px] leading-none">
         {site.name}
       </Link>
       <nav className="flex items-baseline gap-6">
-        <Link href="/photo/gallery" className={link}>
+        <Link href={`${base}/gallery`} className={link}>
           Gallery
         </Link>
         {/* Hidden on phones: it's a section a scroll away, and the row can't fit four items. */}
-        <Link href="/photo#work" className={`${link} hidden sm:inline`}>
+        <Link href={`${base || "/"}#work`} className={`${link} hidden sm:inline`}>
           Work with me
         </Link>
         <SideLink
