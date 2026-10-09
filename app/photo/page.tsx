@@ -22,11 +22,10 @@ export default function PhotoHome() {
       <main>
         <header className="flex min-h-[92vh] flex-col justify-end px-7 pb-12">
           <h1 className="max-w-[14ch] font-serif text-[clamp(40px,7vw,96px)] leading-[0.98] tracking-[-0.01em]">
-            Pictures of people, mostly.
+            Your resident wallflower.
           </h1>
           <p className="mt-6 max-w-[44ch] text-muted">
-            Sean Fang, Philadelphia. Graduation portraits, headshots, events, and the occasional
-            drone flight. Scroll.
+            Sean Fang. Here for this moment, and the one right after it. Scroll.
           </p>
         </header>
 
@@ -38,8 +37,8 @@ export default function PhotoHome() {
         >
           <h2 className="font-serif text-[clamp(32px,5vw,64px)] leading-none">Work with me</h2>
           <p className="mt-4 max-w-[44ch] text-muted">
-            Available for portraits, events, and commissioned work. The fastest way to reach me
-            is email:{" "}
+            Available for commissions, events, and whatever you have in mind. The fastest way to
+            reach me is email:{" "}
             <a href={`mailto:${workWithMe.email}`} className="text-fg underline underline-offset-4">
               {workWithMe.email}
             </a>
