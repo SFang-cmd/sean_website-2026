@@ -43,14 +43,6 @@ const jitterS = (i: number) => 0.85 + (((i * 53) % 100) / 100) * 0.3;
 
 type Mode = "css" | "raf";
 
-function Caption({ photo }: { photo: Photo }) {
-  return (
-    <figcaption className="mt-1.5 whitespace-nowrap text-[11px] text-muted">
-      <i className="font-serif text-[14px] italic text-fg">{photo.title}</i> · {photo.place} ·{" "}
-      {photo.year}
-    </figcaption>
-  );
-}
 
 export function Streams({ photos }: { photos: Photo[] }) {
   const plain = usePlainEnabled();
@@ -78,7 +70,6 @@ function PlainList({ photos }: { photos: Photo[] }) {
                 priority={i < 2}
                 className="h-auto w-full"
               />
-              <Caption photo={p} />
             </figure>
           </li>
         ))}
@@ -224,7 +215,6 @@ function River({ photos }: { photos: Photo[] }) {
             blurDataURL={p.blur}
             priority={i < 2}
           />
-          <Caption photo={p} />
         </figure>
       ))}
     </section>
