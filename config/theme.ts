@@ -38,6 +38,42 @@ export const theme = {
    * runs the A↔B shrink wave (SideFlip). Flicker stops once the visitor has
    * used the door (localStorage `door-found`).
    */
+  /**
+   * The B home river. `layout: "field"` is the depth field (lib/homeField.ts:
+   * vertical-only motion, depth drives size/speed/stacking, blue-noise
+   * placement, coverage cap, screen-time fill); `"streams"` is the earlier
+   * three-lane 18° drift, kept for comparison during the feedback round.
+   */
+  home: {
+    layout: "field" as "field" | "streams",
+    field: {
+      /** Desktop/tablet knobs (see FieldKnobs). Values are the prototype defaults Sean approved. */
+      desktop: { fast: 1.5, slow: 0.6, big: 42, small: 18, fill: 0.45, band: 0.7, cap: 0.2, candidates: 80, seeds: 12 },
+      /**
+       * Phones: shots share one column, so passes can't dodge sideways; the
+       * cap only holds with smaller shots and a lower fill (sweep at 400×800:
+       * 40–64vw at fill 0.3 → worst 20%, fill-min 32%; 50–82vw → worst 70%).
+       */
+      phone: { fast: 1.5, slow: 0.6, big: 64, small: 40, fill: 0.3, band: 0.7, cap: 0.2, candidates: 60, seeds: 6 },
+    },
+    /** The three-lane drift (lib/homeStreams.ts). Lane `speed` is a lag: 1 = page speed, 0.86 = climbs 14% faster. */
+    streams: {
+      angle: 18,
+      phoneAngle: 12,
+      /** Base vertical spacing, shared across streams; Sean preferred 640 over 460 with real photos. */
+      stepY: 640,
+      // Lanes sit apart (22% / 50% / 78%) and images are ~30vw so the streams
+      // drift without covering each other.
+      lanes: [
+        { angleMul: 1.0, lane: 0.22, speed: 1.0 },
+        { angleMul: -1.0, lane: 0.78, speed: 0.86 },
+        { angleMul: 0.5, lane: 0.5, speed: 0.74 },
+      ],
+      /** Phones: a single centred stream (three lanes can't fit without stacking). */
+      phoneLanes: [{ angleMul: 1.0, lane: 0.5, speed: 1.0 }],
+    },
+  },
+
   door: {
     /** Highlight block height in cells, centred on the link (text row ± 1). */
     rows: 3,

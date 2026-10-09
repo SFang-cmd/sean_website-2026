@@ -116,3 +116,10 @@ fetching anywhere; the only client JS is the effects.
   same 24px grid as the backdrop, which is why they always align. On
   scroll/resize an active highlight releases itself rather than chasing
   the element.
+
+### B home: pluggable layouts
+
+`components/photo/Streams.tsx` owns the motion only (a CSS scroll-driven transform per shot, rAF fallback, progressive mount, lightbox buttons). Placement is a pure function behind the `homeLayouts` registry in `lib/homeLayout.ts`: input = photo dimensions, viewport, river top, phone flag; output = per-shot box, z, speed (1 = page speed) and sideways drift, plus the river height. Laid out for the whole set, not just the mounted shots, so the first screenful doesn't move when the rest mounts. Pick with `theme.home.layout`, or `?home=<name>` on the URL for side-by-side QA.
+
+- `field` (`lib/homeField.ts`, default while prototyping): straight-up motion; stratified shuffled depths drive size, speed and stacking; screen-time entry (the next shot enters when projected fill drops under the target); blue-noise x (best candidate) scored against the in-band coverage cap; a few seeds, best worst-case kept, readout on `data-field`. ~3 ms per seed on desktop; nothing per frame.
+- `streams` (`lib/homeStreams.ts`): the original three interleaved lanes crossing at ~18°, knobs in `theme.home.streams`.
