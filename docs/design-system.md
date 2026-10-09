@@ -41,7 +41,16 @@ Fonts: **Geist Sans** (body) and **Geist Mono** (metadata: years, labels,
 counters, captions), via the `geist` package. Mono is the "instrument
 readout" voice — anything that pretends to be model output uses it.
 
-Dark mode is pure `prefers-color-scheme`; there is no toggle by design.
+Dark mode follows `prefers-color-scheme` by default, with a manual override
+shared by both sides: the footer `ThemeToggle` (`lib/themeStore.ts`) cycles
+system → light → dark and writes `<html data-theme="light|dark">` (removed
+for system), persisted in localStorage as `color-scheme`. In CSS an explicit
+attribute always wins: dark tokens apply under `:root[data-theme="dark"]`
+and, via the media query, under `:root:not([data-theme="light"])` (same
+pair for `.b`), with `color-scheme` set alongside so form controls match.
+An inline script in `app/layout.tsx` applies the stored choice before first
+paint. Every effect reads tokens through CSS variables, so none needs to
+know about the choice; the lightbox surround stays `#141414` in all schemes.
 
 ## The grid
 

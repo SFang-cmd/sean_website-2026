@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+/*
+ * Colour scheme. Light is the base. Dark applies when the visitor forced it
+ * (`<html data-theme="dark">`, set by lib/themeStore.ts and the inline
+ * no-flash script in app/layout.tsx) or when the OS prefers dark and the
+ * visitor hasn't forced light. A media query can't join a plain selector
+ * list, so each dark token set appears twice (media branch + attribute
+ * branch) — keep the pairs identical. `color-scheme` follows so scrollbars
+ * and form controls match.
+ */
 :root {
+  color-scheme: light;
   --bg: #fcfcfa;
   --fg: #191918;
   --muted: #6b6b68;
@@ -12,7 +22,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #121211;
     --fg: #ececea;
     --muted: #a0a09b;
@@ -22,12 +33,24 @@
     --line: rgba(140, 140, 140, 0.3);
   }
 }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211;
+  --fg: #ececea;
+  --muted: #a0a09b;
+  --faint: #6e6e69;
+  --accent: #378add;
+  --grid-line: rgba(140, 140, 140, 0.15);
+  --line: rgba(140, 140, 140, 0.3);
+}
 
 /*
  * B side (photography) token set, scoped to `.b` (app/photo/layout.tsx).
  * Paper, near-black text, NO accent — the photos are the color. In dark
  * mode B is a neutral charcoal, never tinted. `--accent` is kept equal to
  * `--fg` so any shared component that uses it degrades to plain text color.
+ * The lightbox surround (components/photo/Lightbox.tsx) is a fixed #141414
+ * in every scheme and does not use these tokens.
  */
 .b {
   --bg: #f7f5f0;
@@ -39,7 +62,7 @@
   --line: rgba(20, 19, 17, 0.14);
 }
 @media (prefers-color-scheme: dark) {
-  .b {
+  :root:not([data-theme="light"]) .b {
     --bg: #141414;
     --fg: #ecebe7;
     --muted: #9a978f;
@@ -48,6 +71,15 @@
     --accent-rgb: 236, 235, 231;
     --line: rgba(236, 235, 231, 0.16);
   }
+}
+:root[data-theme="dark"] .b {
+  --bg: #141414;
+  --fg: #ecebe7;
+  --muted: #9a978f;
+  --faint: #6f6d67;
+  --accent: #ecebe7;
+  --accent-rgb: 236, 235, 231;
+  --line: rgba(236, 235, 231, 0.16);
 }
 
 @theme inline {

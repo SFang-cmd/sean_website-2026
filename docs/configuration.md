@@ -8,6 +8,7 @@
 | `flags.cursorTracker` | `true` | Default for the cursor-following patch. Visitors override via the footer toggle (localStorage key `patch-tracker`). |
 | `flags.linkHighlighting` | `true` | Default for the patch-wave link highlights. Footer toggle, localStorage key `patch-highlighting`. |
 | `flags.plainMode` | `false` | Default for **plaintext mode** — the master switch that disables every dynamic flourish at once (cursor tracker, highlights, hero diffusion + `t=` counter, footer caret). Keeps the static grid. Footer toggle, localStorage key `plain-mode`. |
+| `flags.colorScheme` | `"system"` | Default colour scheme: `system` follows `prefers-color-scheme`; `light` / `dark` force one. Visitors override via the theme toggle in either footer (localStorage key `color-scheme`); the choice becomes `<html data-theme>` and the inline script in `app/layout.tsx` applies it before first paint. |
 | `timing.waveMsPerCell` | `45` | Highlight ripple pace — delay per cell of distance from cursor entry. Lower = snappier, higher = more liquid. |
 | `timing.minWaveMs` | `180` | Minimum total ripple spread so tiny links still visibly wave. |
 | `timing.diffusionSteps` | `24` | Hero reveal step count (the `t=` counter starts here). |
@@ -26,14 +27,16 @@
 
 ## Accent color
 
-Lives in `app/globals.css`, in **three** places that must stay in sync:
+Lives in `app/globals.css`, in **four** places that must stay in sync:
 
 1. `--accent` under `:root` (light-mode text/link color, `#185fa5`)
 2. `--accent` under the dark-mode media query (`#378add`)
-3. `--accent-rgb` (`55, 138, 221`) — used for translucent patch fills;
+3. `--accent` under `:root[data-theme="dark"]` (the forced-dark twin of 2 —
+   every dark token block exists twice, media branch and attribute branch)
+4. `--accent-rgb` (`55, 138, 221`) — used for translucent patch fills;
    one mid-brightness value works for both modes.
 
-To try a different accent, change those three lines. Candidates already
+To try a different accent, change those four lines. Candidates already
 evaluated in context: teal `#1d9e75`, coral `#d85a30` (see
 design-system.md for why blue won).
 

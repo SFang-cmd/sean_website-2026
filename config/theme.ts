@@ -24,6 +24,12 @@ export const theme = {
      * footer caret). Visitors can override it with the footer toggle.
      */
     plainMode: false,
+    /**
+     * Default colour scheme: "system" follows `prefers-color-scheme`;
+     * "light" / "dark" force one. Visitors can override it with the theme
+     * toggle in either side's footer (localStorage key `color-scheme`).
+     */
+    colorScheme: "system" as "system" | "light" | "dark",
   },
 
   /**
