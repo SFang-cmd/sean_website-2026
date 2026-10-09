@@ -36,6 +36,8 @@ const STREAMS = [
 ];
 const ANGLE = 18;
 const PHONE_ANGLE = 12;
+/** Below PHONE_MAX: a single centred stream (three lanes can't fit without stacking). */
+const PHONE_STREAMS = [{ angleMul: +1.0, lane: 0.5, speed: 1.0 }];
 const PHONE_MAX = 767; // px; below this the streams go ~90vw and 12°
 const STEP_Y = 640; // base vertical spacing, shared across streams
 const SIZES = "(max-width: 767px) 90vw, (max-width: 1225px) 56vw, 690px";
@@ -107,7 +109,6 @@ function River({ photos }: { photos: Photo[] }) {
     if (!mode) return;
     const river = riverRef.current!;
     const shots = shotRefs.current;
-    const n = STREAMS.length;
     let last = { w: 0, h: 0 };
 
     const apply = (scroll: number) => {
@@ -122,6 +123,8 @@ function River({ photos }: { photos: Photo[] }) {
       const vh = window.innerHeight;
       const phone = vw <= PHONE_MAX;
       const angle = phone ? PHONE_ANGLE : ANGLE;
+      const defs = phone ? PHONE_STREAMS : STREAMS;
+      const n = defs.length;
       const riverTop = river.getBoundingClientRect().top + window.scrollY;
       const tans: number[] = [];
       const lags: number[] = [];
@@ -136,7 +139,7 @@ function River({ photos }: { photos: Photo[] }) {
       shots.forEach((el, i) => {
         if (!el) return;
         const p = photos[i];
-        const def = STREAMS[i % n];
+        const def = defs[i % n];
         const tan = Math.tan((angle * def.angleMul * Math.PI) / 180);
         const speed = def.speed;
         const laneX = vw * def.lane;
@@ -144,10 +147,10 @@ function River({ photos }: { photos: Photo[] }) {
         // Size by orientation so a landscape has roughly the same visual mass
         // as a portrait (otherwise landscapes read as thumbnails).
         const w = phone
-          ? vw * 0.9 * (0.92 + ((jitterS(i) - 0.85) / 0.3) * 0.08)
+          ? vw * (landscape ? 0.92 : 0.8) * (0.96 + ((jitterS(i) - 0.85) / 0.3) * 0.04)
           : (landscape ? Math.min(vw * 0.36, 540) : Math.min(vw * 0.3, 440)) * jitterS(i);
         const h = (w * p.height) / p.width;
-        const gap = 120 + jitterY(i) * 80;
+        const gap = phone ? 48 + jitterY(i) * 40 : 120 + jitterY(i) * 80;
         const top = Math.max(y, streamBottom[i % n] + gap);
         // scrollY at which this shot sits ~40% down the viewport, given that
         // it moves by scroll·(speed − 1) on top of the page's own scroll.
