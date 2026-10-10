@@ -10399,6 +10399,734 @@
     "alt": "Harbours in Hamburg, Hamburg, Germany, 2025 (6 of 6)"
   },
   {
+    "id": "2025-06-16-usa-sf-2025-06-sf-01",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_01.jpg",
+    "width": 2262,
+    "height": 3393,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-01-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-01-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-01-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-01-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAWAQEBAQAAAAAAAAAAAAAAAAAFAgH/2gAMAwEAAhADEAAAAFq0IEzeisuJ5ZUGpbRmkZ//xAAiEAACAgEDBAMAAAAAAAAAAAABAgADEQQFEhMiMVEhI3H/2gAIAQEAAT8A4RMvnKFf2cIa5pE+T9ZXKA+c5nTg3KviSyYmgsSuzvdu5AO73LN20NblS5JHoZjABCJxtKBxYQCcY8ynahdWHyDmf//EABoRAAICAwAAAAAAAAAAAAAAAAABAiEDEhT/2gAIAQIBAT8Ac7RuTyuDs6j/xAAbEQEBAAEFAAAAAAAAAAAAAAACAAEREhMiUf/aAAgBAwEBPwDA6q2wARzpcA9v/9k=",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": true,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (1 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-02",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_02.jpg",
+    "width": 6000,
+    "height": 4000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-02-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-02-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-02-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-02-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-02-2400.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-02-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAE74VYX/xAAhEAACAQMFAAMAAAAAAAAAAAABAgMAEiEEESIxYVFikv/aAAgBAQABPwBZ8G4lt1t4jFEosbsAx4Iv5pNSXUPZ37R0g6R7R8EbipoJZUCvIuPpRhlbLTZ8UCv/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/AIKYf//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AKf/2Q==",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (2 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-03",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_03.jpg",
+    "width": 3864,
+    "height": 5796,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-03-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-03-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-03-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAXAQADAQAAAAAAAAAAAAAAAAACAwUE/9oADAMBAAIQAxAAAADPQpU8EorDU8i5PamUK4qGv//EACMQAAIBBAIBBQEAAAAAAAAAAAECEQADBBIiMSEFExRBYYH/2gAIAQEAAT8AyNkK6z0ehNNar26zk5IdC3FjIMR5FG0vGfswK+NWRaNvTR38gzyNNdvWSmt1jB6LTS+o5IEFlP8AKfNTXmktWKkxdYyzdflag1//xAAcEQABAwUAAAAAAAAAAAAAAAABAAIRAxATIlH/2gAIAQIBAT8AZV2MlZR1Ngzb/8QAHREAAgIBBQAAAAAAAAAAAAAAAAECEQMTIlFhkf/aAAgBAwEBPwCePbGlyabJOaSst9eH/9k=",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (3 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-04",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_04.jpg",
+    "width": 4943,
+    "height": 3295,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-04-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-04-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-04-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-04-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-04-2400.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-04-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAL/2gAMAwEAAhADEAAAAGepLvipRYNn/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQRBRKRM1FTcaL/2gAIAQEAAT8AW/iK7hGeRQ1AeD6pb9MdI81FcvGzMowd2KivN8ioYwPRpRlVPcV//8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECBBESQv/aAAgBAgEBPwCNldZTNj//xAAYEQACAwAAAAAAAAAAAAAAAAAAARESUf/aAAgBAwEBPwCmEM//2Q==",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (4 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-05",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_05.jpg",
+    "width": 5621,
+    "height": 3747,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-05-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-05-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-05-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-05-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-05-2400.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-05-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAN0OlnKA6OqD/8QAHBAAAQQDAQAAAAAAAAAAAAAAAQACAxEEEiEx/9oACAEBAAE/AHmgsqWgVLIdypXmis2Yi+J879j4v//EABcRAAMBAAAAAAAAAAAAAAAAAAACERP/2gAIAQIBAT8AVoaH/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERL/2gAIAQMBAT8AkrMH/9k=",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (5 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-06",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_06.jpg",
+    "width": 3463,
+    "height": 5195,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-06-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-06-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-06-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMEBQYC/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMCBf/aAAwDAQACEAMQAAAA08Sqq1R0QsUfNRul8h6xRuP/xAAkEAACAgIBAwQDAAAAAAAAAAABAgMRAAQSISIyBUFRcYGRsf/aAAgBAQABPwCQY4wrm/6nMs8scb0qmvHF3tgcmEz/AJPL+5pTjZgV+Q5Do33kyxz7xRn4I0xtvgXjpFwdzL3I1Ba8lPvkO5HEpUxxv3XbA3ks7AMRFHatSnJJC2tBFwQ1ZB++tYbaiI0/Zz//xAAaEQEAAwADAAAAAAAAAAAAAAABAAIDETEy/9oACAECAQE/ADetXphoIJOVPMNLBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAgP/2gAIAQMBAT8AeSkiKTokG//Z",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (6 of 7)"
+  },
+  {
+    "id": "2025-06-16-usa-sf-2025-06-sf-07",
+    "file": "travel/2025_06-16_USA_SF/2025_06-SF_07.jpg",
+    "width": 3767,
+    "height": 5650,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-07-480.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-07-960.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2025-06-16-usa-sf-2025-06-sf-07-1600.avif",
+        "jpg": "/photos/2025-06-16-usa-sf-2025-06-sf-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADBf/EABcBAAMBAAAAAAAAAAAAAAAAAAACBAP/2gAMAwEAAhADEAAAACbmFLUmxtUafmyDYk5//8QAIhAAAgEEAQUBAQAAAAAAAAAAAQIDAAQRISISEzFRcrEj/9oACAEBAAE/AI+6FPMgbGBqrO/MM6wrjDnpOqyvreT+1JIeycDdWcoF5bIrEf05U+nf6NTxnoUA5pLZ0vrTR5MDUwxK/wBGnkmuZOb4CnSjxXXPGyFZn4bXfimnlY5YqT7xj8r/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIRAxIhUf/aAAgBAgEBPwDspN2WRxv01Z//xAAaEQEBAAIDAAAAAAAAAAAAAAABAAIDEiEx/9oACAEDAQE/AOgCSdgvlzxv/9k=",
+    "title": "Sunlit San Francisco",
+    "place": "San Francisco, USA",
+    "year": 2025,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2025_06-16_USA_SF",
+    "cover": false,
+    "alt": "Sunlit San Francisco, San Francisco, USA, 2025 (7 of 7)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-01",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_01.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-01-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-01-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-01-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAXAQADAQAAAAAAAAAAAAAAAAADBAUG/9oADAMBAAIQAxAAAADVXloTP1QwqI8yW05etITFRf8A/8QAJBABAQABAwMDBQAAAAAAAAAAAQIEAAMREzFBBRIUISNhcYH/2gAIAQEAAT8A3MjrYcZMUyicg9qNbPqmRfSHbs53OH8TrJdx3eZIo41u5PQio9qxQ3X81GadNqdiRK47+E1hxG7jwzfjh/ZoxryIX6Essa3fS79nE2CvOsZuJs5T7jrAH4vfu1pljbBppPOud1VEBXX/xAAcEQADAAIDAQAAAAAAAAAAAAABAgMAIQQRIjH/2gAIAQIBAT8AiaAEgjo4tfI0MpzLToyKy+W6+YttDWf/xAAZEQEAAwEBAAAAAAAAAAAAAAABAAIhA0H/2gAIAQMBAT8AuU9I89dYc6WBR0jz2f/Z",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": true,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (1 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-02",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_02.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-1600.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAA0rabIy4CuJ//xAAfEAACAgIBBQAAAAAAAAAAAAABAgADESESBDFBQnH/2gAIAQEAAT8Ar66ixVOSCfUjcF1eQAROYivy8AfIhLsw7aio2NWET//EABcRAAMBAAAAAAAAAAAAAAAAAAABEQL/2gAIAQIBAT8AumVn/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAISAf/aAAgBAwEBPwCVwlT/2Q==",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (2 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-03",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_03.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-03-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-03-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-03-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwUH/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAADXR+nYbCMMpDsVVTzWQXBn/8QAJRAAAQQBAwIHAAAAAAAAAAAAAQACAxEEBRIhBhMxQVJTYYGR/9oACAEBAAE/AMnp7GLJnwlzX1xzwstk8cjjIOSas/CMhHgAPpZWSIIXPFXYAtCDA1F0sT4mt3HfbDzuWXpDoJ3Mg07vx+Ti4rN1GCeLtMvdbSLCwJmsywLFOLrK3x+tv6tsfttQrg0Fa//EABwRAAIBBQEAAAAAAAAAAAAAAAABUQIEERMUIf/aAAgBAgEBPwCpZ8NY7hQzpUM//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAESIVH/2gAIAQMBAT8AXS0JYQf/2Q==",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (3 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-04",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_04.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-04-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-04-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-04-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIQAxAAAAC85R6lCYGmKs1uETQTkf8A/8QAIBAAAgEEAgMBAAAAAAAAAAAAAQIDAAQREiExFEFRcf/aAAgBAQABPwC2US7QlyolQpkd81Y2UttEEebfHA9CtKtXCSRvnhWBNJMrLt6/KEgbqlyIxjOdh1XkyKBmRyy9VLJNI2zgk4HysqUxjrmpZdE31HwUL2T2BX//xAAbEQABBAMAAAAAAAAAAAAAAAAAAQIRYRIhI//aAAgBAgEBPwBHQZ2Ro52f/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAECEgMRIVH/2gAIAQMBAT8AcdlBPpXJ5E//2Q==",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (4 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-05",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_05.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-05-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-05-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-05-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAGKvIWXLAkZtM9uTSZCkQX//xAAlEAACAQQABgIDAAAAAAAAAAABAgMABBEhBRITIiNBMVFhcaH/2gAIAQEAAT8AtUtigk6hb6xqllXI3uuINw+S48sneFAOCahnMEquG/a+zRvA6FFQJzDHNnJFNHCmmky3vFNa3Hzts7GBn+rSvHGBHMPIh7RvVRuwBH5PunvhA5ToL26yCRmrCeS66mMIoXVXEN4knLDKioFAAxX/xAAbEQACAwADAAAAAAAAAAAAAAABEQACEgMxUv/aAAgBAgEBPwA82w7Nw2ZJQlkupqvmf//EABwRAAEEAwEAAAAAAAAAAAAAAAEAAhExAxIhcf/aAAgBAwEBPwBuHTjaQBAtNmbU+r//2Q==",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (5 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-06",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_06.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-1600.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-06-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAACV2aBeiET/xAAgEAABBAIBBQAAAAAAAAAAAAABAAIDEQQUURMhM2GB/9oACAEBAAE/AI2dQhuxQPKlhdG6mZII9FPfNfnafqGTLYPZOy5SbNLakPC//8QAFxEAAwEAAAAAAAAAAAAAAAAAEBEhMf/aAAgBAgEBPwCvR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8AP//Z",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (6 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-07",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_07.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-1600.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFA//EABcBAAMBAAAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAIrS1hpyGHP/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMABBESEyEUUSMyYf/aAAgBAQABPwCOG8MXyXARSPqoGTXhQOuFnwfZ6q4tuGUozA/o7rz54xodXUDADCjdmcohjVVDZ6q405n0XUes5r//xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIRISMxQf/aAAgBAgEBPwDJvgpVSdz/xAAaEQACAgMAAAAAAAAAAAAAAAABEgACESFB/9oACAEDAQE/AAmV7LUWxCjU/9k=",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (7 of 8)"
+  },
+  {
+    "id": "2024-06-1-portugal-lisbon-2024-06-lisbon-08",
+    "file": "travel/2024_06-1_Portugal_Lisbon/2024_06-Lisbon_08.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-480.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-960.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-1600.avif",
+        "jpg": "/photos/2024-06-1-portugal-lisbon-2024-06-lisbon-08-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAAA4csQmomtf//EACQQAAIBAgQHAQAAAAAAAAAAAAECAwAREhMUMQQFISIyQWKx/9oACAEBAAE/ANPDIRlT9lvW4NPy6OQkiYg/S2FRsY0CFdq1ZikbLQYMRIVutqfj5XHiv7SMSoNzX//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhIhUf/aAAgBAgEBPwBXxp5xlpH/xAAaEQACAgMAAAAAAAAAAAAAAAAAAgEREiFh/9oACAEDAQE/AGrcGK9P/9k=",
+    "title": "Lisbon in Lemon",
+    "place": "Lisbon · Cascais, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2024_06-1_Portugal_Lisbon",
+    "cover": false,
+    "alt": "Lisbon in Lemon, Lisbon · Cascais, Portugal, 2024 (8 of 8)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-01",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_01.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-01-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-01-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-01-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABgBAAIDAAAAAAAAAAAAAAAAAAECAAME/9oADAMBAAIQAxAAAAC9pC0re6RASM4owC0NGd//xAAnEAABAwIFAgcAAAAAAAAAAAABAgMRABIEISIxYRNBBRQVI0JRgf/aAAgBAQABPwBvxB/yzxWWuqmLO08xWAxjqg/11CxtN11esYX5BY/KNipBEQNjWk55aRvRUgxpScqYfCXlKWkmZ24p5xC2h3m3tlTLZW0k28bVNibztxvSGkrzIk8mabR7aJ+q/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECIRESYf/aAAgBAgEBPwBvFm3RkpWz/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AMYiP//Z",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": true,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (1 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-02",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_02.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-1600.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-02-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAAA6zMhgmkjgv8A/8QAIRAAAQMEAQUAAAAAAAAAAAAAAQACEQMEEhMFITFCUVL/2gAIAQEAAT8AwXIXWq3caRBdmGotu/sKve13h7pxluPT0jRbLzJMDsVvjwX/xAAWEQEBAQAAAAAAAAAAAAAAAAABAIH/2gAIAQIBAT8AWwv/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwAJ/9k=",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (2 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-03",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_03.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-1600.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/2gAMAwEAAhADEAAAAGPJHoEqiWMz/8QAIRABAAEEAgEFAAAAAAAAAAAAAQIAAwQhBRFiEhRBgZH/2gAIAQEAAT8AxuSlLEldvRPWGvKjkcrSkPhSjkcbo3L8q1qy7Xt6r3HgbAovoAQj91//xAAZEQACAwEAAAAAAAAAAAAAAAAAAgETQWH/2gAIAQIBAT8Almwu4f/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEVH/2gAIAQMBAT8AAsO3/9k=",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (3 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-04",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_04.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-04-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-04-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-04-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMEBQYC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAANtVQIIvuypGHJuSiS7sljx//8QAJhAAAgEDAwEJAAAAAAAAAAAAAQIDAAQRBRIhURMUIiQxMkJhcf/aAAgBAQABPwB7+2iMoaTDJwRVlqDPqbkllSVSqqeooojclQf0VNJDa3dw2RO5YlalNw6GY4wX9orSryLuSpNMhdGZQ271Fdqo3BFz1oXPltjKu0sc800zbiYovCfqgoq2hE0zOAoC/GnPNf/EABsRAAIBBQAAAAAAAAAAAAAAAAABEgMQESEx/9oACAECAQE/AJ7tTcnwwz//xAAbEQABBAMAAAAAAAAAAAAAAAACABESIQMQMf/aAAgBAwEBPwCDC93rOMB6nX//2Q==",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (4 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-05",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_05.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-1600.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAAA3WQ8nbOQkv/EACQQAAEDAgQHAAAAAAAAAAAAAAIAAQMEIRESFVETIjJBQmGS/9oACAEBAAE/AKatkgilHiylmDCPyyvvdapV04hHncsS6ivZalXFcXb5ZU8mDnbtupeeUfd0EQiLMy//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAhET/9oACAECAQE/ALaSf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEv/aAAgBAwEBPwBmP//Z",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (5 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-06",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_06.jpg",
+    "width": 1536,
+    "height": 2304,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-06-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-06-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-06-960.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAAp7HE3cMkabRLGtjhof/EACMQAAICAgECBwAAAAAAAAAAAAECAAMEEQUQIgYSExQxQUL/2gAIAQEAAT8A8M4GFmPf7j8p2TL4XC9K41pX2b2BHrCsRMLNsxHD1nTCX8tfYjqD5Q3zr7jOxYwHU2IWPTfT/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQIg/9oACAECAQE/ALFx/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwAf/9k=",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (6 of 7)"
+  },
+  {
+    "id": "2024-06-2-portugal-sintra-2024-06-sintra-07",
+    "file": "travel/2024_06-2_Portugal_Sintra/2024_06-Sintra_07.jpg",
+    "width": 2304,
+    "height": 1536,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-480.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-960.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-1600.avif",
+        "jpg": "/photos/2024-06-2-portugal-sintra-2024-06-sintra-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwf/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAq0ecOSNGYf/EACEQAAICAgIBBQAAAAAAAAAAAAECAxEABAUSIhQhM0Fx/9oACAEBAAE/ANmXU0ZUja3dq+/EfuLu6z/GwzlvSjcbqteIuskkckksSfaycSR4acNZXOYCnc7gV3jRjn//xAAZEQADAAMAAAAAAAAAAAAAAAAAAQIDITH/2gAIAQIBAT8AWSr2x9P/xAAWEQEBAQAAAAAAAAAAAAAAAAABEEH/2gAIAQMBAT8AAwn/2Q==",
+    "title": "Storybook Sintra",
+    "place": "Sintra, Portugal",
+    "year": 2024,
+    "series": "travel",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2024_06-2_Portugal_Sintra",
+    "cover": false,
+    "alt": "Storybook Sintra, Sintra, Portugal, 2024 (7 of 7)"
+  },
+  {
     "id": "home-01-eyroomies-window",
     "file": "home/01-eyroomies-window.jpg",
     "width": 5464,
