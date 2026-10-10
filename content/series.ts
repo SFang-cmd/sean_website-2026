@@ -13,17 +13,17 @@ export const series: Series[] = [
   {
     slug: "portraits",
     name: "Portraits",
-    lede: "Graduation portraits and headshots. Available light where possible.",
+    lede: "Bringing out the best light in people.",
   },
   {
     slug: "events",
     name: "Events",
-    lede: "Performances, panels, and the rooms they happen in.",
+    lede: "For the moments that happen once.",
   },
   {
     slug: "commercial",
     name: "Commercial",
-    lede: "Product, food, and brand work. Lit on purpose, studio or on location.",
+    lede: "For anything that deserves a studio moment.",
   },
   {
     slug: "sports",
@@ -33,7 +33,7 @@ export const series: Series[] = [
   {
     slug: "travel",
     name: "Travel",
-    lede: "Places, mostly on foot, mostly strangers.",
+    lede: "Just for fun.",
   },
   {
     slug: "aerial",
