@@ -24,9 +24,15 @@ export interface FieldKnobs {
   /** Speed of the nearest / farthest shot, 1 = the page's own scroll speed. */
   fast: number;
   slow: number;
-  /** Width in vw of the nearest / farthest shot (landscapes get ×1.2). */
+  /** Width in vw of the nearest / farthest shot. */
   big: number;
   small: number;
+  /**
+   * Width multiplier for landscapes, so a far landscape doesn't read as a
+   * thumbnail next to a portrait of the same width (equal visual mass is
+   * about ×1.22; Sean wanted more).
+   */
+  landscapeScale: number;
   /** Target share of the viewport covered by photos at any scroll position. */
   fill: number;
   /** Middle band of the viewport height in which a shot must stay prominent. */
@@ -37,6 +43,8 @@ export interface FieldKnobs {
   candidates: number;
   /** Seeds tried by bestFieldLayout. */
   seeds: number;
+  /** First seed is seedOffset + 1: bump to "reroll" into a different family of layouts. */
+  seedOffset: number;
 }
 
 export interface FieldShot {
@@ -58,6 +66,10 @@ export interface FieldLayout {
   seed: number;
   worst: number;
   fillMin: number;
+  /** Peak fill over the scroll (bunching shows up as a spike). */
+  fillMax: number;
+  /** Worst left/right imbalance of on-screen area, 0 = even, 1 = everything on one side. */
+  lopsided: number;
 }
 
 interface Dim {
@@ -128,6 +140,20 @@ export function layoutField(
     }
     return area / (W * H);
   };
+  // Share of on-screen area left of the viewport's centre line (0.5 = even).
+  const leftShareAt = (sc: number) => {
+    let left = 0;
+    let all = 0;
+    for (const o of placed) {
+      const t = screenTop(o, sc);
+      const vis = Math.max(0, Math.min(t + o.h, H) - Math.max(t, 0));
+      if (!vis) continue;
+      const lw = Math.max(0, Math.min(o.x + o.w, W / 2) - Math.max(o.x, 0));
+      left += vis * lw;
+      all += vis * o.w;
+    }
+    return all ? left / all : 0.5;
+  };
 
   const n = photos.length;
   const depths = photos.map((_, i) => (i + 0.5) / n);
@@ -142,7 +168,7 @@ export function layoutField(
   photos.forEach((p, i) => {
     const d = depths[i];
     const land = p.width > p.height;
-    const w = Math.round(Math.min(W * 0.94, (W * lerp(k.small, k.big, d) * (land ? 1.2 : 1)) / 100));
+    const w = Math.round(Math.min(W * 0.94, (W * lerp(k.small, k.big, d) * (land ? k.landscapeScale : 1)) / 100));
     const h = Math.round((w * p.height) / p.width);
     const speed = lerp(k.slow, k.fast, d);
     let s = sEntry;
@@ -191,18 +217,29 @@ export function layoutField(
   // Fill profile from the point where the river fills the lower half of the
   // viewport (the hero owns the fold above that) until the last shot leaves.
   let fillMin = 1;
-  for (let sc = Math.max(0, R - H / 2); sc <= lastOut - H; sc += 20) fillMin = Math.min(fillMin, fillAt(sc));
-  return { shots, height: Math.round(end - R + 80), seed, worst, fillMin };
+  let fillMax = 0;
+  let lopsided = 0;
+  for (let sc = Math.max(0, R - H / 2); sc <= lastOut - H; sc += 20) {
+    const f = fillAt(sc);
+    fillMin = Math.min(fillMin, f);
+    fillMax = Math.max(fillMax, f);
+    if (f > 0.15) lopsided = Math.max(lopsided, Math.abs(leftShareAt(sc) - 0.5) * 2);
+  }
+  return { shots, height: Math.round(end - R + 80), seed, worst, fillMin, fillMax, lopsided };
 }
 
-/** Try `k.seeds` seeds, keep the one with the lowest worst coverage (then fewest fill dips). */
+/**
+ * Try `k.seeds` seeds, keep the best: the coverage cap first, then an even
+ * page (no fill dips, no bunching spikes, no stretch with everything on one
+ * side).
+ */
 export function bestFieldLayout(photos: Dim[], W: number, H: number, riverTop: number, k: FieldKnobs): FieldLayout {
   let best: FieldLayout | null = null;
   let bestKey = Infinity;
-  for (let seed = 1; seed <= k.seeds; seed++) {
+  for (let seed = k.seedOffset + 1; seed <= k.seedOffset + k.seeds; seed++) {
     const l = layoutField(photos, W, H, riverTop, k, seed);
     const over = l.shots.filter((s) => s.covered > k.cap).length;
-    const key = over * 10 + l.worst - l.fillMin * 0.5;
+    const key = over * 10 + l.worst - l.fillMin * 0.5 + Math.max(0, l.fillMax - 0.7) * 2 + l.lopsided * 0.6;
     if (key < bestKey) {
       bestKey = key;
       best = l;
@@ -218,6 +255,6 @@ export const layoutHomeField: HomeLayoutFn = ({ photos, W, H, riverTop, phone }:
   return {
     shots: field.shots.map((s) => ({ x: s.x, y: s.y, w: s.w, h: s.h, z: Math.round(s.d * 100) + 1, speed: s.speed, tan: 0 })),
     height: field.height,
-    readout: `seed ${field.seed} worst ${Math.round(field.worst * 100)}% fill-min ${Math.round(field.fillMin * 100)}%`,
+    readout: `seed ${field.seed} worst ${Math.round(field.worst * 100)}% fill ${Math.round(field.fillMin * 100)}-${Math.round(field.fillMax * 100)}% lopsided ${Math.round(field.lopsided * 100)}%`,
   };
 };

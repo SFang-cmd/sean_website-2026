@@ -4580,8 +4580,8 @@
   {
     "id": "2026-05-lz-grad-2026-05-lz-01",
     "file": "portraits/2026_05-LZ_grad/2026_05-LZ_01.jpeg",
-    "width": 4076,
-    "height": 2718,
+    "width": 4002,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
@@ -4597,14 +4597,9 @@
         "width": 1600,
         "avif": "/photos/2026-05-lz-grad-2026-05-lz-01-1600.avif",
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-01-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-05-lz-grad-2026-05-lz-01-2400.avif",
-        "jpg": "/photos/2026-05-lz-grad-2026-05-lz-01-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAALI3mw03IDQblnCueKKf/8QAHxAAAgMBAAIDAQAAAAAAAAAAAQIAAxEhMUESIlGB/9oACAEBAAE/ALq9U4NaDi41a7BTnkJLbdXUs77AHj+xjZ8NH2B8GWWWltLevUFYJwYNEuAppCjBnI79705EvK5+y0lt2OhLHs//xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIREjED/9oACAECAQE/AIx9OOmZRBPLvrLR/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERIUH/2gAIAQMBAT8ArMcaf//Z",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4618,9 +4613,9 @@
   },
   {
     "id": "2026-05-lz-grad-2026-05-lz-02",
-    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_02.jpeg",
-    "width": 2679,
-    "height": 4017,
+    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_02.jpg",
+    "width": 5464,
+    "height": 8192,
     "renditions": [
       {
         "width": 480,
@@ -4638,7 +4633,7 @@
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-02-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAABAACAwUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAPFKf1E0iPC7BNpwS5P/xAAhEAACAwABAwUAAAAAAAAAAAABAgADERIEIUEiMVFicf/aAAgBAQABPwCxCpwqw/REsBqrTPbZk6xquoCnuCoPj5Owtnac/uZXfW49Qwy2nlpBEKkHCICuDBBy8GLUzd9E/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPwBOohM//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwBqMpc//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAKhNAvSLxzpFrXMHM2Bn/8QAJhAAAgEDBAAGAwAAAAAAAAAAAQIDABESBAUTISMxQVFhgUJxkv/aAAgBAQABPwBNySESAMX5FxJb8fkUN4RXgbBG4haxHT/uptUzPcZ/XVMj3AxPYqeOaIoqJmXS/XdqGh1MoDm/2GrcuTSiMoilX9b1A/NrPFsQidAfNPPHEbZSe9b1FnBDJ6o+H90mUGcKJFePIElfMUmnTEHAG/uTX//EAB0RAAECBwAAAAAAAAAAAAAAAAEAEQIDEBIhUVL/2gAIAQIBAT8AEIcAFWS+0+Bun//EAB0RAQABAwUAAAAAAAAAAAAAAAEAAhESIjJBUWH/2gAIAQMBAT8ABTLiauptaqb2GZeE/9k=",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4652,9 +4647,9 @@
   },
   {
     "id": "2026-05-lz-grad-2026-05-lz-03",
-    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_03.jpg",
-    "width": 5464,
-    "height": 8192,
+    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_03.jpeg",
+    "width": 4076,
+    "height": 2718,
     "renditions": [
       {
         "width": 480,
@@ -4670,9 +4665,14 @@
         "width": 1600,
         "avif": "/photos/2026-05-lz-grad-2026-05-lz-03-1600.avif",
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-03-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-05-lz-grad-2026-05-lz-03-2400.avif",
+        "jpg": "/photos/2026-05-lz-grad-2026-05-lz-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAKhNAvSLxzpFrXMHM2Bn/8QAJhAAAgEDBAAGAwAAAAAAAAAAAQIDABESBAUTISMxQVFhgUJxkv/aAAgBAQABPwBNySESAMX5FxJb8fkUN4RXgbBG4haxHT/uptUzPcZ/XVMj3AxPYqeOaIoqJmXS/XdqGh1MoDm/2GrcuTSiMoilX9b1A/NrPFsQidAfNPPHEbZSe9b1FnBDJ6o+H90mUGcKJFePIElfMUmnTEHAG/uTX//EAB0RAAECBwAAAAAAAAAAAAAAAAEAEQIDEBIhUVL/2gAIAQIBAT8AEIcAFWS+0+Bun//EAB0RAQABAwUAAAAAAAAAAAAAAAEAAhESIjJBUWH/2gAIAQMBAT8ABTLiauptaqb2GZeE/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4686,9 +4686,9 @@
   },
   {
     "id": "2026-05-lz-grad-2026-05-lz-04",
-    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_04.jpg",
-    "width": 5436,
-    "height": 8150,
+    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_04.jpeg",
+    "width": 2679,
+    "height": 4017,
     "renditions": [
       {
         "width": 480,
@@ -4706,7 +4706,7 @@
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-04-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAb/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgH/2gAMAwEAAhADEAAAAMzFOF7BmImCjo+ceLo0Hf/EACcQAAIBAwIEBwEAAAAAAAAAAAEDAgAEESFxEhMzYQUjMUFicpGx/9oACAEBAAE/AGddm9cNW/QV9aMJSuWmM4jU+poKbkgyWO5kNaU2K1wgZwyBvVwW89wUAZE++9KL5xROTdI8UOEa5xrrSCeSvam2hC5SDDgRPb+V4ZbNk9Pm4D1TZ+HFGw+df//EABgRAAMBAQAAAAAAAAAAAAAAAAACEhFS/9oACAECAQE/AChaltUluT//xAAaEQACAgMAAAAAAAAAAAAAAAAAARESMVKh/9oACAEDAQE/ACyLOcFnr0//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAABAACAwUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAPFKf1E0iPC7BNpwS5P/xAAhEAACAwABAwUAAAAAAAAAAAABAgADERIEIUEiMVFicf/aAAgBAQABPwCxCpwqw/REsBqrTPbZk6xquoCnuCoPj5Owtnac/uZXfW49Qwy2nlpBEKkHCICuDBBy8GLUzd9E/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPwBOohM//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwBqMpc//9k=",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4720,9 +4720,9 @@
   },
   {
     "id": "2026-05-lz-grad-2026-05-lz-05",
-    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_05.jpeg",
-    "width": 2725,
-    "height": 4086,
+    "file": "portraits/2026_05-LZ_grad/2026_05-LZ_05.jpg",
+    "width": 5436,
+    "height": 8150,
     "renditions": [
       {
         "width": 480,
@@ -4740,7 +4740,7 @@
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-05-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAAJCYm1YbOcAtTm2nWwwT/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABBFBIRITMTQUInEy/9oACAEBAAE/AJPYfA3XRgVa+unFGN2uZSjKOT5IG6WOYsV+oxskAH8qFxFEqMyZGd5q5cpPMw1nilu5ZSVWIFEKr1c7NWwzCvA3qr60dopEVk6vH84q2eZ7lolfHdODnx+18dhgdyv/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQISIYH/2gAIAQIBAT8AMiFLltrZw//EABsRAAICAwEAAAAAAAAAAAAAAAABEiECA1FS/9oACAEDAQE/ACSFsyVRV9JPwf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAb/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgH/2gAMAwEAAhADEAAAAMzFOF7BmImCjo+ceLo0Hf/EACcQAAIBAwIEBwEAAAAAAAAAAAEDAgAEESFxEhMzYQUjMUFicpGx/9oACAEBAAE/AGddm9cNW/QV9aMJSuWmM4jU+poKbkgyWO5kNaU2K1wgZwyBvVwW89wUAZE++9KL5xROTdI8UOEa5xrrSCeSvam2hC5SDDgRPb+V4ZbNk9Pm4D1TZ+HFGw+df//EABgRAAMBAQAAAAAAAAAAAAAAAAACEhFS/9oACAECAQE/AChaltUluT//xAAaEQACAgMAAAAAAAAAAAAAAAAAARESMVKh/9oACAEDAQE/ACyLOcFnr0//2Q==",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4755,8 +4755,8 @@
   {
     "id": "2026-05-lz-grad-2026-05-lz-06",
     "file": "portraits/2026_05-LZ_grad/2026_05-LZ_06.jpeg",
-    "width": 2732,
-    "height": 4096,
+    "width": 2725,
+    "height": 4086,
     "renditions": [
       {
         "width": 480,
@@ -4774,7 +4774,7 @@
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-06-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAAJCYm1YbOcAtTm2nWwwT/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABBFBIRITMTQUInEy/9oACAEBAAE/AJPYfA3XRgVa+unFGN2uZSjKOT5IG6WOYsV+oxskAH8qFxFEqMyZGd5q5cpPMw1nilu5ZSVWIFEKr1c7NWwzCvA3qr60dopEVk6vH84q2eZ7lolfHdODnx+18dhgdyv/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQISIYH/2gAIAQIBAT8AMiFLltrZw//EABsRAAICAwEAAAAAAAAAAAAAAAABEiECA1FS/9oACAEDAQE/ACSFsyVRV9JPwf/Z",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -4789,8 +4789,8 @@
   {
     "id": "2026-05-lz-grad-2026-05-lz-07",
     "file": "portraits/2026_05-LZ_grad/2026_05-LZ_07.jpeg",
-    "width": 4002,
-    "height": 6000,
+    "width": 2732,
+    "height": 4096,
     "renditions": [
       {
         "width": 480,
@@ -4808,7 +4808,7 @@
         "jpg": "/photos/2026-05-lz-grad-2026-05-lz-07-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAALI3mw03IDQblnCueKKf/8QAHxAAAgMBAAIDAQAAAAAAAAAAAQIAAxEhMUESIlGB/9oACAEBAAE/ALq9U4NaDi41a7BTnkJLbdXUs77AHj+xjZ8NH2B8GWWWltLevUFYJwYNEuAppCjBnI79705EvK5+y0lt2OhLHs//xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIREjED/9oACAECAQE/AIx9OOmZRBPLvrLR/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERIUH/2gAIAQMBAT8ArMcaf//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
     "title": "LZ Grad Shoot",
     "place": "UPenn",
     "year": 2026,
@@ -6074,7 +6074,7 @@
     "rank": 1,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": true,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (1 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (1 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-02",
@@ -6103,7 +6103,7 @@
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAFgEBAQEAAAAAAAAAAAAAAAAABAAB/9oADAMBAAIQAxAAAAB7jFwL4xCbf//EACEQAAMAAgEDBQAAAAAAAAAAAAECAwARBBIxURQhIkKy/9oACAEBAAE/AEtxzIUL/DfT5yohWNfT3VahCVFBoe2QotZKzgB+zL4OcPUzyo/Va/obymirKQCCDsEd8qZrQrSQoV0AxJB1rYBz/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECAxFRYf/aAAgBAgEBPwCVrT3wxM//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIiwf/aAAgBAwEBPwCYTXTJ/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEE/9oADAMBAAIQAxAAAAAy43HRML4v/8QAIRABAAEDAgcAAAAAAAAAAAAAAQMAAhESIQQUIjFBUnH/2gAIAQEAAT8AeZ8QXUx8Xt0iPqjVkM1ptbIZc1JDrvy3vbFQQkduBPukGgK//8QAGxEAAgEFAAAAAAAAAAAAAAAAAAECAxJCUqH/2gAIAQIBAT8AVWTxLYa9Z//EABsRAAIBBQAAAAAAAAAAAAAAAAABAgMTQVKh/9oACAEDAQE/AHCKyXam3Ef/2Q==",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6113,7 +6113,7 @@
     "rank": 2,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (2 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (2 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-03",
@@ -6142,7 +6142,7 @@
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/9oADAMBAAIQAxAAAADVUGxUqK4p/wD/xAAiEAACAgECBwEAAAAAAAAAAAABAgADERNhBBIhMUNRcYH/2gAIAQEAAT8AOsfE4+iVUPbliGI2iI6qBot09kS+vmsJJ7rj8M4epUwqgAbCBRif/8QAGhEBAAEFAAAAAAAAAAAAAAAAAQACAxIhUv/aAAgBAgEBPwAu1OsYJyT/xAAaEQACAgMAAAAAAAAAAAAAAAABAgAREiFC/9oACAEDAQE/AMFXYY3DZ6M//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/aAAwDAQACEAMQAAAAYrHkIqcBYGn/xAAiEAEAAgIBAgcAAAAAAAAAAAACAREAAwQTIQUSFCMyQpL/2gAIAQEAAT8Ab1692rT5bTyPFH1IHpQrVSftm3bI2smpMLtOcs+03E0ib/PfOiGClcpGJvJ4xv5Tn//EABgRAAIDAAAAAAAAAAAAAAAAAAARAQIS/9oACAECAQE/AJ0xWP/EABcRAAMBAAAAAAAAAAAAAAAAAAACERL/2gAIAQMBAT8AXJVP/9k=",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6152,13 +6152,13 @@
     "rank": 3,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (3 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (3 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-04",
     "file": "commercial/2025_04-Penn_Appetit_sp25/2025_04-PennAppetit_04.jpg",
-    "width": 6000,
-    "height": 4000,
+    "width": 5821,
+    "height": 3881,
     "renditions": [
       {
         "width": 480,
@@ -6181,7 +6181,7 @@
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-04-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAK8p5bPraMxx/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxEhBBITUaH/2gAIAQEAAT8AK1oycADInUs1jqyLgYgZO2uPSWC654+xKENjgcZPEPc//8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACESH/2gAIAQIBAT8AtZUxnZ//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIR/9oACAEDAQE/AIlJVpiP/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAX/2gAMAwEAAhADEAAAAK00szrJzZHB/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQREiMQFSExMlFS/9oACAEBAAE/AJ5t0Ke2lmJ9BRmknW52UbQSpOfI4rk8X2aMau4YjrVvZ28LFkTBPD//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8AzUf/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQITIf/aAAgBAwEBPwCmuGlH/9k=",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6191,13 +6191,13 @@
     "rank": 4,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (4 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (4 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-05",
     "file": "commercial/2025_04-Penn_Appetit_sp25/2025_04-PennAppetit_05.jpg",
-    "width": 4000,
-    "height": 6000,
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
@@ -6213,9 +6213,14 @@
         "width": 1600,
         "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-05-1600.avif",
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-05-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-05-2400.avif",
+        "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-05-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAACAwQA/9oADAMBAAIQAxAAAACrYRR1FMXQW7RusWKFf//EACAQAAICAgICAwAAAAAAAAAAAAECABEDIQQSIpFScoH/2gAIAQEAAT8ARAojMAIcu4nIbKSMalqjs3VwxKuCNVejEOGqdHv7CP4NpVH5VwcvBke2wkWa2NwYcfxHqdg4phYmJEQ6B93AZ//EAB0RAAEDBQEAAAAAAAAAAAAAAAEAAjEQERITUpH/2gAIAQIBAT8AytK2jl3iAeINP//EABsRAQEAAQUAAAAAAAAAAAAAAAECABATQVKR/9oACAEDAQE/ACVQM2K7R7iy8af/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAAK8p5bPraMxx/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxEhBBITUaH/2gAIAQEAAT8AK1oycADInUs1jqyLgYgZO2uPSWC654+xKENjgcZPEPc//8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACESH/2gAIAQIBAT8AtZUxnZ//xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIR/9oACAEDAQE/AIlJVpiP/9k=",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6225,13 +6230,13 @@
     "rank": 5,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (5 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (5 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-06",
     "file": "commercial/2025_04-Penn_Appetit_sp25/2025_04-PennAppetit_06.jpg",
-    "width": 6000,
-    "height": 4000,
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
@@ -6247,14 +6252,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-06-1600.avif",
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-06-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-06-2400.avif",
-        "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-06-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/aAAwDAQACEAMQAAAAYrHkIqcBYGn/xAAiEAEAAgIBAgcAAAAAAAAAAAACAREAAwQTIQUSFCMyQpL/2gAIAQEAAT8Ab1692rT5bTyPFH1IHpQrVSftm3bI2smpMLtOcs+03E0ib/PfOiGClcpGJvJ4xv5Tn//EABgRAAIDAAAAAAAAAAAAAAAAAAARAQIS/9oACAECAQE/AJ0xWP/EABcRAAMBAAAAAAAAAAAAAAAAAAACERL/2gAIAQMBAT8AXJVP/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAACAwQA/9oADAMBAAIQAxAAAACrYRR1FMXQW7RusWKFf//EACAQAAICAgICAwAAAAAAAAAAAAECABEDIQQSIpFScoH/2gAIAQEAAT8ARAojMAIcu4nIbKSMalqjs3VwxKuCNVejEOGqdHv7CP4NpVH5VwcvBke2wkWa2NwYcfxHqdg4phYmJEQ6B93AZ//EAB0RAAEDBQEAAAAAAAAAAAAAAAEAAjEQERITUpH/2gAIAQIBAT8AytK2jl3iAeINP//EABsRAQEAAQUAAAAAAAAAAAAAAAECABATQVKR/9oACAEDAQE/ACVQM2K7R7iy8af/2Q==",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6264,7 +6264,7 @@
     "rank": 6,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (6 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (6 of 7)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-07",
@@ -6293,7 +6293,7 @@
         "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-07-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEE/9oADAMBAAIQAxAAAAAy43HRML4v/8QAIRABAAEDAgcAAAAAAAAAAAAAAQMAAhESIQQUIjFBUnH/2gAIAQEAAT8AeZ8QXUx8Xt0iPqjVkM1ptbIZc1JDrvy3vbFQQkduBPukGgK//8QAGxEAAgEFAAAAAAAAAAAAAAAAAAECAxJCUqH/2gAIAQIBAT8AVWTxLYa9Z//EABsRAAIBBQAAAAAAAAAAAAAAAAABAgMTQVKh/9oACAEDAQE/AHCKyXam3Ef/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAFgEBAQEAAAAAAAAAAAAAAAAABAAB/9oADAMBAAIQAxAAAAB7jFwL4xCbf//EACEQAAMAAgEDBQAAAAAAAAAAAAECAwARBBIxURQhIkKy/9oACAEBAAE/AEtxzIUL/DfT5yohWNfT3VahCVFBoe2QotZKzgB+zL4OcPUzyo/Va/obymirKQCCDsEd8qZrQrSQoV0AxJB1rYBz/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECAxFRYf/aAAgBAgEBPwCVrT3wxM//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIiwf/aAAgBAwEBPwCYTXTJ/9k=",
     "title": "Penn Appétit · Spring Issue",
     "place": "UPenn",
     "year": 2025,
@@ -6303,41 +6303,7 @@
     "rank": 7,
     "shoot": "2025_04-Penn_Appetit_sp25",
     "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (7 of 8)"
-  },
-  {
-    "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-08",
-    "file": "commercial/2025_04-Penn_Appetit_sp25/2025_04-PennAppetit_08.jpg",
-    "width": 4000,
-    "height": 6000,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-480.avif",
-        "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-960.avif",
-        "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-1600.avif",
-        "jpg": "/photos/2025-04-penn-appetit-sp25-2025-04-pennappetit-08-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAZAQACAwEAAAAAAAAAAAAAAAABAgADBAX/2gAMAwEAAhADEAAAALF5xzd3TJwq2LrLsWElDP/EACQQAAIBBAECBwAAAAAAAAAAAAECAwAEERIxIVEFExQycaGy/9oACAEBAAE/AJZhCuTUN6shwDQkyKv5fTqrKF3b2luBireSSc4lVS+myuF1Pwe9AFRiru0juYwkikr3HINeQtjDshckHpt+aWUTqJEzg/Rq2njuoRKgYKSeau1DQle5rw6JmgZ9yNpG6Cv/xAAZEQADAQEBAAAAAAAAAAAAAAAAARESAkH/2gAIAQIBAT8Ay36ZHzK6Q//EABkRAQADAQEAAAAAAAAAAAAAAAEAAhEQMf/aAAgBAwEBPwATPOUdSrLILjP/2Q==",
-    "title": "Penn Appétit · Spring Issue",
-    "place": "UPenn",
-    "year": 2025,
-    "series": "commercial",
-    "home": false,
-    "order": null,
-    "rank": 8,
-    "shoot": "2025_04-Penn_Appetit_sp25",
-    "cover": false,
-    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (8 of 8)"
+    "alt": "Penn Appétit · Spring Issue, UPenn, 2025 (7 of 7)"
   },
   {
     "id": "2026-02-sushi-shoot-2026-02-sushi-01",
@@ -7155,13 +7121,13 @@
     "rank": 1,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": true,
-    "alt": "Buda and Pest, Budapest, 2025 (1 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (1 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-02",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_02.jpg",
-    "width": 3850,
-    "height": 5775,
+    "width": 5983,
+    "height": 3989,
     "renditions": [
       {
         "width": 480,
@@ -7177,9 +7143,14 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-02-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-02-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-02-2400.avif",
+        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYC/8QAFgEBAQEAAAAAAAAAAAAAAAAABQME/9oADAMBAAIQAxAAAABJLDpYpaMCs2lFdRGY2RijRD//xAAhEAACAgEEAgMAAAAAAAAAAAABAgADEQQSEyEFMUFRcf/aAAgBAQABPwArGrKMVPsGBZp6A2oqDDouJqat2otOPbQUGeP22DmdQp3lVEv5a77HG3jVwuMfJGTEWplBBGDKtVaANpwMS265lAa1z+nOesRCwRRyWdfTGf/EAB0RAAIBBAMAAAAAAAAAAAAAAAABAgMREhMhImL/2gAIAQIBAT8A2LYoebl0d3UcsuTKof/EABsRAAIDAAMAAAAAAAAAAAAAAAASAQIRAxNi/9oACAEDAQE/AEnrm3rBbGUSIUXjP//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAQCA//aAAwDAQACEAMQAAAAl0mQaKRDC//EACAQAAICAQQDAQAAAAAAAAAAAAECAwQAERIhQRMjgZH/2gAIAQEAAT8AaoHmiQHTcpLfMtUYY4TJHqCuLVjKqeyOc88iukynlOP3LN+Sz69qoO9uLK+1dD1n/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAIBERIhMVH/2gAIAQIBAT8AVLUzso3ZP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAIAQMBAT8Ab1wh/9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7189,13 +7160,13 @@
     "rank": 2,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (2 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (2 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-03",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_03.jpg",
-    "width": 5898,
-    "height": 3932,
+    "width": 5915,
+    "height": 3943,
     "renditions": [
       {
         "width": 480,
@@ -7218,7 +7189,7 @@
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAADVcsjoNDnSz//EACAQAQABAwMFAAAAAAAAAAAAAAECAAMREhMhBDFRYcH/2gAIAQEAAT8AjcK34kcYK3Xy0cHKqGc1GOYvKd09V0l1uQuNw1Ov4Nf/xAAXEQADAQAAAAAAAAAAAAAAAAAAAhNh/9oACAECAQE/AKMUw//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPwCYj//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUDBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAACw5zearJYf/8QAIxAAAgAGAQQDAAAAAAAAAAAAAQIAAwQFESEiEhMyM0Fjov/aAAgBAQABPwCZdEUS3G1ywdR5Aw12l8MI2yM5+BD3pA3Eaitp3onkus9j3Ww0TKM9PubULa/v/Mf/xAAXEQADAQAAAAAAAAAAAAAAAAAAARIC/9oACAECAQE/AKZWj//EABcRAAMBAAAAAAAAAAAAAAAAAAABEQL/2gAIAQMBAT8AiJk//9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7228,13 +7199,13 @@
     "rank": 3,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (3 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (3 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-04",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_04.jpg",
-    "width": 5915,
-    "height": 3943,
+    "width": 3993,
+    "height": 5989,
     "renditions": [
       {
         "width": 480,
@@ -7250,14 +7221,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-04-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-04-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-04-2400.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-04-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUDBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAACw5zearJYf/8QAIxAAAgAGAQQDAAAAAAAAAAAAAQIAAwQFESEiEhMyM0Fjov/aAAgBAQABPwCZdEUS3G1ywdR5Aw12l8MI2yM5+BD3pA3Eaitp3onkus9j3Ww0TKM9PubULa/v/Mf/xAAXEQADAQAAAAAAAAAAAAAAAAAAARIC/9oACAECAQE/AKZWj//EABcRAAMBAAAAAAAAAAAAAAAAAAABEQL/2gAIAQMBAT8AiJk//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUA/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/2gAMAwEAAhADEAAAAGLh0eVabDzifQNLqzfh5T//xAAhEAACAgMAAgIDAAAAAAAAAAABAgMRAAQhEjETQRQyUv/aAAgBAQABPwCLZeTwdgaIySVVHo9yXdeFylHI9pTKQQVUNm1sQtHaMvDyrs5+Yvbjrv33IJQ2zbADyJsVQGTX8TlvD9eVkUkqAqkcbC/ZXJNSIQqqrRL+N3/WbBeKU03MVS1/dGu5/8QAHREAAgIBBQAAAAAAAAAAAAAAAQIAAxETMVFSgf/aAAgBAgEBPwCxGZiYC3XPsNWTvNIcif/EABoRAAICAwAAAAAAAAAAAAAAAAABERMCEmL/2gAIAQMBAT8AUJQaFnJdkf/Z",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7267,13 +7233,13 @@
     "rank": 4,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (4 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (4 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-05",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_05.jpg",
-    "width": 3993,
-    "height": 5989,
+    "width": 3974,
+    "height": 5961,
     "renditions": [
       {
         "width": 480,
@@ -7291,7 +7257,7 @@
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-05-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUA/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/2gAMAwEAAhADEAAAAGLh0eVabDzifQNLqzfh5T//xAAhEAACAgMAAgIDAAAAAAAAAAABAgMRAAQhEjETQRQyUv/aAAgBAQABPwCLZeTwdgaIySVVHo9yXdeFylHI9pTKQQVUNm1sQtHaMvDyrs5+Yvbjrv33IJQ2zbADyJsVQGTX8TlvD9eVkUkqAqkcbC/ZXJNSIQqqrRL+N3/WbBeKU03MVS1/dGu5/8QAHREAAgIBBQAAAAAAAAAAAAAAAQIAAxETMVFSgf/aAAgBAgEBPwCxGZiYC3XPsNWTvNIcif/EABoRAAICAwAAAAAAAAAAAAAAAAABERMCEmL/2gAIAQMBAT8AUJQaFnJdkf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/2gAMAwEAAhADEAAAACrN08m2QgHGY6F9CLFDD//EACIQAAICAQQBBQAAAAAAAAAAAAECAAMRBBIhIkExUmFxkf/aAAgBAQABPwBd4cNU3P3GOsK4LIB8Qoox2X9mnDghQxyDNQmpqq3N6SxbXc7c4ErvtU8Mx8GNqbCo6nIhtcHBtcGL1rB9zRbd7WIyy6rsOfE//8QAGREAAwEBAQAAAAAAAAAAAAAAAAECESEx/9oACAECAQE/AKu02p8Eli3BxPXgok//xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEBEh/9oACAEDAQE/AFFc3ixY/9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7301,13 +7267,13 @@
     "rank": 5,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (5 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (5 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-06",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_06.jpg",
-    "width": 5955,
-    "height": 3970,
+    "width": 5657,
+    "height": 3771,
     "renditions": [
       {
         "width": 480,
@@ -7330,7 +7296,7 @@
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-06-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGAgX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgQF/9oADAMBAAIQAxAAAABmpd2bZ2iaBf/EACEQAQACAQQBBQAAAAAAAAAAAAECAwAEERIUIiMxMlKB/9oACAEBAAE/ADX28hZoK/FyestIT9W0/c7dsPFlFT7ZG6yUeKmxu52LpCKe2WW2Tkq5/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAETQv/aAAgBAgEBPwCTWiB//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESUf/aAAgBAwEBPwClhZ//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAOS0U1pHQQMf/8QAJBAAAQMCBAcAAAAAAAAAAAAAAQIDEgARBBMhQSIxM1FScoH/2gAIAQEAAT8AaZUTMW02rCsrcL6vBmXw0+UZzmXeEjG/agJYdZ3iNaeJy0cSuknel8x6iv/EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIS/9oACAECAQE/ANroUh//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIiMf/aAAgBAwEBPwCNUPT/2Q==",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7340,13 +7306,13 @@
     "rank": 6,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (6 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (6 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-07",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_07.jpg",
-    "width": 5983,
-    "height": 3989,
+    "width": 3913,
+    "height": 5870,
     "renditions": [
       {
         "width": 480,
@@ -7362,14 +7328,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-07-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-07-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-07-2400.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-07-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAQCA//aAAwDAQACEAMQAAAAl0mQaKRDC//EACAQAAICAQQDAQAAAAAAAAAAAAECAwQAERIhQRMjgZH/2gAIAQEAAT8AaoHmiQHTcpLfMtUYY4TJHqCuLVjKqeyOc88iukynlOP3LN+Sz69qoO9uLK+1dD1n/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAIBERIhMVH/2gAIAQIBAT8AVLUzso3ZP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAIAQMBAT8Ab1wh/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAf/aAAwDAQACEAMQAAAAZVqc2lZxVDhYk5EmUtkYw3P/xAAiEAACAQMEAwEBAAAAAAAAAAABAgMAESEEEiJBMVFxE1L/2gAIAQEAAT8AEMBjW4I4ix90qBrnoEgU0BxcWNqeJGgRfBKgfeIp4lUoFj2oEa5A76phGNudmDg/ah1UMy6cB0PZ5XsNlhUOvSGfVxs7OC/Ak+KfUaicI42EFfdCMbUX+akhQjAsbUv6RKFVzY5wbV//xAAdEQACAQQDAAAAAAAAAAAAAAABAgADERIhBBNR/9oACAECAQE/AF5WJQX9iVwyKSRe06tncxcazn//xAAeEQABBAEFAAAAAAAAAAAAAAACAAEREgMEIjFRUv/aAAgBAwEBPwAtPZieOkeGCJm4lXW3yv/Z",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7379,13 +7340,13 @@
     "rank": 7,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (7 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (7 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-08",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_08.jpg",
-    "width": 5657,
-    "height": 3771,
+    "width": 5963,
+    "height": 3975,
     "renditions": [
       {
         "width": 480,
@@ -7408,7 +7369,7 @@
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-08-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAOS0U1pHQQMf/8QAJBAAAQMCBAcAAAAAAAAAAAAAAQIDEgARBBMhQSIxM1FScoH/2gAIAQEAAT8AaZUTMW02rCsrcL6vBmXw0+UZzmXeEjG/agJYdZ3iNaeJy0cSuknel8x6iv/EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIS/9oACAECAQE/ANroUh//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIiMf/aAAgBAwEBPwCNUPT/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAAApLARjRmXNv/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMRITFBkRITUf/aAAgBAQABPwAyMbvCbLE+/Eh1brK9kY5CM8hI10hK8FxvJ+YT53g89r//xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIRUVL/2gAIAQIBAT8AG7qZep//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRUv/aAAgBAwEBPwBqBSyf/9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7418,13 +7379,13 @@
     "rank": 8,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (8 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (8 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-09",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_09.jpg",
-    "width": 3913,
-    "height": 5870,
+    "width": 5633,
+    "height": 3755,
     "renditions": [
       {
         "width": 480,
@@ -7440,9 +7401,14 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-09-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-09-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-09-2400.avif",
+        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-09-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgP/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAf/aAAwDAQACEAMQAAAAZVqc2lZxVDhYk5EmUtkYw3P/xAAiEAACAQMEAwEBAAAAAAAAAAABAgMAESEEEiJBMVFxE1L/2gAIAQEAAT8AEMBjW4I4ix90qBrnoEgU0BxcWNqeJGgRfBKgfeIp4lUoFj2oEa5A76phGNudmDg/ah1UMy6cB0PZ5XsNlhUOvSGfVxs7OC/Ak+KfUaicI42EFfdCMbUX+akhQjAsbUv6RKFVzY5wbV//xAAdEQACAQQDAAAAAAAAAAAAAAABAgADERIhBBNR/9oACAECAQE/AF5WJQX9iVwyKSRe06tncxcazn//xAAeEQABBAEFAAAAAAAAAAAAAAACAAEREgMEIjFRUv/aAAgBAwEBPwAtPZieOkeGCJm4lXW3yv/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGBP/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAABK5QZaztSfEf/EACEQAAEDAwQDAAAAAAAAAAAAAAEAAgMEEiERExQxBSJR/9oACAEBAAE/AB5OXdMbm3MuUdY0gY0uOnWFyCAMBW7juyD9XImPo95dYSAqeJ9RE15lIX//xAAYEQADAQEAAAAAAAAAAAAAAAAAARIxYf/aAAgBAgEBPwBqcwriP//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhIxgv/aAAgBAwEBPwBStp0z/9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7452,13 +7418,13 @@
     "rank": 9,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (9 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (9 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-10",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_10.jpg",
-    "width": 5963,
-    "height": 3975,
+    "width": 3850,
+    "height": 5775,
     "renditions": [
       {
         "width": 480,
@@ -7474,14 +7440,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-10-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-10-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-10-2400.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-10-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAAApLARjRmXNv/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMRITFBkRITUf/aAAgBAQABPwAyMbvCbLE+/Eh1brK9kY5CM8hI10hK8FxvJ+YT53g89r//xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIRUVL/2gAIAQIBAT8AG7qZep//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRUv/aAAgBAwEBPwBqBSyf/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYC/8QAFgEBAQEAAAAAAAAAAAAAAAAABQME/9oADAMBAAIQAxAAAABJLDpYpaMCs2lFdRGY2RijRD//xAAhEAACAgEEAgMAAAAAAAAAAAABAgADEQQSEyEFMUFRcf/aAAgBAQABPwArGrKMVPsGBZp6A2oqDDouJqat2otOPbQUGeP22DmdQp3lVEv5a77HG3jVwuMfJGTEWplBBGDKtVaANpwMS265lAa1z+nOesRCwRRyWdfTGf/EAB0RAAIBBAMAAAAAAAAAAAAAAAABAgMREhMhImL/2gAIAQIBAT8A2LYoebl0d3UcsuTKof/EABsRAAIDAAMAAAAAAAAAAAAAAAASAQIRAxNi/9oACAEDAQE/AEnrm3rBbGUSIUXjP//Z",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7491,13 +7452,13 @@
     "rank": 10,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (10 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (10 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-11",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_11.jpg",
-    "width": 5885,
-    "height": 3923,
+    "width": 3837,
+    "height": 5755,
     "renditions": [
       {
         "width": 480,
@@ -7513,14 +7474,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-11-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-11-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-11-2400.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-11-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAGqN0pTJJR//xAAfEAACAgICAwEAAAAAAAAAAAABAgADBREEIRMyQUP/2gAIAQEAAT8AXIeP9F7E42Qe0qnxlbXcGUt0NukpAsrBbsgiNfbWpqDkoG9ZXzLUXU//xAAbEQACAQUAAAAAAAAAAAAAAAAAAQISISJBUv/aAAgBAgEBPwCeWlcohyj/xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIREiFBUf/aAAgBAwEBPwCNFt4LpdZ//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAGqmlx0LkKIyyr+TM2+ZJT//xAAkEAEAAQQABgIDAAAAAAAAAAABAgADBBEFEhMhMWEVUXKBkf/aAAgBAQABPwCfErEfT7QqfFIsyIw2+6c27vzUrGXcefp3V+0oxcpddOW6li5y7edfyKbpI2IlZV7Hs5M7kF6w9+7qvmD6h+2rd+9zx1NieUGjJlOLuMdj5e72qeRGTtgfwK//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIREP/aAAgBAgEBPwBTJkinOf/EABoRAAICAwAAAAAAAAAAAAAAAAABAhASUWH/2gAIAQMBAT8Acnoy4OVf/9k=",
     "title": "Buda and Pest",
     "place": "Budapest",
     "year": 2025,
@@ -7530,13 +7486,13 @@
     "rank": 11,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (11 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (11 of 12)"
   },
   {
     "id": "2025-04-4-hungary-budapest-2025-04-hungary-12",
     "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_12.jpg",
-    "width": 3837,
-    "height": 5755,
+    "width": 5960,
+    "height": 3973,
     "renditions": [
       {
         "width": 480,
@@ -7552,45 +7508,11 @@
         "width": 1600,
         "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-12-1600.avif",
         "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-12-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAGqmlx0LkKIyyr+TM2+ZJT//xAAkEAEAAQQABgIDAAAAAAAAAAABAgADBBEFEhMhMWEVUXKBkf/aAAgBAQABPwCfErEfT7QqfFIsyIw2+6c27vzUrGXcefp3V+0oxcpddOW6li5y7edfyKbpI2IlZV7Hs5M7kF6w9+7qvmD6h+2rd+9zx1NieUGjJlOLuMdj5e72qeRGTtgfwK//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIREP/aAAgBAgEBPwBTJkinOf/EABoRAAICAwAAAAAAAAAAAAAAAAABAhASUWH/2gAIAQMBAT8Acnoy4OVf/9k=",
-    "title": "Buda and Pest",
-    "place": "Budapest",
-    "year": 2025,
-    "series": "travel",
-    "home": false,
-    "order": null,
-    "rank": 12,
-    "shoot": "2025_04-4_Hungary_Budapest",
-    "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (12 of 13)"
-  },
-  {
-    "id": "2025-04-4-hungary-budapest-2025-04-hungary-13",
-    "file": "travel/2025_04-4_Hungary_Budapest/2025_04-Hungary_13.jpg",
-    "width": 5960,
-    "height": 3973,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-480.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-960.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-1600.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-2400.avif",
-        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-13-2400.jpg"
+        "avif": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-12-2400.avif",
+        "jpg": "/photos/2025-04-4-hungary-budapest-2025-04-hungary-12-2400.jpg"
       }
     ],
     "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMEBQb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADJvrXaJOIwG//EABwQAAICAgMAAAAAAAAAAAAAAAECABESEwNRYf/aAAgBAQABPwAsfIeBtSPmtsLqYN2sJmx6BubWE//EAB4RAAEBCQAAAAAAAAAAAAAAAAMAAQIREhMhIlFS/9oACAECAQE/ACELjK/C+lUN0xf/xAAcEQABAwUAAAAAAAAAAAAAAAACAAEDERIhQVH/2gAIAQMBAT8AAI81HSsi46//2Q==",
@@ -7600,10 +7522,10 @@
     "series": "travel",
     "home": false,
     "order": null,
-    "rank": 13,
+    "rank": 12,
     "shoot": "2025_04-4_Hungary_Budapest",
     "cover": false,
-    "alt": "Buda and Pest, Budapest, 2025 (13 of 13)"
+    "alt": "Buda and Pest, Budapest, 2025 (12 of 12)"
   },
   {
     "id": "2025-04-5-italy-venice-2025-04-venice-01",
@@ -7642,8 +7564,8 @@
   {
     "id": "2025-04-5-italy-venice-2025-04-venice-02",
     "file": "travel/2025_04-5_Italy_Venice/2025_04-Venice_02.jpg",
-    "width": 5762,
-    "height": 3841,
+    "width": 3877,
+    "height": 5816,
     "renditions": [
       {
         "width": 480,
@@ -7659,14 +7581,9 @@
         "width": 1600,
         "avif": "/photos/2025-04-5-italy-venice-2025-04-venice-02-1600.avif",
         "jpg": "/photos/2025-04-5-italy-venice-2025-04-venice-02-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-04-5-italy-venice-2025-04-venice-02-2400.avif",
-        "jpg": "/photos/2025-04-5-italy-venice-2025-04-venice-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAACpM5clAwV//8QAIRAAAgICAgEFAAAAAAAAAAAAAQMCBAARBRIhIjEzQVH/2gAIAQEAAT8Atcwpa4K2Vy8ecnZ5CYBDSYkfmxjJ3WGJhZ66iAfT946EGWGbHsdYiw5CxCDD1yFmwB8hz//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhH/2gAIAQIBAT8AXV1v/8QAFxEBAQEBAAAAAAAAAAAAAAAAEQABEv/aAAgBAwEBPwDOUIv/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMCBgEEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAAA7b6xEtZUixcmrw11DBX/xAAkEAACAQMDBAMBAAAAAAAAAAABAgMAESESMWEEEyJxFCNBUf/aAAgBAQABPwCLq7RnuKVKxA5P6KXqYmeNAwu8esCmZQcuB7NI5LiwkD8ZU186XWbynUDYbAVN1jzSM7CxNSBu6CGsozb+jkCtMCyR7nUQG5JqR0ViLuLUgBd8eQiQ6vdGI/VkXLsSdtqYJMzMFt5EZ4Nf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQADBBAx/9oACAECAQE/AC9Oxyjf/8QAGhEAAQUBAAAAAAAAAAAAAAAAAQADBBARMf/aAAgBAwEBPwAtbxCMb//Z",
     "title": "Venice on the Water",
     "place": "Italy",
     "year": 2025,
@@ -7681,8 +7598,8 @@
   {
     "id": "2025-04-5-italy-venice-2025-04-venice-03",
     "file": "travel/2025_04-5_Italy_Venice/2025_04-Venice_03.jpg",
-    "width": 5833,
-    "height": 3889,
+    "width": 5762,
+    "height": 3841,
     "renditions": [
       {
         "width": 480,
@@ -7705,7 +7622,7 @@
         "jpg": "/photos/2025-04-5-italy-venice-2025-04-venice-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAA1NkooIhOv/8QAIhABAAEDAwQDAAAAAAAAAAAAAQIAAxEEEhMFISJRMVJh/9oACAEBAAE/ALOr1/MpySPSqNXep3be8nCG/wDGrvGpjc+Jl+e73olhMFdWtS28pPB9cUN1BLsw9Zr/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIREjH/2gAIAQIBAT8AuS4zJ//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhIhIv/aAAgBAwEBPwDlvUWif//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAACpM5clAwV//8QAIRAAAgICAgEFAAAAAAAAAAAAAQMCBAARBRIhIjEzQVH/2gAIAQEAAT8Atcwpa4K2Vy8ecnZ5CYBDSYkfmxjJ3WGJhZ66iAfT946EGWGbHsdYiw5CxCDD1yFmwB8hz//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhH/2gAIAQIBAT8AXV1v/8QAFxEBAQEBAAAAAAAAAAAAAAAAEQABEv/aAAgBAwEBPwDOUIv/2Q==",
     "title": "Venice on the Water",
     "place": "Italy",
     "year": 2025,
@@ -7720,8 +7637,8 @@
   {
     "id": "2025-04-5-italy-venice-2025-04-venice-04",
     "file": "travel/2025_04-5_Italy_Venice/2025_04-Venice_04.jpg",
-    "width": 3877,
-    "height": 5816,
+    "width": 5833,
+    "height": 3889,
     "renditions": [
       {
         "width": 480,
@@ -7737,9 +7654,14 @@
         "width": 1600,
         "avif": "/photos/2025-04-5-italy-venice-2025-04-venice-04-1600.avif",
         "jpg": "/photos/2025-04-5-italy-venice-2025-04-venice-04-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-04-5-italy-venice-2025-04-venice-04-2400.avif",
+        "jpg": "/photos/2025-04-5-italy-venice-2025-04-venice-04-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMCBgEEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAAA7b6xEtZUixcmrw11DBX/xAAkEAACAQMDBAMBAAAAAAAAAAABAgMAESESMWEEEyJxFCNBUf/aAAgBAQABPwCLq7RnuKVKxA5P6KXqYmeNAwu8esCmZQcuB7NI5LiwkD8ZU186XWbynUDYbAVN1jzSM7CxNSBu6CGsozb+jkCtMCyR7nUQG5JqR0ViLuLUgBd8eQiQ6vdGI/VkXLsSdtqYJMzMFt5EZ4Nf/8QAGREBAAIDAAAAAAAAAAAAAAAAAQADBBAx/9oACAECAQE/AC9Oxyjf/8QAGhEAAQUBAAAAAAAAAAAAAAAAAQADBBARMf/aAAgBAwEBPwAtbxCMb//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAA1NkooIhOv/8QAIhABAAEDAwQDAAAAAAAAAAAAAQIAAxEEEhMFISJRMVJh/9oACAEBAAE/ALOr1/MpySPSqNXep3be8nCG/wDGrvGpjc+Jl+e73olhMFdWtS28pPB9cUN1BLsw9Zr/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIREjH/2gAIAQIBAT8AuS4zJ//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhIhIv/aAAgBAwEBPwDlvUWif//Z",
     "title": "Venice on the Water",
     "place": "Italy",
     "year": 2025,
@@ -7900,8 +7822,8 @@
   {
     "id": "2025-04-6-italy-bologna-2025-04-bologna-02",
     "file": "travel/2025_04-6_Italy_Bologna/2025_04-Bologna_02.jpg",
-    "width": 3889,
-    "height": 5833,
+    "width": 3852,
+    "height": 5778,
     "renditions": [
       {
         "width": 480,
@@ -7919,7 +7841,7 @@
         "jpg": "/photos/2025-04-6-italy-bologna-2025-04-bologna-02-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQIG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECBP/aAAwDAQACEAMQAAAA8sjUiGkpM9a3MqqdAoF//8QAIxAAAgICAQMFAQAAAAAAAAAAAQIDEQAEEiEyQRMjMWFxcv/aAAgBAQABPwCU2VYfHTJzVEeRkcTyLy55BovIvevDlV/gvH1msqQQEarw6c6mou37Oas6vryQKfd5lxX85uQSoHZx0Khmbzebm/F6iUjdgzVkkXqDX5k08kgdWdiDjJHI3JwSc//EAB0RAQACAgIDAAAAAAAAAAAAAAEAAgMREiEyQXH/2gAIAQIBAT8Aw5NYMtF6dJ9GL35ErRD1ONWf/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAECESMxQZH/2gAIAQMBAT8AmrkZbwzo2mVZ/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAYF/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAA00qFevPeFGMJJKo1tDw//8QAKBAAAgEDAQYHAQAAAAAAAAAAAQIDAAQRBRITITFBkhQVIjIzNEKR/9oACAEBAAE/AMnNBGNCI45V5xpoGd43YastZt97KJpMK7FlJ/NLqenEfci7q8UAyoY/URwG0eVGUkcIW/prbHWJqNncNIkjuhKxleo500EiTQQ7fyRsi8TUdteqiqJosAY9ua//xAAYEQADAQEAAAAAAAAAAAAAAAAAARIRUf/aAAgBAgEBPwCkUS+GH//EABcRAQEBAQAAAAAAAAAAAAAAAAARARL/2gAIAQMBAT8A51FV/9k=",
     "title": "Under the Porticoes",
     "place": "Bologna · Italy",
     "year": 2025,
@@ -7934,8 +7856,8 @@
   {
     "id": "2025-04-6-italy-bologna-2025-04-bologna-03",
     "file": "travel/2025_04-6_Italy_Bologna/2025_04-Bologna_03.jpg",
-    "width": 3852,
-    "height": 5778,
+    "width": 3889,
+    "height": 5833,
     "renditions": [
       {
         "width": 480,
@@ -7953,7 +7875,7 @@
         "jpg": "/photos/2025-04-6-italy-bologna-2025-04-bologna-03-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAYF/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAA00qFevPeFGMJJKo1tDw//8QAKBAAAgEDAQYHAQAAAAAAAAAAAQIDAAQRBRITITFBkhQVIjIzNEKR/9oACAEBAAE/AMnNBGNCI45V5xpoGd43YastZt97KJpMK7FlJ/NLqenEfci7q8UAyoY/URwG0eVGUkcIW/prbHWJqNncNIkjuhKxleo500EiTQQ7fyRsi8TUdteqiqJosAY9ua//xAAYEQADAQEAAAAAAAAAAAAAAAAAARIRUf/aAAgBAgEBPwCkUS+GH//EABcRAQEBAQAAAAAAAAAAAAAAAAARARL/2gAIAQMBAT8A51FV/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQIG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECBP/aAAwDAQACEAMQAAAA8sjUiGkpM9a3MqqdAoF//8QAIxAAAgICAQMFAQAAAAAAAAAAAQIDEQAEEiEyQRMjMWFxcv/aAAgBAQABPwCU2VYfHTJzVEeRkcTyLy55BovIvevDlV/gvH1msqQQEarw6c6mou37Oas6vryQKfd5lxX85uQSoHZx0Khmbzebm/F6iUjdgzVkkXqDX5k08kgdWdiDjJHI3JwSc//EAB0RAQACAgIDAAAAAAAAAAAAAAEAAgMREiEyQXH/2gAIAQIBAT8Aw5NYMtF6dJ9GL35ErRD1ONWf/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAECESMxQZH/2gAIAQMBAT8AmrkZbwzo2mVZ/9k=",
     "title": "Under the Porticoes",
     "place": "Bologna · Italy",
     "year": 2025,
@@ -8435,7 +8357,7 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 1 of 16"
+    "alt": "Photo 1 of 20"
   },
   {
     "id": "home-02-pennyo-duet",
@@ -8474,36 +8396,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 2 of 16"
+    "alt": "Photo 2 of 20"
   },
   {
-    "id": "home-03-lz-palestra",
-    "file": "home/03-lz-palestra.jpg",
-    "width": 4076,
-    "height": 2718,
+    "id": "home-03-jje-steps",
+    "file": "home/03-jje-steps.jpg",
+    "width": 5007,
+    "height": 7511,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-03-lz-palestra-480.avif",
-        "jpg": "/photos/home-03-lz-palestra-480.jpg"
+        "avif": "/photos/home-03-jje-steps-480.avif",
+        "jpg": "/photos/home-03-jje-steps-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-03-lz-palestra-960.avif",
-        "jpg": "/photos/home-03-lz-palestra-960.jpg"
+        "avif": "/photos/home-03-jje-steps-960.avif",
+        "jpg": "/photos/home-03-jje-steps-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-03-lz-palestra-1600.avif",
-        "jpg": "/photos/home-03-lz-palestra-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/home-03-lz-palestra-2400.avif",
-        "jpg": "/photos/home-03-lz-palestra-2400.jpg"
+        "avif": "/photos/home-03-jje-steps-1600.avif",
+        "jpg": "/photos/home-03-jje-steps-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8513,31 +8430,36 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 3 of 16"
+    "alt": "Photo 3 of 20"
   },
   {
-    "id": "home-04-ap-window",
-    "file": "home/04-ap-window.jpg",
-    "width": 5236,
-    "height": 7850,
+    "id": "home-04-jr-stair",
+    "file": "home/04-jr-stair.jpg",
+    "width": 8192,
+    "height": 5464,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-04-ap-window-480.avif",
-        "jpg": "/photos/home-04-ap-window-480.jpg"
+        "avif": "/photos/home-04-jr-stair-480.avif",
+        "jpg": "/photos/home-04-jr-stair-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-04-ap-window-960.avif",
-        "jpg": "/photos/home-04-ap-window-960.jpg"
+        "avif": "/photos/home-04-jr-stair-960.avif",
+        "jpg": "/photos/home-04-jr-stair-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-04-ap-window-1600.avif",
-        "jpg": "/photos/home-04-ap-window-1600.jpg"
+        "avif": "/photos/home-04-jr-stair-1600.avif",
+        "jpg": "/photos/home-04-jr-stair-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-04-jr-stair-2400.avif",
+        "jpg": "/photos/home-04-jr-stair-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAA1SCaeI0EpRtCor9Z7UJiL//EACUQAAIBAwMCBwAAAAAAAAAAAAECAwAEEQUSMRMiFCFCUWJxwf/aAAgBAQABPwA6hiSHt7gx4+q1a5hN2szsEX5UvTlVXQgqwyDUcgR1VvPD/mK12GSdIdqZetPvoLS38PcPh0Y1JGIJFDIitjhjk4q+DzXGBjbEAO3gs1NpAmYvMWjc+nGamv7uVtzmPd7hFzVlIxVyGJkaTluM1LqF3HIy7ga//8QAHxEAAgECBwAAAAAAAAAAAAAAAQIAAxEQEiEiUZHh/9oACAECAQE/AFcsbHBiLbRrM1Xgd+T/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEGGx/9oACAEDAQE/AIvmEqltI//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8547,31 +8469,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 4 of 16"
+    "alt": "Photo 4 of 20"
   },
   {
-    "id": "home-05-jjck-toss",
-    "file": "home/05-jjck-toss.jpg",
-    "width": 5257,
-    "height": 7886,
+    "id": "home-05-jh-huntsman",
+    "file": "home/05-jh-huntsman.jpg",
+    "width": 4891,
+    "height": 7336,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-05-jjck-toss-480.avif",
-        "jpg": "/photos/home-05-jjck-toss-480.jpg"
+        "avif": "/photos/home-05-jh-huntsman-480.avif",
+        "jpg": "/photos/home-05-jh-huntsman-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-05-jjck-toss-960.avif",
-        "jpg": "/photos/home-05-jjck-toss-960.jpg"
+        "avif": "/photos/home-05-jh-huntsman-960.avif",
+        "jpg": "/photos/home-05-jh-huntsman-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-05-jjck-toss-1600.avif",
-        "jpg": "/photos/home-05-jjck-toss-1600.jpg"
+        "avif": "/photos/home-05-jh-huntsman-1600.avif",
+        "jpg": "/photos/home-05-jh-huntsman-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwL/2gAMAwEAAhADEAAAAKO2VThWYNNOBfLbG0QYf//EACMQAAICAQMEAwEAAAAAAAAAAAECAxEABBIxEyJBYSFx0eH/2gAIAQEAAT8A0w37gJVZbAAHj0clAEFpsN8+iMkcK5A/M00hjdSDxZNZrJ1YLSADlvvNRCXktbX4FjJZK1SpGa3uhK848800kXfSyuK9GqOQalIYkV+pwCO28CCTXXuIJQYmmg6irbf0G7zqRUBsIoeDn//EABsRAAICAwEAAAAAAAAAAAAAAAABESESMUFR/9oACAECAQE/AJSerKIS4YL0/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AHT/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwYB/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/9oADAMBAAIQAxAAAACxayOPprEwhbW0vGIy5oSX/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQACEQMSFTFRUiEyU2Jxgf/aAAgBAQABPwAkRqE554I1ak9gVnqi3UFoiArBsgYCrF9jrD1ALvxolU33MadwCsNT5rEATFUiWlp+FYVnkX//xAAbEQACAQUAAAAAAAAAAAAAAAAAARECAxATUf/aAAgBAgEBPwBYptNNTBqfT//EABoRAQACAwEAAAAAAAAAAAAAAAEAEQIDURT/2gAIAQMBAT8Ab7KezLeIgNz0Y8Z//9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8581,70 +8503,70 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 5 of 16"
+    "alt": "Photo 5 of 20"
   },
   {
-    "id": "home-06-wuhc-panel",
-    "file": "home/06-wuhc-panel.jpg",
-    "width": 5991,
-    "height": 3994,
+    "id": "home-06-appetit-overhead",
+    "file": "home/06-appetit-overhead.jpg",
+    "width": 5821,
+    "height": 3881,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-06-wuhc-panel-480.avif",
-        "jpg": "/photos/home-06-wuhc-panel-480.jpg"
+        "avif": "/photos/home-06-appetit-overhead-480.avif",
+        "jpg": "/photos/home-06-appetit-overhead-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-06-wuhc-panel-960.avif",
-        "jpg": "/photos/home-06-wuhc-panel-960.jpg"
+        "avif": "/photos/home-06-appetit-overhead-960.avif",
+        "jpg": "/photos/home-06-appetit-overhead-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-06-wuhc-panel-1600.avif",
-        "jpg": "/photos/home-06-wuhc-panel-1600.jpg"
+        "avif": "/photos/home-06-appetit-overhead-1600.avif",
+        "jpg": "/photos/home-06-appetit-overhead-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-06-wuhc-panel-2400.avif",
-        "jpg": "/photos/home-06-wuhc-panel-2400.jpg"
+        "avif": "/photos/home-06-appetit-overhead-2400.avif",
+        "jpg": "/photos/home-06-appetit-overhead-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAAbLwzjXsDTOZ//8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREgUUITFSIkGS/9oACAEBAAE/AGctfz7KStY/Rp7LlvZ9yzJnj1jXTW4JBkMjz8qdcOgW6TMdZDJ9iac90pkSYZAS8GuMO1tt9mcia//EABwRAAICAgMAAAAAAAAAAAAAAAECAAMRIRJRYf/aAAgBAgEBPwAI5JzZrwSy1kdl5No9z//EABoRAAIDAQEAAAAAAAAAAAAAAAECABIhUZH/2gAIAQMBAT8AugGJ7EUMoNV0cn//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAX/2gAMAwEAAhADEAAAAK00szrJzZHB/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQREiMQFSExMlFS/9oACAEBAAE/AJ5t0Ke2lmJ9BRmknW52UbQSpOfI4rk8X2aMau4YjrVvZ28LFkTBPD//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8AzUf/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQITIf/aAAgBAwEBPwCmuGlH/9k=",
     "title": "",
     "place": "",
-    "year": 2026,
+    "year": 2025,
     "series": "home",
     "home": true,
     "order": 6,
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 6 of 16"
+    "alt": "Photo 6 of 20"
   },
   {
-    "id": "home-07-jh-quatrefoil",
-    "file": "home/07-jh-quatrefoil.jpg",
-    "width": 5441,
-    "height": 8158,
+    "id": "home-07-lz-above",
+    "file": "home/07-lz-above.jpg",
+    "width": 2732,
+    "height": 4096,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-07-jh-quatrefoil-480.avif",
-        "jpg": "/photos/home-07-jh-quatrefoil-480.jpg"
+        "avif": "/photos/home-07-lz-above-480.avif",
+        "jpg": "/photos/home-07-lz-above-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-07-jh-quatrefoil-960.avif",
-        "jpg": "/photos/home-07-jh-quatrefoil-960.jpg"
+        "avif": "/photos/home-07-lz-above-960.avif",
+        "jpg": "/photos/home-07-lz-above-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-07-jh-quatrefoil-1600.avif",
-        "jpg": "/photos/home-07-jh-quatrefoil-1600.jpg"
+        "avif": "/photos/home-07-lz-above-1600.avif",
+        "jpg": "/photos/home-07-lz-above-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQIG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAG9bfOlSC2FrswsFNkks/8QAIxAAAgEDBAIDAQAAAAAAAAAAAQIDAAQRBRITQSExFCJRYf/aAAgBAQABPwCzjtYpGa6mReJsCL2KZEWVrUurxSLmNh+HqpoNkjIw8qcVBxQzzWnGvA/3U9f1avHd9QkkSPZEACuO9tXlkZpQ69qKg1hi8aTqyqGqWWBJSyq7KA3jOMgj1TaheOciTYOlAzRzjNfLkZmUqtPepGxUqfFf/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECElER/9oACAECAQE/AHVorLDuJFp6z//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhESUf/aAAgBAwEBPwBXbNRMoqPEf//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8654,7 +8576,7 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 7 of 16"
+    "alt": "Photo 7 of 20"
   },
   {
     "id": "home-08-jlin-lift",
@@ -8693,31 +8615,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 8 of 16"
+    "alt": "Photo 8 of 20"
   },
   {
-    "id": "home-09-jje-steps",
-    "file": "home/09-jje-steps.jpg",
-    "width": 5007,
-    "height": 7511,
+    "id": "home-09-ey-walk",
+    "file": "home/09-ey-walk.jpg",
+    "width": 5222,
+    "height": 7829,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-09-jje-steps-480.avif",
-        "jpg": "/photos/home-09-jje-steps-480.jpg"
+        "avif": "/photos/home-09-ey-walk-480.avif",
+        "jpg": "/photos/home-09-ey-walk-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-09-jje-steps-960.avif",
-        "jpg": "/photos/home-09-jje-steps-960.jpg"
+        "avif": "/photos/home-09-ey-walk-960.avif",
+        "jpg": "/photos/home-09-ey-walk-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-09-jje-steps-1600.avif",
-        "jpg": "/photos/home-09-jje-steps-1600.jpg"
+        "avif": "/photos/home-09-ey-walk-1600.avif",
+        "jpg": "/photos/home-09-ey-walk-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAABsj4M+gIxmVccr2SIXwr//xAAhEAACAgICAgMBAAAAAAAAAAABAgMRAAQSITFRBRRxYv/aAAgBAQABPwB9mSJAyKGtwMEiCyKLKc5RnvgovJ9hwH6FR8Cf1shYmTUVJFbnEvMf0t5rK80KuC5947wRffS2NxqA3t7xESfViWCBkdArF+h3mpqbojZmpS7l6/cX4+CVmZ1B5kMVqh14xIgiigKwVXjP/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEhAxcf/aAAgBAgEBPwBQeyvcWZ//xAAaEQEAAQUAAAAAAAAAAAAAAAAAEQExUXGC/9oACAEDAQE/AIs6oxpD/9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADPpyrOUjGGz1ab13cBYUf/xAAiEAEBAAEDBAIDAAAAAAAAAAABAhEAAwQFEiExInEQE1H/2gAIAQEAAT8A4u6zSK4ya6hszsdsD3eMuo3LgxI4+9TL+wJltPYa392q3SEtmYFK0S1MuMeA9a43EOJ2XMZV8q/LXK2u/k8ep2sZKKfZg1XTeMue2j6HUny0bKTTdtojL/Px/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAIRARAiQVH/2gAIAQIBAT8AZctEU4Rb/8QAGREAAwADAAAAAAAAAAAAAAAAAAEREjFR/9oACAEDAQE/AMW6+ERoh//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8727,36 +8649,36 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 9 of 16"
+    "alt": "Photo 9 of 20"
   },
   {
-    "id": "home-10-pennyo-cast",
-    "file": "home/10-pennyo-cast.jpg",
+    "id": "home-10-sushi-overhead",
+    "file": "home/10-sushi-overhead.jpg",
     "width": 6000,
     "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-10-pennyo-cast-480.avif",
-        "jpg": "/photos/home-10-pennyo-cast-480.jpg"
+        "avif": "/photos/home-10-sushi-overhead-480.avif",
+        "jpg": "/photos/home-10-sushi-overhead-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-10-pennyo-cast-960.avif",
-        "jpg": "/photos/home-10-pennyo-cast-960.jpg"
+        "avif": "/photos/home-10-sushi-overhead-960.avif",
+        "jpg": "/photos/home-10-sushi-overhead-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-10-pennyo-cast-1600.avif",
-        "jpg": "/photos/home-10-pennyo-cast-1600.jpg"
+        "avif": "/photos/home-10-sushi-overhead-1600.avif",
+        "jpg": "/photos/home-10-sushi-overhead-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-10-pennyo-cast-2400.avif",
-        "jpg": "/photos/home-10-pennyo-cast-2400.jpg"
+        "avif": "/photos/home-10-sushi-overhead-2400.avif",
+        "jpg": "/photos/home-10-sushi-overhead-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGAf/EABUBAQEAAAAAAAAAAAAAAAAAAAMC/9oADAMBAAIQAxAAAACWeT7YkmjBI//EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEABAUSExQy/9oACAEBAAE/AOO1U2JLK2iUXBasbjdPatU9eF+p6KhZjhWjnF7b685UCxKOhyfdnSLyEhinyTjGzn//xAAYEQACAwAAAAAAAAAAAAAAAAABAhARIf/aAAgBAgEBPwBg95H/xAAYEQACAwAAAAAAAAAAAAAAAAACEBESIf/aAAgBAwEBPwAaxq//2Q==",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8766,31 +8688,31 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 10 of 16"
+    "alt": "Photo 10 of 20"
   },
   {
-    "id": "home-11-ey-walk",
-    "file": "home/11-ey-walk.jpg",
-    "width": 5222,
-    "height": 7829,
+    "id": "home-11-ap-window",
+    "file": "home/11-ap-window.jpg",
+    "width": 5236,
+    "height": 7850,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-11-ey-walk-480.avif",
-        "jpg": "/photos/home-11-ey-walk-480.jpg"
+        "avif": "/photos/home-11-ap-window-480.avif",
+        "jpg": "/photos/home-11-ap-window-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-11-ey-walk-960.avif",
-        "jpg": "/photos/home-11-ey-walk-960.jpg"
+        "avif": "/photos/home-11-ap-window-960.avif",
+        "jpg": "/photos/home-11-ap-window-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-11-ey-walk-1600.avif",
-        "jpg": "/photos/home-11-ey-walk-1600.jpg"
+        "avif": "/photos/home-11-ap-window-1600.avif",
+        "jpg": "/photos/home-11-ap-window-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADPpyrOUjGGz1ab13cBYUf/xAAiEAEBAAEDBAIDAAAAAAAAAAABAhEAAwQFEiExInEQE1H/2gAIAQEAAT8A4u6zSK4ya6hszsdsD3eMuo3LgxI4+9TL+wJltPYa392q3SEtmYFK0S1MuMeA9a43EOJ2XMZV8q/LXK2u/k8ep2sZKKfZg1XTeMue2j6HUny0bKTTdtojL/Px/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAIRARAiQVH/2gAIAQIBAT8AZctEU4Rb/8QAGREAAwADAAAAAAAAAAAAAAAAAAEREjFR/9oACAEDAQE/AMW6+ERoh//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/aAAwDAQACEAMQAAAA1SCaeI0EpRtCor9Z7UJiL//EACUQAAIBAwMCBwAAAAAAAAAAAAECAwAEEQUSMRMiFCFCUWJxwf/aAAgBAQABPwA6hiSHt7gx4+q1a5hN2szsEX5UvTlVXQgqwyDUcgR1VvPD/mK12GSdIdqZetPvoLS38PcPh0Y1JGIJFDIitjhjk4q+DzXGBjbEAO3gs1NpAmYvMWjc+nGamv7uVtzmPd7hFzVlIxVyGJkaTluM1LqF3HIy7ga//8QAHxEAAgECBwAAAAAAAAAAAAAAAQIAAxEQEiEiUZHh/9oACAECAQE/AFcsbHBiLbRrM1Xgd+T/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEGGx/9oACAEDAQE/AIvmEqltI//Z",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8800,70 +8722,70 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 11 of 16"
+    "alt": "Photo 11 of 20"
   },
   {
-    "id": "home-12-jr-stair",
-    "file": "home/12-jr-stair.jpg",
-    "width": 8192,
-    "height": 5464,
+    "id": "home-12-slovakia-sunrise",
+    "file": "home/12-slovakia-sunrise.jpg",
+    "width": 5960,
+    "height": 3973,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-12-jr-stair-480.avif",
-        "jpg": "/photos/home-12-jr-stair-480.jpg"
+        "avif": "/photos/home-12-slovakia-sunrise-480.avif",
+        "jpg": "/photos/home-12-slovakia-sunrise-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-12-jr-stair-960.avif",
-        "jpg": "/photos/home-12-jr-stair-960.jpg"
+        "avif": "/photos/home-12-slovakia-sunrise-960.avif",
+        "jpg": "/photos/home-12-slovakia-sunrise-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-12-jr-stair-1600.avif",
-        "jpg": "/photos/home-12-jr-stair-1600.jpg"
+        "avif": "/photos/home-12-slovakia-sunrise-1600.avif",
+        "jpg": "/photos/home-12-slovakia-sunrise-1600.jpg"
       },
       {
         "width": 2400,
-        "avif": "/photos/home-12-jr-stair-2400.avif",
-        "jpg": "/photos/home-12-jr-stair-2400.jpg"
+        "avif": "/photos/home-12-slovakia-sunrise-2400.avif",
+        "jpg": "/photos/home-12-slovakia-sunrise-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAADcADfPdGWh/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIEEQADEgUhEyIxQUJRYf/aAAgBAQABPwDf1iFOR6XysoBDfmJHLo7625IG7L7gHvh1qT6YqcgCKFmsiynjSBsT4miPsZK1a/EsLVi8/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERP/2gAIAQIBAT8A56VGMi//xAAXEQEBAQEAAAAAAAAAAAAAAAABABIR/9oACAEDAQE/ANiByw3/2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAFvfHb570QjGf//EAB4QAAICAwADAQAAAAAAAAAAAAECAAMEERIUIWGR/9oACAEBAAE/AKs5Hs5Fj69aMsvqULzkMx1DkQWHmV5T60yIw+iCzHIB8b8cz//EABkRAAIDAQAAAAAAAAAAAAAAAAECAANxEv/aAAgBAgEBPwBqizKQ5ycbP//EABkRAAMAAwAAAAAAAAAAAAAAAAABAgMTUf/aAAgBAwEBPwCM0qWqhG5cR//Z",
     "title": "",
     "place": "",
-    "year": 2026,
+    "year": 2025,
     "series": "home",
     "home": true,
     "order": 12,
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 12 of 16"
+    "alt": "Photo 12 of 20"
   },
   {
-    "id": "home-13-jh-huntsman",
-    "file": "home/13-jh-huntsman.jpg",
-    "width": 4891,
-    "height": 7336,
+    "id": "home-13-jjck-toss",
+    "file": "home/13-jjck-toss.jpg",
+    "width": 5257,
+    "height": 7886,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-13-jh-huntsman-480.avif",
-        "jpg": "/photos/home-13-jh-huntsman-480.jpg"
+        "avif": "/photos/home-13-jjck-toss-480.avif",
+        "jpg": "/photos/home-13-jjck-toss-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-13-jh-huntsman-960.avif",
-        "jpg": "/photos/home-13-jh-huntsman-960.jpg"
+        "avif": "/photos/home-13-jjck-toss-960.avif",
+        "jpg": "/photos/home-13-jjck-toss-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-13-jh-huntsman-1600.avif",
-        "jpg": "/photos/home-13-jh-huntsman-1600.jpg"
+        "avif": "/photos/home-13-jjck-toss-1600.avif",
+        "jpg": "/photos/home-13-jjck-toss-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwYB/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/9oADAMBAAIQAxAAAACxayOPprEwhbW0vGIy5oSX/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQACEQMSFTFRUiEyU2Jxgf/aAAgBAQABPwAkRqE554I1ak9gVnqi3UFoiArBsgYCrF9jrD1ALvxolU33MadwCsNT5rEATFUiWlp+FYVnkX//xAAbEQACAQUAAAAAAAAAAAAAAAAAARECAxATUf/aAAgBAgEBPwBYptNNTBqfT//EABoRAQACAwEAAAAAAAAAAAAAAAEAEQIDURT/2gAIAQMBAT8Ab7KezLeIgNz0Y8Z//9k=",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwL/2gAMAwEAAhADEAAAAKO2VThWYNNOBfLbG0QYf//EACMQAAICAQMEAwEAAAAAAAAAAAECAxEABBIxEyJBYSFx0eH/2gAIAQEAAT8A0w37gJVZbAAHj0clAEFpsN8+iMkcK5A/M00hjdSDxZNZrJ1YLSADlvvNRCXktbX4FjJZK1SpGa3uhK848800kXfSyuK9GqOQalIYkV+pwCO28CCTXXuIJQYmmg6irbf0G7zqRUBsIoeDn//EABsRAAICAwEAAAAAAAAAAAAAAAABESESMUFR/9oACAECAQE/AJSerKIS4YL0/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AHT/2Q==",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8873,99 +8795,109 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 13 of 16"
+    "alt": "Photo 13 of 20"
   },
   {
-    "id": "home-14-lz-above",
-    "file": "home/14-lz-above.jpg",
-    "width": 2732,
-    "height": 4096,
+    "id": "home-14-budapest-bridge",
+    "file": "home/14-budapest-bridge.jpg",
+    "width": 5950,
+    "height": 3967,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-14-lz-above-480.avif",
-        "jpg": "/photos/home-14-lz-above-480.jpg"
+        "avif": "/photos/home-14-budapest-bridge-480.avif",
+        "jpg": "/photos/home-14-budapest-bridge-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-14-lz-above-960.avif",
-        "jpg": "/photos/home-14-lz-above-960.jpg"
+        "avif": "/photos/home-14-budapest-bridge-960.avif",
+        "jpg": "/photos/home-14-budapest-bridge-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-14-lz-above-1600.avif",
-        "jpg": "/photos/home-14-lz-above-1600.jpg"
+        "avif": "/photos/home-14-budapest-bridge-1600.avif",
+        "jpg": "/photos/home-14-budapest-bridge-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-14-budapest-bridge-2400.avif",
+        "jpg": "/photos/home-14-budapest-bridge-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAABpjnjakBeNeBXh5w4h/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAEQMSIROBUWFx/9oACAEBAAE/AM6q6Vev5KPAWJ7Uy+NX1AY1HK5qrHr7JJmXHqoO9D6jldj2phIs7fEcnV7ba8jH0Y7WxmJ2Y8MZbBjILn//xAAbEQACAgMBAAAAAAAAAAAAAAAAAgEREiIxYf/aAAgBAgEBPwBElZrLnShV1mLL8P/EABgRAAIDAAAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/AGWZH//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCBAb/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/aAAwDAQACEAMQAAAASWkEq59gIg0//8QAIRAAAgIABgMBAAAAAAAAAAAAAQIAAwQRISIxkQUUQUL/2gAIAQEAAT8A3AjZp9J0iNg/1esrPjGQH2E7lrGpslA4HMStWcLr3K8Jkgyuef/EABwRAAEDBQAAAAAAAAAAAAAAAAEAAzECBBEUIf/aAAgBAgEBPwDZfBr6JRun8yv/xAAbEQACAQUAAAAAAAAAAAAAAAAAAQMCBBQhUv/aAAgBAwEBPwDGgap0xWsHJ//Z",
     "title": "",
     "place": "",
-    "year": 2026,
+    "year": 2025,
     "series": "home",
     "home": true,
     "order": 14,
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 14 of 16"
+    "alt": "Photo 14 of 20"
   },
   {
-    "id": "home-15-ew-studio",
-    "file": "home/15-ew-studio.jpg",
-    "width": 5464,
-    "height": 8192,
+    "id": "home-15-venice-gondola",
+    "file": "home/15-venice-gondola.jpg",
+    "width": 3872,
+    "height": 5808,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-15-ew-studio-480.avif",
-        "jpg": "/photos/home-15-ew-studio-480.jpg"
+        "avif": "/photos/home-15-venice-gondola-480.avif",
+        "jpg": "/photos/home-15-venice-gondola-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-15-ew-studio-960.avif",
-        "jpg": "/photos/home-15-ew-studio-960.jpg"
+        "avif": "/photos/home-15-venice-gondola-960.avif",
+        "jpg": "/photos/home-15-venice-gondola-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-15-ew-studio-1600.avif",
-        "jpg": "/photos/home-15-ew-studio-1600.jpg"
+        "avif": "/photos/home-15-venice-gondola-1600.avif",
+        "jpg": "/photos/home-15-venice-gondola-1600.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAABv5nU1MBeGLODJWo4maS//xAAiEAACAgEEAgMBAAAAAAAAAAABAgADBQQRElEUMiEigrL/2gAIAQEAAT8ASgdSvxry61Wo5Q7MFO+0fSjl6yy6ump7HbZVUkmYzWpTmlpK7c9Nwb+hGsXeZq8+ESLFADfKke/QmKuS3KG0oytxZu/tDeZmrixro/ZmOqKNp9QT7uyKOobp/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwCDFn//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAwEBPwBZNo//2Q==",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBBQYD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIB/9oADAMBAAIQAxAAAACHMhak6osTKNnVaZcSOQNf/8QAJRAAAgEDAgUFAAAAAAAAAAAAAQIDABESBAUTITFBUSIyQnGB/9oACAEBAAE/ANv3Il4kjUK45G/i1bjqXninMslkCtZRSyAqgB9qgH7ArStJFqUIIqSXjJIyvzDH5drVkRfFl6+KkkIvjfKuCOExxAbrf8vURGNaf1Trlzya1apAqvbsprTMTECa/8QAGREAAgMBAAAAAAAAAAAAAAAAAAERITFx/9oACAECAQE/AOYO2yHA1Z//xAAZEQADAQEBAAAAAAAAAAAAAAAAARECITH/2gAIAQMBAT8AzI76Iy12lP/Z",
     "title": "",
     "place": "",
-    "year": 2026,
+    "year": 2025,
     "series": "home",
     "home": true,
     "order": 15,
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 15 of 16"
+    "alt": "Photo 15 of 20"
   },
   {
-    "id": "home-16-pennyo-blue",
-    "file": "home/16-pennyo-blue.jpg",
-    "width": 4000,
-    "height": 6000,
+    "id": "home-16-pennyo-cast",
+    "file": "home/16-pennyo-cast.jpg",
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
-        "avif": "/photos/home-16-pennyo-blue-480.avif",
-        "jpg": "/photos/home-16-pennyo-blue-480.jpg"
+        "avif": "/photos/home-16-pennyo-cast-480.avif",
+        "jpg": "/photos/home-16-pennyo-cast-480.jpg"
       },
       {
         "width": 960,
-        "avif": "/photos/home-16-pennyo-blue-960.avif",
-        "jpg": "/photos/home-16-pennyo-blue-960.jpg"
+        "avif": "/photos/home-16-pennyo-cast-960.avif",
+        "jpg": "/photos/home-16-pennyo-cast-960.jpg"
       },
       {
         "width": 1600,
-        "avif": "/photos/home-16-pennyo-blue-1600.avif",
-        "jpg": "/photos/home-16-pennyo-blue-1600.jpg"
+        "avif": "/photos/home-16-pennyo-cast-1600.avif",
+        "jpg": "/photos/home-16-pennyo-cast-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-16-pennyo-cast-2400.avif",
+        "jpg": "/photos/home-16-pennyo-cast-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEBf/aAAwDAQACEAMQAAAAV2QQ7LpKEP/EACAQAQABBAICAwAAAAAAAAAAAAERAAIDEgUhFZEiMlH/2gAIAQEAAT8AxchZrtt1MV5bDfIXvqr+Usk+3Z+VjzfEs0IVaMgs6EjHqr8iIAdFf//EABwRAAEDBQAAAAAAAAAAAAAAAAABAiEDBBRRof/aAAgBAgEBPwBbZkwYtPXT/8QAHhEAAQMEAwAAAAAAAAAAAAAAAQACBAMREiFRYZL/2gAIAQMBAT8AEpxcL496Rm1uW+V//9k=",
     "title": "",
     "place": "",
     "year": 2026,
@@ -8975,6 +8907,152 @@
     "rank": null,
     "shoot": null,
     "cover": false,
-    "alt": "Photo 16 of 16"
+    "alt": "Photo 16 of 20"
+  },
+  {
+    "id": "home-17-jh-quatrefoil",
+    "file": "home/17-jh-quatrefoil.jpg",
+    "width": 5441,
+    "height": 8158,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-17-jh-quatrefoil-480.avif",
+        "jpg": "/photos/home-17-jh-quatrefoil-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-17-jh-quatrefoil-960.avif",
+        "jpg": "/photos/home-17-jh-quatrefoil-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-17-jh-quatrefoil-1600.avif",
+        "jpg": "/photos/home-17-jh-quatrefoil-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQIG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAG9bfOlSC2FrswsFNkks/8QAIxAAAgEDBAIDAQAAAAAAAAAAAQIDAAQRBRITQSExFCJRYf/aAAgBAQABPwCzjtYpGa6mReJsCL2KZEWVrUurxSLmNh+HqpoNkjIw8qcVBxQzzWnGvA/3U9f1avHd9QkkSPZEACuO9tXlkZpQ69qKg1hi8aTqyqGqWWBJSyq7KA3jOMgj1TaheOciTYOlAzRzjNfLkZmUqtPepGxUqfFf/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECElER/9oACAECAQE/AHVorLDuJFp6z//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhESUf/aAAgBAwEBPwBXbNRMoqPEf//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 17,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 17 of 20"
+  },
+  {
+    "id": "home-18-florence-skyline",
+    "file": "home/18-florence-skyline.jpg",
+    "width": 5833,
+    "height": 3889,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-18-florence-skyline-480.avif",
+        "jpg": "/photos/home-18-florence-skyline-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-18-florence-skyline-960.avif",
+        "jpg": "/photos/home-18-florence-skyline-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-18-florence-skyline-1600.avif",
+        "jpg": "/photos/home-18-florence-skyline-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-18-florence-skyline-2400.avif",
+        "jpg": "/photos/home-18-florence-skyline-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIGBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAA0WjWQ7YhSa//xAAjEAACAgEBCQEAAAAAAAAAAAABAgARAwQFEhQhMTNBQnGS/9oACAEBAAE/AAy1ZYQZcY65BBqkA7gj7SzAqtXy8mcdkdN6qP2Nq2Y+/wC5/8QAGBEAAgMAAAAAAAAAAAAAAAAAAGIBBBP/2gAIAQIBAT8Amwhop//EABkRAAIDAQAAAAAAAAAAAAAAAAABAxJCYv/aAAgBAwEBPwBRJbKdH//Z",
+    "title": "",
+    "place": "",
+    "year": 2025,
+    "series": "home",
+    "home": true,
+    "order": 18,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 18 of 20"
+  },
+  {
+    "id": "home-19-pennyo-blue",
+    "file": "home/19-pennyo-blue.jpg",
+    "width": 4000,
+    "height": 6000,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-19-pennyo-blue-480.avif",
+        "jpg": "/photos/home-19-pennyo-blue-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-19-pennyo-blue-960.avif",
+        "jpg": "/photos/home-19-pennyo-blue-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-19-pennyo-blue-1600.avif",
+        "jpg": "/photos/home-19-pennyo-blue-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIDBQEEBv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgH/2gAMAwEAAhADEAAAAOMJFsAqSBM2lzPMO1RaC5P/xAAmEAACAQMBBwUAAAAAAAAAAAABAgADBBEFEhMhImFxkSMyUVJT/9oACAEBAAE/AMCYEwJTVWyWcKFGe/QQhyz8mNkgHE3VX828TTrdbh6yv7BSJMu0e2uCys4DrkHPHE3jfZvM0qq1J9ofKqexmsn1KJ6GUqNsaSM1PiVE/8QAIhEAAQMEAAcAAAAAAAAAAAAAAgABBAMREhMUIjFRUpHB/9oACAECAQE/AClRxkjQtzON1ujeQe2W5znjlZ8qXy64msLuOfR+zL//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIREgQTIUFS/9oACAEDAQE/ANbqXVH+SqgY8jpy1g8wF//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 19,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 19 of 20"
+  },
+  {
+    "id": "home-20-lz-palestra",
+    "file": "home/20-lz-palestra.jpg",
+    "width": 4076,
+    "height": 2718,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/home-20-lz-palestra-480.avif",
+        "jpg": "/photos/home-20-lz-palestra-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/home-20-lz-palestra-960.avif",
+        "jpg": "/photos/home-20-lz-palestra-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/home-20-lz-palestra-1600.avif",
+        "jpg": "/photos/home-20-lz-palestra-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/home-20-lz-palestra-2400.avif",
+        "jpg": "/photos/home-20-lz-palestra-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAOaka40yxyP/xAAgEAACAgEDBQAAAAAAAAAAAAABAgARAxMxYRIiQUJR/9oACAEBAAE/AHU5F58G534jsyngwvMLN01dj5G08uKimwmnXtP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8AkY//xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIREiH/2gAIAQMBAT8AV9tJP//Z",
+    "title": "",
+    "place": "",
+    "year": 2026,
+    "series": "home",
+    "home": true,
+    "order": 20,
+    "rank": null,
+    "shoot": null,
+    "cover": false,
+    "alt": "Photo 20 of 20"
   }
 ]
