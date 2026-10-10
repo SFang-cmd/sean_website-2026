@@ -47,14 +47,14 @@ export const theme = {
   home: {
     layout: "field" as "field" | "streams",
     field: {
-      /** Desktop/tablet knobs (see FieldKnobs). Values are the prototype defaults Sean approved. */
-      desktop: { fast: 1.5, slow: 0.6, big: 42, small: 18, fill: 0.45, band: 0.7, cap: 0.2, candidates: 80, seeds: 12 },
+      /** Desktop/tablet knobs (see FieldKnobs). Tuned on the 20-photo home at 1280×900: portraits 20–32vw (260–390 px) and landscapes ×1.5 (400–610 px) keep 4–5 shots on screen, never under 3; speeds 0.85–1.25 (a 0.6 shot lingered ~2 viewports and everything bunched around it; narrowing cut lopsidedness 38% → 14%); fill 0.45 + 24 seeds from offset 100 → worst 11% covered, fill 36–66%. Phone keeps 0.6–1.5: narrowing there pushed coverage to 31%. */
+      desktop: { fast: 1.25, slow: 0.85, big: 32, small: 20, landscapeScale: 1.5, fill: 0.45, band: 0.7, cap: 0.2, candidates: 80, seeds: 24, seedOffset: 300 },
       /**
        * Phones: shots share one column, so passes can't dodge sideways; the
-       * cap only holds with smaller shots and a lower fill (sweep at 400×800:
+       * cap only holds with smaller shots, a lower fill and enough seeds (sweep at 400×800, 20 photos: 16 seeds → worst 19%, 6 seeds → 74%;
        * 40–64vw at fill 0.3 → worst 20%, fill-min 32%; 50–82vw → worst 70%).
        */
-      phone: { fast: 1.5, slow: 0.6, big: 64, small: 40, fill: 0.3, band: 0.7, cap: 0.2, candidates: 60, seeds: 6 },
+      phone: { fast: 1.5, slow: 0.6, big: 64, small: 40, landscapeScale: 1.2, fill: 0.3, band: 0.7, cap: 0.2, candidates: 60, seeds: 16, seedOffset: 0 },
     },
     /** The three-lane drift (lib/homeStreams.ts). Lane `speed` is a lag: 1 = page speed, 0.86 = climbs 14% faster. */
     streams: {
