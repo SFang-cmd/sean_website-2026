@@ -4957,303 +4957,6 @@
     "alt": "EW Headshots, UPenn, 2026 (3 of 3)"
   },
   {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-01",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_01.jpg",
-    "width": 5515,
-    "height": 3677,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-2400.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-2400.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/9oADAMBAAIQAxAAAABOIyI1skAD/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQRISJRYQUTUv/aAAgBAQABPwC4aKHyfsfJXC5A7Sr+8guY0WNGBDfNXboZV3LpFGNDwoqWIM6sSdwz1Txjk1lgTur/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAMTImH/2gAIAQIBAT8AKtUWYuz/xAAXEQADAQAAAAAAAAAAAAAAAAAAEyFh/9oACAEDAQE/AG0Zh//Z",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 1,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": true,
-    "alt": "WUHC Speaker, UPenn, 2026 (1 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-02",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_02.jpg",
-    "width": 5780,
-    "height": 3853,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-2400.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-2400.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAKwogzW0okD/xAAhEAACAQMEAwEAAAAAAAAAAAABAgMAERIEEyIxBSMycf/aAAgBAQABPwB2MullfLkXUW/Aa1K+MEPojAluLHAimkMEWnG0XyhVr3FbsmA5dg3pppL/AEaBeZEdsfkDq/Vf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAIBEQMTMf/aAAgBAgEBPwBcLKtXHDWf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAESEzH/2gAIAQMBAT8AsTeEz//Z",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 2,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (2 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-03",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_03.jpg",
-    "width": 2142,
-    "height": 3213,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCBQYD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAQBBf/aAAwDAQACEAMQAAAAXeq7LmXSERqDVZxul0BlA//EACMQAAIBAwQBBQAAAAAAAAAAAAECAwAEERIhMkFRYXKRobH/2gAIAQEAAT8AjBBgDeTUnKD3n8pxv391ZztcrHJjid6Miu0WM7Oej4q6muklxHGpXFIULk2xTScakXaoJXaRE0HSgyDTSoDhoJSfTAq2nmWIohVQOwozUtzc9zP80ZXJyWNf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQACEhMhUv/aAAgBAgEBPwBqijNS9yrMBHk108z/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAISE1JB/9oACAEDAQE/ABEJk82mSezZbqf/2Q==",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 3,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (3 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-04",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_04.jpg",
-    "width": 5238,
-    "height": 3492,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-2400.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-2400.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQP/2gAMAwEAAhADEAAAAKCkyGlRtGk//8QAIBAAAgIDAAEFAAAAAAAAAAAAAQIDEQAEExIhIjJUkv/aAAgBAQABPwCt77kn6znN0WSWZnpSBZybY5vXJm9LvNlGLLb+0KCAMV3k5x+ZDV8sj0VRFDSFjV2c/8QAGxEBAAICAwAAAAAAAAAAAAAAAQMRAAISEzH/2gAIAQIBAT8A6ptjW5LH3CACuA5//8QAGxEBAAICAwAAAAAAAAAAAAAAAQATAyEiMUL/2gAIAQMBAT8Asxi8NnUtH2k//9k=",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 4,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (4 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-05",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_05.jpg",
-    "width": 3343,
-    "height": 5014,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEAwUG/8QAFwEBAAMAAAAAAAAAAAAAAAAABAECA//aAAwDAQACEAMQAAAAmuyuKrzgBdnWZUm1OcRb/8QAJxAAAgEDAgMJAAAAAAAAAAAAAQIDAAQRBUESISITIzEyU1RxgZH/2gAIAQEAAT8AtLCG5RnMZZuNs86OjW/pGnRIppkQYUPWn3trBEySScJ7RtjR1Gy9yv6anmie5uGVgVL8j9Uj8eO7HnK0HiZpAY8BPE0Jrc5wu+1O8Y6TGBv00BDjpQr8MRUk6K2FBAr/xAAfEQACAQIHAAAAAAAAAAAAAAAAAgEhYQMEEhMiQZH/2gAIAQIBAT8AWOK16HidbUJy2Fc2Fv6f/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAEQMSE1H/2gAIAQMBAT8AsW1rEYaiDM86t6J//9k=",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 5,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (5 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-06",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_06.jpg",
-    "width": 5991,
-    "height": 3994,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-2400.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-2400.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAAbLwzjXsDTOZ//8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREgUUITFSIkGS/9oACAEBAAE/AGctfz7KStY/Rp7LlvZ9yzJnj1jXTW4JBkMjz8qdcOgW6TMdZDJ9iac90pkSYZAS8GuMO1tt9mcia//EABwRAAICAgMAAAAAAAAAAAAAAAECAAMRIRJRYf/aAAgBAgEBPwAI5JzZrwSy1kdl5No9z//EABoRAAIDAQEAAAAAAAAAAAAAAAECABIhUZH/2gAIAQMBAT8AugGJ7EUMoNV0cn//2Q==",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 6,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (6 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-07",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_07.jpg",
-    "width": 2385,
-    "height": 3578,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-1600.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEFBP/aAAwDAQACEAMQAAAArp3HORQVmiGZmGCWnhYFcZ//xAAhEAEAAgEEAwADAAAAAAAAAAABAgMABBETIRIxURSRof/aAAgBAQABPwCVfJVOB15G2+OnmgNih6z8WP1zT2l1ZM6Mt1ddZA6RkPXtDKnmrjOAsXK9VqaKpVSDy2V3Pv3K51VlXKbf3187yq3jhtGTsq99Zr9HXXqPFCsnANoGWVwi7E1iPvbZy4eRiS6gEf0Z/8QAHREBAAEEAwEAAAAAAAAAAAAAAQIAAxMxBBASU//aAAgBAgEBPwCzmjOdsKycn5zo8mgF31//xAAdEQACAQQDAAAAAAAAAAAAAAABAgADEBEhEzFR/9oACAEDAQE/AH4yoYzFH1Zs97t//9k=",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 7,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (7 of 8)"
-  },
-  {
-    "id": "2026-04-wuhc-speakers-2026-04-wuhc-08",
-    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_08.jpg",
-    "width": 4546,
-    "height": 3031,
-    "renditions": [
-      {
-        "width": 480,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-480.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-480.jpg"
-      },
-      {
-        "width": 960,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-960.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-960.jpg"
-      },
-      {
-        "width": 1600,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-1600.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-2400.avif",
-        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-2400.jpg"
-      }
-    ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAME/9oADAMBAAIQAxAAAADWWRly3SiY/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIDEQAEEhMhIjEyUYH/2gAIAQEAAT8AWcR6Aft5xj39V3OToPkJ2juOjxarx49GM0+wl/pyGXY2UWJpiEWDtQHrHmmD31G5cQLvJb6r0xHln//EABsRAAEEAwAAAAAAAAAAAAAAAAIAARETElOR/9oACAECAQE/AKJMSzdoVDbD6v/EABsRAAEEAwAAAAAAAAAAAAAAAAEAAhETElKR/9oACAEDAQE/ALYBGMyrTo3i/9k=",
-    "title": "WUHC Speaker",
-    "place": "UPenn",
-    "year": 2026,
-    "series": "events",
-    "home": false,
-    "order": null,
-    "rank": 8,
-    "shoot": "2026_04-WUHC_Speakers",
-    "cover": false,
-    "alt": "WUHC Speaker, UPenn, 2026 (8 of 8)"
-  },
-  {
     "id": "2026-03-pennyo-concert-2026-03-pennyo-01",
     "file": "events/2026_03-PennYo_Concert/2026_03-PennYo_01.jpg",
     "width": 6000,
@@ -6036,6 +5739,303 @@
     "shoot": "2026_03-PennYo_Concert",
     "cover": false,
     "alt": "PennYo Concert, UPenn, 2026 (21 of 21)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-01",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_01.jpg",
+    "width": 5515,
+    "height": 3677,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-2400.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-01-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/9oADAMBAAIQAxAAAABOIyI1skAD/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQRISJRYQUTUv/aAAgBAQABPwC4aKHyfsfJXC5A7Sr+8guY0WNGBDfNXboZV3LpFGNDwoqWIM6sSdwz1Txjk1lgTur/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAMTImH/2gAIAQIBAT8AKtUWYuz/xAAXEQADAQAAAAAAAAAAAAAAAAAAEyFh/9oACAEDAQE/AG0Zh//Z",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 1,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": true,
+    "alt": "WUHC Speaker, UPenn, 2026 (1 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-02",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_02.jpg",
+    "width": 5780,
+    "height": 3853,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-2400.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-02-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAKwogzW0okD/xAAhEAACAQMEAwEAAAAAAAAAAAABAgMAERIEEyIxBSMycf/aAAgBAQABPwB2MullfLkXUW/Aa1K+MEPojAluLHAimkMEWnG0XyhVr3FbsmA5dg3pppL/AEaBeZEdsfkDq/Vf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAIBEQMTMf/aAAgBAgEBPwBcLKtXHDWf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAESEzH/2gAIAQMBAT8AsTeEz//Z",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 2,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (2 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-03",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_03.jpg",
+    "width": 2142,
+    "height": 3213,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-03-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCBQYD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAQBBf/aAAwDAQACEAMQAAAAXeq7LmXSERqDVZxul0BlA//EACMQAAIBAwQBBQAAAAAAAAAAAAECAwAEERIhMkFRYXKRobH/2gAIAQEAAT8AjBBgDeTUnKD3n8pxv391ZztcrHJjid6Miu0WM7Oej4q6muklxHGpXFIULk2xTScakXaoJXaRE0HSgyDTSoDhoJSfTAq2nmWIohVQOwozUtzc9zP80ZXJyWNf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQACEhMhUv/aAAgBAgEBPwBqijNS9yrMBHk108z/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAISE1JB/9oACAEDAQE/ABEJk82mSezZbqf/2Q==",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 3,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (3 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-04",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_04.jpg",
+    "width": 5238,
+    "height": 3492,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-2400.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-04-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQP/2gAMAwEAAhADEAAAAKCkyGlRtGk//8QAIBAAAgIDAAEFAAAAAAAAAAAAAQIDEQAEExIhIjJUkv/aAAgBAQABPwCt77kn6znN0WSWZnpSBZybY5vXJm9LvNlGLLb+0KCAMV3k5x+ZDV8sj0VRFDSFjV2c/8QAGxEBAAICAwAAAAAAAAAAAAAAAQMRAAISEzH/2gAIAQIBAT8A6ptjW5LH3CACuA5//8QAGxEBAAICAwAAAAAAAAAAAAAAAQATAyEiMUL/2gAIAQMBAT8Asxi8NnUtH2k//9k=",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 4,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (4 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-05",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_05.jpg",
+    "width": 3343,
+    "height": 5014,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-05-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEAwUG/8QAFwEBAAMAAAAAAAAAAAAAAAAABAECA//aAAwDAQACEAMQAAAAmuyuKrzgBdnWZUm1OcRb/8QAJxAAAgEDAgMJAAAAAAAAAAAAAQIDAAQRBUESISITIzEyU1RxgZH/2gAIAQEAAT8AtLCG5RnMZZuNs86OjW/pGnRIppkQYUPWn3trBEySScJ7RtjR1Gy9yv6anmie5uGVgVL8j9Uj8eO7HnK0HiZpAY8BPE0Jrc5wu+1O8Y6TGBv00BDjpQr8MRUk6K2FBAr/xAAfEQACAQIHAAAAAAAAAAAAAAAAAgEhYQMEEhMiQZH/2gAIAQIBAT8AWOK16HidbUJy2Fc2Fv6f/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAEQMSE1H/2gAIAQMBAT8AsW1rEYaiDM86t6J//9k=",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 5,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (5 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-06",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_06.jpg",
+    "width": 5991,
+    "height": 3994,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-2400.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-06-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAAbLwzjXsDTOZ//8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREgUUITFSIkGS/9oACAEBAAE/AGctfz7KStY/Rp7LlvZ9yzJnj1jXTW4JBkMjz8qdcOgW6TMdZDJ9iac90pkSYZAS8GuMO1tt9mcia//EABwRAAICAgMAAAAAAAAAAAAAAAECAAMRIRJRYf/aAAgBAgEBPwAI5JzZrwSy1kdl5No9z//EABoRAAIDAQEAAAAAAAAAAAAAAAECABIhUZH/2gAIAQMBAT8AugGJ7EUMoNV0cn//2Q==",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 6,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (6 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-07",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_07.jpg",
+    "width": 2385,
+    "height": 3578,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-07-1600.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYD/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEFBP/aAAwDAQACEAMQAAAArp3HORQVmiGZmGCWnhYFcZ//xAAhEAEAAgEEAwADAAAAAAAAAAABAgMABBETIRIxURSRof/aAAgBAQABPwCVfJVOB15G2+OnmgNih6z8WP1zT2l1ZM6Mt1ddZA6RkPXtDKnmrjOAsXK9VqaKpVSDy2V3Pv3K51VlXKbf3187yq3jhtGTsq99Zr9HXXqPFCsnANoGWVwi7E1iPvbZy4eRiS6gEf0Z/8QAHREBAAEEAwEAAAAAAAAAAAAAAQIAAxMxBBASU//aAAgBAgEBPwCzmjOdsKycn5zo8mgF31//xAAdEQACAQQDAAAAAAAAAAAAAAABAgADEBEhEzFR/9oACAEDAQE/AH4yoYzFH1Zs97t//9k=",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 7,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (7 of 8)"
+  },
+  {
+    "id": "2026-04-wuhc-speakers-2026-04-wuhc-08",
+    "file": "events/2026_04-WUHC_Speakers/2026_04-WUHC_08.jpg",
+    "width": 4546,
+    "height": 3031,
+    "renditions": [
+      {
+        "width": 480,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-480.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-480.jpg"
+      },
+      {
+        "width": 960,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-960.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-960.jpg"
+      },
+      {
+        "width": 1600,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-1600.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-2400.avif",
+        "jpg": "/photos/2026-04-wuhc-speakers-2026-04-wuhc-08-2400.jpg"
+      }
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAME/9oADAMBAAIQAxAAAADWWRly3SiY/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIDEQAEEhMhIjEyUYH/2gAIAQEAAT8AWcR6Aft5xj39V3OToPkJ2juOjxarx49GM0+wl/pyGXY2UWJpiEWDtQHrHmmD31G5cQLvJb6r0xHln//EABsRAAEEAwAAAAAAAAAAAAAAAAIAARETElOR/9oACAECAQE/AKJMSzdoVDbD6v/EABsRAAEEAwAAAAAAAAAAAAAAAAEAAhETElKR/9oACAEDAQE/ALYBGMyrTo3i/9k=",
+    "title": "WUHC Speaker",
+    "place": "UPenn",
+    "year": 2026,
+    "series": "events",
+    "home": false,
+    "order": null,
+    "rank": 8,
+    "shoot": "2026_04-WUHC_Speakers",
+    "cover": false,
+    "alt": "WUHC Speaker, UPenn, 2026 (8 of 8)"
   },
   {
     "id": "2025-04-penn-appetit-sp25-2025-04-pennappetit-01",
