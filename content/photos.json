@@ -6347,8 +6347,8 @@
   {
     "id": "2024-11-penn-appetit-fa24-2024-11-pennappetit-02",
     "file": "commercial/2024_11-Penn_Appetit_fa24/2024_11-PennAppetit_02.jpg",
-    "width": 4000,
-    "height": 6000,
+    "width": 6000,
+    "height": 4000,
     "renditions": [
       {
         "width": 480,
@@ -6364,9 +6364,14 @@
         "width": 1600,
         "avif": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-02-1600.avif",
         "jpg": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-02-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-02-2400.avif",
+        "jpg": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQAEBgP/xAAXAQADAQAAAAAAAAAAAAAAAAABAwQC/9oADAMBAAIQAxAAAAAh/b5z0nR0FndZxTmxlgpq/wD/xAAjEAACAgEDBAMBAAAAAAAAAAABAgMEAAURIRITIzIUInGR/9oACAEBAAE/ANBHhm4PvhR9vRv5hPOafTjpVzHBKCCxYEnLD/GrPNOzEAEtkDvcVpUmESliAjnNFvPXm7UdVZXlP4cvR2rNZ4VV0J232AfIrdfTg1eQOXB3PVECecgvRIGMkAEo5jli+jK2Vbt0pU7llvOkh/OnLdhrMokbffpAz//EABgRAAMBAQAAAAAAAAAAAAAAAAABAhET/9oACAECAQE/AKjabOdFukLcWn//xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIhERL/2gAIAQMBAT8AhT51nUQNaf/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAAAuzrVTC8hWMf/xAAhEAACAgICAQUAAAAAAAAAAAABAgMEAAUREhUyQUJikv/aAAgBAQABPwDwtJAUFL347PyzZe1j1YUY14y07EBAG7qfrld70USo9u5ER8BCTk1+4mi180VmVHLFGzcU5aYgnNp5Xc+psTbbNF4W7N+s/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQAREjH/2gAIAQIBAT8AFsL7MM//xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIRElH/2gAIAQMBAT8AUTJQAm1eT//Z",
     "title": "Penn Appétit · Fall Issue",
     "place": "UPenn",
     "year": 2024,
@@ -6381,8 +6386,8 @@
   {
     "id": "2024-11-penn-appetit-fa24-2024-11-pennappetit-03",
     "file": "commercial/2024_11-Penn_Appetit_fa24/2024_11-PennAppetit_03.jpg",
-    "width": 6000,
-    "height": 4000,
+    "width": 4000,
+    "height": 6000,
     "renditions": [
       {
         "width": 480,
@@ -6398,14 +6403,9 @@
         "width": 1600,
         "avif": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-03-1600.avif",
         "jpg": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-03-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-03-2400.avif",
-        "jpg": "/photos/2024-11-penn-appetit-fa24-2024-11-pennappetit-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAAAuzrVTC8hWMf/xAAhEAACAgICAQUAAAAAAAAAAAABAgMEAAUREhUyQUJikv/aAAgBAQABPwDwtJAUFL347PyzZe1j1YUY14y07EBAG7qfrld70USo9u5ER8BCTk1+4mi180VmVHLFGzcU5aYgnNp5Xc+psTbbNF4W7N+s/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQAREjH/2gAIAQIBAT8AFsL7MM//xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIRElH/2gAIAQMBAT8AUTJQAm1eT//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQAEBgP/xAAXAQADAQAAAAAAAAAAAAAAAAABAwQC/9oADAMBAAIQAxAAAAAh/b5z0nR0FndZxTmxlgpq/wD/xAAjEAACAgEDBAMBAAAAAAAAAAABAgMEAAURIRITIzIUInGR/9oACAEBAAE/ANBHhm4PvhR9vRv5hPOafTjpVzHBKCCxYEnLD/GrPNOzEAEtkDvcVpUmESliAjnNFvPXm7UdVZXlP4cvR2rNZ4VV0J232AfIrdfTg1eQOXB3PVECecgvRIGMkAEo5jli+jK2Vbt0pU7llvOkh/OnLdhrMokbffpAz//EABgRAAMBAQAAAAAAAAAAAAAAAAABAhET/9oACAECAQE/AKjabOdFukLcWn//xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIhERL/2gAIAQMBAT8AhT51nUQNaf/Z",
     "title": "Penn Appétit · Fall Issue",
     "place": "UPenn",
     "year": 2024,
