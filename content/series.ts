@@ -11,14 +11,14 @@ export interface Series {
 
 export const series: Series[] = [
   {
-    slug: "portraits",
-    name: "Portraits",
-    lede: "Bringing out the best light in people.",
-  },
-  {
     slug: "sports",
     name: "Sports",
     lede: "Capturing Courtside Keepsakes.",
+  },
+  {
+    slug: "portraits",
+    name: "Portraits",
+    lede: "Bringing out the best light in people.",
   },
   {
     slug: "events",
