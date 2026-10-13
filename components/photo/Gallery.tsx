@@ -21,7 +21,13 @@ const SIZES: Record<Span, string> = {
   4: "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 60vw, 860px",
   6: "(max-width: 800px) calc(100vw - 56px), (max-width: 1400px) 90vw, 1300px",
 };
-const EDITORIAL_SIZES = "(max-width: 815px) calc(100vw - 56px), 760px";
+// Editorial: every frame is one height (see Gallery.module.css), so a
+// landscape is the column (100vw minus padding and the index) and a portrait
+// 4/9 of it; below 600px both go full width.
+const EDITORIAL_SIZES = {
+  land: "(max-width: 800px) calc(100vw - 56px), calc(100vw - 324px)",
+  port: "(max-width: 599px) calc(100vw - 56px), (max-width: 800px) calc((100vw - 56px) * 0.45), calc((100vw - 324px) * 0.45)",
+};
 
 /**
  * B gallery: sticky series index + sections (port of b-gallery.html), with a
@@ -195,7 +201,7 @@ function Cell({
   span: Span;
 }) {
   const land = p.width > p.height;
-  const sizes = view === "editorial" ? EDITORIAL_SIZES : SIZES[span];
+  const sizes = view === "editorial" ? EDITORIAL_SIZES[land ? "land" : "port"] : SIZES[span];
   return (
     <figure
       id={p.id}
@@ -240,7 +246,7 @@ function ShootCard({
   const { cover: p, photos, slug } = item;
   const peek = photos.find((x) => x.id !== p.id);
   const land = p.width > p.height;
-  const sizes = view === "editorial" ? EDITORIAL_SIZES : SIZES[span];
+  const sizes = view === "editorial" ? EDITORIAL_SIZES[land ? "land" : "port"] : SIZES[span];
   return (
     <figure
       id={p.id}

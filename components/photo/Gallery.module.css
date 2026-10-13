@@ -86,25 +86,67 @@
   .shoot .cell img.peek { transition: none; }
 }
 
-/* Editorial view: one image at a time, natural ratio, varied widths, more air. */
+/* Editorial view: one frame at a time, every frame one height (--eh: what a
+   3:2 landscape is when it fills the column, capped at 80% of the screen).
+   Landscapes fill that width from the column's left edge; portraits match
+   their height and alternate between its two edges, caption in the space
+   beside them.
+   --ar is the photo's "w / h" from the figure's style, so --eh * --ar is the
+   frame's width. Rows stay in packRows order, like the grid. */
 .editorial .grid {
   display: block;
+  --eh: min(80svh, 100cqw * 2 / 3);
 }
+/* Every figure is capped at the landscape's width, so right-edge portraits
+   end where landscapes do. */
 .editorial .figure {
-  margin: 0 0 56px;
-  max-width: 760px;
-}
-.editorial .figure:nth-child(3n) {
-  max-width: 480px;
-  margin-left: auto;
-}
-.editorial .figure:nth-child(3n + 2) {
-  max-width: 100%;
+  margin: 0 0 88px;
+  max-width: calc(var(--eh) * 3 / 2);
 }
 .editorial .cell,
 .editorial .cell.land {
+  width: min(100%, var(--eh) * var(--ar));
   height: auto;
   aspect-ratio: var(--ar);
+}
+@media (min-width: 600px) {
+  .editorial .figure:not(.land) {
+    display: grid;
+    grid-template-columns: calc(var(--eh) * var(--ar)) minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: end;
+  }
+  .editorial .figure:not(.land) figcaption {
+    margin: 0;
+    max-width: 30ch;
+  }
+  .editorial .shoot:not(.land) figcaption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  /* Every second portrait in a series sits on the right edge. */
+  .editorial .figure:nth-child(even of :not(.land)) {
+    grid-template-columns: minmax(0, 1fr) calc(var(--eh) * var(--ar));
+  }
+  .editorial .figure:nth-child(even of :not(.land)) .cell {
+    grid-area: 1 / 2;
+  }
+  .editorial .figure:nth-child(even of :not(.land)) figcaption {
+    grid-area: 1 / 1;
+    justify-self: end;
+    text-align: right;
+    align-items: flex-end;
+  }
+}
+/* Phones: one column, full width, portraits capped at 80% of the screen. */
+@media (max-width: 599px) {
+  .editorial .grid {
+    --eh: 80svh;
+  }
+  .editorial .figure {
+    margin-bottom: 56px;
+  }
 }
 
 @media (max-width: 800px) {
