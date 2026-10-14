@@ -7097,8 +7097,8 @@
   {
     "id": "2025-12-everest-peak-shoot-2025-12-everestpeak-02",
     "file": "commercial/2025_12-Everest_Peak_Shoot/2025_12-EverestPeak_02.png",
-    "width": 1667,
-    "height": 2500,
+    "width": 2500,
+    "height": 1667,
     "renditions": [
       {
         "width": 480,
@@ -7114,9 +7114,14 @@
         "width": 1600,
         "avif": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-02-1600.avif",
         "jpg": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-02-1600.jpg"
+      },
+      {
+        "width": 2400,
+        "avif": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-02-2400.avif",
+        "jpg": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-02-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAOwE5GosjRLIlv6MPE4K/8QAIBAAAgICAgMBAQAAAAAAAAAAAQIABAMhBRESEzEiMv/aAAgBAQABPwAY1Ub6EZMZ12NxsA7+TlbPoqHIqebK66lflnz3KmE4QPN4x3OUr5LVU402S6/T1KvHWsFms/iFVHBb9xnPf9QWSQJ7uyI2bc//xAAYEQEBAQEBAAAAAAAAAAAAAAABAhAhMf/aAAgBAgEBPwAm0UOGFUCHmf/EABcRAQEBAQAAAAAAAAAAAAAAAAECECH/2gAIAQMBAT8AakQXuMijn//Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBBAb/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAADW0YRaS1EAP//EAB4QAAICAwEAAwAAAAAAAAAAAAECAxEABBJBBRMh/9oACAEBAAE/AA6ooJGbnyaakkIeMsHDYdlJQsgQqGF0fMfpojTUfCf3JtaZpPsl2O6LBRzXOJHt8jjb5XxeLrP/xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEhYf/aAAgBAgEBPwCE7Hh//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERMWH/2gAIAQMBAT8Adjmk6f/Z",
     "title": "Everest Peak Coffee",
     "place": "UPenn",
     "year": 2025,
@@ -7131,8 +7136,8 @@
   {
     "id": "2025-12-everest-peak-shoot-2025-12-everestpeak-03",
     "file": "commercial/2025_12-Everest_Peak_Shoot/2025_12-EverestPeak_03.png",
-    "width": 2500,
-    "height": 1667,
+    "width": 1667,
+    "height": 2500,
     "renditions": [
       {
         "width": 480,
@@ -7148,14 +7153,9 @@
         "width": 1600,
         "avif": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-03-1600.avif",
         "jpg": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-03-1600.jpg"
-      },
-      {
-        "width": 2400,
-        "avif": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-03-2400.avif",
-        "jpg": "/photos/2025-12-everest-peak-shoot-2025-12-everestpeak-03-2400.jpg"
       }
     ],
-    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBBAb/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAADW0YRaS1EAP//EAB4QAAICAwEAAwAAAAAAAAAAAAECAxEABBJBBRMh/9oACAEBAAE/AA6ooJGbnyaakkIeMsHDYdlJQsgQqGF0fMfpojTUfCf3JtaZpPsl2O6LBRzXOJHt8jjb5XxeLrP/xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEhYf/aAAgBAgEBPwCE7Hh//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERMWH/2gAIAQMBAT8Adjmk6f/Z",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAOwE5GosjRLIlv6MPE4K/8QAIBAAAgICAgMBAQAAAAAAAAAAAQIABAMhBRESEzEiMv/aAAgBAQABPwAY1Ub6EZMZ12NxsA7+TlbPoqHIqebK66lflnz3KmE4QPN4x3OUr5LVU402S6/T1KvHWsFms/iFVHBb9xnPf9QWSQJ7uyI2bc//xAAYEQEBAQEBAAAAAAAAAAAAAAABAhAhMf/aAAgBAgEBPwAm0UOGFUCHmf/EABcRAQEBAQAAAAAAAAAAAAAAAAECECH/2gAIAQMBAT8AakQXuMijn//Z",
     "title": "Everest Peak Coffee",
     "place": "UPenn",
     "year": 2025,
