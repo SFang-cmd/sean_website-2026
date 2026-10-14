@@ -21,14 +21,14 @@ export const series: Series[] = [
     lede: "Bringing out the best light in people.",
   },
   {
+    slug: "commercial",
+    name: "Studio",
+    lede: "For anything that deserves a studio moment.",
+  },
+  {
     slug: "events",
     name: "Events",
     lede: "For the moments that happen once.",
-  },
-  {
-    slug: "commercial",
-    name: "Commercial",
-    lede: "For anything that deserves a studio moment.",
   },
   {
     slug: "travel",
