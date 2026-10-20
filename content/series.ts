@@ -16,6 +16,11 @@ export const series: Series[] = [
     lede: "Capturing Courtside Keepsakes.",
   },
   {
+    slug: "grads",
+    name: "Grads",
+    lede: "One last lap around campus.",
+  },
+  {
     slug: "portraits",
     name: "Portraits",
     lede: "Bringing out the best light in people.",
