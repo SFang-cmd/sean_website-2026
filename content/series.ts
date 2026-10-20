@@ -18,7 +18,7 @@ export const series: Series[] = [
   {
     slug: "grads",
     name: "Grads",
-    lede: "One last lap around campus.",
+    lede: "Treasuring campus before it's a memory.",
   },
   {
     slug: "portraits",
